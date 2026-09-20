@@ -6,10 +6,12 @@ permalink: /browse/month/2026-09/
 
 # September 2026
 
-*26 item(s) in this period.*
+*27 item(s) in this period.*
 
-## Cisco (18)
+## Cisco (19)
 
+- 🟡 [Week in review: Cisco patches exploited email gateway 0-day, Revolut breach](https://www.helpnetsecurity.com/2026/09/20/week-in-review-cisco-patches-exploited-email-gateway-0-day-revolut-breach/)  
+  <small>2026-09-20 · Help Net Security · [in digest]({{ '/2026/09/20/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Zero-Day Highlights API Endpoint Authentication Issues](https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues) — CVE-2026-76460 **[KEV]**  
