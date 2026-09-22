@@ -6,7 +6,7 @@ permalink: /browse/vendor/check-point/
 
 # Check Point
 
-*5 item(s) across all editions.*
+*6 item(s) across all editions.*
 
 ## Management platforms
 
@@ -21,6 +21,8 @@ permalink: /browse/vendor/check-point/
 
 ## Other
 
+- ⚪ [No Attacker Required: What a Two-Day Hackathon Taught Us About Agent Security](https://blog.checkpoint.com/ai-security/no-attacker-required-what-a-two-day-hackathon-taught-us-about-agent-security/)  
+  <small>2026-09-22 · Check Point Blog · [in digest]({{ '/2026/09/22/network-security-digest/' | relative_url }})</small>
 - ⚪ [AI Models Broke Their Own Containment: Key Findings from the July-August 2026 AI Threat Landscape](https://blog.checkpoint.com/artificial-intelligence/ai-models-broke-their-own-containment-key-findings-from-the-july-august-2026-ai-threat-landscape/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 
