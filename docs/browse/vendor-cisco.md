@@ -6,7 +6,7 @@ permalink: /browse/vendor/cisco/
 
 # Cisco
 
-*18 item(s) across all editions.*
+*20 item(s) across all editions.*
 
 ## Firewalls
 
@@ -62,6 +62,10 @@ permalink: /browse/vendor/cisco/
 
 ## Other
 
+- ⚪ [The Closed Quorum: Inside the first reported autonomous AI C2 implant](https://blog.talosintelligence.com/the-closed-quorum-inside-the-first-reported-autonomous-ai-c2-implant/)  
+  <small>2026-09-22 · Cisco Talos · [in digest]({{ '/2026/09/22/network-security-digest/' | relative_url }})</small>
+- ⚪ [From Love Letters to AI Agents: Cybersecurity’s Evolution](https://blogs.cisco.com/security/from-love-letters-to-ai-agents-cybersecuritys-evolution/)  
+  <small>2026-09-22 · Cisco Security Blog · [in digest]({{ '/2026/09/22/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Email Gateway SQL Injection Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [CVE-2026-76461: Critical Cisco Secure Email Gateway Vulnerability Exploited in the Wild](https://www.rapid7.com/blog/post/etr-cve-2026-76461-critical-cisco-secure-email-gateway-vulnerability-exploited-in-the-wild) — CVE-2026-76461 **[KEV]**  

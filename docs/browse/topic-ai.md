@@ -6,12 +6,15 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*26 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
 ## Check Point
 
+- ⚪ [No Attacker Required: What a Two-Day Hackathon Taught Us About Agent Security](https://blog.checkpoint.com/ai-security/no-attacker-required-what-a-two-day-hackathon-taught-us-about-agent-security/)  
+  <small>2026-09-22 · Check Point Blog · [in digest]({{ '/2026/09/22/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** Agent failure without an adversary, and repository poisoning turning a coding agent into an exfiltration channel - relevant to anyone granting agents access to network configuration.</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
@@ -30,6 +33,12 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 
 ## Cisco
 
+- ⚪ [The Closed Quorum: Inside the first reported autonomous AI C2 implant](https://blog.talosintelligence.com/the-closed-quorum-inside-the-first-reported-autonomous-ai-c2-implant/)  
+  <small>2026-09-22 · Cisco Talos · [in digest]({{ '/2026/09/22/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** This is the genuine AI item of the cycle: Talos reports autonomous, non-operator-driven C2, which shortens the attacker's decision loop without changing the fact that the implant must still traverse the network to act.</small>
+- ⚪ [From Love Letters to AI Agents: Cybersecurity’s Evolution](https://blogs.cisco.com/security/from-love-letters-to-ai-agents-cybersecuritys-evolution/)  
+  <small>2026-09-22 · Cisco Security Blog · [in digest]({{ '/2026/09/22/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** Vendor-side AI defence positioning: Cisco's four pillars of agentic security, recorded on the defences side rather than the threat side.</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
@@ -74,6 +83,18 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
   <small>**AI angle:** None stated in this source.</small>
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Fastly
+
+- ⚪ [Fastly gives enterprises real-time control over AI models and agents](https://www.helpnetsecurity.com/2026/09/21/fastly-ai-runtime-control/)  
+  <small>2026-09-22 · Help Net Security · [in digest]({{ '/2026/09/22/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** Vendor-side AI defence: controls over how AI models and agents reach enterprise APIs, recorded on the defences side.</small>
+
+## Multiple
+
+- ⚪ [⚡ Weekly Recap: Cisco 0-Day, AI Agent RCE, ClickFix Attacks, ClickFix Surge, and Browser Hijacks](https://thehackernews.com/2026/09/weekly-recap-cisco-0-day-ai-agent-rce.html)  
+  <small>2026-09-22 · The Hacker News · [in digest]({{ '/2026/09/22/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** References an AI agent RCE, but names no product or CVE - insufficient to act on.</small>
 
 ## Palo Alto Networks
 

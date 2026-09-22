@@ -6,10 +6,14 @@ permalink: /browse/month/2026-09/
 
 # September 2026
 
-*26 item(s) in this period.*
+*35 item(s) in this period.*
 
-## Cisco (18)
+## Cisco (20)
 
+- ⚪ [The Closed Quorum: Inside the first reported autonomous AI C2 implant](https://blog.talosintelligence.com/the-closed-quorum-inside-the-first-reported-autonomous-ai-c2-implant/)  
+  <small>2026-09-22 · Cisco Talos · [in digest]({{ '/2026/09/22/network-security-digest/' | relative_url }})</small>
+- ⚪ [From Love Letters to AI Agents: Cybersecurity’s Evolution](https://blogs.cisco.com/security/from-love-letters-to-ai-agents-cybersecuritys-evolution/)  
+  <small>2026-09-22 · Cisco Security Blog · [in digest]({{ '/2026/09/22/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Zero-Day Highlights API Endpoint Authentication Issues](https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues) — CVE-2026-76460 **[KEV]**  
@@ -47,8 +51,10 @@ permalink: /browse/month/2026-09/
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 
-## Check Point (5)
+## Check Point (6)
 
+- ⚪ [No Attacker Required: What a Two-Day Hackathon Taught Us About Agent Security](https://blog.checkpoint.com/ai-security/no-attacker-required-what-a-two-day-hackathon-taught-us-about-agent-security/)  
+  <small>2026-09-22 · Check Point Blog · [in digest]({{ '/2026/09/22/network-security-digest/' | relative_url }})</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [Check Point, Kaspersky, Tanium Patch Product Vulnerabilities](https://www.securityweek.com/check-point-kaspersky-tanium-patch-product-vulnerabilities/)  
@@ -60,12 +66,33 @@ permalink: /browse/month/2026-09/
 - ⚪ [When Security Operations Can’t Keep Up: 4 Ways Agentic Network Security Management Improves Security Operations](https://blog.checkpoint.com/hybrid-mesh/when-security-operations-cant-keep-up-4-ways-agentic-network-security-management-improves-security-operations/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 
-## Palo Alto Networks (2)
+## Palo Alto Networks (3)
 
+- 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
+  <small>2026-09-22 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/09/22/network-security-digest/' | relative_url }})</small>
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
   <small>2026-09-17 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Zyxel (3)
+
+- 🔴 [Zyxel and Veeam Flaws Under Active Exploitation With Command and SYSTEM Access](https://thehackernews.com/2026/09/zyxel-and-veeam-flaws-under-active.html) — CVE-2026-7273 **[KEV]**  
+  <small>2026-09-22 · The Hacker News · [in digest]({{ '/2026/09/22/network-security-digest/' | relative_url }})</small>
+- 🔴 [Attacker compromised nearly 1000 Zyxel switches since August (CVE-2026-7273)](https://www.helpnetsecurity.com/2026/09/22/zyxel-switches-cve-2026-7273-vulnerability-exploited/) — CVE-2026-7273 **[KEV]**  
+  <small>2026-09-22 · Help Net Security · [in digest]({{ '/2026/09/22/network-security-digest/' | relative_url }})</small>
+- 🟠 [CISA orders feds to patch Zyxel flaw exploited for data theft](https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-zyxel-flaw-by-thursday/)  
+  <small>2026-09-22 · BleepingComputer · [in digest]({{ '/2026/09/22/network-security-digest/' | relative_url }})</small>
+
+## Fastly (1)
+
+- ⚪ [Fastly gives enterprises real-time control over AI models and agents](https://www.helpnetsecurity.com/2026/09/21/fastly-ai-runtime-control/)  
+  <small>2026-09-22 · Help Net Security · [in digest]({{ '/2026/09/22/network-security-digest/' | relative_url }})</small>
+
+## Multiple (1)
+
+- ⚪ [⚡ Weekly Recap: Cisco 0-Day, AI Agent RCE, ClickFix Attacks, ClickFix Surge, and Browser Hijacks](https://thehackernews.com/2026/09/weekly-recap-cisco-0-day-ai-agent-rce.html)  
+  <small>2026-09-22 · The Hacker News · [in digest]({{ '/2026/09/22/network-security-digest/' | relative_url }})</small>
 
 ## Ubiquiti (1)
 
