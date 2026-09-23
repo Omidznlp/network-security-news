@@ -6,11 +6,21 @@ permalink: /browse/ai-defenses/
 
 # Vendor AI defences
 
-*3 vendor AI capability announcement(s), all editions.*
+*4 vendor AI capability announcement(s), all editions.*
 
 What the network vendors have shipped to answer AI-era threats: AI security products and features, AI-assisted detection, guardrails for AI running on network gear, and vendor guidance for defending against AI-enabled attacks.
 
-## Check Point (2)
+## Check Point (3)
+
+### Frontier AI Readiness Program
+
+Check Point describes this as the program under which it continues to release Jumbo hotfixes carrying security fixes and hardening improvements for its Firewall and Management products. The advisory gives no further detail on the program's scope.
+
+*Defends against:* Not stated in the source beyond framing the hardening cadence as AI-era readiness; no specific AI threat is named.  
+*Availability:* described-only
+
+- 🔴 [Security Advisory – Action Required – Active Exploitation of CVE-2026-85102 and a Management Pre-Authentication Vulnerability CVE-2026-93616](https://blog.checkpoint.com/security/security-advisory-action-required-active-exploitation-of-cve-2026-85102-and-a-management-pre-authentication-vulnerability-cve-2026-93616/) — CVE-2026-85102, CVE-2026-93616 **[KEV]**  
+  <small>2026-09-23 · Check Point Blog · [in digest]({{ '/2026/09/23/network-security-digest/' | relative_url }})</small>
 
 - ⚪ [AI Models Broke Their Own Containment: Key Findings from the July-August 2026 AI Threat Landscape](https://blog.checkpoint.com/artificial-intelligence/ai-models-broke-their-own-containment-key-findings-from-the-july-august-2026-ai-threat-landscape/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
