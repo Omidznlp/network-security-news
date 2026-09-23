@@ -6,7 +6,7 @@ permalink: /browse/vendor/palo-alto-networks/
 
 # Palo Alto Networks
 
-*2 item(s) across all editions.*
+*3 item(s) across all editions.*
 
 ## VPN gateways
 
@@ -15,6 +15,8 @@ permalink: /browse/vendor/palo-alto-networks/
 
 ## Other
 
+- 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
+  <small>2026-09-23 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/09/23/network-security-digest/' | relative_url }})</small>
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  

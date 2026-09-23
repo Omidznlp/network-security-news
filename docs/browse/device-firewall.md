@@ -6,7 +6,12 @@ permalink: /browse/device/firewall/
 
 # Firewalls
 
-*11 item(s) across all editions.*
+*13 item(s) across all editions.*
+
+## Check Point
+
+- 🔴 [Security Advisory – Action Required – Active Exploitation of CVE-2026-85102 and a Management Pre-Authentication Vulnerability CVE-2026-93616](https://blog.checkpoint.com/security/security-advisory-action-required-active-exploitation-of-cve-2026-85102-and-a-management-pre-authentication-vulnerability-cve-2026-93616/) — CVE-2026-85102, CVE-2026-93616 **[KEV]**  
+  <small>2026-09-23 · Check Point Blog · [in digest]({{ '/2026/09/23/network-security-digest/' | relative_url }})</small>
 
 ## Cisco
 
@@ -32,6 +37,11 @@ permalink: /browse/device/firewall/
   <small>2026-09-17 · Zero Day Initiative · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Multiple
+
+- 🔴 [Attackers hit Check Point Management Servers and Spark firewalls, F5 BIG-IP APM instances](https://www.helpnetsecurity.com/2026/09/23/check-point-f5-big-ip-apm-zero-days-targeted/) — CVE-2026-85102, CVE-2026-93616 **[KEV]**  
+  <small>2026-09-23 · Help Net Security · [in digest]({{ '/2026/09/23/network-security-digest/' | relative_url }})</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>

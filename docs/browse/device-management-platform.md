@@ -6,10 +6,25 @@ permalink: /browse/device/management-platform/
 
 # Management platforms
 
-*11 item(s) across all editions.*
+*18 item(s) across all editions.*
+
+## Arista Networks
+
+- 🔴 [New CVSS 10.0 VeloCloud Orchestrator Flaw Actively Exploited in Certificate-Based Setups](https://thehackernews.com/2026/09/new-cvss-100-velocloud-orchestrator.html) — CVE-2026-93952 **[KEV]**  
+  <small>2026-09-23 · The Hacker News · [in digest]({{ '/2026/09/23/network-security-digest/' | relative_url }})</small>
+- 🟠 [Arista Urges Immediate Patching of Exploited VCO Zero-Day](https://www.securityweek.com/arista-urges-immediate-patching-of-exploited-vco-zero-day/)  
+  <small>2026-09-23 · SecurityWeek · [in digest]({{ '/2026/09/23/network-security-digest/' | relative_url }})</small>
 
 ## Check Point
 
+- 🔴 [Check Point Warns of Management Server Zero-Day Exploited in Targeted Attacks](https://thehackernews.com/2026/09/check-point-warns-of-management-server.html) — CVE-2026-93616 **[KEV]**  
+  <small>2026-09-23 · The Hacker News · [in digest]({{ '/2026/09/23/network-security-digest/' | relative_url }})</small>
+- 🔴 [Security Advisory – Action Required – Active Exploitation of CVE-2026-85102 and a Management Pre-Authentication Vulnerability CVE-2026-93616](https://blog.checkpoint.com/security/security-advisory-action-required-active-exploitation-of-cve-2026-85102-and-a-management-pre-authentication-vulnerability-cve-2026-93616/) — CVE-2026-85102, CVE-2026-93616 **[KEV]**  
+  <small>2026-09-23 · Check Point Blog · [in digest]({{ '/2026/09/23/network-security-digest/' | relative_url }})</small>
+- 🟠 [Check Point Patches Exploited Management Server Zero-Day](https://www.securityweek.com/check-point-patches-exploited-management-server-zero-day/)  
+  <small>2026-09-23 · SecurityWeek · [in digest]({{ '/2026/09/23/network-security-digest/' | relative_url }})</small>
+- 🟠 [Check Point warns of Management Server zero-day exploited in attacks](https://www.bleepingcomputer.com/news/security/check-point-patches-management-server-zero-day-exploited-in-attacks/)  
+  <small>2026-09-23 · BleepingComputer · [in digest]({{ '/2026/09/23/network-security-digest/' | relative_url }})</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [Check Point, Kaspersky, Tanium Patch Product Vulnerabilities](https://www.securityweek.com/check-point-kaspersky-tanium-patch-product-vulnerabilities/)  
@@ -35,6 +50,11 @@ permalink: /browse/device/management-platform/
   <small>2026-09-18 · Zero Day Initiative · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [ZDI-26-709: Cisco Secure Firewall Management Center CommandSinkRmi Deserialization of Untrusted Data Remote Code Execution Vulnerability](http://www.zerodayinitiative.com/advisories/ZDI-26-709/) — CVE-2026-20242  
   <small>2026-09-17 · Zero Day Initiative · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Multiple
+
+- 🔴 [Attackers hit Check Point Management Servers and Spark firewalls, F5 BIG-IP APM instances](https://www.helpnetsecurity.com/2026/09/23/check-point-f5-big-ip-apm-zero-days-targeted/) — CVE-2026-85102, CVE-2026-93616 **[KEV]**  
+  <small>2026-09-23 · Help Net Security · [in digest]({{ '/2026/09/23/network-security-digest/' | relative_url }})</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>

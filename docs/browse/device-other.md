@@ -6,7 +6,7 @@ permalink: /browse/device/other/
 
 # Other
 
-*8 item(s) across all editions.*
+*9 item(s) across all editions.*
 
 ## Check Point
 
@@ -26,6 +26,8 @@ permalink: /browse/device/other/
 
 ## Palo Alto Networks
 
+- 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
+  <small>2026-09-23 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/09/23/network-security-digest/' | relative_url }})</small>
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  

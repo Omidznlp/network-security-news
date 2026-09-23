@@ -1,99 +1,98 @@
 {
-  "date": "2026-09-18",
-  "url": "/2026/09/18/network-security-digest/",
-  "item_count": 20,
-  "critical_count": 4,
+  "date": "2026-09-23",
+  "url": "/2026/09/23/network-security-digest/",
+  "item_count": 14,
+  "critical_count": 6,
   "kev": [
-    "CVE-2026-76460"
+    "CVE-2026-85102",
+    "CVE-2026-93616",
+    "CVE-2026-93952",
+    "CVE-2026-94127"
   ],
   "feeds_ok": 22,
-  "top_story_title": "Cisco ISE authentication bypass CVE-2026-76460 (CVSS 10.0) is on KEV with a 19 September deadline",
-  "top_story_summary": "Cisco has confirmed active exploitation of CVE-2026-76460, a maximum-severity authentication bypass in Cisco Identity Services Engine (ISE) and the ISE Passive Identity Connector (ISE-PIC). Cisco attributes it to insufficient authentication control on an API endpoint, which lets an unauthenticated, remote attacker bypass the web-based management interface and gain unauthorized access to the device. CISA added it to the Known Exploited Vulnerabilities catalogue on 2026-09-16 with a remediation due date of 2026-09-19 under BOD 26-04; ransomware use is listed as unknown.",
+  "top_story_title": "Check Point Security Management Server zero-day exploited since July; gateway pre-auth RCE under attack alongside it",
+  "top_story_summary": "Check Point has released emergency Jumbo hotfixes for CVE-2026-93616, a pre-authentication path traversal in Security Management Server that lets an unauthenticated attacker reach the server's web service and upload and execute arbitrary scripts. Check Point Research says the flaw was exploited in a small number of targeted attacks as far back as July 23, 2026, and published the fix on September 22. CISA added it to the KEV catalog on September 22 with a remediation due date of September 25. Per the KEV entry, the same path traversal covers Multi-Domain Security Management Server, Log Server, Multi-Domain Log Server and SmartEvent.",
   "top_actions": [
-    "Inventory every ISE and ISE-PIC node (including standby, PAN and MnT personas) with its running patch level, and apply the fixed release named in the Cisco advisory for CVE-2026-76460 - check the vendor advisory for the fixed release, it is not stated in these sources.",
-    "US federal agencies: the BOD 26-04 due date for CVE-2026-76460 is 2026-09-19. If you cannot meet it, follow CISA's instruction to apply vendor mitigations or discontinue use, and record the decision.",
-    "Remove the ISE administrative and API interfaces from any internet-facing or user-reachable path today; permit them only from a dedicated management VLAN or out-of-band network and jump hosts.",
-    "Assume pre-patch compromise on any ISE node that was reachable from an untrusted network: rotate admin credentials, API keys, pxGrid and node certificates, RADIUS/TACACS+ shared secrets and any ERS/OpenAPI service accounts after upgrading.",
-    "Review ISE for unexpected admin users, changed authorisation policies and profiles, new network device entries and modified shared secrets - a policy change is the quiet form of this compromise."
+    "Apply the Check Point Jumbo hotfix for CVE-2026-93616 to Security Management Server, Multi-Domain Security Management Server, Log Server, Multi-Domain Log Server and SmartEvent now - the KEV due date is 2026-09-25.",
+    "Confirm every Security Gateway and Spark firewall carries the CVE-2026-85102 fix released on September 9; if the build predates it, treat the device as having been exposed to active exploitation.",
+    "Remove the management server's web service from any internet-reachable path and restrict it to a dedicated management VLAN or out-of-band network with an explicit source ACL.",
+    "Assume pre-patch compromise back to 2026-07-23: rotate management and gateway admin credentials, API keys, certificates and VPN pre-shared keys after the upgrade.",
+    "Export and diff the policy database and gateway configurations against a known-good backup, looking for unexpected admin users, rules, scripts or modified login pages."
   ],
   "executive_summary": [
-    "Cisco ISE CVE-2026-76460 (CVSS 10.0, unauthenticated authentication bypass on an API endpoint) is actively exploited and on CISA KEV with a 2026-09-19 due date - patch the identity platform first.",
-    "Cisco's September 2026 ASA/FTD/FMC hardening release states two of its flaws are already exploited, both in Firewall Management Center: a static credential issue and an authentication bypass.",
-    "Six further Cisco ASA/FTD advisories land at once - four denial of service (IKEv2 certificate, DTLS on 3100/4200, EIGRP, TCP DNS), one syslog CPU exhaustion, and an Object Group Search ACL bypass that lets blocked traffic through.",
-    "Check Point Security Management and Log Servers have a critical unauthenticated remote code execution as root, fixed via LivePatch, with no reported exploitation - this is the box that holds firewall policy.",
-    "Three ZDI advisories cover authenticated Cisco ISE flaws (CVE-2026-20176, CVE-2026-20211, CVE-2026-20235); they chain behind the auth bypass rather than standing alone.",
-    "No source in this window states a fixed version string. Take exact fixed releases from the vendor advisories, not from press coverage."
+    "Check Point patched CVE-2026-93616, a pre-auth script upload and execution flaw in Security Management Server exploited in targeted attacks since 2026-07-23; KEV due date 2026-09-25.",
+    "Check Point also confirms active exploitation of CVE-2026-85102, unauthenticated RCE on Security Gateway and Spark firewalls running Site-to-Site or Remote Access VPN; fix available since 2026-09-09.",
+    "F5 disclosed CVE-2026-94127 on 2026-09-22, a CVSS 9.8 heap overflow giving unauthenticated RCE on BIG-IP APM - only where a virtual server has both an APM access policy and an OAuth profile. Engineering hotfixes released; exploited as a zero-day, now in KEV.",
+    "Arista reported active exploitation of CVE-2026-93952 in on-premises VeloCloud Orchestrator (CVSS 10.0), affecting only orchestrators that authenticate Edges with certificates. In KEV, due 2026-09-25.",
+    "D-Link disclosed a maximum-severity flaw in legacy DIR-822A Wi-Fi routers, CVE-2026-86296, with public PoC code and no patch - replacement or isolation is the only answer.",
+    "A Chinese-speaking threat actor exploited Zyxel GS1900 smart managed switches, reaching 996 devices and more than 18,500 records in backend databases.",
+    "Three of the four exploited flaws this cycle hit management and orchestration platforms rather than data-plane devices; prioritise the controllers before the edge."
   ],
   "key_actions": [
-    "**Cisco** \u2014 Confirm the running ASA, FTD and FMC versions against Cisco's fixed-release table in the hardening advisory - check the vendor advisory for the fixed release, no version is stated in this source.",
-    "**Cisco** \u2014 Patch FMC before the managed FTD devices, then upgrade firewalls in the change window, HA pair secondary first, and verify policy deploy afterwards.",
-    "**Cisco** \u2014 Patch ISE and ISE-PIC to the fixed release named in the Cisco advisory - check the vendor advisory for the fixed release.",
-    "**Cisco** \u2014 Meet or formally document the CISA BOD 26-04 due date of 2026-09-19 if you are in scope; otherwise apply vendor mitigations or discontinue use as the KEV entry instructs.",
-    "**Cisco** \u2014 Upgrade ISE to the fixed release stated in the Cisco advisory - check the vendor advisory for the fixed release.",
-    "**Cisco** \u2014 Before the upgrade, capture ISE logs and configuration for forensics; patching overwrites some of the evidence you would want later.",
-    "**Check Point** \u2014 Confirm LivePatch is enabled and has actually applied the fix on every Security Management Server and Log Server - verify the installed patch level rather than assuming the channel delivered it.",
-    "**Check Point** \u2014 Remove management server access from any untrusted or internet-facing network; SmartConsole and management traffic belong on a dedicated management VLAN or out-of-band network."
+    "**Multiple** \u2014 Patch the Check Point Security Management Server first, then gateways; then the BIG-IP APM units - management and access control planes before data plane.",
+    "**Multiple** \u2014 Verify each Check Point gateway is on the 2026-09-09 or later build that fixes CVE-2026-85102; anything older has been exposed to probing for two weeks.",
+    "**F5** \u2014 Apply F5's engineering hotfix to all units in the device group and verify config sync after upgrade; check the vendor advisory for the fixed release that applies to your branch.",
+    "**F5** \u2014 Inventory virtual servers for the exposed combination - an APM access policy together with an OAuth profile - and prioritise those; other configurations are not affected.",
+    "**Arista** \u2014 Patch the on-premises orchestrator before touching Edge devices, and validate certificate trust after the upgrade; check the vendor advisory for the fixed release.",
+    "**Arista** \u2014 Determine whether your VCO authenticates Edges with certificates - that is the exposed configuration per Arista.",
+    "**F5** \u2014 Enumerate virtual servers and filter for the pairing of an APM access policy with an OAuth profile; that list is your patch queue.",
+    "**F5** \u2014 Apply the F5 hotfix across the device group and verify config sync; check the vendor advisory for the fixed release for your branch."
   ],
   "ai_defenses": [
     {
       "vendor": "Check Point",
-      "solution": "Agentic network security management",
-      "what_it_does": "Check Point describes agentic AI taking on day-to-day security operations work in hybrid mesh environments, setting out four ways agentic network security management improves security operations where environments change faster than teams can manage them manually. The post describes the approach; it does not state a product name, release or availability date."
-    },
-    {
-      "vendor": "Palo Alto Networks",
-      "solution": "AI Application Security",
-      "what_it_does": "Palo Alto Networks describes its work on AI security and states it was named a Market Shaper in the 2026 September Gartner Emerging Market Quadrant for AI Application Security - Established Vendors. The collected text names no specific product, feature or capability detail."
+      "solution": "Frontier AI Readiness Program",
+      "what_it_does": "Check Point describes this as the program under which it continues to release Jumbo hotfixes carrying security fixes and hardening improvements for its Firewall and Management products. The advisory gives no further detail on the program's scope."
     }
   ],
   "headlines": [
     {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN",
-      "summary": "Cisco's September 2026 hardening release for ASA, FTD and FMC software fixes multiple internally found flaws, two of them already exploited in Firewall Management Center.",
+      "title": "Attackers hit Check Point Management Servers and Spark firewalls, F5 BIG-IP APM instances",
+      "link": "https://www.helpnetsecurity.com/2026/09/23/check-point-f5-big-ip-apm-zero-days-targeted/",
+      "summary": "Check Point and F5 are both responding to in-the-wild exploitation: two Check Point CVEs added to KEV, plus an unauthenticated RCE zero-day in F5 BIG-IP APM.",
       "relevance": "critical",
-      "vendor": "Cisco",
-      "source": "Cisco PSIRT"
+      "vendor": "Multiple",
+      "source": "Help Net Security"
     },
     {
-      "title": "Cisco Zero-Day Highlights API Endpoint Authentication Issues",
-      "link": "https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues",
-      "summary": "CVE-2026-76460, a CVSS 10.0 authentication bypass on a Cisco ISE API endpoint, is on CISA's KEV list with a 2026-09-19 remediation deadline.",
+      "title": "F5 Patches Critical BIG-IP APM Zero-Day Exploited for Unauthenticated RCE on OAuth Servers",
+      "link": "https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html",
+      "summary": "F5 says attackers are exploiting CVE-2026-94127 in BIG-IP APM to run code without logging in, on systems where APM acts as an OAuth authorization server.",
       "relevance": "critical",
-      "vendor": "Cisco",
-      "source": "Dark Reading"
-    },
-    {
-      "title": "Cisco Warns of New Zero-Day ISE Auth Bypass (CVSS 10.0) Exploited in Active Attacks",
-      "link": "https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html",
-      "summary": "Cisco confirms active exploitation of a maximum-severity ISE authentication bypass caused by insufficient authentication control on an API endpoint.",
-      "relevance": "critical",
-      "vendor": "Cisco",
+      "vendor": "F5",
       "source": "The Hacker News"
     },
     {
-      "title": "Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root",
-      "link": "https://thehackernews.com/2026/09/critical-check-point-management-server.html",
-      "summary": "Check Point Security Management and Log Servers accept unauthenticated network requests that run code as root; a LivePatch fix is out with no reported exploitation.",
+      "title": "New CVSS 10.0 VeloCloud Orchestrator Flaw Actively Exploited in Certificate-Based Setups",
+      "link": "https://thehackernews.com/2026/09/new-cvss-100-velocloud-orchestrator.html",
+      "summary": "Arista reports active exploitation of CVE-2026-93952, a CVSS 10.0 input validation flaw in on-premises VeloCloud Orchestrator, in certificate-authenticated deployments.",
+      "relevance": "critical",
+      "vendor": "Arista",
+      "source": "The Hacker News"
+    },
+    {
+      "title": "CVE-2026-94127: Critical Unauthenticated RCE in F5 BIG-IP APM",
+      "link": "https://www.rapid7.com/blog/post/etr-cve-2026-94127-critical-unauthenticated-rce-in-f5-big-ip-apm",
+      "summary": "Rapid7 details CVE-2026-94127 as a CVSS 9.8 heap-based buffer overflow in BIG-IP APM, reachable only when a virtual server has both an access policy and an OAuth profile.",
+      "relevance": "critical",
+      "vendor": "F5",
+      "source": "Rapid7 Blog"
+    },
+    {
+      "title": "Check Point Warns of Management Server Zero-Day Exploited in Targeted Attacks",
+      "link": "https://thehackernews.com/2026/09/check-point-warns-of-management-server.html",
+      "summary": "Check Point's Security Management Server carried a zero-day, CVE-2026-93616, letting unauthenticated attackers run scripts on the server that controls firewall policy.",
       "relevance": "critical",
       "vendor": "Check Point",
       "source": "The Hacker News"
     },
     {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Certificate Authentication Denial of Service Vulnerability",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv",
-      "summary": "An unauthenticated attacker can crash Cisco ASA and FTD firewalls by starting an IKEv2 VPN connection with a crafted certificate, and Cisco states there is no workaround.",
-      "relevance": "high",
-      "vendor": "Cisco",
-      "source": "Cisco PSIRT"
-    },
-    {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software for Secure Firewall 3100 and 4200 Series DTLS Denial of Service Vulnerability",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-dtls-dos-Kp57HkyO",
-      "summary": "Crafted DTLS traffic reloads Cisco Secure Firewall 3100 and 4200 Series appliances running ASA or FTD software; Cisco states workarounds exist.",
-      "relevance": "high",
-      "vendor": "Cisco",
-      "source": "Cisco PSIRT"
+      "title": "Security Advisory \u2013 Action Required \u2013 Active Exploitation of CVE-2026-85102 and a Management Pre-Authentication Vulnerability CVE-2026-93616",
+      "link": "https://blog.checkpoint.com/security/security-advisory-action-required-active-exploitation-of-cve-2026-85102-and-a-management-pre-authentication-vulnerability-cve-2026-93616/",
+      "summary": "Check Point's own advisory confirms active exploitation of two flaws: CVE-2026-85102 on Security Gateway and the new pre-auth CVE-2026-93616 in Security Management.",
+      "relevance": "critical",
+      "vendor": "Check Point",
+      "source": "Check Point Blog"
     }
   ]
 }
