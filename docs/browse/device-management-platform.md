@@ -6,10 +6,17 @@ permalink: /browse/device/management-platform/
 
 # Management platforms
 
-*11 item(s) across all editions.*
+*13 item(s) across all editions.*
+
+## Arista Networks
+
+- 🔴 [Arista patches actively exploited VeloCloud Orchestrator zero-day](https://www.bleepingcomputer.com/news/security/arista-patches-actively-exploited-velocloud-orchestrator-zero-day/)  
+  <small>2026-09-24 · BleepingComputer · [in digest]({{ '/2026/09/24/network-security-digest/' | relative_url }})</small>
 
 ## Check Point
 
+- ⚪ [Workforce AI Security Policy Management Is Now Conversational](https://blog.checkpoint.com/ai-security/workforce-ai-security-policy-management-is-now-conversational/)  
+  <small>2026-09-24 · Check Point Blog · [in digest]({{ '/2026/09/24/network-security-digest/' | relative_url }})</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [Check Point, Kaspersky, Tanium Patch Product Vulnerabilities](https://www.securityweek.com/check-point-kaspersky-tanium-patch-product-vulnerabilities/)  

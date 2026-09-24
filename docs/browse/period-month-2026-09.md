@@ -6,10 +6,12 @@ permalink: /browse/month/2026-09/
 
 # September 2026
 
-*26 item(s) in this period.*
+*32 item(s) in this period.*
 
-## Cisco (18)
+## Cisco (19)
 
+- 🟠 [Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software SSL VPN Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftdvirtual-dos-MuenGnYR)  
+  <small>2026-09-24 · Cisco PSIRT · [in digest]({{ '/2026/09/24/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Zero-Day Highlights API Endpoint Authentication Issues](https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues) — CVE-2026-76460 **[KEV]**  
@@ -47,8 +49,12 @@ permalink: /browse/month/2026-09/
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 
-## Check Point (5)
+## Check Point (7)
 
+- 🔴 [Check Point warns of hackers exploiting Security Gateway VPN RCE flaw](https://www.bleepingcomputer.com/news/security/check-point-warns-of-hackers-exploiting-security-gateway-vpn-rce-flaw/) — CVE-2026-85102 **[KEV]**  
+  <small>2026-09-24 · BleepingComputer · [in digest]({{ '/2026/09/24/network-security-digest/' | relative_url }})</small>
+- ⚪ [Workforce AI Security Policy Management Is Now Conversational](https://blog.checkpoint.com/ai-security/workforce-ai-security-policy-management-is-now-conversational/)  
+  <small>2026-09-24 · Check Point Blog · [in digest]({{ '/2026/09/24/network-security-digest/' | relative_url }})</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [Check Point, Kaspersky, Tanium Patch Product Vulnerabilities](https://www.securityweek.com/check-point-kaspersky-tanium-patch-product-vulnerabilities/)  
@@ -66,6 +72,21 @@ permalink: /browse/month/2026-09/
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
   <small>2026-09-17 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Arista Networks (1)
+
+- 🔴 [Arista patches actively exploited VeloCloud Orchestrator zero-day](https://www.bleepingcomputer.com/news/security/arista-patches-actively-exploited-velocloud-orchestrator-zero-day/)  
+  <small>2026-09-24 · BleepingComputer · [in digest]({{ '/2026/09/24/network-security-digest/' | relative_url }})</small>
+
+## F5 (1)
+
+- 🔴 [Is This A Joke? In The Auth Header? (F5 BIG-IP UnAuth Heap-Overflow to RCE CVE-2026-94127)](https://labs.watchtowr.com/is-this-a-joke-in-the-auth-header-f5-big-ip-unauth-heap-overflow-to-rce-cve-2026-94127/) — CVE-2026-94127 **[KEV]**  
+  <small>2026-09-24 · watchTowr Labs · [in digest]({{ '/2026/09/24/network-security-digest/' | relative_url }})</small>
+
+## MikroTik (1)
+
+- 🔴 [MikroTrick Chain Let Attackers Take Over MikroTik Routers Without a Password or SSH Key](https://thehackernews.com/2026/09/mikrotrick-chain-let-attackers-take.html) — CVE-2026-67279, CVE-2026-86060 **[KEV]**  
+  <small>2026-09-24 · The Hacker News · [in digest]({{ '/2026/09/24/network-security-digest/' | relative_url }})</small>
 
 ## Ubiquiti (1)
 

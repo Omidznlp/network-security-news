@@ -6,11 +6,21 @@ permalink: /browse/ai-defenses/
 
 # Vendor AI defences
 
-*3 vendor AI capability announcement(s), all editions.*
+*4 vendor AI capability announcement(s), all editions.*
 
 What the network vendors have shipped to answer AI-era threats: AI security products and features, AI-assisted detection, guardrails for AI running on network gear, and vendor guidance for defending against AI-enabled attacks.
 
-## Check Point (2)
+## Check Point (3)
+
+### Workforce AI MCP
+
+Check Point's own Model Context Protocol server for Workforce AI Security, letting a connected AI client query, analyse and manage employee AI usage policy in natural language rather than through filters and per-rule checks. It covers users, managed assets, GenAI application usage, DLP data types, and agent and MCP activity in one conversation, and can create and update rules by request.
+
+*Defends against:* Unsanctioned and unmanaged employee use of GenAI applications and agents, and the policy-management burden of governing it - including shadowed or conflicting rules that leave AI usage effectively ungoverned.  
+*Availability:* announced
+
+- ⚪ [Workforce AI Security Policy Management Is Now Conversational](https://blog.checkpoint.com/ai-security/workforce-ai-security-policy-management-is-now-conversational/)  
+  <small>2026-09-24 · Check Point Blog · [in digest]({{ '/2026/09/24/network-security-digest/' | relative_url }})</small>
 
 - ⚪ [AI Models Broke Their Own Containment: Key Findings from the July-August 2026 AI Threat Landscape](https://blog.checkpoint.com/artificial-intelligence/ai-models-broke-their-own-containment-key-findings-from-the-july-august-2026-ai-threat-landscape/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>

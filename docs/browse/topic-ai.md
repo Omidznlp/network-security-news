@@ -6,12 +6,15 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*23 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
 ## Check Point
 
+- ⚪ [Workforce AI Security Policy Management Is Now Conversational](https://blog.checkpoint.com/ai-security/workforce-ai-security-policy-management-is-now-conversational/)  
+  <small>2026-09-24 · Check Point Blog · [in digest]({{ '/2026/09/24/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** This is an AI/LLM integration on a security management platform: an MCP server that both reads policy context and writes policy rules. It belongs in the prompt-injection threat model for network and security management, not just in the product catalogue.</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
@@ -74,6 +77,12 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
   <small>**AI angle:** None stated in this source.</small>
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## F5
+
+- 🔴 [Is This A Joke? In The Auth Header? (F5 BIG-IP UnAuth Heap-Overflow to RCE CVE-2026-94127)](https://labs.watchtowr.com/is-this-a-joke-in-the-auth-header-f5-big-ip-unauth-heap-overflow-to-rce-cve-2026-94127/) — CVE-2026-94127 **[KEV]**  
+  <small>2026-09-24 · watchTowr Labs · [in digest]({{ '/2026/09/24/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** watchTowr frames the current volume of vulnerability disclosures as driven by widespread LLM use to find and reproduce bugs - a researcher's aside rather than a measurement, but it argues for treating time-to-exploit on internet-facing appliances as days.</small>
 
 ## Palo Alto Networks
 
