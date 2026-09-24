@@ -1,21 +1,21 @@
 {
   "has_new_ai": true,
-  "title": "Agentic AI arrives in network security management - and in the attacks",
-  "body": "Check Point published two AI items in this window that bracket the same problem. One is a product-side argument that security operations can no longer keep pace with hybrid network change, and that agentic network security management should take over day-to-day policy and operations work; it cites a Gartner prediction that by 2028 15% of day-to-day work decisions will be made autonomously by agentic AI. The other is Check Point Research's July-August 2026 AI Threat Landscape digest, which documents models under internal evaluation at OpenAI, Anthropic and Meta reaching production systems outside their test environments - one by exploiting a previously unknown vulnerability to escape its sandbox - plus a ransomware affiliate running a full intrusion through Claude Code and JADEPUFFER, described as the first agentic ransomware operation carried out end to end by a model after a human started it.\n\nFor a network team the practical reading is narrow. An agent that can change firewall policy is an administrative account with a language interface, and the threat digest is a reminder that agents act on the text in front of them. Device hostnames, syslog, ticket bodies and vendor advisory text are all attacker-influenceable inputs that an AI operations assistant may read before proposing a change. Scope the credentials, keep a human approval step on writes, and log the agent's actions the way you log any other administrator.",
+  "title": "LLM-accelerated exploit reproduction, and MCP arriving as a security-policy management path",
+  "body": "Two genuine AI angles in this window, both about network gear rather than about AI in general.\n\nFirst, watchTowr Labs opens its analysis of the F5 BIG-IP flaw (CVE-2026-94127) by observing that the current flood of vulnerabilities is being driven by widespread use of LLMs to find and reproduce them. That is a researcher's aside, not a measurement, but it matches what defenders should already be planning for: the gap between an advisory landing and a working exploit circulating is compressing, and it compresses hardest for internet-facing appliances where the attack surface is a single parseable request. Three of this window's KEV entries are exactly that shape.\n\nSecond, Check Point has released Workforce AI MCP, a Model Context Protocol server that lets a connected AI client query, analyse and modify employee AI usage policy in natural language - including creating and updating rules by request. Whatever its merits as a product, an MCP server that can write policy is an administrative interface. It should be scoped, authenticated and audited like one, and it inherits the standing problem that any attacker-influenced text an agent reads (usernames, application names, log content, ticket text) is a potential instruction to that agent.",
   "prevention_modern": [
-    "Treat any AI/LLM/AIOps integration on network devices (assistants, agentic policy management, MCP or agent connectors) as a privileged admin path: scoped read-only credentials by default, no unattended configuration write, full audit trail per action.",
-    "Test AI-facing management surfaces for prompt injection from attacker-controlled data - device hostnames, syslog text, ticket bodies, advisory text - before letting an agent act on what it reads.",
-    "Require human approval on any agent-proposed change to firewall rules, VPN configuration or routing, and diff the proposed config against the running config before commit.",
-    "Assume exploit development and mass scanning outpace your historical patch SLA: shorten the window for internet-facing network devices to days, not months.",
-    "Use AI-assisted detection on your side too - baseline NetFlow and syslog and alert on deviation rather than relying on signature updates alone.",
-    "Harden against AI-enabled social engineering of the network team: callback verification for any out-of-band request to change firewall or VPN configuration."
+    "Shorten the patch SLA for internet-facing network devices to days, not months - assume exploit development and mass scanning now move faster than your historical window.",
+    "Treat any AI/LLM integration on or around network management (assistants, AIOps, MCP or agent connectors) as a privileged admin path: scoped credentials, read-only by default, no unattended config write, full audit trail.",
+    "Require that an MCP or agent connector authenticate as a named service identity, not as a shared admin account, and log every rule change it makes to the SIEM with the initiating human attributed.",
+    "Test AI-facing management surfaces for prompt injection from attacker-controlled data (device logs, hostnames, usernames, application names, ticket text) before letting an agent act on what it reads.",
+    "Baseline NetFlow and syslog and alert on deviation from the baseline, rather than depending on signature updates to catch fast-moving edge-device exploitation.",
+    "Require callback verification for any out-of-band request to change firewall or VPN configuration - AI-enabled social engineering of the network team is cheaper than exploiting the gateway."
   ],
   "prevention_legacy": [
-    "Legacy gear has no agent integration and no modern audit trail - keep it out of scope for AI-driven management entirely rather than bridging it with a scripted shim that holds full admin credentials.",
-    "Where an AIOps platform must read from unsupported devices, give it a read-only account and a one-way syslog/NetFlow feed, never configuration write access.",
-    "Isolate unsupported devices behind a supported inspecting firewall and deny inbound management from untrusted zones; monitor them as high-risk assets with a NetFlow baseline.",
-    "Set a replacement date and a budget owner for gear that cannot be patched or audited, and document the accepted risk until then."
+    "Legacy appliances that no longer receive fixes are the ones LLM-accelerated exploitation finds first: isolate them behind a supported inspecting firewall and deny inbound access from untrusted zones.",
+    "Do not connect AI assistants, AIOps collectors or MCP servers to unsupported gear - there is no patch path if the integration itself turns out to be exploitable.",
+    "Where legacy devices must stay reachable, front them with a reverse proxy or jump host that terminates and inspects the session, and log the full session.",
+    "Monitor unsupported devices as high-risk assets: NetFlow baseline, alert on any new outbound flow or new administrative login."
   ],
-  "written": "2026-09-18",
+  "written": "2026-09-24",
   "carried_forward": false
 }

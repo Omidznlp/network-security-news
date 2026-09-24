@@ -6,10 +6,22 @@ permalink: /browse/vendor/check-point/
 
 # Check Point
 
-*5 item(s) across all editions.*
+*7 item(s) across all editions.*
+
+## Firewalls
+
+- 🔴 [Check Point warns of hackers exploiting Security Gateway VPN RCE flaw](https://www.bleepingcomputer.com/news/security/check-point-warns-of-hackers-exploiting-security-gateway-vpn-rce-flaw/) — CVE-2026-85102 **[KEV]**  
+  <small>2026-09-24 · BleepingComputer · [in digest]({{ '/2026/09/24/network-security-digest/' | relative_url }})</small>
+
+## VPN gateways
+
+- 🔴 [Check Point warns of hackers exploiting Security Gateway VPN RCE flaw](https://www.bleepingcomputer.com/news/security/check-point-warns-of-hackers-exploiting-security-gateway-vpn-rce-flaw/) — CVE-2026-85102 **[KEV]**  
+  <small>2026-09-24 · BleepingComputer · [in digest]({{ '/2026/09/24/network-security-digest/' | relative_url }})</small>
 
 ## Management platforms
 
+- ⚪ [Workforce AI Security Policy Management Is Now Conversational](https://blog.checkpoint.com/ai-security/workforce-ai-security-policy-management-is-now-conversational/)  
+  <small>2026-09-24 · Check Point Blog · [in digest]({{ '/2026/09/24/network-security-digest/' | relative_url }})</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [Check Point, Kaspersky, Tanium Patch Product Vulnerabilities](https://www.securityweek.com/check-point-kaspersky-tanium-patch-product-vulnerabilities/)  
