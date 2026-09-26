@@ -6,7 +6,7 @@ permalink: /browse/month/2026-09/
 
 # September 2026
 
-*26 item(s) in this period.*
+*27 item(s) in this period.*
 
 ## Cisco (18)
 
@@ -66,6 +66,11 @@ permalink: /browse/month/2026-09/
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
   <small>2026-09-17 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## MikroTik (1)
+
+- 🔴 [SharePoint RCE and MikroTik RouterOS Flaws Actively Exploited in the Wild](https://thehackernews.com/2026/09/sharepoint-rce-and-mikrotik-routeros.html) — CVE-2026-65660 **[KEV]**  
+  <small>2026-09-26 · The Hacker News · [in digest]({{ '/2026/09/26/network-security-digest/' | relative_url }})</small>
 
 ## Ubiquiti (1)
 
