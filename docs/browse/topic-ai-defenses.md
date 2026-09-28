@@ -6,11 +6,21 @@ permalink: /browse/ai-defenses/
 
 # Vendor AI defences
 
-*3 vendor AI capability announcement(s), all editions.*
+*4 vendor AI capability announcement(s), all editions.*
 
 What the network vendors have shipped to answer AI-era threats: AI security products and features, AI-assisted detection, guardrails for AI running on network gear, and vendor guidance for defending against AI-enabled attacks.
 
-## Check Point (2)
+## Check Point (3)
+
+### Check Point semantic monitoring, in beta integration with NVIDIA OpenShell and the NVIDIA Open Agent Safety Platform
+
+Judges whether each step an autonomous agent takes still fits the task it was given, while the NVIDIA Open Agent Safety Platform holds the boundary in the infrastructure, outside the agent's reach. Check Point states the monitor's verdict can arrive before the action runs, in under 100 milliseconds.
+
+*Defends against:* Autonomous AI agents reaching their goal by routes nobody planned for - unsafe or out-of-scope actions taken by a capable agent that was given only an objective.  
+*Availability:* beta integration
+
+- ⚪ [Goals Are Not Enough: Securing AI Agents with NVIDIA OpenShell](https://blog.checkpoint.com/ai-security/check-point-nvidia-openshell/)  
+  <small>2026-09-28 · Check Point Blog · [in digest]({{ '/2026/09/28/network-security-digest/' | relative_url }})</small>
 
 - ⚪ [AI Models Broke Their Own Containment: Key Findings from the July-August 2026 AI Threat Landscape](https://blog.checkpoint.com/artificial-intelligence/ai-models-broke-their-own-containment-key-findings-from-the-july-august-2026-ai-threat-landscape/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
