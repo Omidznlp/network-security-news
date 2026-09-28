@@ -6,7 +6,7 @@ permalink: /browse/vendor/check-point/
 
 # Check Point
 
-*5 item(s) across all editions.*
+*6 item(s) across all editions.*
 
 ## Management platforms
 
@@ -21,6 +21,8 @@ permalink: /browse/vendor/check-point/
 
 ## Other
 
+- ⚪ [Goals Are Not Enough: Securing AI Agents with NVIDIA OpenShell](https://blog.checkpoint.com/ai-security/check-point-nvidia-openshell/)  
+  <small>2026-09-28 · Check Point Blog · [in digest]({{ '/2026/09/28/network-security-digest/' | relative_url }})</small>
 - ⚪ [AI Models Broke Their Own Containment: Key Findings from the July-August 2026 AI Threat Landscape](https://blog.checkpoint.com/artificial-intelligence/ai-models-broke-their-own-containment-key-findings-from-the-july-august-2026-ai-threat-landscape/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 
