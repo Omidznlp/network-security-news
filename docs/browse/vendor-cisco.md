@@ -6,10 +6,12 @@ permalink: /browse/vendor/cisco/
 
 # Cisco
 
-*18 item(s) across all editions.*
+*19 item(s) across all editions.*
 
 ## Firewalls
 
+- ⚪ [Beyond the Box: Future-Proofing Branch Firewall Security for the AI Era](https://blogs.cisco.com/security/future-proofing-branch-firewall-security-for-the-ai-era/)  
+  <small>2026-09-29 · Cisco Security Blog · [in digest]({{ '/2026/09/29/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Certificate Authentication Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv)  
@@ -42,6 +44,11 @@ permalink: /browse/vendor/cisco/
 
 - 🟠 [Cisco IOS XR Software Security Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-iosxr-qg64NcM)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
+
+## SD-WAN / SASE
+
+- ⚪ [Beyond the Box: Future-Proofing Branch Firewall Security for the AI Era](https://blogs.cisco.com/security/future-proofing-branch-firewall-security-for-the-ai-era/)  
+  <small>2026-09-29 · Cisco Security Blog · [in digest]({{ '/2026/09/29/network-security-digest/' | relative_url }})</small>
 
 ## Management platforms
 

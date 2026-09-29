@@ -6,7 +6,7 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*23 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
@@ -30,6 +30,9 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 
 ## Cisco
 
+- ⚪ [Beyond the Box: Future-Proofing Branch Firewall Security for the AI Era](https://blogs.cisco.com/security/future-proofing-branch-firewall-security-for-the-ai-era/)  
+  <small>2026-09-29 · Cisco Security Blog · [in digest]({{ '/2026/09/29/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** AI-powered threat detection on a branch firewall platform; recorded in vendor AI defences.</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
@@ -77,6 +80,9 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 
 ## Palo Alto Networks
 
+- ⚪ [Palo Alto Networks and NVIDIA want tighter control over AI agents](https://www.helpnetsecurity.com/2026/09/29/palo-alto-networks-nvidia-ai-agent-security/)  
+  <small>2026-09-29 · Help Net Security · [in digest]({{ '/2026/09/29/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** Vendor-side control plane for AI agent access, network traffic and identity; recorded in vendor AI defences.</small>
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** Vendor positioning in AI application security; no product capability or availability detail is given in the source.</small>
