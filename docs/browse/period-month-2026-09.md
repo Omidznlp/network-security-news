@@ -6,10 +6,12 @@ permalink: /browse/month/2026-09/
 
 # September 2026
 
-*26 item(s) in this period.*
+*31 item(s) in this period.*
 
-## Cisco (18)
+## Cisco (19)
 
+- ⚪ [Beyond the Box: Future-Proofing Branch Firewall Security for the AI Era](https://blogs.cisco.com/security/future-proofing-branch-firewall-security-for-the-ai-era/)  
+  <small>2026-09-29 · Cisco Security Blog · [in digest]({{ '/2026/09/29/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Zero-Day Highlights API Endpoint Authentication Issues](https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues) — CVE-2026-76460 **[KEV]**  
@@ -60,12 +62,23 @@ permalink: /browse/month/2026-09/
 - ⚪ [When Security Operations Can’t Keep Up: 4 Ways Agentic Network Security Management Improves Security Operations](https://blog.checkpoint.com/hybrid-mesh/when-security-operations-cant-keep-up-4-ways-agentic-network-security-management-improves-security-operations/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 
-## Palo Alto Networks (2)
+## Palo Alto Networks (4)
 
+- ⚪ [Palo Alto Networks and NVIDIA want tighter control over AI agents](https://www.helpnetsecurity.com/2026/09/29/palo-alto-networks-nvidia-ai-agent-security/)  
+  <small>2026-09-29 · Help Net Security · [in digest]({{ '/2026/09/29/network-security-digest/' | relative_url }})</small>
+- ⚪ [Why OT Resilience Is Now a Boardroom Imperative](https://www.paloaltonetworks.com/blog/2026/09/why-ot-resilience-is-now-a-boardroom-imperative/)  
+  <small>2026-09-29 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/29/network-security-digest/' | relative_url }})</small>
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
   <small>2026-09-17 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Citrix (2)
+
+- 🔴 [Threat Brief: NetScaler Zero Days CVE-2026-88771 and CVE-2026-88772 Exploited in the Wild](https://unit42.paloaltonetworks.com/netscaler-zero-days-exploited/) — CVE-2026-88771, CVE-2026-88772 **[KEV]**  
+  <small>2026-09-29 · Unit 42 · [in digest]({{ '/2026/09/29/network-security-digest/' | relative_url }})</small>
+- 🔴 [US, UK warn of exploited Citrix NetScaler zero-day bugs](https://therecord.media/us-uk-warn-of-citrix-netscaler-zero-day-bug)  
+  <small>2026-09-29 · The Record · [in digest]({{ '/2026/09/29/network-security-digest/' | relative_url }})</small>
 
 ## Ubiquiti (1)
 

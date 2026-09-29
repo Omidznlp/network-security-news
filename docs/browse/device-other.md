@@ -6,7 +6,7 @@ permalink: /browse/device/other/
 
 # Other
 
-*8 item(s) across all editions.*
+*10 item(s) across all editions.*
 
 ## Check Point
 
@@ -26,6 +26,10 @@ permalink: /browse/device/other/
 
 ## Palo Alto Networks
 
+- ⚪ [Palo Alto Networks and NVIDIA want tighter control over AI agents](https://www.helpnetsecurity.com/2026/09/29/palo-alto-networks-nvidia-ai-agent-security/)  
+  <small>2026-09-29 · Help Net Security · [in digest]({{ '/2026/09/29/network-security-digest/' | relative_url }})</small>
+- ⚪ [Why OT Resilience Is Now a Boardroom Imperative](https://www.paloaltonetworks.com/blog/2026/09/why-ot-resilience-is-now-a-boardroom-imperative/)  
+  <small>2026-09-29 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/29/network-security-digest/' | relative_url }})</small>
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
