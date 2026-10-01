@@ -1,99 +1,90 @@
 {
-  "date": "2026-09-18",
-  "url": "/2026/09/18/network-security-digest/",
-  "item_count": 20,
-  "critical_count": 4,
+  "date": "2026-10-01",
+  "url": "/2026/10/01/network-security-digest/",
+  "item_count": 12,
+  "critical_count": 5,
   "kev": [
-    "CVE-2026-76460"
+    "CVE-2026-76504",
+    "CVE-2026-88771",
+    "CVE-2026-88772"
   ],
   "feeds_ok": 22,
-  "top_story_title": "Cisco ISE authentication bypass CVE-2026-76460 (CVSS 10.0) is on KEV with a 19 September deadline",
-  "top_story_summary": "Cisco has confirmed active exploitation of CVE-2026-76460, a maximum-severity authentication bypass in Cisco Identity Services Engine (ISE) and the ISE Passive Identity Connector (ISE-PIC). Cisco attributes it to insufficient authentication control on an API endpoint, which lets an unauthenticated, remote attacker bypass the web-based management interface and gain unauthorized access to the device. CISA added it to the Known Exploited Vulnerabilities catalogue on 2026-09-16 with a remediation due date of 2026-09-19 under BOD 26-04; ransomware use is listed as unknown.",
+  "top_story_title": "Cisco Catalyst SD-WAN Manager authentication bypass (CVE-2026-76504) exploited as a zero-day, now in CISA KEV",
+  "top_story_summary": "Cisco published an advisory on September 30, 2026 for CVE-2026-76504, a CVSSv3.1 9.8 API authentication bypass in Cisco Catalyst SD-WAN Manager. The root cause is improper handling of URI encoding in an HTTP request (CWE-177): a crafted request slips past an authentication rule that is supposed to restrict a specific API endpoint, and the attacker reaches the API with the privileges of the admin user. No credentials are needed. Cisco PSIRT became aware of exploitation activity in September 2026, after a Cisco TAC support case, and states the vulnerability is being actively exploited in the wild. CISA added it to the Known Exploited Vulnerabilities catalog on September 30, 2026 with a remediation due date of October 3, 2026.",
   "top_actions": [
-    "Inventory every ISE and ISE-PIC node (including standby, PAN and MnT personas) with its running patch level, and apply the fixed release named in the Cisco advisory for CVE-2026-76460 - check the vendor advisory for the fixed release, it is not stated in these sources.",
-    "US federal agencies: the BOD 26-04 due date for CVE-2026-76460 is 2026-09-19. If you cannot meet it, follow CISA's instruction to apply vendor mitigations or discontinue use, and record the decision.",
-    "Remove the ISE administrative and API interfaces from any internet-facing or user-reachable path today; permit them only from a dedicated management VLAN or out-of-band network and jump hosts.",
-    "Assume pre-patch compromise on any ISE node that was reachable from an untrusted network: rotate admin credentials, API keys, pxGrid and node certificates, RADIUS/TACACS+ shared secrets and any ERS/OpenAPI service accounts after upgrading.",
-    "Review ISE for unexpected admin users, changed authorisation policies and profiles, new network device entries and modified shared secrets - a policy change is the quiet form of this compromise."
+    "Inventory every Catalyst SD-WAN Manager instance and its running version; check each against the fixed-release table in Cisco advisory cisco-sa-sdwan-webauth-xr8beuuU. Cisco states there is no workaround, so the upgrade is the remediation.",
+    "Remove the Manager's HTTPS and API ports from internet exposure today, before the change window: restrict to a dedicated management VLAN or out-of-band network reachable only from a jump host.",
+    "Patch the controller/orchestrator before edge devices and validate certificate trust and config sync after the upgrade.",
+    "After upgrading, rotate Manager admin credentials, API tokens and device certificates - unauthenticated admin-level API access predates the patch and is not undone by it.",
+    "Diff current device templates, policies and admin user lists against a known-good export; an admin API session can push configuration to every managed edge router."
   ],
   "executive_summary": [
-    "Cisco ISE CVE-2026-76460 (CVSS 10.0, unauthenticated authentication bypass on an API endpoint) is actively exploited and on CISA KEV with a 2026-09-19 due date - patch the identity platform first.",
-    "Cisco's September 2026 ASA/FTD/FMC hardening release states two of its flaws are already exploited, both in Firewall Management Center: a static credential issue and an authentication bypass.",
-    "Six further Cisco ASA/FTD advisories land at once - four denial of service (IKEv2 certificate, DTLS on 3100/4200, EIGRP, TCP DNS), one syslog CPU exhaustion, and an Object Group Search ACL bypass that lets blocked traffic through.",
-    "Check Point Security Management and Log Servers have a critical unauthenticated remote code execution as root, fixed via LivePatch, with no reported exploitation - this is the box that holds firewall policy.",
-    "Three ZDI advisories cover authenticated Cisco ISE flaws (CVE-2026-20176, CVE-2026-20211, CVE-2026-20235); they chain behind the auth bypass rather than standing alone.",
-    "No source in this window states a fixed version string. Take exact fixed releases from the vendor advisories, not from press coverage."
+    "Cisco Catalyst SD-WAN Manager: CVE-2026-76504, CVSS 9.8 unauthenticated API authentication bypass to admin, exploited in the wild, added to CISA KEV on September 30, 2026 with a due date of October 3, 2026. Fixed releases exist, no workaround.",
+    "Citrix NetScaler ADC and Gateway: CVE-2026-88771 and CVE-2026-88772 exploited as zero-days; KEV due date was September 30, 2026. LevelBlue reports post-exploitation web shells mapped to CSS-like URLs and superuser account creation.",
+    "MikroTik RouterOS: CISA warning on a critical pre-authentication flaw leading to remote code execution or denial of service.",
+    "WatchGuard Fireware OS: 15 fixes including a critical code injection bug across firewall and VPN appliances.",
+    "Cisco advance notification: security-hardening advisories land October 7, 2026 for APIC, Meraki, NX-OS on MDS 9000 and Nexus 3000/7000/9000, and UCS Fabric Interconnects - plan the window now.",
+    "Two internet-facing control points are under confirmed attack at once. Sequence SD-WAN Manager and NetScaler ahead of routine patching, and treat exposed instances as suspect rather than merely vulnerable."
   ],
   "key_actions": [
-    "**Cisco** \u2014 Confirm the running ASA, FTD and FMC versions against Cisco's fixed-release table in the hardening advisory - check the vendor advisory for the fixed release, no version is stated in this source.",
-    "**Cisco** \u2014 Patch FMC before the managed FTD devices, then upgrade firewalls in the change window, HA pair secondary first, and verify policy deploy afterwards.",
-    "**Cisco** \u2014 Patch ISE and ISE-PIC to the fixed release named in the Cisco advisory - check the vendor advisory for the fixed release.",
-    "**Cisco** \u2014 Meet or formally document the CISA BOD 26-04 due date of 2026-09-19 if you are in scope; otherwise apply vendor mitigations or discontinue use as the KEV entry instructs.",
-    "**Cisco** \u2014 Upgrade ISE to the fixed release stated in the Cisco advisory - check the vendor advisory for the fixed release.",
-    "**Cisco** \u2014 Before the upgrade, capture ISE logs and configuration for forensics; patching overwrites some of the evidence you would want later.",
-    "**Check Point** \u2014 Confirm LivePatch is enabled and has actually applied the fix on every Security Management Server and Log Server - verify the installed patch level rather than assuming the channel delivered it.",
-    "**Check Point** \u2014 Remove management server access from any untrusted or internet-facing network; SmartConsole and management traffic belong on a dedicated management VLAN or out-of-band network."
+    "**Cisco** \u2014 Confirm the running Manager version against the fixed-release table in the Cisco advisory and schedule the upgrade immediately - there is no workaround, so no mitigation substitutes for it.",
+    "**Cisco** \u2014 Take Manager HTTPS/API ports off the internet now; restrict management access to a dedicated management VLAN or out-of-band network, reachable only via a jump host.",
+    "**Cisco** \u2014 Treat the KEV due date of October 3, 2026 as the deadline; record patched, mitigated or discontinued against every Manager instance in the change record.",
+    "**Cisco** \u2014 Apply the Cisco fixed release per the advisory; where a maintenance window cannot be found in time, remove internet exposure of the management interface as an interim risk reduction and document it.",
+    "**Citrix** \u2014 Patch to the Citrix fixed build for your release stream - take the version from the Citrix advisory, not from news coverage.",
+    "**Citrix** \u2014 Terminate all active sessions and revoke session tokens after the upgrade; assume stolen session cookies survive patching.",
+    "**Cisco** \u2014 Use advisory cisco-sa-sdwan-webauth-xr8beuuU as the single source for the fixed release; do not take version numbers from secondary coverage.",
+    "**Cisco** \u2014 Upgrade every Manager instance; in clustered deployments follow Cisco's documented upgrade order and verify cluster health afterwards."
   ],
-  "ai_defenses": [
-    {
-      "vendor": "Check Point",
-      "solution": "Agentic network security management",
-      "what_it_does": "Check Point describes agentic AI taking on day-to-day security operations work in hybrid mesh environments, setting out four ways agentic network security management improves security operations where environments change faster than teams can manage them manually. The post describes the approach; it does not state a product name, release or availability date."
-    },
-    {
-      "vendor": "Palo Alto Networks",
-      "solution": "AI Application Security",
-      "what_it_does": "Palo Alto Networks describes its work on AI security and states it was named a Market Shaper in the 2026 September Gartner Emerging Market Quadrant for AI Application Security - Established Vendors. The collected text names no specific product, feature or capability detail."
-    }
-  ],
+  "ai_defenses": [],
   "headlines": [
     {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN",
-      "summary": "Cisco's September 2026 hardening release for ASA, FTD and FMC software fixes multiple internally found flaws, two of them already exploited in Firewall Management Center.",
+      "title": "Critical Cisco Catalyst SD-WAN Manager API authentication bypass exploited in the wild (CVE-2026-76504)",
+      "link": "https://www.rapid7.com/blog/post/etr-critical-cisco-catalyst-sd-wan-manager-api-authentication-bypass-exploited-in-the-wild-cve-2026-76504",
+      "summary": "Cisco Catalyst SD-WAN Manager has a CVSS 9.8 API authentication bypass, CVE-2026-76504, under active exploitation; a crafted HTTP request grants admin-level API access with no credentials.",
       "relevance": "critical",
       "vendor": "Cisco",
-      "source": "Cisco PSIRT"
+      "source": "Rapid7 Blog"
     },
     {
-      "title": "Cisco Zero-Day Highlights API Endpoint Authentication Issues",
-      "link": "https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues",
-      "summary": "CVE-2026-76460, a CVSS 10.0 authentication bypass on a Cisco ISE API endpoint, is on CISA's KEV list with a 2026-09-19 remediation deadline.",
-      "relevance": "critical",
-      "vendor": "Cisco",
-      "source": "Dark Reading"
-    },
-    {
-      "title": "Cisco Warns of New Zero-Day ISE Auth Bypass (CVSS 10.0) Exploited in Active Attacks",
-      "link": "https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html",
-      "summary": "Cisco confirms active exploitation of a maximum-severity ISE authentication bypass caused by insufficient authentication control on an API endpoint.",
+      "title": "CISA Adds Exploited Cisco Catalyst SD-WAN Manager Auth Bypass to KEV",
+      "link": "https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
+      "summary": "CISA added CVE-2026-76504 in Cisco Catalyst SD-WAN Manager to the KEV catalog after confirmed exploitation, with a federal remediation deadline of October 3, 2026.",
       "relevance": "critical",
       "vendor": "Cisco",
       "source": "The Hacker News"
     },
     {
-      "title": "Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root",
-      "link": "https://thehackernews.com/2026/09/critical-check-point-management-server.html",
-      "summary": "Check Point Security Management and Log Servers accept unauthenticated network requests that run code as root; a LivePatch fix is out with no reported exploitation.",
+      "title": "Threat Brief: NetScaler Zero Days CVE-2026-88771 and CVE-2026-88772 Exploited in the Wild (Updated September 30)",
+      "link": "https://unit42.paloaltonetworks.com/netscaler-zero-days-exploited/",
+      "summary": "Two NetScaler ADC and Gateway zero-days, CVE-2026-88771 and CVE-2026-88772, are being exploited in the wild for arbitrary command execution and remote code execution.",
       "relevance": "critical",
-      "vendor": "Check Point",
+      "vendor": "Citrix",
+      "source": "Unit 42"
+    },
+    {
+      "title": "Cisco Catalyst SD-WAN Manager API Authentication Bypass Vulnerability",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-webauth-xr8beuuU",
+      "summary": "Cisco PSIRT confirms improper URI encoding handling in Catalyst SD-WAN Manager lets an unauthenticated attacker bypass an API authentication rule and act as admin; no workaround exists.",
+      "relevance": "critical",
+      "vendor": "Cisco",
+      "source": "Cisco PSIRT"
+    },
+    {
+      "title": "Citrix NetScaler Post-Exploitation Payload Creates Superuser, Maps Web Shell to CSS-Like URLs",
+      "link": "https://thehackernews.com/2026/10/citrix-netscaler-post-exploitation.html",
+      "summary": "Attackers exploiting the NetScaler pre-auth command injection are creating superuser accounts and hiding web shells behind CSS-like URLs while stealing appliance configuration.",
+      "relevance": "critical",
+      "vendor": "Citrix",
       "source": "The Hacker News"
     },
     {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Certificate Authentication Denial of Service Vulnerability",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv",
-      "summary": "An unauthenticated attacker can crash Cisco ASA and FTD firewalls by starting an IKEv2 VPN connection with a crafted certificate, and Cisco states there is no workaround.",
+      "title": "Cisco Warns of Attackers Exploiting Critical Authentication Bypass in SD-WAN Manager",
+      "link": "https://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html",
+      "summary": "Cisco's September 30 advisory says attackers are already abusing a zero-day in Catalyst SD-WAN Manager to reach the management API as admin; fixed releases exist and no workaround does.",
       "relevance": "high",
       "vendor": "Cisco",
-      "source": "Cisco PSIRT"
-    },
-    {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software for Secure Firewall 3100 and 4200 Series DTLS Denial of Service Vulnerability",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-dtls-dos-Kp57HkyO",
-      "summary": "Crafted DTLS traffic reloads Cisco Secure Firewall 3100 and 4200 Series appliances running ASA or FTD software; Cisco states workarounds exist.",
-      "relevance": "high",
-      "vendor": "Cisco",
-      "source": "Cisco PSIRT"
+      "source": "The Hacker News"
     }
   ]
 }
