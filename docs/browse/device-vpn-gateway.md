@@ -6,7 +6,7 @@ permalink: /browse/device/vpn-gateway/
 
 # VPN gateways
 
-*2 item(s) across all editions.*
+*3 item(s) across all editions.*
 
 ## Cisco
 
@@ -15,6 +15,8 @@ permalink: /browse/device/vpn-gateway/
 
 ## Palo Alto Networks
 
+- 🟡 [CVE-2026-0250 GlobalProtect App: Buffer Overflow Vulnerability during connection to Portal or Gateway (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0250) — CVE-2026-0250  
+  <small>2026-10-02 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/10/02/network-security-digest/' | relative_url }})</small>
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
   <small>2026-09-17 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 

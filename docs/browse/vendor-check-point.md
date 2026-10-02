@@ -6,7 +6,12 @@ permalink: /browse/vendor/check-point/
 
 # Check Point
 
-*5 item(s) across all editions.*
+*6 item(s) across all editions.*
+
+## SD-WAN / SASE
+
+- ⚪ [SASE in the AI Era: Why Secure Global Connectivity Matters More Than Ever](https://blog.checkpoint.com/harmony-sase/sase-in-the-ai-era-why-secure-global-connectivity-matters-more-than-ever/)  
+  <small>2026-10-02 · Check Point Blog · [in digest]({{ '/2026/10/02/network-security-digest/' | relative_url }})</small>
 
 ## Management platforms
 

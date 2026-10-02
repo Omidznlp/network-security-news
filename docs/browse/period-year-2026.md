@@ -6,7 +6,7 @@ permalink: /browse/year/2026/
 
 # Year 2026
 
-*26 item(s) in this period.*
+*33 item(s) in this period.*
 
 ## Cisco (18)
 
@@ -47,8 +47,10 @@ permalink: /browse/year/2026/
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 
-## Check Point (5)
+## Check Point (6)
 
+- ⚪ [SASE in the AI Era: Why Secure Global Connectivity Matters More Than Ever](https://blog.checkpoint.com/harmony-sase/sase-in-the-ai-era-why-secure-global-connectivity-matters-more-than-ever/)  
+  <small>2026-10-02 · Check Point Blog · [in digest]({{ '/2026/10/02/network-security-digest/' | relative_url }})</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [Check Point, Kaspersky, Tanium Patch Product Vulnerabilities](https://www.securityweek.com/check-point-kaspersky-tanium-patch-product-vulnerabilities/)  
@@ -60,8 +62,23 @@ permalink: /browse/year/2026/
 - ⚪ [When Security Operations Can’t Keep Up: 4 Ways Agentic Network Security Management Improves Security Operations](https://blog.checkpoint.com/hybrid-mesh/when-security-operations-cant-keep-up-4-ways-agentic-network-security-management-improves-security-operations/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 
-## Palo Alto Networks (2)
+## Fortinet (4)
 
+- 🔴 [Critical FortiMail Zero-Day Flaw Exploited in Attacks Allows Unauthenticated Arbitrary File Writes](https://thehackernews.com/2026/10/critical-fortimail-zero-day-flaw.html) — CVE-2026-104286 **[KEV]**  
+  <small>2026-10-02 · The Hacker News · [in digest]({{ '/2026/10/02/network-security-digest/' | relative_url }})</small>
+- 🟠 [Critical FortiMail zero-day exploited in the wild (CVE-2026-104286)](https://www.helpnetsecurity.com/2026/10/02/fortinet-fortimail-vulnerability-cve-2026-104286/) — CVE-2026-104286 **[KEV]**  
+  <small>2026-10-02 · Help Net Security · [in digest]({{ '/2026/10/02/network-security-digest/' | relative_url }})</small>
+- 🟠 [Fortinet warns of critical FortiMail flaw exploited in zero-day attacks](https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/) — CVE-2026-104286 **[KEV]**  
+  <small>2026-10-02 · BleepingComputer · [in digest]({{ '/2026/10/02/network-security-digest/' | relative_url }})</small>
+- 🟠 [Exploited Fortinet FortiMail Zero-Day Calls for Urgent Action](https://www.securityweek.com/exploited-fortinet-fortimail-zero-day-calls-for-urgent-action/) — CVE-2026-104286 **[KEV]**  
+  <small>2026-10-02 · SecurityWeek · [in digest]({{ '/2026/10/02/network-security-digest/' | relative_url }})</small>
+
+## Palo Alto Networks (4)
+
+- 🟡 [CVE-2026-0250 GlobalProtect App: Buffer Overflow Vulnerability during connection to Portal or Gateway (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0250) — CVE-2026-0250  
+  <small>2026-10-02 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/10/02/network-security-digest/' | relative_url }})</small>
+- ⚪ [Observability’s AI Moment](https://www.paloaltonetworks.com/blog/2026/10/observabilitys-ai-moment-introducing-cortex-xcor-ai-driven-observability-for-autonomous-response-with-ai-sre/)  
+  <small>2026-10-02 · Palo Alto Networks Blog · [in digest]({{ '/2026/10/02/network-security-digest/' | relative_url }})</small>
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
