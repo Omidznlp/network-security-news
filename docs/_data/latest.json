@@ -1,99 +1,100 @@
 {
-  "date": "2026-09-18",
-  "url": "/2026/09/18/network-security-digest/",
-  "item_count": 20,
-  "critical_count": 4,
+  "date": "2026-10-02",
+  "url": "/2026/10/02/network-security-digest/",
+  "item_count": 7,
+  "critical_count": 1,
   "kev": [
-    "CVE-2026-76460"
+    "CVE-2026-104286"
   ],
   "feeds_ok": 22,
-  "top_story_title": "Cisco ISE authentication bypass CVE-2026-76460 (CVSS 10.0) is on KEV with a 19 September deadline",
-  "top_story_summary": "Cisco has confirmed active exploitation of CVE-2026-76460, a maximum-severity authentication bypass in Cisco Identity Services Engine (ISE) and the ISE Passive Identity Connector (ISE-PIC). Cisco attributes it to insufficient authentication control on an API endpoint, which lets an unauthenticated, remote attacker bypass the web-based management interface and gain unauthorized access to the device. CISA added it to the Known Exploited Vulnerabilities catalogue on 2026-09-16 with a remediation due date of 2026-09-19 under BOD 26-04; ransomware use is listed as unknown.",
+  "top_story_title": "FortiMail zero-day CVE-2026-104286 exploited in the wild, on CISA KEV with a 2026-10-04 due date, and no fixed release yet",
+  "top_story_summary": "Fortinet is warning that attackers are actively exploiting CVE-2026-104286 in FortiMail, its email security gateway. The sources describe a path traversal (CWE-22) combined with improper neutralization of a NULL byte or NULL character (CWE-158) that lets an unauthenticated attacker write arbitrary files on the underlying system via crafted HTTP or HTTPS requests. The Hacker News reports a CVSS score of 9.8. BleepingComputer reports the flaw is being used to execute unauthorized code or commands on vulnerable devices, which is the expected outcome of an arbitrary file write on an appliance that serves web content.",
   "top_actions": [
-    "Inventory every ISE and ISE-PIC node (including standby, PAN and MnT personas) with its running patch level, and apply the fixed release named in the Cisco advisory for CVE-2026-76460 - check the vendor advisory for the fixed release, it is not stated in these sources.",
-    "US federal agencies: the BOD 26-04 due date for CVE-2026-76460 is 2026-09-19. If you cannot meet it, follow CISA's instruction to apply vendor mitigations or discontinue use, and record the decision.",
-    "Remove the ISE administrative and API interfaces from any internet-facing or user-reachable path today; permit them only from a dedicated management VLAN or out-of-band network and jump hosts.",
-    "Assume pre-patch compromise on any ISE node that was reachable from an untrusted network: rotate admin credentials, API keys, pxGrid and node certificates, RADIUS/TACACS+ shared secrets and any ERS/OpenAPI service accounts after upgrading.",
-    "Review ISE for unexpected admin users, changed authorisation policies and profiles, new network device entries and modified shared secrets - a policy change is the quiet form of this compromise."
+    "Inventory every FortiMail unit and confirm its running version against the Fortinet advisory for CVE-2026-104286; no fixed release is named in the sources, so apply Fortinet's published workaround now and track the advisory for the fixed build.",
+    "Remove the FortiMail administrative and web interfaces from the internet and from any untrusted interface; restrict them to a dedicated management VLAN or out-of-band network with explicit ACLs.",
+    "Treat internet-reachable units as potentially already compromised: the KEV due date is 2026-10-04 and exploitation preceded the fix, so hunt before and after remediation rather than only patching.",
+    "Hunt for arbitrary-file-write artifacts: new or modified files in web-accessible directories, unexpected scripts or webshell-like content, new local administrator accounts, and outbound connections from the appliance that do not match mail flow.",
+    "Rotate credentials held on or reachable from the appliance - local admin accounts, API keys, directory/LDAP service accounts and certificates - because a pre-workaround compromise survives both the workaround and the eventual upgrade."
   ],
   "executive_summary": [
-    "Cisco ISE CVE-2026-76460 (CVSS 10.0, unauthenticated authentication bypass on an API endpoint) is actively exploited and on CISA KEV with a 2026-09-19 due date - patch the identity platform first.",
-    "Cisco's September 2026 ASA/FTD/FMC hardening release states two of its flaws are already exploited, both in Firewall Management Center: a static credential issue and an authentication bypass.",
-    "Six further Cisco ASA/FTD advisories land at once - four denial of service (IKEv2 certificate, DTLS on 3100/4200, EIGRP, TCP DNS), one syslog CPU exhaustion, and an Object Group Search ACL bypass that lets blocked traffic through.",
-    "Check Point Security Management and Log Servers have a critical unauthenticated remote code execution as root, fixed via LivePatch, with no reported exploitation - this is the box that holds firewall policy.",
-    "Three ZDI advisories cover authenticated Cisco ISE flaws (CVE-2026-20176, CVE-2026-20211, CVE-2026-20235); they chain behind the auth bypass rather than standing alone.",
-    "No source in this window states a fixed version string. Take exact fixed releases from the vendor advisories, not from press coverage."
+    "FortiMail CVE-2026-104286 (CVSS 9.8 per The Hacker News) is exploited in the wild and on the CISA KEV catalog as of 2026-10-01 with a 2026-10-04 due date; unauthenticated attackers can write arbitrary files via crafted HTTP/HTTPS requests.",
+    "No fixed FortiMail release is named in any source - Fortinet's guidance is a workaround until fixes are available, so exposure reduction and compromise hunting are the only levers today.",
+    "Four separate outlets reported the same FortiMail CVE in this window; it is one vulnerability, not four, and it is the only confirmed-exploited issue in this edition.",
+    "Palo Alto Networks PSIRT published CVE-2026-0250, a medium-severity buffer overflow in the GlobalProtect app triggered during connection to a portal or gateway; the collected entry names no affected or fixed versions, so check the advisory.",
+    "No router, switch, wireless or load-balancer vulnerabilities appeared in this window.",
+    "Two network vendors described AI capabilities rather than vulnerabilities: Palo Alto Networks introduced Cortex XCOR (AI-driven observability with autonomous response) and Check Point argued its SASE platform case for AI-era connectivity. Both are tracked under vendor AI defences, not as security issues.",
+    "Three collected items were dropped as out of scope: a ransomware-gang takedown, an AI-policy credential-phishing campaign, and Prime Day shopping-scam research. None concerns network infrastructure devices."
   ],
   "key_actions": [
-    "**Cisco** \u2014 Confirm the running ASA, FTD and FMC versions against Cisco's fixed-release table in the hardening advisory - check the vendor advisory for the fixed release, no version is stated in this source.",
-    "**Cisco** \u2014 Patch FMC before the managed FTD devices, then upgrade firewalls in the change window, HA pair secondary first, and verify policy deploy afterwards.",
-    "**Cisco** \u2014 Patch ISE and ISE-PIC to the fixed release named in the Cisco advisory - check the vendor advisory for the fixed release.",
-    "**Cisco** \u2014 Meet or formally document the CISA BOD 26-04 due date of 2026-09-19 if you are in scope; otherwise apply vendor mitigations or discontinue use as the KEV entry instructs.",
-    "**Cisco** \u2014 Upgrade ISE to the fixed release stated in the Cisco advisory - check the vendor advisory for the fixed release.",
-    "**Cisco** \u2014 Before the upgrade, capture ISE logs and configuration for forensics; patching overwrites some of the evidence you would want later.",
-    "**Check Point** \u2014 Confirm LivePatch is enabled and has actually applied the fix on every Security Management Server and Log Server - verify the installed patch level rather than assuming the channel delivered it.",
-    "**Check Point** \u2014 Remove management server access from any untrusted or internet-facing network; SmartConsole and management traffic belong on a dedicated management VLAN or out-of-band network."
+    "**Fortinet** \u2014 Identify every FortiMail unit from asset inventory, filtered by model and running version, and compare each against the Fortinet advisory for CVE-2026-104286.",
+    "**Fortinet** \u2014 Apply Fortinet's published workaround now - the sources state fixes were not yet available - and subscribe to the advisory so the fixed build is picked up the day it ships.",
+    "**Fortinet** \u2014 Read the Fortinet advisory and apply the stated workaround on every FortiMail unit today, starting with any that are reachable from the internet.",
+    "**Fortinet** \u2014 Where the workaround cannot be applied immediately, block external access to the appliance's web and management interfaces at the upstream firewall instead of accepting the exposure.",
+    "**Fortinet** \u2014 Treat any FortiMail unit that was internet-reachable before the workaround was applied as in scope for incident response, not just patch management.",
+    "**Fortinet** \u2014 Apply Fortinet's workaround and remove external reachability of the management and web interfaces.",
+    "**Fortinet** \u2014 Escalate FortiMail remediation to an emergency change rather than a routine window, using the KEV due date of 2026-10-04 as the internal deadline.",
+    "**Fortinet** \u2014 Confirm with the mail team which FortiMail units accept connections from the internet and shrink that list to the minimum."
   ],
   "ai_defenses": [
     {
-      "vendor": "Check Point",
-      "solution": "Agentic network security management",
-      "what_it_does": "Check Point describes agentic AI taking on day-to-day security operations work in hybrid mesh environments, setting out four ways agentic network security management improves security operations where environments change faster than teams can manage them manually. The post describes the approach; it does not state a product name, release or availability date."
+      "vendor": "Palo Alto Networks",
+      "solution": "Cortex XCOR",
+      "what_it_does": "Described by the vendor as AI-driven observability that delivers autonomous response, with an 'AI SRE' framing. The source is an introduction post and gives no further technical detail, supported integrations or scope of what the autonomous response can act on."
     },
     {
-      "vendor": "Palo Alto Networks",
-      "solution": "AI Application Security",
-      "what_it_does": "Palo Alto Networks describes its work on AI security and states it was named a Market Shaper in the 2026 September Gartner Emerging Market Quadrant for AI Application Security - Established Vendors. The collected text names no specific product, feature or capability detail."
+      "vendor": "Check Point",
+      "solution": "Harmony SASE",
+      "what_it_does": "A Harmony SASE blog post setting out Check Point's approach to secure global connectivity in the AI era: it argues that regional regulatory and infrastructure boundaries produce a patchwork architecture held together by exceptions, and positions one unified, secure global connectivity design in its place. No specific feature, control or capability is named beyond the platform itself."
     }
   ],
   "headlines": [
     {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN",
-      "summary": "Cisco's September 2026 hardening release for ASA, FTD and FMC software fixes multiple internally found flaws, two of them already exploited in Firewall Management Center.",
+      "title": "Critical FortiMail Zero-Day Flaw Exploited in Attacks Allows Unauthenticated Arbitrary File Writes",
+      "link": "https://thehackernews.com/2026/10/critical-fortimail-zero-day-flaw.html",
+      "summary": "CISA added FortiMail flaw CVE-2026-104286 (CVSS 9.8) to the KEV catalog after active exploitation; unauthenticated attackers can write arbitrary files on the appliance.",
       "relevance": "critical",
-      "vendor": "Cisco",
-      "source": "Cisco PSIRT"
-    },
-    {
-      "title": "Cisco Zero-Day Highlights API Endpoint Authentication Issues",
-      "link": "https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues",
-      "summary": "CVE-2026-76460, a CVSS 10.0 authentication bypass on a Cisco ISE API endpoint, is on CISA's KEV list with a 2026-09-19 remediation deadline.",
-      "relevance": "critical",
-      "vendor": "Cisco",
-      "source": "Dark Reading"
-    },
-    {
-      "title": "Cisco Warns of New Zero-Day ISE Auth Bypass (CVSS 10.0) Exploited in Active Attacks",
-      "link": "https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html",
-      "summary": "Cisco confirms active exploitation of a maximum-severity ISE authentication bypass caused by insufficient authentication control on an API endpoint.",
-      "relevance": "critical",
-      "vendor": "Cisco",
+      "vendor": "Fortinet",
       "source": "The Hacker News"
     },
     {
-      "title": "Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root",
-      "link": "https://thehackernews.com/2026/09/critical-check-point-management-server.html",
-      "summary": "Check Point Security Management and Log Servers accept unauthenticated network requests that run code as root; a LivePatch fix is out with no reported exploitation.",
-      "relevance": "critical",
+      "title": "Critical FortiMail zero-day exploited in the wild (CVE-2026-104286)",
+      "link": "https://www.helpnetsecurity.com/2026/10/02/fortinet-fortimail-vulnerability-cve-2026-104286/",
+      "summary": "Fortinet confirms CVE-2026-104286 in FortiMail is exploited in the wild and tells customers to apply a workaround because fixes are not yet available.",
+      "relevance": "high",
+      "vendor": "Fortinet",
+      "source": "Help Net Security"
+    },
+    {
+      "title": "Fortinet warns of critical FortiMail flaw exploited in zero-day attacks",
+      "link": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/",
+      "summary": "BleepingComputer reports the actively exploited FortiMail flaw is being used to execute unauthorized code or commands on vulnerable appliances.",
+      "relevance": "high",
+      "vendor": "Fortinet",
+      "source": "BleepingComputer"
+    },
+    {
+      "title": "Exploited Fortinet FortiMail Zero-Day Calls for Urgent Action",
+      "link": "https://www.securityweek.com/exploited-fortinet-fortimail-zero-day-calls-for-urgent-action/",
+      "summary": "SecurityWeek characterises CVE-2026-104286 as a critical-severity FortiMail path traversal enabling arbitrary file writes and calls for urgent action.",
+      "relevance": "high",
+      "vendor": "Fortinet",
+      "source": "SecurityWeek"
+    },
+    {
+      "title": "CVE-2026-0250 GlobalProtect App: Buffer Overflow Vulnerability during connection to Portal or Gateway (Severity: MEDIUM)",
+      "link": "https://security.paloaltonetworks.com/CVE-2026-0250",
+      "summary": "Palo Alto Networks PSIRT published CVE-2026-0250, a medium-severity buffer overflow in the GlobalProtect app triggered while connecting to a portal or gateway.",
+      "relevance": "medium",
+      "vendor": "Palo Alto Networks",
+      "source": "Palo Alto Networks PSIRT"
+    },
+    {
+      "title": "SASE in the AI Era: Why Secure Global Connectivity Matters More Than Ever",
+      "link": "https://blog.checkpoint.com/harmony-sase/sase-in-the-ai-era-why-secure-global-connectivity-matters-more-than-ever/",
+      "summary": "Check Point argues that AI adoption is overstretching regional patchwork network architectures and makes the case for unified global SASE connectivity.",
+      "relevance": "watch",
       "vendor": "Check Point",
-      "source": "The Hacker News"
-    },
-    {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Certificate Authentication Denial of Service Vulnerability",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv",
-      "summary": "An unauthenticated attacker can crash Cisco ASA and FTD firewalls by starting an IKEv2 VPN connection with a crafted certificate, and Cisco states there is no workaround.",
-      "relevance": "high",
-      "vendor": "Cisco",
-      "source": "Cisco PSIRT"
-    },
-    {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software for Secure Firewall 3100 and 4200 Series DTLS Denial of Service Vulnerability",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-dtls-dos-Kp57HkyO",
-      "summary": "Crafted DTLS traffic reloads Cisco Secure Firewall 3100 and 4200 Series appliances running ASA or FTD software; Cisco states workarounds exist.",
-      "relevance": "high",
-      "vendor": "Cisco",
-      "source": "Cisco PSIRT"
+      "source": "Check Point Blog"
     }
   ]
 }

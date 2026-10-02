@@ -6,12 +6,15 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*23 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
 ## Check Point
 
+- ⚪ [SASE in the AI Era: Why Secure Global Connectivity Matters More Than Ever](https://blog.checkpoint.com/harmony-sase/sase-in-the-ai-era-why-secure-global-connectivity-matters-more-than-ever/)  
+  <small>2026-10-02 · Check Point Blog · [in digest]({{ '/2026/10/02/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** The post uses AI adoption as the driver for network architecture change - growing AI, SaaS and collaboration traffic straining regional patchwork designs. It describes no AI-assisted attack and no AI capability running on network gear; the vendor's defensive positioning is recorded under vendor AI defences.</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
@@ -77,6 +80,9 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 
 ## Palo Alto Networks
 
+- ⚪ [Observability’s AI Moment](https://www.paloaltonetworks.com/blog/2026/10/observabilitys-ai-moment-introducing-cortex-xcor-ai-driven-observability-for-autonomous-response-with-ai-sre/)  
+  <small>2026-10-02 · Palo Alto Networks Blog · [in digest]({{ '/2026/10/02/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** An AI-driven observability and autonomous-response platform from a network security vendor, described with an 'AI SRE' framing. It is a defensive AI capability aimed at operations rather than an AI attack technique or an AI integration running on network devices themselves, so it is recorded under vendor AI defences.</small>
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** Vendor positioning in AI application security; no product capability or availability detail is given in the source.</small>
