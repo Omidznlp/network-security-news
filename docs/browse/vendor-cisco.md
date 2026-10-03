@@ -6,7 +6,7 @@ permalink: /browse/vendor/cisco/
 
 # Cisco
 
-*18 item(s) across all editions.*
+*20 item(s) across all editions.*
 
 ## Firewalls
 
@@ -40,11 +40,25 @@ permalink: /browse/vendor/cisco/
 
 ## Routers
 
+- 🟡 [Cisco IOS XE Software Security Hardening Release: August 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-iosxe-V8NMuMZJ)  
+  <small>2026-10-03 · Cisco PSIRT · [in digest]({{ '/2026/10/03/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco IOS XR Software Security Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-iosxr-qg64NcM)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 
+## Switches
+
+- 🟡 [Cisco IOS XE Software Security Hardening Release: August 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-iosxe-V8NMuMZJ)  
+  <small>2026-10-03 · Cisco PSIRT · [in digest]({{ '/2026/10/03/network-security-digest/' | relative_url }})</small>
+
+## SD-WAN / SASE
+
+- 🔴 [Cisco Catalyst SD-WAN Manager API Authentication Bypass Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-webauth-xr8beuuU) — CVE-2026-76504 **[KEV]**  
+  <small>2026-10-03 · Cisco PSIRT · [in digest]({{ '/2026/10/03/network-security-digest/' | relative_url }})</small>
+
 ## Management platforms
 
+- 🔴 [Cisco Catalyst SD-WAN Manager API Authentication Bypass Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-webauth-xr8beuuU) — CVE-2026-76504 **[KEV]**  
+  <small>2026-10-03 · Cisco PSIRT · [in digest]({{ '/2026/10/03/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Zero-Day Highlights API Endpoint Authentication Issues](https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues) — CVE-2026-76460 **[KEV]**  
