@@ -6,7 +6,7 @@ permalink: /browse/device/other/
 
 # Other
 
-*8 item(s) across all editions.*
+*9 item(s) across all editions.*
 
 ## Check Point
 
@@ -23,6 +23,11 @@ permalink: /browse/device/other/
   <small>2026-09-17 · The Hacker News · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Citrix
+
+- ⚪ [Kiteworks & Citrix Incidents Show Challenges of Zero-Day Response](https://www.darkreading.com/cybersecurity-operations/kiteworks-citrix-incidents-challenges-zero-day-response)  
+  <small>2026-10-03 · Dark Reading · [in digest]({{ '/2026/10/03/network-security-digest/' | relative_url }})</small>
 
 ## Palo Alto Networks
 
