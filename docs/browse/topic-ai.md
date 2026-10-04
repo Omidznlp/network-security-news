@@ -6,7 +6,7 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*22 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
@@ -74,6 +74,12 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
   <small>**AI angle:** None stated in this source.</small>
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Citrix
+
+- 🔴 [Week in review: Researcher breaks into Microsoft analytics service, NetScaler RCE 0-day exploited](https://www.helpnetsecurity.com/2026/10/04/week-in-review-researcher-breaks-into-microsoft-analytics-service-netscaler-rce-0-day-exploited/) — CVE-2026-88771, CVE-2026-88772 **[KEV]**  
+  <small>2026-10-04 · Help Net Security · [in digest]({{ '/2026/10/04/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None. No AI element is present in this item.</small>
 
 ## Palo Alto Networks
 
