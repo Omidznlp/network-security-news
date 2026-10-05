@@ -6,7 +6,7 @@ permalink: /browse/year/2026/
 
 # Year 2026
 
-*26 item(s) in this period.*
+*29 item(s) in this period.*
 
 ## Cisco (18)
 
@@ -59,6 +59,15 @@ permalink: /browse/year/2026/
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - ⚪ [When Security Operations Can’t Keep Up: 4 Ways Agentic Network Security Management Improves Security Operations](https://blog.checkpoint.com/hybrid-mesh/when-security-operations-cant-keep-up-4-ways-agentic-network-security-management-improves-security-operations/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
+
+## Citrix (3)
+
+- 🔴 [Citrix patches NetScaler SAML zero-day exploited in attacks](https://www.bleepingcomputer.com/news/security/citrix-patches-netscaler-saml-zero-day-exploited-in-attacks/) — CVE-2026-88779 **[KEV]**  
+  <small>2026-10-05 · BleepingComputer · [in digest]({{ '/2026/10/05/network-security-digest/' | relative_url }})</small>
+- 🔴 [New NetScaler Zero-Day Exploited in Targeted Attacks Can Knock SAML Deployments Offline](https://thehackernews.com/2026/10/new-netscaler-zero-day-exploited-in.html) — CVE-2026-88779 **[KEV]**  
+  <small>2026-10-05 · The Hacker News · [in digest]({{ '/2026/10/05/network-security-digest/' | relative_url }})</small>
+- 🔴 [Exploitation of Citrix NetScaler Zero-Day Hits Appliances Patched Days Earlier](https://www.securityweek.com/exploitation-of-citrix-netscaler-zero-day-hits-appliances-patched-days-earlier/) — CVE-2026-88779 **[KEV]**  
+  <small>2026-10-05 · SecurityWeek · [in digest]({{ '/2026/10/05/network-security-digest/' | relative_url }})</small>
 
 ## Palo Alto Networks (2)
 
