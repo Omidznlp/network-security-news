@@ -6,7 +6,7 @@ permalink: /browse/year/2026/
 
 # Year 2026
 
-*26 item(s) in this period.*
+*28 item(s) in this period.*
 
 ## Cisco (18)
 
@@ -66,6 +66,16 @@ permalink: /browse/year/2026/
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
   <small>2026-09-17 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Citrix (1)
+
+- 🔴 [US, Australia warn of latest Citrix vulnerability after NetScaler advisory](https://therecord.media/us-australia-warn-of-latest-citrix-vulnerability)  
+  <small>2026-10-06 · The Record · [in digest]({{ '/2026/10/06/network-security-digest/' | relative_url }})</small>
+
+## Multiple (1)
+
+- 🟠 [⚡ Weekly Recap: NetScaler and FortiMail 0-Days, AI Coding Leaks, Spectre v2 and Ransomware Arrests](https://thehackernews.com/2026/10/weekly-recap-netscaler-and-fortimail-0.html)  
+  <small>2026-10-06 · The Hacker News · [in digest]({{ '/2026/10/06/network-security-digest/' | relative_url }})</small>
 
 ## Ubiquiti (1)
 

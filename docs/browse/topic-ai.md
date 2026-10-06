@@ -6,7 +6,7 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*23 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
@@ -74,6 +74,18 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
   <small>**AI angle:** None stated in this source.</small>
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Citrix
+
+- 🔴 [US, Australia warn of latest Citrix vulnerability after NetScaler advisory](https://therecord.media/us-australia-warn-of-latest-citrix-vulnerability)  
+  <small>2026-10-06 · The Record · [in digest]({{ '/2026/10/06/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None stated in the source.</small>
+
+## Multiple
+
+- 🟠 [⚡ Weekly Recap: NetScaler and FortiMail 0-Days, AI Coding Leaks, Spectre v2 and Ransomware Arrests](https://thehackernews.com/2026/10/weekly-recap-netscaler-and-fortimail-0.html)  
+  <small>2026-10-06 · The Hacker News · [in digest]({{ '/2026/10/06/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** The roundup mentions AI coding leaks and smarter attacker automation, but neither concerns network devices or their management surfaces.</small>
 
 ## Palo Alto Networks
 
