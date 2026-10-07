@@ -6,7 +6,12 @@ permalink: /browse/vendor/check-point/
 
 # Check Point
 
-*5 item(s) across all editions.*
+*6 item(s) across all editions.*
+
+## Firewalls
+
+- ⚪ [Check Point PromptGuardX: Securing the Files AI Agents Trust](https://blog.checkpoint.com/ai-security/check-point-promptguardx-securing-the-files-ai-agents-trust/)  
+  <small>2026-10-07 · Check Point Blog · [in digest]({{ '/2026/10/07/network-security-digest/' | relative_url }})</small>
 
 ## Management platforms
 

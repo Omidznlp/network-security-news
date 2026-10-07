@@ -6,11 +6,21 @@ permalink: /browse/ai-defenses/
 
 # Vendor AI defences
 
-*3 vendor AI capability announcement(s), all editions.*
+*5 vendor AI capability announcement(s), all editions.*
 
 What the network vendors have shipped to answer AI-era threats: AI security products and features, AI-assisted detection, guardrails for AI running on network gear, and vendor guidance for defending against AI-enabled attacks.
 
-## Check Point (2)
+## Check Point (3)
+
+### PromptGuardX
+
+Moves prompt-injection detection into the file layer: integrated into Check Point Threat Emulation, it analyzes PDF files before their content reaches an LLM or AI agent. Check Point describes it as extending its AI Defense Plane into the file layer, alongside prompt inspection, runtime monitoring, access controls and action-level enforcement.
+
+*Defends against:* Prompt injection via external content - instructions hidden in files such as invoices, contracts and emails that attempt to activate an AI agent's tools, APIs and permissions.  
+*Availability:* described-only - the post states it is integrated into Check Point Threat Emulation and gives no availability date or release stage
+
+- ⚪ [Check Point PromptGuardX: Securing the Files AI Agents Trust](https://blog.checkpoint.com/ai-security/check-point-promptguardx-securing-the-files-ai-agents-trust/)  
+  <small>2026-10-07 · Check Point Blog · [in digest]({{ '/2026/10/07/network-security-digest/' | relative_url }})</small>
 
 - ⚪ [AI Models Broke Their Own Containment: Key Findings from the July-August 2026 AI Threat Landscape](https://blog.checkpoint.com/artificial-intelligence/ai-models-broke-their-own-containment-key-findings-from-the-july-august-2026-ai-threat-landscape/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
@@ -36,6 +46,11 @@ Palo Alto Networks describes its work on AI security and states it was named a M
 
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
+
+## Unspecified (1)
+
+- 🟡 [OpenSSH 10.6 enables a post-quantum signature algorithm, so experimental keys need replacing](https://www.helpnetsecurity.com/2026/10/07/openssh-10-6-released/)  
+  <small>2026-10-07 · Help Net Security · [in digest]({{ '/2026/10/07/network-security-digest/' | relative_url }})</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>

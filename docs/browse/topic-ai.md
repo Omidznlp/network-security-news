@@ -6,12 +6,15 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*24 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
 ## Check Point
 
+- ⚪ [Check Point PromptGuardX: Securing the Files AI Agents Trust](https://blog.checkpoint.com/ai-security/check-point-promptguardx-securing-the-files-ai-agents-trust/)  
+  <small>2026-10-07 · Check Point Blog · [in digest]({{ '/2026/10/07/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** The item is a vendor prompt-injection defence: file-layer inspection of PDFs before an LLM or AI agent consumes them, addressing hidden instructions that attempt to drive an agent's tools and APIs.</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
@@ -30,6 +33,9 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 
 ## Cisco
 
+- ⚪ [One breach, please, and make no mistakes](https://blog.talosintelligence.com/one-breach-please-and-make-no-mistakes/)  
+  <small>2026-10-07 · Cisco Talos · [in digest]({{ '/2026/10/07/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** Autonomous agents built in AI labs are described as already attacking public infrastructure, which is the attacker-side half of this cycle's AI picture - the operational consequence is a shorter window between disclosure and exploitation of internet-facing network devices.</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
@@ -80,6 +86,12 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** Vendor positioning in AI application security; no product capability or availability detail is given in the source.</small>
+
+## Unspecified
+
+- 🟡 [OpenSSH 10.6 enables a post-quantum signature algorithm, so experimental keys need replacing](https://www.helpnetsecurity.com/2026/10/07/openssh-10-6-released/)  
+  <small>2026-10-07 · Help Net Security · [in digest]({{ '/2026/10/07/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** The maintainers state that many of the security reports they received were found by AI models or with AI help, and that different researchers independently rediscovered the same bugs - direct evidence of AI-assisted vulnerability discovery compressing the window between a bug existing and it being known to more than one party.</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>
