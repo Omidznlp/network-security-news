@@ -6,7 +6,7 @@ permalink: /browse/device/other/
 
 # Other
 
-*8 item(s) across all editions.*
+*11 item(s) across all editions.*
 
 ## Check Point
 
@@ -15,6 +15,8 @@ permalink: /browse/device/other/
 
 ## Cisco
 
+- ⚪ [One breach, please, and make no mistakes](https://blog.talosintelligence.com/one-breach-please-and-make-no-mistakes/)  
+  <small>2026-10-07 · Cisco Talos · [in digest]({{ '/2026/10/07/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Email Gateway SQL Injection Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [CVE-2026-76461: Critical Cisco Secure Email Gateway Vulnerability Exploited in the Wild](https://www.rapid7.com/blog/post/etr-cve-2026-76461-critical-cisco-secure-email-gateway-vulnerability-exploited-in-the-wild) — CVE-2026-76461 **[KEV]**  
@@ -26,6 +28,8 @@ permalink: /browse/device/other/
 
 ## Palo Alto Networks
 
+- ⚪ [Even with OT network visibility, critical infrastructure operators struggle with legacy equipment](https://www.helpnetsecurity.com/2026/10/07/ot-network-visibility-challenges/)  
+  <small>2026-10-07 · Help Net Security · [in digest]({{ '/2026/10/07/network-security-digest/' | relative_url }})</small>
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
@@ -35,6 +39,11 @@ permalink: /browse/device/other/
 
 - ⚪ [Attackers Exploit Issabel Framework Flaw Enabling Unauthenticated OS Command Execution](https://thehackernews.com/2026/09/attackers-exploit-issabel-framework.html) — CVE-2026-89026  
   <small>2026-09-17 · The Hacker News · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Unspecified
+
+- 🟡 [OpenSSH 10.6 enables a post-quantum signature algorithm, so experimental keys need replacing](https://www.helpnetsecurity.com/2026/10/07/openssh-10-6-released/)  
+  <small>2026-10-07 · Help Net Security · [in digest]({{ '/2026/10/07/network-security-digest/' | relative_url }})</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>

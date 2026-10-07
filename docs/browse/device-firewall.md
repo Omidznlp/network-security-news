@@ -6,7 +6,12 @@ permalink: /browse/device/firewall/
 
 # Firewalls
 
-*11 item(s) across all editions.*
+*13 item(s) across all editions.*
+
+## Check Point
+
+- ⚪ [Check Point PromptGuardX: Securing the Files AI Agents Trust](https://blog.checkpoint.com/ai-security/check-point-promptguardx-securing-the-files-ai-agents-trust/)  
+  <small>2026-10-07 · Check Point Blog · [in digest]({{ '/2026/10/07/network-security-digest/' | relative_url }})</small>
 
 ## Cisco
 
@@ -32,6 +37,11 @@ permalink: /browse/device/firewall/
   <small>2026-09-17 · Zero Day Initiative · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Fortinet
+
+- 🔴 [FBI Warns FortiBleed Remains Active After Amassing 86,644 Fortinet Device Credentials](https://thehackernews.com/2026/10/fbi-warns-fortibleed-remains-active.html)  
+  <small>2026-10-07 · The Hacker News · [in digest]({{ '/2026/10/07/network-security-digest/' | relative_url }})</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>

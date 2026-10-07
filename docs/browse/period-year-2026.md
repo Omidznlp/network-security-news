@@ -6,10 +6,12 @@ permalink: /browse/year/2026/
 
 # Year 2026
 
-*26 item(s) in this period.*
+*33 item(s) in this period.*
 
-## Cisco (18)
+## Cisco (19)
 
+- ⚪ [One breach, please, and make no mistakes](https://blog.talosintelligence.com/one-breach-please-and-make-no-mistakes/)  
+  <small>2026-10-07 · Cisco Talos · [in digest]({{ '/2026/10/07/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Zero-Day Highlights API Endpoint Authentication Issues](https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues) — CVE-2026-76460 **[KEV]**  
@@ -47,8 +49,10 @@ permalink: /browse/year/2026/
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 
-## Check Point (5)
+## Check Point (6)
 
+- ⚪ [Check Point PromptGuardX: Securing the Files AI Agents Trust](https://blog.checkpoint.com/ai-security/check-point-promptguardx-securing-the-files-ai-agents-trust/)  
+  <small>2026-10-07 · Check Point Blog · [in digest]({{ '/2026/10/07/network-security-digest/' | relative_url }})</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [Check Point, Kaspersky, Tanium Patch Product Vulnerabilities](https://www.securityweek.com/check-point-kaspersky-tanium-patch-product-vulnerabilities/)  
@@ -60,17 +64,36 @@ permalink: /browse/year/2026/
 - ⚪ [When Security Operations Can’t Keep Up: 4 Ways Agentic Network Security Management Improves Security Operations](https://blog.checkpoint.com/hybrid-mesh/when-security-operations-cant-keep-up-4-ways-agentic-network-security-management-improves-security-operations/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 
-## Palo Alto Networks (2)
+## Palo Alto Networks (3)
 
+- ⚪ [Even with OT network visibility, critical infrastructure operators struggle with legacy equipment](https://www.helpnetsecurity.com/2026/10/07/ot-network-visibility-challenges/)  
+  <small>2026-10-07 · Help Net Security · [in digest]({{ '/2026/10/07/network-security-digest/' | relative_url }})</small>
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
   <small>2026-09-17 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 
+## SonicWall (2)
+
+- 🔴 [SonicWall fixes pre-auth SSRF flaw in SMA 1000 appliances (CVE-2026-102255)](https://www.helpnetsecurity.com/2026/10/07/sonicwall-fixes-pre-auth-ssrf-flaw-in-sma-1000-appliances-cve-2026-102255/) — CVE-2026-102255  
+  <small>2026-10-07 · Help Net Security · [in digest]({{ '/2026/10/07/network-security-digest/' | relative_url }})</small>
+- 🟠 [SonicWall warns of max severity SSRF flaw in SMA1000 gateways](https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-max-severity-ssrf-flaw-in-sma1000-gateways/)  
+  <small>2026-10-07 · BleepingComputer · [in digest]({{ '/2026/10/07/network-security-digest/' | relative_url }})</small>
+
+## Fortinet (1)
+
+- 🔴 [FBI Warns FortiBleed Remains Active After Amassing 86,644 Fortinet Device Credentials](https://thehackernews.com/2026/10/fbi-warns-fortibleed-remains-active.html)  
+  <small>2026-10-07 · The Hacker News · [in digest]({{ '/2026/10/07/network-security-digest/' | relative_url }})</small>
+
 ## Ubiquiti (1)
 
 - ⚪ [Attackers Exploit Issabel Framework Flaw Enabling Unauthenticated OS Command Execution](https://thehackernews.com/2026/09/attackers-exploit-issabel-framework.html) — CVE-2026-89026  
   <small>2026-09-17 · The Hacker News · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Unspecified (1)
+
+- 🟡 [OpenSSH 10.6 enables a post-quantum signature algorithm, so experimental keys need replacing](https://www.helpnetsecurity.com/2026/10/07/openssh-10-6-released/)  
+  <small>2026-10-07 · Help Net Security · [in digest]({{ '/2026/10/07/network-security-digest/' | relative_url }})</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>
