@@ -1,99 +1,92 @@
 {
-  "date": "2026-09-18",
-  "url": "/2026/09/18/network-security-digest/",
-  "item_count": 20,
-  "critical_count": 4,
-  "kev": [
-    "CVE-2026-76460"
-  ],
+  "date": "2026-10-08",
+  "url": "/2026/10/08/network-security-digest/",
+  "item_count": 19,
+  "critical_count": 6,
+  "kev": [],
   "feeds_ok": 22,
-  "top_story_title": "Cisco ISE authentication bypass CVE-2026-76460 (CVSS 10.0) is on KEV with a 19 September deadline",
-  "top_story_summary": "Cisco has confirmed active exploitation of CVE-2026-76460, a maximum-severity authentication bypass in Cisco Identity Services Engine (ISE) and the ISE Passive Identity Connector (ISE-PIC). Cisco attributes it to insufficient authentication control on an API endpoint, which lets an unauthenticated, remote attacker bypass the web-based management interface and gain unauthorized access to the device. CISA added it to the Known Exploited Vulnerabilities catalogue on 2026-09-16 with a remediation due date of 2026-09-19 under BOD 26-04; ransomware use is listed as unknown.",
+  "top_story_title": "FBI warns FortiBleed attacks are ongoing: attackers are locking admins out of FortiGate firewalls and SSL VPN gateways",
+  "top_story_summary": "The FBI has issued a warning that the attack campaign reported as \"FortiBleed\" is still active against internet-exposed Fortinet FortiGate firewalls and SSL VPN gateways. Unlike most edge-device campaigns, the reported goal is not quiet persistence: the attackers create new administrative accounts and then delete existing accounts and passwords, locking the legitimate administrators out of their own perimeter device. Two independent reports in this cycle (BleepingComputer citing the FBI, and SecurityWeek) describe the same behaviour.",
   "top_actions": [
-    "Inventory every ISE and ISE-PIC node (including standby, PAN and MnT personas) with its running patch level, and apply the fixed release named in the Cisco advisory for CVE-2026-76460 - check the vendor advisory for the fixed release, it is not stated in these sources.",
-    "US federal agencies: the BOD 26-04 due date for CVE-2026-76460 is 2026-09-19. If you cannot meet it, follow CISA's instruction to apply vendor mitigations or discontinue use, and record the decision.",
-    "Remove the ISE administrative and API interfaces from any internet-facing or user-reachable path today; permit them only from a dedicated management VLAN or out-of-band network and jump hosts.",
-    "Assume pre-patch compromise on any ISE node that was reachable from an untrusted network: rotate admin credentials, API keys, pxGrid and node certificates, RADIUS/TACACS+ shared secrets and any ERS/OpenAPI service accounts after upgrading.",
-    "Review ISE for unexpected admin users, changed authorisation policies and profiles, new network device entries and modified shared secrets - a policy change is the quiet form of this compromise."
+    "Confirm right now that you can authenticate to every internet-facing FortiGate and that an out-of-band path (console server, serial, dedicated management link) works - verify this before you start changing anything.",
+    "Export and store a current configuration backup off-device for every FortiGate and SSL VPN gateway, and verify the export is readable.",
+    "Remove the administrative interface (HTTPS/SSH/API) from all internet-facing interfaces; restrict administration to a dedicated management VLAN or out-of-band network.",
+    "Audit the local administrator list, API users and admin profiles for accounts you did not create, and compare against your last known-good configuration backup.",
+    "Check the running version against Fortinet's advisory and schedule the upgrade to the vendor's fixed build - check the vendor advisory for the fixed release, as no fixed version is stated in these reports."
   ],
   "executive_summary": [
-    "Cisco ISE CVE-2026-76460 (CVSS 10.0, unauthenticated authentication bypass on an API endpoint) is actively exploited and on CISA KEV with a 2026-09-19 due date - patch the identity platform first.",
-    "Cisco's September 2026 ASA/FTD/FMC hardening release states two of its flaws are already exploited, both in Firewall Management Center: a static credential issue and an authentication bypass.",
-    "Six further Cisco ASA/FTD advisories land at once - four denial of service (IKEv2 certificate, DTLS on 3100/4200, EIGRP, TCP DNS), one syslog CPU exhaustion, and an Object Group Search ACL bypass that lets blocked traffic through.",
-    "Check Point Security Management and Log Servers have a critical unauthenticated remote code execution as root, fixed via LivePatch, with no reported exploitation - this is the box that holds firewall policy.",
-    "Three ZDI advisories cover authenticated Cisco ISE flaws (CVE-2026-20176, CVE-2026-20211, CVE-2026-20235); they chain behind the auth bypass rather than standing alone.",
-    "No source in this window states a fixed version string. Take exact fixed releases from the vendor advisories, not from press coverage."
+    "The FBI says FortiBleed attacks against exposed Fortinet FortiGate firewalls and SSL VPN gateways are ongoing, with attackers creating admin accounts and deleting existing ones to lock legitimate administrators out. This is the one to act on today.",
+    "Cisco published a large 7 October 2026 bundle dominated by NX-OS: unauthenticated remote code execution as root on Nexus 3000 and 9000 switches via MPLS OAM (CVE-2026-76465, CVSS 9.8), further RCE via NGOAM, RCE via NX-API, and a critical NX-OS hardening release (CVE-2026-76453/76455/76456/76457/76458/76459, CVSS 9.8). None have workarounds - the fix is the upgrade.",
+    "Cisco APIC, the ACI fabric controller, takes three issues including API command injection to root and file access that exposes key material usable to elevate to root on managed switches. A fabric controller compromise is a whole-fabric compromise.",
+    "SonicWall shipped hotfixes for four SMA1000 flaws, the worst a pre-authentication SSRF rated CVSS 10.0; SonicWall states it has no evidence any of the four is being exploited.",
+    "TP-Link is facing US state lawsuits over ISP router flaws, with SEC Consult now publishing technical detail on the vulnerabilities named in the complaint - relevant to anyone with ISP-supplied TP-Link CPE in branch or home-office estates.",
+    "Cisco's advance notification ties this disclosure format - findings grouped by CWE with one CVE per grouping - to its stated response to AI-accelerated vulnerability discovery, so triage must now key on model and version, not CVE count."
   ],
   "key_actions": [
-    "**Cisco** \u2014 Confirm the running ASA, FTD and FMC versions against Cisco's fixed-release table in the hardening advisory - check the vendor advisory for the fixed release, no version is stated in this source.",
-    "**Cisco** \u2014 Patch FMC before the managed FTD devices, then upgrade firewalls in the change window, HA pair secondary first, and verify policy deploy afterwards.",
-    "**Cisco** \u2014 Patch ISE and ISE-PIC to the fixed release named in the Cisco advisory - check the vendor advisory for the fixed release.",
-    "**Cisco** \u2014 Meet or formally document the CISA BOD 26-04 due date of 2026-09-19 if you are in scope; otherwise apply vendor mitigations or discontinue use as the KEV entry instructs.",
-    "**Cisco** \u2014 Upgrade ISE to the fixed release stated in the Cisco advisory - check the vendor advisory for the fixed release.",
-    "**Cisco** \u2014 Before the upgrade, capture ISE logs and configuration for forensics; patching overwrites some of the evidence you would want later.",
-    "**Check Point** \u2014 Confirm LivePatch is enabled and has actually applied the fix on every Security Management Server and Log Server - verify the installed patch level rather than assuming the channel delivered it.",
-    "**Check Point** \u2014 Remove management server access from any untrusted or internet-facing network; SmartConsole and management traffic belong on a dedicated management VLAN or out-of-band network."
+    "**Cisco** \u2014 Inventory Nexus 3000 and 9000 switches and check whether MPLS OAM is configured; the advisory's Vulnerable Products section defines the exact feature condition.",
+    "**Cisco** \u2014 Upgrade NX-OS to the fixed release from the advisory - validate the ISSU/hitless path for spine and distribution switches first, and verify image integrity against Cisco's published hash before loading.",
+    "**Cisco** \u2014 Check whether NGOAM is enabled on each Nexus 3000/9000; the per-vulnerability feature conditions are in the advisory's Vulnerable Products section and are not uniform.",
+    "**Cisco** \u2014 Upgrade NX-OS to the fixed release, bundling this with the MPLS OAM and NX-API upgrades into a single change window rather than three.",
+    "**Cisco** \u2014 Determine where NX-API (the 'feature nxapi' HTTP/HTTPS server) is enabled, and disable it on every switch that no automation actually drives.",
+    "**Cisco** \u2014 Upgrade NX-OS to the fixed release from the advisory.",
+    "**Cisco** \u2014 Treat this as the anchor of a single NX-OS change window covering the MPLS OAM, NGOAM, NX-API, control-plane DoS and Python sandbox advisories together.",
+    "**Cisco** \u2014 Match your switches to the advisory by platform and running version rather than by CVE ID, since each CVE covers a class of defects."
   ],
   "ai_defenses": [
     {
-      "vendor": "Check Point",
-      "solution": "Agentic network security management",
-      "what_it_does": "Check Point describes agentic AI taking on day-to-day security operations work in hybrid mesh environments, setting out four ways agentic network security management improves security operations where environments change faster than teams can manage them manually. The post describes the approach; it does not state a product name, release or availability date."
-    },
-    {
-      "vendor": "Palo Alto Networks",
-      "solution": "AI Application Security",
-      "what_it_does": "Palo Alto Networks describes its work on AI security and states it was named a Market Shaper in the 2026 September Gartner Emerging Market Quadrant for AI Application Security - Established Vendors. The collected text names no specific product, feature or capability detail."
+      "vendor": "Cisco",
+      "solution": "Strengthening the Foundation: A Predictable, Customer-Focused Response to AI-Accelerated Vulnerability Discovery",
+      "what_it_does": "Cisco's documented change to how PSIRT discloses vulnerabilities, referenced from the advance notification for the 7 October 2026 advisories. In this bundle it takes the form of proactive internal security reviews published as 'security hardening releases', with internally discovered findings grouped by Common Weakness Enumeration class and a single CVE ID assigned per CWE grouping to streamline customer patching."
     }
   ],
   "headlines": [
     {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN",
-      "summary": "Cisco's September 2026 hardening release for ASA, FTD and FMC software fixes multiple internally found flaws, two of them already exploited in Firewall Management Center.",
+      "title": "Cisco Nexus 3000 and 9000 Series Switches MPLS OAM Remote Code Execution Vulnerability",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-moam-rce-uBTzYV7",
+      "summary": "An unauthenticated attacker can get root on Cisco Nexus 3000 and 9000 switches by sending one crafted MPLS echo-request; CVE-2026-76465, CVSS 9.8, no workaround.",
       "relevance": "critical",
       "vendor": "Cisco",
       "source": "Cisco PSIRT"
     },
     {
-      "title": "Cisco Zero-Day Highlights API Endpoint Authentication Issues",
-      "link": "https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues",
-      "summary": "CVE-2026-76460, a CVSS 10.0 authentication bypass on a Cisco ISE API endpoint, is on CISA's KEV list with a 2026-09-19 remediation deadline.",
+      "title": "Cisco Nexus 3000 and 9000 Series Switches NGOAM Remote Code Execution Vulnerabilities",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ngoam-rce-LWKQ4BU",
+      "summary": "Multiple NGOAM flaws in Cisco NX-OS let an unauthenticated attacker run code as root on Nexus 3000 and 9000 switches with crafted packets; no workaround exists.",
       "relevance": "critical",
       "vendor": "Cisco",
-      "source": "Dark Reading"
+      "source": "Cisco PSIRT"
     },
     {
-      "title": "Cisco Warns of New Zero-Day ISE Auth Bypass (CVSS 10.0) Exploited in Active Attacks",
-      "link": "https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html",
-      "summary": "Cisco confirms active exploitation of a maximum-severity ISE authentication bypass caused by insufficient authentication control on an API endpoint.",
+      "title": "Cisco NX-OS Software NX-API Remote Code Execution Vulnerability",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-napi-rce-r2shwu2j",
+      "summary": "A crafted HTTP request to the NX-API on Cisco NX-OS gives an unauthenticated attacker arbitrary code execution as root, or crashes the device into a reload.",
       "relevance": "critical",
       "vendor": "Cisco",
+      "source": "Cisco PSIRT"
+    },
+    {
+      "title": "Cisco NX-OS Software Security Hardening Release: October 2026",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-nxosw1-cWzSbtR",
+      "summary": "Cisco's NX-OS hardening release fixes internally found vulnerabilities rated Critical at CVSS 9.8 (CVE-2026-76453/76455/76456/76457/76458/76459), with no workarounds available.",
+      "relevance": "critical",
+      "vendor": "Cisco",
+      "source": "Cisco PSIRT"
+    },
+    {
+      "title": "FBI: Ongoing FortiBleed attacks lock out FortiGate VPN admins",
+      "link": "https://www.bleepingcomputer.com/news/security/fbi-ongoing-fortibleed-attacks-lock-out-fortigate-vpn-admins/",
+      "summary": "The FBI warns FortiBleed attacks are still running against exposed Fortinet FortiGate firewalls and SSL VPN gateways, and are locking legitimate administrators out of the devices.",
+      "relevance": "critical",
+      "vendor": "Fortinet",
+      "source": "BleepingComputer"
+    },
+    {
+      "title": "SonicWall Patches CVSS 10.0 Pre-Authentication SSRF Flaw in SMA1000 Appliances",
+      "link": "https://thehackernews.com/2026/10/sonicwall-patches-cvss-100-pre.html",
+      "summary": "SonicWall hotfixed four SMA1000 flaws, the worst a pre-authentication SSRF rated CVSS 10.0 that lets an attacker without a login reach internal functions through the remote-access gateway.",
+      "relevance": "critical",
+      "vendor": "SonicWall",
       "source": "The Hacker News"
-    },
-    {
-      "title": "Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root",
-      "link": "https://thehackernews.com/2026/09/critical-check-point-management-server.html",
-      "summary": "Check Point Security Management and Log Servers accept unauthenticated network requests that run code as root; a LivePatch fix is out with no reported exploitation.",
-      "relevance": "critical",
-      "vendor": "Check Point",
-      "source": "The Hacker News"
-    },
-    {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Certificate Authentication Denial of Service Vulnerability",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv",
-      "summary": "An unauthenticated attacker can crash Cisco ASA and FTD firewalls by starting an IKEv2 VPN connection with a crafted certificate, and Cisco states there is no workaround.",
-      "relevance": "high",
-      "vendor": "Cisco",
-      "source": "Cisco PSIRT"
-    },
-    {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software for Secure Firewall 3100 and 4200 Series DTLS Denial of Service Vulnerability",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-dtls-dos-Kp57HkyO",
-      "summary": "Crafted DTLS traffic reloads Cisco Secure Firewall 3100 and 4200 Series appliances running ASA or FTD software; Cisco states workarounds exist.",
-      "relevance": "high",
-      "vendor": "Cisco",
-      "source": "Cisco PSIRT"
     }
   ]
 }

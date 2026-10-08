@@ -6,7 +6,7 @@ permalink: /browse/device/management-platform/
 
 # Management platforms
 
-*11 item(s) across all editions.*
+*18 item(s) across all editions.*
 
 ## Check Point
 
@@ -21,6 +21,20 @@ permalink: /browse/device/management-platform/
 
 ## Cisco
 
+- 🔴 [Cisco NX-OS Software NX-API Remote Code Execution Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-napi-rce-r2shwu2j)  
+  <small>2026-10-08 · Cisco PSIRT · [in digest]({{ '/2026/10/08/network-security-digest/' | relative_url }})</small>
+- 🟠 [Cisco Advance Notification for Publication of October 7, 2026, Security Advisories](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-fBn58ELx) — CVE-2026-76453, CVE-2026-76455, CVE-2026-76456, CVE-2026-76457, CVE-2026-76458, CVE-2026-76459, CVE-2026-76465  
+  <small>2026-10-08 · Cisco PSIRT · [in digest]({{ '/2026/10/08/network-security-digest/' | relative_url }})</small>
+- 🟠 [Cisco Application Policy Infrastructure Controller Unauthorized File Access Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-apic-info-priv-enAdB5vD)  
+  <small>2026-10-08 · Cisco PSIRT · [in digest]({{ '/2026/10/08/network-security-digest/' | relative_url }})</small>
+- 🟠 [Cisco Application Policy Infrastructure Controller API Command Injection Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-apic-cmdinj-L6VR4E7)  
+  <small>2026-10-08 · Cisco PSIRT · [in digest]({{ '/2026/10/08/network-security-digest/' | relative_url }})</small>
+- 🟠 [Cisco License (Smart Software Manager) On-Prem Vulnerabilities](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ssm-access-nttb2dhE)  
+  <small>2026-10-08 · Cisco PSIRT · [in digest]({{ '/2026/10/08/network-security-digest/' | relative_url }})</small>
+- 🟡 [Cisco License (Smart Software Manager) On-Prem Security Hardening Release: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-ssm-Ph77wdhf)  
+  <small>2026-10-08 · Cisco PSIRT · [in digest]({{ '/2026/10/08/network-security-digest/' | relative_url }})</small>
+- 🟡 [Cisco Application Policy Infrastructure Controller Security Hardening Release: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-apic-UOXWtfh)  
+  <small>2026-10-08 · Cisco PSIRT · [in digest]({{ '/2026/10/08/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Zero-Day Highlights API Endpoint Authentication Issues](https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues) — CVE-2026-76460 **[KEV]**  

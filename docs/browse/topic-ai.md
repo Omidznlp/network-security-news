@@ -6,7 +6,7 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*22 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
@@ -30,6 +30,9 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 
 ## Cisco
 
+- 🟠 [Cisco Advance Notification for Publication of October 7, 2026, Security Advisories](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-fBn58ELx) — CVE-2026-76453, CVE-2026-76455, CVE-2026-76456, CVE-2026-76457, CVE-2026-76458, CVE-2026-76459, CVE-2026-76465  
+  <small>2026-10-08 · Cisco PSIRT · [in digest]({{ '/2026/10/08/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** Cisco explicitly frames its revised disclosure process as a response to AI-accelerated vulnerability discovery, and the CWE-grouped CVE assignment in this bundle is the practical consequence.</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
