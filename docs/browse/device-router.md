@@ -6,12 +6,17 @@ permalink: /browse/device/router/
 
 # Routers
 
-*1 item(s) across all editions.*
+*2 item(s) across all editions.*
 
 ## Cisco
 
 - 🟠 [Cisco IOS XR Software Security Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-iosxr-qg64NcM)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
+
+## TP-Link
+
+- 🟡 [TP-Link Faces State Lawsuits and New Scrutiny Over ISP Router Flaws](https://www.securityweek.com/tp-link-faces-state-lawsuits-and-new-scrutiny-over-isp-router-flaws/)  
+  <small>2026-10-08 · SecurityWeek · [in digest]({{ '/2026/10/08/network-security-digest/' | relative_url }})</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>
