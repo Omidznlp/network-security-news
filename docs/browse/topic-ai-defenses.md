@@ -6,9 +6,51 @@ permalink: /browse/ai-defenses/
 
 # Vendor AI defences
 
-*3 vendor AI capability announcement(s), all editions.*
+*7 vendor AI capability announcement(s), all editions.*
 
 What the network vendors have shipped to answer AI-era threats: AI security products and features, AI-assisted detection, guardrails for AI running on network gear, and vendor guidance for defending against AI-enabled attacks.
+
+## Cisco (4)
+
+### Retrospective packet replay with Cisco Secure Firewall, Talos rules and Endace full PCAP
+
+Replays retained full packet capture against Talos detections published after the traffic occurred, so a zero-day detection can be applied to wire data already on disk.
+
+*Defends against:* The zero-day blind spot - exploitation traffic that crosses the edge before any signature exists for it, which is the usual pattern for internet-facing network device flaws.  
+*Availability:* described-only
+
+- ⚪ [The Zero-Day Blind Spot: Why Your Agentic SOC needs Retrospective Packet Replay](https://blogs.cisco.com/security/conf26-agentic-soc-packet-replay/)  
+  <small>2026-10-09 · Cisco Security Blog · [in digest]({{ '/2026/10/09/network-security-digest/' | relative_url }})</small>
+
+### Cisco Secure Firewall and Cisco Cloud Control structured Snort 3 and Encrypted Visibility Engine telemetry into Splunk Enterprise Security
+
+Streams structured Snort 3 and EVE telemetry from Cisco Secure Firewall through Cloud Control into Splunk Enterprise Security, forming the data layer of the .conf26 Agentic SOC pipeline. Cisco describes the model as admin-in-the-loop.
+
+*Defends against:* AI-era alert volume on the firewall: agent-assisted triage of firewall detections, with the human approval step retained so an agent does not act on network configuration unattended.  
+*Availability:* described-only
+
+- ⚪ [Admin in the Loop: Firewalls and the Agentic SOC](https://blogs.cisco.com/security/conf26-agentic-soc-firewalls/)  
+  <small>2026-10-09 · Cisco Security Blog · [in digest]({{ '/2026/10/09/network-security-digest/' | relative_url }})</small>
+
+### Cisco Cloud Control with Splunk Enterprise Security (Agentic SOC)
+
+Cisco reports using Cloud Control and Splunk Enterprise Security to run a live Agentic SOC delivering unified threat detection, investigation and response over .conf26 event traffic.
+
+*Defends against:* Fragmented detection and response across device families, where AI-assisted correlation is offered as the answer to telemetry spread over separate consoles.  
+*Availability:* described-only
+
+- ⚪ [One Cisco in Action: Inside the Agentic SOC at .conf26](https://blogs.cisco.com/security/conf26-agentic-soc/)  
+  <small>2026-10-09 · Cisco Security Blog · [in digest]({{ '/2026/10/09/network-security-digest/' | relative_url }})</small>
+
+### Splunk AI Triage Agent
+
+Triages security alerts on Splunk as the SOC data platform, tracked at .conf26 against human-validated workflows rather than running autonomously.
+
+*Defends against:* Triage backlog and slow investigation under AI-era attack volume, while keeping a human decision point on actions.  
+*Availability:* described-only
+
+- ⚪ [Splunk .conf26: Tracking the Triage Agent in the Agentic SOC](https://blogs.cisco.com/security/conf26-agentic-soc-triage-agent/)  
+  <small>2026-10-09 · Cisco Security Blog · [in digest]({{ '/2026/10/09/network-security-digest/' | relative_url }})</small>
 
 ## Check Point (2)
 
