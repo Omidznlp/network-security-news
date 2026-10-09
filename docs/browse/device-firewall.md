@@ -6,10 +6,16 @@ permalink: /browse/device/firewall/
 
 # Firewalls
 
-*11 item(s) across all editions.*
+*14 item(s) across all editions.*
 
 ## Cisco
 
+- ⚪ [The Zero-Day Blind Spot: Why Your Agentic SOC needs Retrospective Packet Replay](https://blogs.cisco.com/security/conf26-agentic-soc-packet-replay/)  
+  <small>2026-10-09 · Cisco Security Blog · [in digest]({{ '/2026/10/09/network-security-digest/' | relative_url }})</small>
+- ⚪ [Admin in the Loop: Firewalls and the Agentic SOC](https://blogs.cisco.com/security/conf26-agentic-soc-firewalls/)  
+  <small>2026-10-09 · Cisco Security Blog · [in digest]({{ '/2026/10/09/network-security-digest/' | relative_url }})</small>
+- ⚪ [Chasing AMMYY at Splunk .conf](https://blogs.cisco.com/security/conf26-agentic-soc-chasing-ammyy/)  
+  <small>2026-10-09 · Cisco Security Blog · [in digest]({{ '/2026/10/09/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Certificate Authentication Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv)  

@@ -6,7 +6,7 @@ permalink: /browse/device/management-platform/
 
 # Management platforms
 
-*11 item(s) across all editions.*
+*14 item(s) across all editions.*
 
 ## Check Point
 
@@ -21,6 +21,12 @@ permalink: /browse/device/management-platform/
 
 ## Cisco
 
+- ⚪ [Admin in the Loop: Firewalls and the Agentic SOC](https://blogs.cisco.com/security/conf26-agentic-soc-firewalls/)  
+  <small>2026-10-09 · Cisco Security Blog · [in digest]({{ '/2026/10/09/network-security-digest/' | relative_url }})</small>
+- ⚪ [One Cisco in Action: Inside the Agentic SOC at .conf26](https://blogs.cisco.com/security/conf26-agentic-soc/)  
+  <small>2026-10-09 · Cisco Security Blog · [in digest]({{ '/2026/10/09/network-security-digest/' | relative_url }})</small>
+- ⚪ [Splunk .conf26: Tracking the Triage Agent in the Agentic SOC](https://blogs.cisco.com/security/conf26-agentic-soc-triage-agent/)  
+  <small>2026-10-09 · Cisco Security Blog · [in digest]({{ '/2026/10/09/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Zero-Day Highlights API Endpoint Authentication Issues](https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues) — CVE-2026-76460 **[KEV]**  
