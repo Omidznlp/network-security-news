@@ -6,7 +6,7 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*23 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
@@ -80,6 +80,18 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** Vendor positioning in AI application security; no product capability or availability detail is given in the source.</small>
+
+## SonicWall
+
+- 🔴 [Max severity SonicWall SMA1000 flaw now exploited in attacks](https://www.bleepingcomputer.com/news/security/max-severity-sonicwall-sma1000-flaw-now-exploited-in-attacks/) — CVE-2026-102255  
+  <small>2026-10-10 · BleepingComputer · [in digest]({{ '/2026/10/10/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None reported. The source describes conventional exploitation of a patched vulnerability with no AI involvement in discovery or attack.</small>
+
+## TP-Link
+
+- ⚪ [TP-Link Sued by Four More U.S. States Over Router Security and China Ties](https://thehackernews.com/2026/10/tp-link-sued-by-four-more-us-states.html)  
+  <small>2026-10-10 · The Hacker News · [in digest]({{ '/2026/10/10/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None. The source describes litigation over router security and corporate structure, with no AI element.</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>
