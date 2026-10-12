@@ -6,12 +6,15 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*22 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
 ## Check Point
 
+- ⚪ [Peer Pressure Works on AI Agents: How One Change of Mind Can Tip the Whole Team](https://blog.checkpoint.com/security/peer-pressure-ai-agents/)  
+  <small>2026-10-12 · Check Point Blog · [in digest]({{ '/2026/10/12/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** Entirely an AI item: multi-agent conformity undermining rule-following, with direct implications for agent access to network management.</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
