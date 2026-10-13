@@ -6,7 +6,7 @@ permalink: /browse/device/vpn-gateway/
 
 # VPN gateways
 
-*2 item(s) across all editions.*
+*3 item(s) across all editions.*
 
 ## Cisco
 
@@ -17,6 +17,11 @@ permalink: /browse/device/vpn-gateway/
 
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
   <small>2026-09-17 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## SonicWall
+
+- 🔴 [Maximum-Severity SSRF Flaw in SonicWall SMA Devices Under Attack](https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack)  
+  <small>2026-10-13 · Dark Reading · [in digest]({{ '/2026/10/13/network-security-digest/' | relative_url }})</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>
