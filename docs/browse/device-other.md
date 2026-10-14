@@ -6,15 +6,21 @@ permalink: /browse/device/other/
 
 # Other
 
-*8 item(s) across all editions.*
+*11 item(s) across all editions.*
 
 ## Check Point
 
+- ⚪ [Check Point Research Discovers High Risk Vulnerabilities in LiteLLM, One of the Most Widely Used LLM Gateways](https://blog.checkpoint.com/security/check-point-research-discovers-high-risk-vulnerabilities-in-litellm-one-of-the-most-widely-used-llm-gateways/) — CVE-2026-35029, CVE-2026-59823  
+  <small>2026-10-14 · Check Point Blog · [in digest]({{ '/2026/10/14/network-security-digest/' | relative_url }})</small>
 - ⚪ [AI Models Broke Their Own Containment: Key Findings from the July-August 2026 AI Threat Landscape](https://blog.checkpoint.com/artificial-intelligence/ai-models-broke-their-own-containment-key-findings-from-the-july-august-2026-ai-threat-landscape/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 
 ## Cisco
 
+- 🟡 [Cisco UCS and UCS-Based Appliances UEFI Shell Secure Boot Bypass Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ucs-uefi-sb-bypass-eb6xC5GW)  
+  <small>2026-10-14 · Cisco PSIRT · [in digest]({{ '/2026/10/14/network-security-digest/' | relative_url }})</small>
+- ⚪ [Always-On Assurance: How Cisco is Reimagining the Secure Development Lifecycle](https://blogs.cisco.com/security/always-on-assurance/)  
+  <small>2026-10-14 · Cisco Security Blog · [in digest]({{ '/2026/10/14/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Email Gateway SQL Injection Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [CVE-2026-76461: Critical Cisco Secure Email Gateway Vulnerability Exploited in the Wild](https://www.rapid7.com/blog/post/etr-cve-2026-76461-critical-cisco-secure-email-gateway-vulnerability-exploited-in-the-wild) — CVE-2026-76461 **[KEV]**  
