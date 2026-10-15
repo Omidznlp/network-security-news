@@ -6,7 +6,7 @@ permalink: /browse/vendor/cisco/
 
 # Cisco
 
-*18 item(s) across all editions.*
+*24 item(s) across all editions.*
 
 ## Firewalls
 
@@ -35,16 +35,22 @@ permalink: /browse/vendor/cisco/
 
 ## VPN gateways
 
+- 🟡 [Cisco Advance Notification for Publication of October 21, 2026, Security Advisories](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-QGwHnJ6k)  
+  <small>2026-10-15 · Cisco PSIRT · [in digest]({{ '/2026/10/15/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Certificate Authentication Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 
 ## Routers
 
+- 🟡 [Cisco Advance Notification for Publication of October 21, 2026, Security Advisories](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-QGwHnJ6k)  
+  <small>2026-10-15 · Cisco PSIRT · [in digest]({{ '/2026/10/15/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco IOS XR Software Security Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-iosxr-qg64NcM)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 
 ## Management platforms
 
+- 🟠 [Cisco Secure Email Gateway and Secure Email and Web Manager Security Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-esa-dfCrfXkm)  
+  <small>2026-10-15 · Cisco PSIRT · [in digest]({{ '/2026/10/15/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Zero-Day Highlights API Endpoint Authentication Issues](https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues) — CVE-2026-76460 **[KEV]**  
@@ -62,6 +68,18 @@ permalink: /browse/vendor/cisco/
 
 ## Other
 
+- 🟠 [Cisco patches new Secure Email Gateway zero-day exploited in attacks](https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/)  
+  <small>2026-10-15 · BleepingComputer · [in digest]({{ '/2026/10/15/network-security-digest/' | relative_url }})</small>
+- 🟠 [Cisco Secure Email Gateway and Secure Email and Web Manager Security Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-esa-dfCrfXkm)  
+  <small>2026-10-15 · Cisco PSIRT · [in digest]({{ '/2026/10/15/network-security-digest/' | relative_url }})</small>
+- 🟠 [Cisco Secure Email Gateway Arbitrary File Write Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-afw-zqYJkjxp)  
+  <small>2026-10-15 · Cisco PSIRT · [in digest]({{ '/2026/10/15/network-security-digest/' | relative_url }})</small>
+- 🟠 [Cisco Warns of Exploited Secure Email Gateway Vulnerability](https://www.securityweek.com/cisco-warns-of-exploited-secure-email-gateway-vulnerability/)  
+  <small>2026-10-15 · SecurityWeek · [in digest]({{ '/2026/10/15/network-security-digest/' | relative_url }})</small>
+- 🟠 [Cisco Warns of Active Attacks Exploiting New Critical Secure Email Gateway Vulnerability](https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html)  
+  <small>2026-10-15 · The Hacker News · [in digest]({{ '/2026/10/15/network-security-digest/' | relative_url }})</small>
+- 🟡 [Cisco Advance Notification for Publication of October 21, 2026, Security Advisories](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-QGwHnJ6k)  
+  <small>2026-10-15 · Cisco PSIRT · [in digest]({{ '/2026/10/15/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Email Gateway SQL Injection Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [CVE-2026-76461: Critical Cisco Secure Email Gateway Vulnerability Exploited in the Wild](https://www.rapid7.com/blog/post/etr-cve-2026-76461-critical-cisco-secure-email-gateway-vulnerability-exploited-in-the-wild) — CVE-2026-76461 **[KEV]**  

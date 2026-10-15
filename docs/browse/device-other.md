@@ -6,7 +6,7 @@ permalink: /browse/device/other/
 
 # Other
 
-*8 item(s) across all editions.*
+*15 item(s) across all editions.*
 
 ## Check Point
 
@@ -15,6 +15,18 @@ permalink: /browse/device/other/
 
 ## Cisco
 
+- 🟠 [Cisco patches new Secure Email Gateway zero-day exploited in attacks](https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/)  
+  <small>2026-10-15 · BleepingComputer · [in digest]({{ '/2026/10/15/network-security-digest/' | relative_url }})</small>
+- 🟠 [Cisco Secure Email Gateway and Secure Email and Web Manager Security Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-esa-dfCrfXkm)  
+  <small>2026-10-15 · Cisco PSIRT · [in digest]({{ '/2026/10/15/network-security-digest/' | relative_url }})</small>
+- 🟠 [Cisco Secure Email Gateway Arbitrary File Write Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-afw-zqYJkjxp)  
+  <small>2026-10-15 · Cisco PSIRT · [in digest]({{ '/2026/10/15/network-security-digest/' | relative_url }})</small>
+- 🟠 [Cisco Warns of Exploited Secure Email Gateway Vulnerability](https://www.securityweek.com/cisco-warns-of-exploited-secure-email-gateway-vulnerability/)  
+  <small>2026-10-15 · SecurityWeek · [in digest]({{ '/2026/10/15/network-security-digest/' | relative_url }})</small>
+- 🟠 [Cisco Warns of Active Attacks Exploiting New Critical Secure Email Gateway Vulnerability](https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html)  
+  <small>2026-10-15 · The Hacker News · [in digest]({{ '/2026/10/15/network-security-digest/' | relative_url }})</small>
+- 🟡 [Cisco Advance Notification for Publication of October 21, 2026, Security Advisories](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-QGwHnJ6k)  
+  <small>2026-10-15 · Cisco PSIRT · [in digest]({{ '/2026/10/15/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Email Gateway SQL Injection Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [CVE-2026-76461: Critical Cisco Secure Email Gateway Vulnerability Exploited in the Wild](https://www.rapid7.com/blog/post/etr-cve-2026-76461-critical-cisco-secure-email-gateway-vulnerability-exploited-in-the-wild) — CVE-2026-76461 **[KEV]**  
@@ -23,6 +35,11 @@ permalink: /browse/device/other/
   <small>2026-09-17 · The Hacker News · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Multiple
+
+- 🔴 [CISA flags exploited flaws in Palo Alto, Cisco and Ahsay products](https://www.helpnetsecurity.com/2026/10/15/cve-2026-0322-cve-2026-76519-cve-2026-105133-cve-2026-105134-exploted/) — CVE-2026-0322, CVE-2026-105133, CVE-2026-105134, CVE-2026-76519 **[KEV]**  
+  <small>2026-10-15 · Help Net Security · [in digest]({{ '/2026/10/15/network-security-digest/' | relative_url }})</small>
 
 ## Palo Alto Networks
 

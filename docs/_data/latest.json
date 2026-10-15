@@ -1,99 +1,99 @@
 {
-  "date": "2026-09-18",
-  "url": "/2026/09/18/network-security-digest/",
-  "item_count": 20,
-  "critical_count": 4,
+  "date": "2026-10-15",
+  "url": "/2026/10/15/network-security-digest/",
+  "item_count": 22,
+  "critical_count": 6,
   "kev": [
-    "CVE-2026-76460"
+    "CVE-2024-47575",
+    "CVE-2026-0322",
+    "CVE-2026-104935",
+    "CVE-2026-105133",
+    "CVE-2026-105134",
+    "CVE-2026-76519"
   ],
   "feeds_ok": 22,
-  "top_story_title": "Cisco ISE authentication bypass CVE-2026-76460 (CVSS 10.0) is on KEV with a 19 September deadline",
-  "top_story_summary": "Cisco has confirmed active exploitation of CVE-2026-76460, a maximum-severity authentication bypass in Cisco Identity Services Engine (ISE) and the ISE Passive Identity Connector (ISE-PIC). Cisco attributes it to insufficient authentication control on an API endpoint, which lets an unauthenticated, remote attacker bypass the web-based management interface and gain unauthorized access to the device. CISA added it to the Known Exploited Vulnerabilities catalogue on 2026-09-16 with a remediation due date of 2026-09-19 under BOD 26-04; ransomware use is listed as unknown.",
+  "top_story_title": "Ivanti Connect Secure authentication bypass (CVE-2026-104935) exploited as a zero-day since October 1; CISA deadline is 16 October",
+  "top_story_summary": "CISA has added CVE-2026-104935 to the Known Exploited Vulnerabilities catalog (added 13 October 2026, remediation due 16 October 2026) and urged organisations to update Ivanti Connect Secure appliances immediately. CISA describes it as an authentication bypass by spoofing that lets a remote, unauthenticated attacker execute arbitrary commands; reporting puts the CVSS score at 8.6. BleepingComputer reports exploitation as a zero-day since at least 1 October, and The Hacker News reports honeypots logging 105 exploit attempts.",
   "top_actions": [
-    "Inventory every ISE and ISE-PIC node (including standby, PAN and MnT personas) with its running patch level, and apply the fixed release named in the Cisco advisory for CVE-2026-76460 - check the vendor advisory for the fixed release, it is not stated in these sources.",
-    "US federal agencies: the BOD 26-04 due date for CVE-2026-76460 is 2026-09-19. If you cannot meet it, follow CISA's instruction to apply vendor mitigations or discontinue use, and record the decision.",
-    "Remove the ISE administrative and API interfaces from any internet-facing or user-reachable path today; permit them only from a dedicated management VLAN or out-of-band network and jump hosts.",
-    "Assume pre-patch compromise on any ISE node that was reachable from an untrusted network: rotate admin credentials, API keys, pxGrid and node certificates, RADIUS/TACACS+ shared secrets and any ERS/OpenAPI service accounts after upgrading.",
-    "Review ISE for unexpected admin users, changed authorisation policies and profiles, new network device entries and modified shared secrets - a policy change is the quiet form of this compromise."
+    "Inventory every Ivanti Connect Secure appliance and compare the running build against Ivanti's advisory for CVE-2026-104935; check the vendor advisory for the fixed release. Do not assume the July patch covers this.",
+    "Patch to the vendor's fixed build and run the Ivanti Integrity Checker Tool; treat an ICT failure as confirmed compromise and escalate to IR.",
+    "Terminate all active sessions and revoke session tokens after upgrade; assume stolen session cookies are in use.",
+    "Rotate certificates, service-account credentials, local admin passwords and any secrets stored on the appliance.",
+    "Hunt for compromise on appliances exposed since 1 October: unexpected outbound connections, new local accounts, modified web resources, unusual timestamps in /var logs."
   ],
   "executive_summary": [
-    "Cisco ISE CVE-2026-76460 (CVSS 10.0, unauthenticated authentication bypass on an API endpoint) is actively exploited and on CISA KEV with a 2026-09-19 due date - patch the identity platform first.",
-    "Cisco's September 2026 ASA/FTD/FMC hardening release states two of its flaws are already exploited, both in Firewall Management Center: a static credential issue and an authentication bypass.",
-    "Six further Cisco ASA/FTD advisories land at once - four denial of service (IKEv2 certificate, DTLS on 3100/4200, EIGRP, TCP DNS), one syslog CPU exhaustion, and an Object Group Search ACL bypass that lets blocked traffic through.",
-    "Check Point Security Management and Log Servers have a critical unauthenticated remote code execution as root, fixed via LivePatch, with no reported exploitation - this is the box that holds firewall policy.",
-    "Three ZDI advisories cover authenticated Cisco ISE flaws (CVE-2026-20176, CVE-2026-20211, CVE-2026-20235); they chain behind the auth bypass rather than standing alone.",
-    "No source in this window states a fixed version string. Take exact fixed releases from the vendor advisories, not from press coverage."
+    "Ivanti Connect Secure CVE-2026-104935 (unauthenticated auth bypass to command execution, CVSS 8.6) has been exploited as a zero-day since at least 1 October; CISA's KEV due date is 16 October 2026 and honeypots have logged 105 exploit attempts. The July patch was only partial - re-verify the running build.",
+    "Palo Alto Networks patched PAN-OS CVE-2026-0322, an authenticated RCE in the management interface, after limited exploitation against customer firewalls; KEV due 17 October 2026 and IoCs are published.",
+    "Cisco patched an actively exploited Secure Email Gateway arbitrary file write (KEV: CVE-2026-76519) reachable by an unauthenticated sender via a crafted email attachment when file reputation is enabled, leading to root command execution. There is no workaround.",
+    "Unit 42 reports attackers used FortiManager CVE-2024-47575 (KEV since October 2024) to reach 500+ firewalls and deploy PEERSTITCH, a memory-resident ARM64 FortiGate implant - a two-year-old management-plane bug still delivering firewall persistence.",
+    "Palo Alto Networks' October bundle also carries lower-severity PAN-OS and GlobalProtect app fixes (command injection, Panorama DoS, network-services DoS, XSS, client-side LPE/DoS); fold them into the same change window as CVE-2026-0322.",
+    "Cisco has pre-announced a 21 October 2026 advisory bundle covering Expressway Series, IOS XR for ASR 9000 Series routers, Secure Client, Snort and Unified Communications."
   ],
   "key_actions": [
-    "**Cisco** \u2014 Confirm the running ASA, FTD and FMC versions against Cisco's fixed-release table in the hardening advisory - check the vendor advisory for the fixed release, no version is stated in this source.",
-    "**Cisco** \u2014 Patch FMC before the managed FTD devices, then upgrade firewalls in the change window, HA pair secondary first, and verify policy deploy afterwards.",
-    "**Cisco** \u2014 Patch ISE and ISE-PIC to the fixed release named in the Cisco advisory - check the vendor advisory for the fixed release.",
-    "**Cisco** \u2014 Meet or formally document the CISA BOD 26-04 due date of 2026-09-19 if you are in scope; otherwise apply vendor mitigations or discontinue use as the KEV entry instructs.",
-    "**Cisco** \u2014 Upgrade ISE to the fixed release stated in the Cisco advisory - check the vendor advisory for the fixed release.",
-    "**Cisco** \u2014 Before the upgrade, capture ISE logs and configuration for forensics; patching overwrites some of the evidence you would want later.",
-    "**Check Point** \u2014 Confirm LivePatch is enabled and has actually applied the fix on every Security Management Server and Log Server - verify the installed patch level rather than assuming the channel delivered it.",
-    "**Check Point** \u2014 Remove management server access from any untrusted or internet-facing network; SmartConsole and management traffic belong on a dedicated management VLAN or out-of-band network."
+    "**Multiple** \u2014 Pull the KEV list and map CVE-2026-0322 and CVE-2026-76519 against your asset inventory by model and running version.",
+    "**Multiple** \u2014 Apply the vendor fixed releases for PAN-OS and Cisco Secure Email Gateway; check each vendor advisory for the fixed release, as this item states none.",
+    "**Ivanti** \u2014 Re-verify the running build on every Connect Secure appliance against Ivanti's current advisory for CVE-2026-104935 - do not rely on the July change record.",
+    "**Ivanti** \u2014 Patch to the vendor's fixed build and run the Ivanti Integrity Checker Tool; check the vendor advisory for the fixed release.",
+    "**Palo Alto Networks** \u2014 Confirm the running PAN-OS version against the vendor's fixed-release table and schedule the upgrade inside the change window, HA pair secondary first.",
+    "**Palo Alto Networks** \u2014 Remove management access (HTTPS/SSH/API) from any untrusted or internet-facing interface; restrict to a dedicated management VLAN or out-of-band network.",
+    "**Palo Alto Networks** \u2014 Patch to the vendor's fixed PAN-OS release now; check the vendor advisory for the fixed release.",
+    "**Palo Alto Networks** \u2014 Treat any firewall whose management interface was reachable from an untrusted network before patching as potentially compromised and run a configuration diff against a known-good backup."
   ],
   "ai_defenses": [
     {
-      "vendor": "Check Point",
-      "solution": "Agentic network security management",
-      "what_it_does": "Check Point describes agentic AI taking on day-to-day security operations work in hybrid mesh environments, setting out four ways agentic network security management improves security operations where environments change faster than teams can manage them manually. The post describes the approach; it does not state a product name, release or availability date."
-    },
-    {
-      "vendor": "Palo Alto Networks",
-      "solution": "AI Application Security",
-      "what_it_does": "Palo Alto Networks describes its work on AI security and states it was named a Market Shaper in the 2026 September Gartner Emerging Market Quadrant for AI Application Security - Established Vendors. The collected text names no specific product, feature or capability detail."
+      "vendor": "Cisco",
+      "solution": "Strengthening the Foundation: A Predictable, Customer-Focused Response to AI-Accelerated Vulnerability Discovery",
+      "what_it_does": "Cisco's documented change to how PSIRT discloses vulnerabilities, referenced from its advance notification of the 21 October 2026 advisory bundle. In the same cycle Cisco grouped internally discovered Secure Email Gateway issues by CWE class under a single CVE ID per grouping and shipped them as scheduled hardening releases."
     }
   ],
   "headlines": [
     {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN",
-      "summary": "Cisco's September 2026 hardening release for ASA, FTD and FMC software fixes multiple internally found flaws, two of them already exploited in Firewall Management Center.",
+      "title": "CISA flags exploited flaws in Palo Alto, Cisco and Ahsay products",
+      "link": "https://www.helpnetsecurity.com/2026/10/15/cve-2026-0322-cve-2026-76519-cve-2026-105133-cve-2026-105134-exploted/",
+      "summary": "CISA added four actively exploited flaws to KEV, including a PAN-OS management-interface RCE and a critical path traversal in Cisco Secure Email Gateway.",
       "relevance": "critical",
-      "vendor": "Cisco",
-      "source": "Cisco PSIRT"
+      "vendor": "Multiple",
+      "source": "Help Net Security"
     },
     {
-      "title": "Cisco Zero-Day Highlights API Endpoint Authentication Issues",
-      "link": "https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues",
-      "summary": "CVE-2026-76460, a CVSS 10.0 authentication bypass on a Cisco ISE API endpoint, is on CISA's KEV list with a 2026-09-19 remediation deadline.",
+      "title": "Ivanti ICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
+      "link": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
+      "summary": "An incomplete July fix left Ivanti Connect Secure exposed to CVE-2026-104935, a high-severity authentication bypass chained to RCE now exploited in the wild.",
       "relevance": "critical",
-      "vendor": "Cisco",
+      "vendor": "Ivanti",
       "source": "Dark Reading"
     },
     {
-      "title": "Cisco Warns of New Zero-Day ISE Auth Bypass (CVSS 10.0) Exploited in Active Attacks",
-      "link": "https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html",
-      "summary": "Cisco confirms active exploitation of a maximum-severity ISE authentication bypass caused by insufficient authentication control on an API endpoint.",
+      "title": "CVE-2026-0322 PAN-OS: Authenticated Remote Code Execution (RCE) in the Management Interface (Severity: HIGH)",
+      "link": "https://security.paloaltonetworks.com/CVE-2026-0322",
+      "summary": "Palo Alto Networks' advisory for CVE-2026-0322 confirms an authenticated remote code execution flaw in the PAN-OS management interface, rated high.",
       "relevance": "critical",
-      "vendor": "Cisco",
+      "vendor": "Palo Alto Networks",
+      "source": "Palo Alto Networks PSIRT"
+    },
+    {
+      "title": "Palo Alto Networks warns of PAN-OS RCE flaw exploited in attacks",
+      "link": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/",
+      "summary": "PAN-OS zero-day CVE-2026-0322 was exploited in attacks against firewalls before Palo Alto Networks shipped security updates.",
+      "relevance": "critical",
+      "vendor": "Palo Alto Networks",
+      "source": "BleepingComputer"
+    },
+    {
+      "title": "CISA Urges Immediate Ivanti Connect Secure Updates as Honeypots Log 105 Exploit Attempts",
+      "link": "https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html",
+      "summary": "CISA told organisations to update Ivanti Connect Secure immediately against CVE-2026-104935 (CVSS 8.6) as honeypots logged 105 exploit attempts.",
+      "relevance": "critical",
+      "vendor": "Ivanti",
       "source": "The Hacker News"
     },
     {
-      "title": "Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root",
-      "link": "https://thehackernews.com/2026/09/critical-check-point-management-server.html",
-      "summary": "Check Point Security Management and Log Servers accept unauthenticated network requests that run code as root; a LivePatch fix is out with no reported exploitation.",
+      "title": "Unit 42 Uncovers PEERSTITCH, a Stealthy FortiGate Implant",
+      "link": "https://unit42.paloaltonetworks.com/fortimanager-cve-2024-47575-peerstitch-malware/",
+      "summary": "Unit 42 found attackers exploiting FortiManager CVE-2024-47575 to reach 500+ firewalls and plant PEERSTITCH, a memory-resident ARM64 FortiGate implant.",
       "relevance": "critical",
-      "vendor": "Check Point",
-      "source": "The Hacker News"
-    },
-    {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Certificate Authentication Denial of Service Vulnerability",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv",
-      "summary": "An unauthenticated attacker can crash Cisco ASA and FTD firewalls by starting an IKEv2 VPN connection with a crafted certificate, and Cisco states there is no workaround.",
-      "relevance": "high",
-      "vendor": "Cisco",
-      "source": "Cisco PSIRT"
-    },
-    {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software for Secure Firewall 3100 and 4200 Series DTLS Denial of Service Vulnerability",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-dtls-dos-Kp57HkyO",
-      "summary": "Crafted DTLS traffic reloads Cisco Secure Firewall 3100 and 4200 Series appliances running ASA or FTD software; Cisco states workarounds exist.",
-      "relevance": "high",
-      "vendor": "Cisco",
-      "source": "Cisco PSIRT"
+      "vendor": "Fortinet",
+      "source": "Unit 42"
     }
   ]
 }

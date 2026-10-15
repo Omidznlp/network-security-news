@@ -6,7 +6,7 @@ permalink: /browse/ai-defenses/
 
 # Vendor AI defences
 
-*3 vendor AI capability announcement(s), all editions.*
+*4 vendor AI capability announcement(s), all editions.*
 
 What the network vendors have shipped to answer AI-era threats: AI security products and features, AI-assisted detection, guardrails for AI running on network gear, and vendor guidance for defending against AI-enabled attacks.
 
@@ -24,6 +24,18 @@ Check Point describes agentic AI taking on day-to-day security operations work i
 
 - ⚪ [When Security Operations Can’t Keep Up: 4 Ways Agentic Network Security Management Improves Security Operations](https://blog.checkpoint.com/hybrid-mesh/when-security-operations-cant-keep-up-4-ways-agentic-network-security-management-improves-security-operations/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
+
+## Cisco (1)
+
+### Strengthening the Foundation: A Predictable, Customer-Focused Response to AI-Accelerated Vulnerability Discovery
+
+Cisco's documented change to how PSIRT discloses vulnerabilities, referenced from its advance notification of the 21 October 2026 advisory bundle. In the same cycle Cisco grouped internally discovered Secure Email Gateway issues by CWE class under a single CVE ID per grouping and shipped them as scheduled hardening releases.
+
+*Defends against:* The compressed defender timeline created by AI-accelerated vulnerability discovery, where internally and externally found bugs arrive faster than a conventional one-advisory-at-a-time disclosure and patch cycle can absorb.  
+*Availability:* described-only
+
+- 🟡 [Cisco Advance Notification for Publication of October 21, 2026, Security Advisories](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-QGwHnJ6k)  
+  <small>2026-10-15 · Cisco PSIRT · [in digest]({{ '/2026/10/15/network-security-digest/' | relative_url }})</small>
 
 ## Palo Alto Networks (1)
 
