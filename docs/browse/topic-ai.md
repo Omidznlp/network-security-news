@@ -6,12 +6,15 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*23 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
 ## Check Point
 
+- ⚪ [Dangerous Deviation Detection: Catching the Agent Action Nobody Asked For](https://blog.checkpoint.com/ai-security/dangerous-deviation-detection-ai-agents/)  
+  <small>2026-10-16 · Check Point Blog · [in digest]({{ '/2026/10/16/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** Vendor-described detection for AI agents taking actions nobody asked for; the defensive counterpart to agentic-AI risk rather than a threat report. Recorded under vendor AI defences.</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
@@ -80,6 +83,12 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** Vendor positioning in AI application security; no product capability or availability detail is given in the source.</small>
+
+## Unspecified
+
+- ⚪ [Small Agents, Smaller Blast Radius: Controlling What AI Can Do, (Fri, Oct 16th)](https://isc.sans.edu/diary/rss/33430)  
+  <small>2026-10-16 · SANS Internet Storm Center · [in digest]({{ '/2026/10/16/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** General argument for narrowing what AI agents are allowed to do; relevant to anyone wiring an assistant or AIOps integration into network management, but it describes no attack on network gear.</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>

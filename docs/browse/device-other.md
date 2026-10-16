@@ -6,10 +6,17 @@ permalink: /browse/device/other/
 
 # Other
 
-*8 item(s) across all editions.*
+*11 item(s) across all editions.*
+
+## BeyondTrust
+
+- ⚪ [China-Linked Hackers Exploited BeyondTrust Zero-Day to Take Over Remote Support Servers](https://thehackernews.com/2026/10/china-linked-hackers-exploited.html) — CVE-2026-102764  
+  <small>2026-10-16 · The Hacker News · [in digest]({{ '/2026/10/16/network-security-digest/' | relative_url }})</small>
 
 ## Check Point
 
+- ⚪ [Dangerous Deviation Detection: Catching the Agent Action Nobody Asked For](https://blog.checkpoint.com/ai-security/dangerous-deviation-detection-ai-agents/)  
+  <small>2026-10-16 · Check Point Blog · [in digest]({{ '/2026/10/16/network-security-digest/' | relative_url }})</small>
 - ⚪ [AI Models Broke Their Own Containment: Key Findings from the July-August 2026 AI Threat Landscape](https://blog.checkpoint.com/artificial-intelligence/ai-models-broke-their-own-containment-key-findings-from-the-july-august-2026-ai-threat-landscape/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 
@@ -35,6 +42,11 @@ permalink: /browse/device/other/
 
 - ⚪ [Attackers Exploit Issabel Framework Flaw Enabling Unauthenticated OS Command Execution](https://thehackernews.com/2026/09/attackers-exploit-issabel-framework.html) — CVE-2026-89026  
   <small>2026-09-17 · The Hacker News · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Unspecified
+
+- ⚪ [Small Agents, Smaller Blast Radius: Controlling What AI Can Do, (Fri, Oct 16th)](https://isc.sans.edu/diary/rss/33430)  
+  <small>2026-10-16 · SANS Internet Storm Center · [in digest]({{ '/2026/10/16/network-security-digest/' | relative_url }})</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>
