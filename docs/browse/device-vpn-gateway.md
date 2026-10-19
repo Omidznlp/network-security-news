@@ -6,12 +6,17 @@ permalink: /browse/device/vpn-gateway/
 
 # VPN gateways
 
-*2 item(s) across all editions.*
+*3 item(s) across all editions.*
 
 ## Cisco
 
 - 🟠 [Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Certificate Authentication Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
+
+## Fortinet
+
+- 🔴 [Exploited Fortinet Bug Linked to Stealthy FortiGate Implant in Telecom Hack](https://www.securityweek.com/exploited-fortinet-bug-linked-to-stealthy-fortigate-implant-in-telecom-hack/)  
+  <small>2026-10-19 · SecurityWeek · [in digest]({{ '/2026/10/19/network-security-digest/' | relative_url }})</small>
 
 ## Palo Alto Networks
 
