@@ -6,7 +6,12 @@ permalink: /browse/device/router/
 
 # Routers
 
-*1 item(s) across all editions.*
+*2 item(s) across all editions.*
+
+## Broadcom
+
+- 🟠 [Unpatched Broadcom Wi-Fi Flaw Lets Attackers in Range Run Code as Root on Routers](https://thehackernews.com/2026/10/unpatched-broadcom-wi-fi-flaw-lets.html)  
+  <small>2026-10-19 · The Hacker News · [in digest]({{ '/2026/10/19/network-security-digest/' | relative_url }})</small>
 
 ## Cisco
 
