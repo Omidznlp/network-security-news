@@ -6,11 +6,21 @@ permalink: /browse/ai-defenses/
 
 # Vendor AI defences
 
-*3 vendor AI capability announcement(s), all editions.*
+*4 vendor AI capability announcement(s), all editions.*
 
 What the network vendors have shipped to answer AI-era threats: AI security products and features, AI-assisted detection, guardrails for AI running on network gear, and vendor guidance for defending against AI-enabled attacks.
 
-## Check Point (2)
+## Check Point (3)
+
+### Check Point solutions on AWS Marketplace (expanded strategic collaboration with AWS for AI and cloud security capabilities)
+
+Check Point describes an expanded 2026 collaboration with AWS extending prevention-first security across cloud networks, applications, workloads and emerging AI environments, delivered through AWS Marketplace, with a stated focus on helping customers secure generative-AI initiatives built on AWS. The post names no individual product.
+
+*Defends against:* Exposure of enterprise generative-AI workloads and the cloud networks around them, as framed by the vendor.  
+*Availability:* described-only - the post states solutions are available through AWS Marketplace but names no product, version or date for the AI-focused expansion
+
+- ⚪ [Check Point Expands Strategic Collaboration with AWS to Accelerate AI and Cloud Security Capabilities](https://blog.checkpoint.com/partners/check-point-expands-strategic-collaboration-with-aws-to-accelerate-ai-and-cloud-security-capabilities/)  
+  <small>2026-10-20 · Check Point Blog · [in digest]({{ '/2026/10/20/network-security-digest/' | relative_url }})</small>
 
 - ⚪ [AI Models Broke Their Own Containment: Key Findings from the July-August 2026 AI Threat Landscape](https://blog.checkpoint.com/artificial-intelligence/ai-models-broke-their-own-containment-key-findings-from-the-july-august-2026-ai-threat-landscape/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>

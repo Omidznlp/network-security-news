@@ -6,7 +6,12 @@ permalink: /browse/vendor/check-point/
 
 # Check Point
 
-*5 item(s) across all editions.*
+*6 item(s) across all editions.*
+
+## Firewalls
+
+- ⚪ [Check Point Expands Strategic Collaboration with AWS to Accelerate AI and Cloud Security Capabilities](https://blog.checkpoint.com/partners/check-point-expands-strategic-collaboration-with-aws-to-accelerate-ai-and-cloud-security-capabilities/)  
+  <small>2026-10-20 · Check Point Blog · [in digest]({{ '/2026/10/20/network-security-digest/' | relative_url }})</small>
 
 ## Management platforms
 
@@ -21,6 +26,8 @@ permalink: /browse/vendor/check-point/
 
 ## Other
 
+- ⚪ [Check Point Expands Strategic Collaboration with AWS to Accelerate AI and Cloud Security Capabilities](https://blog.checkpoint.com/partners/check-point-expands-strategic-collaboration-with-aws-to-accelerate-ai-and-cloud-security-capabilities/)  
+  <small>2026-10-20 · Check Point Blog · [in digest]({{ '/2026/10/20/network-security-digest/' | relative_url }})</small>
 - ⚪ [AI Models Broke Their Own Containment: Key Findings from the July-August 2026 AI Threat Landscape](https://blog.checkpoint.com/artificial-intelligence/ai-models-broke-their-own-containment-key-findings-from-the-july-august-2026-ai-threat-landscape/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 

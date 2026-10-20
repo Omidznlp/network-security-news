@@ -6,10 +6,12 @@ permalink: /browse/device/other/
 
 # Other
 
-*8 item(s) across all editions.*
+*10 item(s) across all editions.*
 
 ## Check Point
 
+- ⚪ [Check Point Expands Strategic Collaboration with AWS to Accelerate AI and Cloud Security Capabilities](https://blog.checkpoint.com/partners/check-point-expands-strategic-collaboration-with-aws-to-accelerate-ai-and-cloud-security-capabilities/)  
+  <small>2026-10-20 · Check Point Blog · [in digest]({{ '/2026/10/20/network-security-digest/' | relative_url }})</small>
 - ⚪ [AI Models Broke Their Own Containment: Key Findings from the July-August 2026 AI Threat Landscape](https://blog.checkpoint.com/artificial-intelligence/ai-models-broke-their-own-containment-key-findings-from-the-july-august-2026-ai-threat-landscape/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 
@@ -23,6 +25,11 @@ permalink: /browse/device/other/
   <small>2026-09-17 · The Hacker News · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## F5
+
+- 🟠 [F5 releases out-of-band patches for critical NGINX vulnerabilities](https://www.bleepingcomputer.com/news/security/f5-releases-out-of-band-patches-for-critical-nginx-vulnerabilities/)  
+  <small>2026-10-20 · BleepingComputer · [in digest]({{ '/2026/10/20/network-security-digest/' | relative_url }})</small>
 
 ## Palo Alto Networks
 

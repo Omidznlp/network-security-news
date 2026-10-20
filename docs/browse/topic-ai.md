@@ -6,12 +6,15 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*22 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
 ## Check Point
 
+- ⚪ [Check Point Expands Strategic Collaboration with AWS to Accelerate AI and Cloud Security Capabilities](https://blog.checkpoint.com/partners/check-point-expands-strategic-collaboration-with-aws-to-accelerate-ai-and-cloud-security-capabilities/)  
+  <small>2026-10-20 · Check Point Blog · [in digest]({{ '/2026/10/20/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** A network security vendor describing how its platform will cover customer AI workloads in the cloud. Tracked as a vendor AI defence rather than as an AI threat - there is no AI-assisted attack, no AI integration on network gear, and no prompt-injection exposure described here.</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
