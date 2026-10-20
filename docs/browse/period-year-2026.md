@@ -6,7 +6,7 @@ permalink: /browse/year/2026/
 
 # Year 2026
 
-*26 item(s) in this period.*
+*29 item(s) in this period.*
 
 ## Cisco (18)
 
@@ -47,8 +47,10 @@ permalink: /browse/year/2026/
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 
-## Check Point (5)
+## Check Point (6)
 
+- ⚪ [Check Point Expands Strategic Collaboration with AWS to Accelerate AI and Cloud Security Capabilities](https://blog.checkpoint.com/partners/check-point-expands-strategic-collaboration-with-aws-to-accelerate-ai-and-cloud-security-capabilities/)  
+  <small>2026-10-20 · Check Point Blog · [in digest]({{ '/2026/10/20/network-security-digest/' | relative_url }})</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [Check Point, Kaspersky, Tanium Patch Product Vulnerabilities](https://www.securityweek.com/check-point-kaspersky-tanium-patch-product-vulnerabilities/)  
@@ -60,12 +62,19 @@ permalink: /browse/year/2026/
 - ⚪ [When Security Operations Can’t Keep Up: 4 Ways Agentic Network Security Management Improves Security Operations](https://blog.checkpoint.com/hybrid-mesh/when-security-operations-cant-keep-up-4-ways-agentic-network-security-management-improves-security-operations/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 
-## Palo Alto Networks (2)
+## Palo Alto Networks (3)
 
+- 🔴 [Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257 (Updated October 19)](https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/) — CVE-2026-0257 **[KEV]**  
+  <small>2026-10-20 · Unit 42 · [in digest]({{ '/2026/10/20/network-security-digest/' | relative_url }})</small>
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
   <small>2026-09-17 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## F5 (1)
+
+- 🟠 [F5 releases out-of-band patches for critical NGINX vulnerabilities](https://www.bleepingcomputer.com/news/security/f5-releases-out-of-band-patches-for-critical-nginx-vulnerabilities/)  
+  <small>2026-10-20 · BleepingComputer · [in digest]({{ '/2026/10/20/network-security-digest/' | relative_url }})</small>
 
 ## Ubiquiti (1)
 
