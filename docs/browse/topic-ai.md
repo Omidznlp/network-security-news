@@ -6,7 +6,7 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*26 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
@@ -30,6 +30,9 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 
 ## Cisco
 
+- ⚪ [Cisco Unified Intelligence Center SQL Injection Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cuic-sql-inject-2qbfWSm5)  
+  <small>2026-10-21 · Cisco PSIRT · [in digest]({{ '/2026/10/21/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None reported in this item.</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
@@ -75,8 +78,23 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 
+## Fortinet
+
+- 🔴 [Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution](https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html) — CVE-2026-106173  
+  <small>2026-10-21 · The Hacker News · [in digest]({{ '/2026/10/21/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None reported in this item.</small>
+
 ## Palo Alto Networks
 
+- 🔴 [Ransomware gangs have been exploiting Palo Alto GlobalProtect VPN flaw since June](https://www.helpnetsecurity.com/2026/10/21/ransomware-groups-exploit-palo-alto-globalprotect-cve-2026-0257/) — CVE-2026-0257 **[KEV]**  
+  <small>2026-10-21 · Help Net Security · [in digest]({{ '/2026/10/21/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None reported in this item.</small>
+- 🔴 [Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA](https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html) — CVE-2026-0257 **[KEV]**  
+  <small>2026-10-21 · The Hacker News · [in digest]({{ '/2026/10/21/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None reported in this item.</small>
+- 🟠 [Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257 (Updated October 20)](https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/) — CVE-2026-0257 **[KEV]**  
+  <small>2026-10-21 · Unit 42 · [in digest]({{ '/2026/10/21/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None reported in this item.</small>
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** Vendor positioning in AI application security; no product capability or availability detail is given in the source.</small>

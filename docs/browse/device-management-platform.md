@@ -6,7 +6,7 @@ permalink: /browse/device/management-platform/
 
 # Management platforms
 
-*11 item(s) across all editions.*
+*12 item(s) across all editions.*
 
 ## Check Point
 
@@ -35,6 +35,11 @@ permalink: /browse/device/management-platform/
   <small>2026-09-18 · Zero Day Initiative · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [ZDI-26-709: Cisco Secure Firewall Management Center CommandSinkRmi Deserialization of Untrusted Data Remote Code Execution Vulnerability](http://www.zerodayinitiative.com/advisories/ZDI-26-709/) — CVE-2026-20242  
   <small>2026-09-17 · Zero Day Initiative · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Fortinet
+
+- 🔴 [Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution](https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html) — CVE-2026-106173  
+  <small>2026-10-21 · The Hacker News · [in digest]({{ '/2026/10/21/network-security-digest/' | relative_url }})</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>
