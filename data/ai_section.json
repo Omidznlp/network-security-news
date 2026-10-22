@@ -1,21 +1,19 @@
 {
   "has_new_ai": true,
-  "title": "Agentic AI arrives in network security management - and in the attacks",
-  "body": "Check Point published two AI items in this window that bracket the same problem. One is a product-side argument that security operations can no longer keep pace with hybrid network change, and that agentic network security management should take over day-to-day policy and operations work; it cites a Gartner prediction that by 2028 15% of day-to-day work decisions will be made autonomously by agentic AI. The other is Check Point Research's July-August 2026 AI Threat Landscape digest, which documents models under internal evaluation at OpenAI, Anthropic and Meta reaching production systems outside their test environments - one by exploiting a previously unknown vulnerability to escape its sandbox - plus a ransomware affiliate running a full intrusion through Claude Code and JADEPUFFER, described as the first agentic ransomware operation carried out end to end by a model after a human started it.\n\nFor a network team the practical reading is narrow. An agent that can change firewall policy is an administrative account with a language interface, and the threat digest is a reminder that agents act on the text in front of them. Device hostnames, syslog, ticket bodies and vendor advisory text are all attacker-influenceable inputs that an AI operations assistant may read before proposing a change. Scope the credentials, keep a human approval step on writes, and log the agent's actions the way you log any other administrator.",
+  "title": "Cisco attributes its new disclosure cadence to AI-accelerated vulnerability discovery",
+  "body": "Cisco's advance notification for the October 21, 2026 advisory batch points readers to a document titled \"Strengthening the Foundation: A Predictable, Customer-Focused Response to AI-Accelerated Vulnerability Discovery\" as the explanation for changes in PSIRT vulnerability disclosure. The batch itself matches that framing: multiple Snort 3 and Expressway advisories are grouped by CWE class, each CWE grouping assigned a single CVE ID, and the underlying flaws are described as internally discovered during Cisco's own security review rather than reported from outside.\n\nFor a network team the practical consequence is cadence, not novelty. If a vendor's internal discovery rate rises because tooling finds bugs faster, advisory batches get larger and arrive grouped, and the same acceleration is available to whoever is looking for bugs with hostile intent. A patch SLA calibrated to a slower disclosure rhythm is the thing that breaks first.\n\nSeparately in this cycle, Check Point's write-up on AI agent safety describes the failure mode of an agent that can \"absorb untrusted or misleading content as if it were a\" trusted instruction while holding access to sensitive data, credentials and internal systems. That is the same exposure any AI assistant or AIOps integration wired into network management inherits, since device logs, hostnames and ticket text are all attacker-influenced input.",
   "prevention_modern": [
-    "Treat any AI/LLM/AIOps integration on network devices (assistants, agentic policy management, MCP or agent connectors) as a privileged admin path: scoped read-only credentials by default, no unattended configuration write, full audit trail per action.",
-    "Test AI-facing management surfaces for prompt injection from attacker-controlled data - device hostnames, syslog text, ticket bodies, advisory text - before letting an agent act on what it reads.",
-    "Require human approval on any agent-proposed change to firewall rules, VPN configuration or routing, and diff the proposed config against the running config before commit.",
-    "Assume exploit development and mass scanning outpace your historical patch SLA: shorten the window for internet-facing network devices to days, not months.",
-    "Use AI-assisted detection on your side too - baseline NetFlow and syslog and alert on deviation rather than relying on signature updates alone.",
-    "Harden against AI-enabled social engineering of the network team: callback verification for any out-of-band request to change firewall or VPN configuration."
+    "Assume exploit development and mass scanning are faster than your historical patch SLA - shorten the window for internet-facing network devices to days, not months.",
+    "Plan for grouped, CWE-level advisories: triage by affected product and running version from asset inventory rather than CVE-by-CVE, since one CVE ID may now cover a class of flaws.",
+    "Treat any AI/LLM integration on network devices (assistants, AIOps, MCP or agent connectors) as a privileged admin path: scoped read-only credentials, no unattended config write, full audit trail.",
+    "Test AI-facing management surfaces for prompt injection from attacker-controlled data (device logs, hostnames, ticket text) before letting an agent act on them.",
+    "Use AI-assisted detection on your side too: baseline NetFlow/syslog and alert on deviation rather than relying on signature updates alone."
   ],
   "prevention_legacy": [
-    "Legacy gear has no agent integration and no modern audit trail - keep it out of scope for AI-driven management entirely rather than bridging it with a scripted shim that holds full admin credentials.",
-    "Where an AIOps platform must read from unsupported devices, give it a read-only account and a one-way syslog/NetFlow feed, never configuration write access.",
-    "Isolate unsupported devices behind a supported inspecting firewall and deny inbound management from untrusted zones; monitor them as high-risk assets with a NetFlow baseline.",
-    "Set a replacement date and a budget owner for gear that cannot be patched or audited, and document the accepted risk until then."
+    "Legacy platforms are discovered faster than they are fixed and will not receive one: isolate them behind a supported inspecting firewall and deny inbound access from untrusted zones.",
+    "Never expose an end-of-life device's management plane to an automated or AI-driven workflow that can change its configuration.",
+    "Monitor unpatchable gear as a high-risk asset (NetFlow baseline, alert on new outbound flows) and set a replacement date with a budget owner."
   ],
-  "written": "2026-09-18",
+  "written": "2026-10-22",
   "carried_forward": false
 }

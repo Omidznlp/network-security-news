@@ -6,10 +6,33 @@ permalink: /browse/device/firewall/
 
 # Firewalls
 
-*11 item(s) across all editions.*
+*23 item(s) across all editions.*
+
+## Check Point
+
+- 🟠 [PHP2Shell: Leaked Critical PHP Vulnerabilities (CVE-2026-109618 & CVE-2026-109619)](https://blog.checkpoint.com/security/php2shell-what-we-know-about-the-leaked-critical-php-vulnerabilities-cve-2026-109618-cve-2026-109619/) — CVE-2026-109618, CVE-2026-109619  
+  <small>2026-10-22 · Check Point Blog · [in digest]({{ '/2026/10/22/network-security-digest/' | relative_url }})</small>
 
 ## Cisco
 
+- 🔴 [Multiple Cisco Products Snort 3 Security Hardening Release: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-snort3-ybgmhTQe) — CVE-2026-20043  
+  <small>2026-10-22 · Cisco PSIRT · [in digest]({{ '/2026/10/22/network-security-digest/' | relative_url }})</small>
+- 🟠 [Multiple Cisco Products Snort 3 Generic Routing Encapsulation Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-gre-JNpMHrTv)  
+  <small>2026-10-22 · Cisco PSIRT · [in digest]({{ '/2026/10/22/network-security-digest/' | relative_url }})</small>
+- 🟡 [Cisco Advance Notification for Publication of October 21, 2026, Security Advisories](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-QGwHnJ6k) — CVE-2026-20043, CVE-2026-20236, CVE-2026-20291, CVE-2026-20356, CVE-2026-76524  
+  <small>2026-10-22 · Cisco PSIRT · [in digest]({{ '/2026/10/22/network-security-digest/' | relative_url }})</small>
+- 🟡 [Multiple Cisco Products Snort 3 SMTP MIME Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-mime-vulns-bkXjcKkt)  
+  <small>2026-10-22 · Cisco PSIRT · [in digest]({{ '/2026/10/22/network-security-digest/' | relative_url }})</small>
+- 🟡 [Multiple Cisco Products Snort 3 Denial of Service Vulnerabilities](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-misc-dos-6mB22qAK)  
+  <small>2026-10-22 · Cisco PSIRT · [in digest]({{ '/2026/10/22/network-security-digest/' | relative_url }})</small>
+- 🟡 [Multiple Cisco Products Snort 3 Visual Basic for Applications Buffer Overflow Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-vba-bufdos-jAuFdvn9)  
+  <small>2026-10-22 · Cisco PSIRT · [in digest]({{ '/2026/10/22/network-security-digest/' | relative_url }})</small>
+- 🟡 [Open Source Snort 3 Control Channel Socket Arbitrary Command Execution Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-opensrc-snort3-2fXGJPfe)  
+  <small>2026-10-22 · Cisco PSIRT · [in digest]({{ '/2026/10/22/network-security-digest/' | relative_url }})</small>
+- 🟡 [Multiple Cisco Products Snort 3 Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-gtpcodec-dos-Rmecfepz)  
+  <small>2026-10-22 · Cisco PSIRT · [in digest]({{ '/2026/10/22/network-security-digest/' | relative_url }})</small>
+- 🟡 [Cisco Patches 34 Vulnerabilities Across Multiple Products](https://www.securityweek.com/cisco-patches-34-vulnerabilities-across-multiple-products/)  
+  <small>2026-10-22 · SecurityWeek · [in digest]({{ '/2026/10/22/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Certificate Authentication Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv)  
@@ -32,6 +55,16 @@ permalink: /browse/device/firewall/
   <small>2026-09-17 · Zero Day Initiative · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Multiple
+
+- 🔴 [What the PHP2Shell vulnerability means for Fortinet, Cisco and Palo Alto customers](https://www.helpnetsecurity.com/2026/10/22/php2shell-vulnerability-fortinet-cisco-palo-alto-networks/)  
+  <small>2026-10-22 · Help Net Security · [in digest]({{ '/2026/10/22/network-security-digest/' | relative_url }})</small>
+
+## Palo Alto Networks
+
+- 🔴 [CVE-2026-109618 Impact of Critical Vulnerabilities in PHP (CVE-2026-109618, CVE-2026-109619) on Palo Alto Networks Products (Severity: HIGH)](https://security.paloaltonetworks.com/CVE-2026-109618) — CVE-2026-109618, CVE-2026-109619  
+  <small>2026-10-22 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/10/22/network-security-digest/' | relative_url }})</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>
