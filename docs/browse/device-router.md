@@ -6,10 +6,12 @@ permalink: /browse/device/router/
 
 # Routers
 
-*1 item(s) across all editions.*
+*2 item(s) across all editions.*
 
 ## Cisco
 
+- 🟠 [Cisco IOS XR Software for ASR 9000 Series Routers IPv4 Unicast Packets Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asr9k-tUyxcyXN)  
+  <small>2026-10-22 · Cisco PSIRT · [in digest]({{ '/2026/10/22/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco IOS XR Software Security Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-iosxr-qg64NcM)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 
