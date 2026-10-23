@@ -6,12 +6,30 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*35 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
+## Arista Networks
+
+- 🔴 [Arista patches new VeloCloud Orchestrator zero-day exploited in attacks](https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/)  
+  <small>2026-10-23 · BleepingComputer · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+- 🔴 [Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks](https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html)  
+  <small>2026-10-23 · The Hacker News · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+
 ## Check Point
 
+- 🟡 [PHP2Shell Update: One in ten organizations impacted as Europe bears the brunt](https://blog.checkpoint.com/ai-security/php2shell-one-in-ten-organizations-impacted-as-europe-bears-the-brunt/) — CVE-2026-109618, CVE-2026-109619  
+  <small>2026-10-23 · Check Point Blog · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None in this item; the AI framing of PHP2Shell appears in item 18.</small>
+- ⚪ [Custom Guardrails: The AI Rules No Vendor Can Write for You](https://blog.checkpoint.com/ai-security/custom-guardrails-ai-agents/)  
+  <small>2026-10-23 · Check Point Blog · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** A vendor capability for enforcing organisation-specific rules on AI agents - recorded in vendor AI defences.</small>
+- ⚪ [PHP2Shell: Log4Shell at AI Speed — A CISO’s Perspective](https://blog.checkpoint.com/ai-security/php2shell-log4shell-at-ai-speed-a-cisos-perspective/)  
+  <small>2026-10-23 · Check Point Blog · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** Argues AI is accelerating vulnerability discovery in widely used software, producing more Log4Shell-class events - the basis of this edition's AI section.</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
@@ -30,6 +48,30 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 
 ## Cisco
 
+- 🟠 [Multiple Cisco Products Snort 3 Security Hardening Release: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-snort3-ybgmhTQe) — CVE-2026-20043  
+  <small>2026-10-23 · Cisco PSIRT · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+- 🟠 [Vulnerabilities in PHP Affecting Cisco Products: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq) — CVE-2026-109618, CVE-2026-109619  
+  <small>2026-10-23 · Cisco PSIRT · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+- 🟠 [Multiple Cisco Products Snort 3 Generic Routing Encapsulation Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-gre-JNpMHrTv)  
+  <small>2026-10-23 · Cisco PSIRT · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+- 🟡 [Multiple Cisco Products Snort 3 SMTP MIME Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-mime-vulns-bkXjcKkt)  
+  <small>2026-10-23 · Cisco PSIRT · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+- 🟡 [Multiple Cisco Products Snort 3 Denial of Service Vulnerabilities](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-misc-dos-6mB22qAK)  
+  <small>2026-10-23 · Cisco PSIRT · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+- 🟡 [Multiple Cisco Products Snort 3 Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-gtpcodec-dos-Rmecfepz)  
+  <small>2026-10-23 · Cisco PSIRT · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+- 🟡 [Multiple Cisco Products Snort 3 Visual Basic for Applications Buffer Overflow Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-vba-bufdos-jAuFdvn9)  
+  <small>2026-10-23 · Cisco PSIRT · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+- ⚪ [Unified Defense from Endpoint to Cloud: Real-Time Protection with Cisco Security, Splunk, and SentinelOne](https://blogs.cisco.com/security/unified-defense-from-endpoint-to-cloud/)  
+  <small>2026-10-23 · Cisco Security Blog · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None stated - the post describes automation between products, not an AI capability.</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
@@ -77,6 +119,9 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 
 ## Palo Alto Networks
 
+- 🟠 [CVE-2026-109618 Impact of Critical Vulnerabilities in PHP (CVE-2026-109618, CVE-2026-109619) on Palo Alto Networks Products (Severity: HIGH)](https://security.paloaltonetworks.com/CVE-2026-109618) — CVE-2026-109618, CVE-2026-109619  
+  <small>2026-10-23 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** Vendor positioning in AI application security; no product capability or availability detail is given in the source.</small>

@@ -6,7 +6,7 @@ permalink: /browse/vendor/check-point/
 
 # Check Point
 
-*5 item(s) across all editions.*
+*8 item(s) across all editions.*
 
 ## Management platforms
 
@@ -21,6 +21,12 @@ permalink: /browse/vendor/check-point/
 
 ## Other
 
+- 🟡 [PHP2Shell Update: One in ten organizations impacted as Europe bears the brunt](https://blog.checkpoint.com/ai-security/php2shell-one-in-ten-organizations-impacted-as-europe-bears-the-brunt/) — CVE-2026-109618, CVE-2026-109619  
+  <small>2026-10-23 · Check Point Blog · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
+- ⚪ [Custom Guardrails: The AI Rules No Vendor Can Write for You](https://blog.checkpoint.com/ai-security/custom-guardrails-ai-agents/)  
+  <small>2026-10-23 · Check Point Blog · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
+- ⚪ [PHP2Shell: Log4Shell at AI Speed — A CISO’s Perspective](https://blog.checkpoint.com/ai-security/php2shell-log4shell-at-ai-speed-a-cisos-perspective/)  
+  <small>2026-10-23 · Check Point Blog · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
 - ⚪ [AI Models Broke Their Own Containment: Key Findings from the July-August 2026 AI Threat Landscape](https://blog.checkpoint.com/artificial-intelligence/ai-models-broke-their-own-containment-key-findings-from-the-july-august-2026-ai-threat-landscape/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 
