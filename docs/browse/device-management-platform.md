@@ -6,7 +6,14 @@ permalink: /browse/device/management-platform/
 
 # Management platforms
 
-*11 item(s) across all editions.*
+*14 item(s) across all editions.*
+
+## Arista Networks
+
+- 🔴 [Arista patches new VeloCloud Orchestrator zero-day exploited in attacks](https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/)  
+  <small>2026-10-23 · BleepingComputer · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
+- 🔴 [Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks](https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html)  
+  <small>2026-10-23 · The Hacker News · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
 
 ## Check Point
 
@@ -21,6 +28,8 @@ permalink: /browse/device/management-platform/
 
 ## Cisco
 
+- ⚪ [Unified Defense from Endpoint to Cloud: Real-Time Protection with Cisco Security, Splunk, and SentinelOne](https://blogs.cisco.com/security/unified-defense-from-endpoint-to-cloud/)  
+  <small>2026-10-23 · Cisco Security Blog · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Zero-Day Highlights API Endpoint Authentication Issues](https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues) — CVE-2026-76460 **[KEV]**  

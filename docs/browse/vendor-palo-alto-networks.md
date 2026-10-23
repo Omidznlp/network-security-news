@@ -6,7 +6,12 @@ permalink: /browse/vendor/palo-alto-networks/
 
 # Palo Alto Networks
 
-*2 item(s) across all editions.*
+*3 item(s) across all editions.*
+
+## Firewalls
+
+- 🟠 [CVE-2026-109618 Impact of Critical Vulnerabilities in PHP (CVE-2026-109618, CVE-2026-109619) on Palo Alto Networks Products (Severity: HIGH)](https://security.paloaltonetworks.com/CVE-2026-109618) — CVE-2026-109618, CVE-2026-109619  
+  <small>2026-10-23 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
 
 ## VPN gateways
 

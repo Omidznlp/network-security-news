@@ -6,10 +6,24 @@ permalink: /browse/vendor/cisco/
 
 # Cisco
 
-*18 item(s) across all editions.*
+*26 item(s) across all editions.*
 
 ## Firewalls
 
+- 🟠 [Multiple Cisco Products Snort 3 Security Hardening Release: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-snort3-ybgmhTQe) — CVE-2026-20043  
+  <small>2026-10-23 · Cisco PSIRT · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
+- 🟠 [Multiple Cisco Products Snort 3 Generic Routing Encapsulation Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-gre-JNpMHrTv)  
+  <small>2026-10-23 · Cisco PSIRT · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
+- 🟡 [Multiple Cisco Products Snort 3 SMTP MIME Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-mime-vulns-bkXjcKkt)  
+  <small>2026-10-23 · Cisco PSIRT · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
+- 🟡 [Multiple Cisco Products Snort 3 Denial of Service Vulnerabilities](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-misc-dos-6mB22qAK)  
+  <small>2026-10-23 · Cisco PSIRT · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
+- 🟡 [Multiple Cisco Products Snort 3 Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-gtpcodec-dos-Rmecfepz)  
+  <small>2026-10-23 · Cisco PSIRT · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
+- 🟡 [Multiple Cisco Products Snort 3 Visual Basic for Applications Buffer Overflow Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-vba-bufdos-jAuFdvn9)  
+  <small>2026-10-23 · Cisco PSIRT · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
+- ⚪ [Unified Defense from Endpoint to Cloud: Real-Time Protection with Cisco Security, Splunk, and SentinelOne](https://blogs.cisco.com/security/unified-defense-from-endpoint-to-cloud/)  
+  <small>2026-10-23 · Cisco Security Blog · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Certificate Authentication Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv)  
@@ -45,6 +59,8 @@ permalink: /browse/vendor/cisco/
 
 ## Management platforms
 
+- ⚪ [Unified Defense from Endpoint to Cloud: Real-Time Protection with Cisco Security, Splunk, and SentinelOne](https://blogs.cisco.com/security/unified-defense-from-endpoint-to-cloud/)  
+  <small>2026-10-23 · Cisco Security Blog · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Zero-Day Highlights API Endpoint Authentication Issues](https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues) — CVE-2026-76460 **[KEV]**  
@@ -62,6 +78,8 @@ permalink: /browse/vendor/cisco/
 
 ## Other
 
+- 🟠 [Vulnerabilities in PHP Affecting Cisco Products: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq) — CVE-2026-109618, CVE-2026-109619  
+  <small>2026-10-23 · Cisco PSIRT · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Email Gateway SQL Injection Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [CVE-2026-76461: Critical Cisco Secure Email Gateway Vulnerability Exploited in the Wild](https://www.rapid7.com/blog/post/etr-cve-2026-76461-critical-cisco-secure-email-gateway-vulnerability-exploited-in-the-wild) — CVE-2026-76461 **[KEV]**  

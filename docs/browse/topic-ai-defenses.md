@@ -6,11 +6,24 @@ permalink: /browse/ai-defenses/
 
 # Vendor AI defences
 
-*3 vendor AI capability announcement(s), all editions.*
+*5 vendor AI capability announcement(s), all editions.*
 
 What the network vendors have shipped to answer AI-era threats: AI security products and features, AI-assisted detection, guardrails for AI running on network gear, and vendor guidance for defending against AI-enabled attacks.
 
-## Check Point (2)
+## Check Point (4)
+
+### Custom Guardrails
+
+Lets an organisation describe a rule for AI agents in a sentence and have it enforced, instead of relying on vendor-shipped policies, keyword lists or US-centric DLP lists. Check Point says a rule can be described and tested in under five minutes.
+
+*Defends against:* AI agents and GenAI applications breaking organisation-specific rules that no vendor default covers - including models being argued out of their system prompts, and regulated data that generic DLP lists do not recognise.  
+*Availability:* described-only
+
+- ⚪ [Custom Guardrails: The AI Rules No Vendor Can Write for You](https://blog.checkpoint.com/ai-security/custom-guardrails-ai-agents/)  
+  <small>2026-10-23 · Check Point Blog · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
+
+- ⚪ [PHP2Shell: Log4Shell at AI Speed — A CISO’s Perspective](https://blog.checkpoint.com/ai-security/php2shell-log4shell-at-ai-speed-a-cisos-perspective/)  
+  <small>2026-10-23 · Check Point Blog · [in digest]({{ '/2026/10/23/network-security-digest/' | relative_url }})</small>
 
 - ⚪ [AI Models Broke Their Own Containment: Key Findings from the July-August 2026 AI Threat Landscape](https://blog.checkpoint.com/artificial-intelligence/ai-models-broke-their-own-containment-key-findings-from-the-july-august-2026-ai-threat-landscape/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
