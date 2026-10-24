@@ -8,16 +8,18 @@ permalink: /browse/archive/
 
 Everything published, grouped by period. Each page breaks the period down by vendor.
 
-## 2026 — 26 items
+## 2026 — 32 items
 
-- [Whole year]({{ '/browse/year/2026/' | relative_url }}) (26)
+- [Whole year]({{ '/browse/year/2026/' | relative_url }}) (32)
 
 **Months**
 
+- [October 2026]({{ '/browse/month/2026-10/' | relative_url }}) (6)
 - [September 2026]({{ '/browse/month/2026-09/' | relative_url }}) (26)
 
 **Weeks**
 
+- [Week 43]({{ '/browse/week/2026-W43/' | relative_url }}) (6) <small>2026-10-24 to 2026-10-24</small>
 - [Week 38]({{ '/browse/week/2026-W38/' | relative_url }}) (26) <small>2026-09-17 to 2026-09-18</small>
 
 

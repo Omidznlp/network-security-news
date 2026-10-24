@@ -1,99 +1,88 @@
 {
-  "date": "2026-09-18",
-  "url": "/2026/09/18/network-security-digest/",
-  "item_count": 20,
-  "critical_count": 4,
+  "date": "2026-10-24",
+  "url": "/2026/10/24/network-security-digest/",
+  "item_count": 6,
+  "critical_count": 3,
   "kev": [
-    "CVE-2026-76460"
+    "CVE-2026-110447"
   ],
   "feeds_ok": 22,
-  "top_story_title": "Cisco ISE authentication bypass CVE-2026-76460 (CVSS 10.0) is on KEV with a 19 September deadline",
-  "top_story_summary": "Cisco has confirmed active exploitation of CVE-2026-76460, a maximum-severity authentication bypass in Cisco Identity Services Engine (ISE) and the ISE Passive Identity Connector (ISE-PIC). Cisco attributes it to insufficient authentication control on an API endpoint, which lets an unauthenticated, remote attacker bypass the web-based management interface and gain unauthorized access to the device. CISA added it to the Known Exploited Vulnerabilities catalogue on 2026-09-16 with a remediation due date of 2026-09-19 under BOD 26-04; ransomware use is listed as unknown.",
+  "top_story_title": "Actively exploited Arista VeloCloud Orchestrator flaw added to CISA KEV",
+  "top_story_summary": "CISA added two critical vulnerabilities to the Known Exploited Vulnerabilities catalog citing reports of active exploitation in the wild. One of them is in Arista VeloCloud Orchestrator (VCO), the management plane of the VeloCloud SD-WAN estate. The other, CVE-2026-110447 (CVSS 9.2), is an OS command injection flaw in the Collabora Online Built-in CODE Server used within NextCloud - not network infrastructure, but it arrived in the same KEV batch and will appear on the same compliance report. The report naming both entries does not state the CVE ID, affected releases or fixed build for the Arista flaw, so take those from Arista's own advisory and the KEV catalog entry rather than from secondary coverage.",
   "top_actions": [
-    "Inventory every ISE and ISE-PIC node (including standby, PAN and MnT personas) with its running patch level, and apply the fixed release named in the Cisco advisory for CVE-2026-76460 - check the vendor advisory for the fixed release, it is not stated in these sources.",
-    "US federal agencies: the BOD 26-04 due date for CVE-2026-76460 is 2026-09-19. If you cannot meet it, follow CISA's instruction to apply vendor mitigations or discontinue use, and record the decision.",
-    "Remove the ISE administrative and API interfaces from any internet-facing or user-reachable path today; permit them only from a dedicated management VLAN or out-of-band network and jump hosts.",
-    "Assume pre-patch compromise on any ISE node that was reachable from an untrusted network: rotate admin credentials, API keys, pxGrid and node certificates, RADIUS/TACACS+ shared secrets and any ERS/OpenAPI service accounts after upgrading.",
-    "Review ISE for unexpected admin users, changed authorisation policies and profiles, new network device entries and modified shared secrets - a policy change is the quiet form of this compromise."
+    "Inventory every Arista VeloCloud Orchestrator instance and its running version; pull the CVE ID and fixed release from Arista's advisory and the KEV entry - this report does not state them, so check the vendor advisory for the fixed release.",
+    "Remove VCO web UI and API access from the internet now: bind management to a management network or jump host and enforce an explicit source ACL at the perimeter.",
+    "Patch the orchestrator before the edge devices, then validate certificate trust and config sync across the fabric after the upgrade.",
+    "Rotate orchestrator admin credentials, API tokens and edge activation keys after patching, not before; enforce MFA on every orchestrator admin account and remove shared local admins.",
+    "Diff edge templates, profiles and policy objects against a known-good export, looking for overrides, routes or tunnel changes nobody filed a ticket for."
   ],
   "executive_summary": [
-    "Cisco ISE CVE-2026-76460 (CVSS 10.0, unauthenticated authentication bypass on an API endpoint) is actively exploited and on CISA KEV with a 2026-09-19 due date - patch the identity platform first.",
-    "Cisco's September 2026 ASA/FTD/FMC hardening release states two of its flaws are already exploited, both in Firewall Management Center: a static credential issue and an authentication bypass.",
-    "Six further Cisco ASA/FTD advisories land at once - four denial of service (IKEv2 certificate, DTLS on 3100/4200, EIGRP, TCP DNS), one syslog CPU exhaustion, and an Object Group Search ACL bypass that lets blocked traffic through.",
-    "Check Point Security Management and Log Servers have a critical unauthenticated remote code execution as root, fixed via LivePatch, with no reported exploitation - this is the box that holds firewall policy.",
-    "Three ZDI advisories cover authenticated Cisco ISE flaws (CVE-2026-20176, CVE-2026-20211, CVE-2026-20235); they chain behind the auth bypass rather than standing alone.",
-    "No source in this window states a fixed version string. Take exact fixed releases from the vendor advisories, not from press coverage."
+    "CISA added an actively exploited Arista VeloCloud Orchestrator vulnerability to KEV; the SD-WAN management plane can push config to every edge device, so treat it as fleet-wide. The CVE and fixed release are not in the report - take them from Arista's advisory.",
+    "A large-scale campaign against internet-exposed Fortinet FortiGate and Palo Alto Networks GlobalProtect devices has exposed more than 70,000 credentials, with attempted follow-on compromise of victim organisations. Rotate VPN and admin credentials and assume stolen sessions.",
+    "HPE patched 72 ArubaOS vulnerabilities including eight maximum-severity authentication bypass and remote code execution flaws. No CVEs or fixed builds in the source - read them off the HPE advisory before planning the controller upgrade.",
+    "Two critical PHP RCE flaws (CVE-2026-109618, CVE-2026-109619, dubbed PHP2shell) are now being tracked by both Cisco and Palo Alto Networks PSIRT against their product lines. Watch both advisories for the affected-product tables.",
+    "Cisco issued an emergency informational advisory on distrusting eight eMudhra intermediate CAs whose private keys are brute-forceable in seconds - a trust-store action, not a patch.",
+    "Dropped as out of scope this cycle: a Windows UEFI bootkit, an abandoned media-player updater, a developer-focused infostealer, a Microsoft AI-agent governance story and a vendor education announcement."
   ],
   "key_actions": [
-    "**Cisco** \u2014 Confirm the running ASA, FTD and FMC versions against Cisco's fixed-release table in the hardening advisory - check the vendor advisory for the fixed release, no version is stated in this source.",
-    "**Cisco** \u2014 Patch FMC before the managed FTD devices, then upgrade firewalls in the change window, HA pair secondary first, and verify policy deploy afterwards.",
-    "**Cisco** \u2014 Patch ISE and ISE-PIC to the fixed release named in the Cisco advisory - check the vendor advisory for the fixed release.",
-    "**Cisco** \u2014 Meet or formally document the CISA BOD 26-04 due date of 2026-09-19 if you are in scope; otherwise apply vendor mitigations or discontinue use as the KEV entry instructs.",
-    "**Cisco** \u2014 Upgrade ISE to the fixed release stated in the Cisco advisory - check the vendor advisory for the fixed release.",
-    "**Cisco** \u2014 Before the upgrade, capture ISE logs and configuration for forensics; patching overwrites some of the evidence you would want later.",
-    "**Check Point** \u2014 Confirm LivePatch is enabled and has actually applied the fix on every Security Management Server and Log Server - verify the installed patch level rather than assuming the channel delivered it.",
-    "**Check Point** \u2014 Remove management server access from any untrusted or internet-facing network; SmartConsole and management traffic belong on a dedicated management VLAN or out-of-band network."
+    "**Arista** \u2014 Identify every VCO instance from the asset inventory, filtered by model and running version, and confirm it against Arista's fixed-release table.",
+    "**Arista** \u2014 Patch the orchestrator/controller before edge devices and validate certificate trust after the upgrade.",
+    "**Multiple** \u2014 Treat this as a credential incident first: force a password reset for all VPN users and rotate every local admin credential, API key, certificate and VPN pre-shared key on the affected gateways.",
+    "**Multiple** \u2014 Terminate all active VPN sessions and revoke session tokens; assume stolen session cookies remain valid until explicitly invalidated.",
+    "**HPE Aruba** \u2014 Map ArubaOS versions across all controllers and APs and compare them against HPE's fixed-release table; the specific builds are in the advisory, not in this report.",
+    "**HPE Aruba** \u2014 Patch controllers first, then stage the AP upgrade behind them.",
+    "**Cisco** \u2014 Read the affected-product list in cisco-sa-emudhra-info-ScS22A1r and re-check it later, since Cisco states the advisory will be updated as information becomes available.",
+    "**Cisco** \u2014 Inventory where the eight eMudhra intermediates and their roots appear in device trust stores: VPN peer validation, 802.1X/RADIUS, management TLS, captive portals and any TLS-inspection CA bundle."
   ],
-  "ai_defenses": [
-    {
-      "vendor": "Check Point",
-      "solution": "Agentic network security management",
-      "what_it_does": "Check Point describes agentic AI taking on day-to-day security operations work in hybrid mesh environments, setting out four ways agentic network security management improves security operations where environments change faster than teams can manage them manually. The post describes the approach; it does not state a product name, release or availability date."
-    },
-    {
-      "vendor": "Palo Alto Networks",
-      "solution": "AI Application Security",
-      "what_it_does": "Palo Alto Networks describes its work on AI security and states it was named a Market Shaper in the 2026 September Gartner Emerging Market Quadrant for AI Application Security - Established Vendors. The collected text names no specific product, feature or capability detail."
-    }
-  ],
+  "ai_defenses": [],
   "headlines": [
     {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN",
-      "summary": "Cisco's September 2026 hardening release for ASA, FTD and FMC software fixes multiple internally found flaws, two of them already exploited in Firewall Management Center.",
+      "title": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
+      "link": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
+      "summary": "CISA added an actively exploited Arista VeloCloud Orchestrator flaw to KEV, putting the SD-WAN management plane that configures every edge device under live attack.",
       "relevance": "critical",
-      "vendor": "Cisco",
-      "source": "Cisco PSIRT"
-    },
-    {
-      "title": "Cisco Zero-Day Highlights API Endpoint Authentication Issues",
-      "link": "https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues",
-      "summary": "CVE-2026-76460, a CVSS 10.0 authentication bypass on a Cisco ISE API endpoint, is on CISA's KEV list with a 2026-09-19 remediation deadline.",
-      "relevance": "critical",
-      "vendor": "Cisco",
-      "source": "Dark Reading"
-    },
-    {
-      "title": "Cisco Warns of New Zero-Day ISE Auth Bypass (CVSS 10.0) Exploited in Active Attacks",
-      "link": "https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html",
-      "summary": "Cisco confirms active exploitation of a maximum-severity ISE authentication bypass caused by insufficient authentication control on an API endpoint.",
-      "relevance": "critical",
-      "vendor": "Cisco",
+      "vendor": "Arista",
       "source": "The Hacker News"
     },
     {
-      "title": "Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root",
-      "link": "https://thehackernews.com/2026/09/critical-check-point-management-server.html",
-      "summary": "Check Point Security Management and Log Servers accept unauthenticated network requests that run code as root; a LivePatch fix is out with no reported exploitation.",
+      "title": "Hackers Breach Enterprise Firewalls and VPNs, Exposing Over 70,000 Credentials",
+      "link": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html",
+      "summary": "A mass campaign against exposed Fortinet FortiGate and Palo Alto Networks GlobalProtect edge devices has harvested over 70,000 credentials, with follow-on intrusion attempts.",
       "relevance": "critical",
-      "vendor": "Check Point",
+      "vendor": "Multiple",
       "source": "The Hacker News"
     },
     {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Certificate Authentication Denial of Service Vulnerability",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv",
-      "summary": "An unauthenticated attacker can crash Cisco ASA and FTD firewalls by starting an IKEv2 VPN connection with a crafted certificate, and Cisco states there is no workaround.",
+      "title": "HPE patches eight max severity RCE and auth bypass AOS flaws",
+      "link": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/",
+      "summary": "HPE patched 72 ArubaOS vulnerabilities, eight of them maximum-severity authentication bypass and remote code execution flaws in the wireless controller OS.",
+      "relevance": "critical",
+      "vendor": "HPE Aruba",
+      "source": "BleepingComputer"
+    },
+    {
+      "title": "Cisco Informational for Emergency Distrust of eMudhra Root and Intermediate Certificate Authorities",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r",
+      "summary": "Cisco issued an emergency informational advisory to distrust eight eMudhra intermediate CAs after a researcher showed their private keys can be brute-forced in seconds.",
       "relevance": "high",
       "vendor": "Cisco",
       "source": "Cisco PSIRT"
     },
     {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software for Secure Firewall 3100 and 4200 Series DTLS Denial of Service Vulnerability",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-dtls-dos-Kp57HkyO",
-      "summary": "Crafted DTLS traffic reloads Cisco Secure Firewall 3100 and 4200 Series appliances running ASA or FTD software; Cisco states workarounds exist.",
+      "title": "Vulnerabilities in PHP Affecting Cisco Products: October 2026",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq",
+      "summary": "Cisco is assessing its product line against two critical PHP remote code execution flaws, CVE-2026-109618 and CVE-2026-109619, being tracked as PHP2shell.",
       "relevance": "high",
       "vendor": "Cisco",
       "source": "Cisco PSIRT"
+    },
+    {
+      "title": "CVE-2026-109618 Impact of Critical Vulnerabilities in PHP (CVE-2026-109618, CVE-2026-109619) on Palo Alto Networks Products (Severity: HIGH)",
+      "link": "https://security.paloaltonetworks.com/CVE-2026-109618",
+      "summary": "Palo Alto Networks rates the impact of the critical PHP flaws CVE-2026-109618 and CVE-2026-109619 on its products as HIGH in a PSIRT advisory.",
+      "relevance": "high",
+      "vendor": "Palo Alto Networks",
+      "source": "Palo Alto Networks PSIRT"
     }
   ]
 }
