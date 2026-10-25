@@ -6,15 +6,24 @@ permalink: /browse/vendor/palo-alto-networks/
 
 # Palo Alto Networks
 
-*2 item(s) across all editions.*
+*4 item(s) across all editions.*
+
+## Firewalls
+
+- 🟠 [CVE-2026-109618 Impact of Critical Vulnerabilities in PHP (CVE-2026-109618, CVE-2026-109619) on Palo Alto Networks Products (Severity: HIGH)](https://security.paloaltonetworks.com/CVE-2026-109618) — CVE-2026-109618, CVE-2026-109619  
+  <small>2026-10-25 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/10/25/network-security-digest/' | relative_url }})</small>
 
 ## VPN gateways
 
+- 🟠 [Week in review: PHP vulnerabilities patched, exploited Palo Alto GlobalProtect VPN flaw](https://www.helpnetsecurity.com/2026/10/25/week-in-review-php-vulnerabilities-patched-exploited-palo-alto-globalprotect-vpn-flaw/)  
+  <small>2026-10-25 · Help Net Security · [in digest]({{ '/2026/10/25/network-security-digest/' | relative_url }})</small>
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
   <small>2026-09-17 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 
 ## Other
 
+- 🟠 [CVE-2026-109618 Impact of Critical Vulnerabilities in PHP (CVE-2026-109618, CVE-2026-109619) on Palo Alto Networks Products (Severity: HIGH)](https://security.paloaltonetworks.com/CVE-2026-109618) — CVE-2026-109618, CVE-2026-109619  
+  <small>2026-10-25 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/10/25/network-security-digest/' | relative_url }})</small>
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  

@@ -6,7 +6,7 @@ permalink: /browse/device/vpn-gateway/
 
 # VPN gateways
 
-*2 item(s) across all editions.*
+*3 item(s) across all editions.*
 
 ## Cisco
 
@@ -15,6 +15,8 @@ permalink: /browse/device/vpn-gateway/
 
 ## Palo Alto Networks
 
+- 🟠 [Week in review: PHP vulnerabilities patched, exploited Palo Alto GlobalProtect VPN flaw](https://www.helpnetsecurity.com/2026/10/25/week-in-review-php-vulnerabilities-patched-exploited-palo-alto-globalprotect-vpn-flaw/)  
+  <small>2026-10-25 · Help Net Security · [in digest]({{ '/2026/10/25/network-security-digest/' | relative_url }})</small>
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
   <small>2026-09-17 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 
