@@ -1,99 +1,71 @@
 {
-  "date": "2026-09-18",
-  "url": "/2026/09/18/network-security-digest/",
-  "item_count": 20,
-  "critical_count": 4,
-  "kev": [
-    "CVE-2026-76460"
-  ],
-  "feeds_ok": 22,
-  "top_story_title": "Cisco ISE authentication bypass CVE-2026-76460 (CVSS 10.0) is on KEV with a 19 September deadline",
-  "top_story_summary": "Cisco has confirmed active exploitation of CVE-2026-76460, a maximum-severity authentication bypass in Cisco Identity Services Engine (ISE) and the ISE Passive Identity Connector (ISE-PIC). Cisco attributes it to insufficient authentication control on an API endpoint, which lets an unauthenticated, remote attacker bypass the web-based management interface and gain unauthorized access to the device. CISA added it to the Known Exploited Vulnerabilities catalogue on 2026-09-16 with a remediation due date of 2026-09-19 under BOD 26-04; ransomware use is listed as unknown.",
+  "date": "2026-10-26",
+  "url": "/2026/10/26/network-security-digest/",
+  "item_count": 4,
+  "critical_count": 1,
+  "kev": [],
+  "feeds_ok": 23,
+  "top_story_title": "Fortinet ships critical fixes for FortiOS and FortiManager and withholds the details until November 10",
+  "top_story_summary": "Fortinet released security hardening updates last week for FortiOS, FortiManager, FortiAnalyzer, FortiMail and FortiAuthenticator, but is not publishing the vulnerability details until November 10, 2026. In an advance announcement, Fortinet CISO Carl Windsor said the flaws were uncovered with the help of AI models and validated by humans, and warned that attackers have the same AI tooling available to find vulnerabilities and build exploits.",
   "top_actions": [
-    "Inventory every ISE and ISE-PIC node (including standby, PAN and MnT personas) with its running patch level, and apply the fixed release named in the Cisco advisory for CVE-2026-76460 - check the vendor advisory for the fixed release, it is not stated in these sources.",
-    "US federal agencies: the BOD 26-04 due date for CVE-2026-76460 is 2026-09-19. If you cannot meet it, follow CISA's instruction to apply vendor mitigations or discontinue use, and record the decision.",
-    "Remove the ISE administrative and API interfaces from any internet-facing or user-reachable path today; permit them only from a dedicated management VLAN or out-of-band network and jump hosts.",
-    "Assume pre-patch compromise on any ISE node that was reachable from an untrusted network: rotate admin credentials, API keys, pxGrid and node certificates, RADIUS/TACACS+ shared secrets and any ERS/OpenAPI service accounts after upgrading.",
-    "Review ISE for unexpected admin users, changed authorisation policies and profiles, new network device entries and modified shared secrets - a policy change is the quiet form of this compromise."
+    "Inventory FortiOS, FortiManager, FortiAnalyzer, FortiMail and FortiAuthenticator instances with their running builds, and treat anything with an internet-facing management or VPN interface as first in the queue.",
+    "Upgrade FortiManager and FortiAnalyzer before the devices they manage - the management platform is the higher-value target and should not be left behind the fleet.",
+    "Move FortiGate upgrades into the next change window, HA pair secondary first, and verify config sync and session failover before promoting.",
+    "Remove HTTPS/SSH/API administrative access from untrusted and internet-facing interfaces now; restrict the management plane to a dedicated management VLAN or out-of-band network while the upgrades roll out.",
+    "Enforce phishing-resistant MFA on all administrative and SSL VPN accounts and remove shared local admin accounts."
   ],
   "executive_summary": [
-    "Cisco ISE CVE-2026-76460 (CVSS 10.0, unauthenticated authentication bypass on an API endpoint) is actively exploited and on CISA KEV with a 2026-09-19 due date - patch the identity platform first.",
-    "Cisco's September 2026 ASA/FTD/FMC hardening release states two of its flaws are already exploited, both in Firewall Management Center: a static credential issue and an authentication bypass.",
-    "Six further Cisco ASA/FTD advisories land at once - four denial of service (IKEv2 certificate, DTLS on 3100/4200, EIGRP, TCP DNS), one syslog CPU exhaustion, and an Object Group Search ACL bypass that lets blocked traffic through.",
-    "Check Point Security Management and Log Servers have a critical unauthenticated remote code execution as root, fixed via LivePatch, with no reported exploitation - this is the box that holds firewall policy.",
-    "Three ZDI advisories cover authenticated Cisco ISE flaws (CVE-2026-20176, CVE-2026-20211, CVE-2026-20235); they chain behind the auth bypass rather than standing alone.",
-    "No source in this window states a fixed version string. Take exact fixed releases from the vendor advisories, not from press coverage."
+    "Fortinet has shipped fixes for FortiOS, FortiManager, FortiAnalyzer, FortiMail and FortiAuthenticator but is withholding the vulnerability details until November 10, 2026 - upgrade on the builds, not on the advisory.",
+    "Fortinet says the flaws were found with AI assistance and validated by humans, and warns that attackers have the same tooling; the public-build/private-advisory gap is the exposure window.",
+    "Palo Alto Networks PSIRT has rated the impact of two critical PHP vulnerabilities (CVE-2026-109618, CVE-2026-109619) on its products as HIGH; the collected entry names no products, versions or fixed releases.",
+    "Unpatched Tailscale SSH flaws let an attacker who already controls one node reach root on other servers when ACLs permit port forwarding - a lateral-movement problem for overlay remote access.",
+    "Unit 42 has retracted its assessment that PHP2Shell flaws were exploited against a European government agency, while scanning and exploitation attempts linked to suspected North Korean activity continue."
   ],
   "key_actions": [
-    "**Cisco** \u2014 Confirm the running ASA, FTD and FMC versions against Cisco's fixed-release table in the hardening advisory - check the vendor advisory for the fixed release, no version is stated in this source.",
-    "**Cisco** \u2014 Patch FMC before the managed FTD devices, then upgrade firewalls in the change window, HA pair secondary first, and verify policy deploy afterwards.",
-    "**Cisco** \u2014 Patch ISE and ISE-PIC to the fixed release named in the Cisco advisory - check the vendor advisory for the fixed release.",
-    "**Cisco** \u2014 Meet or formally document the CISA BOD 26-04 due date of 2026-09-19 if you are in scope; otherwise apply vendor mitigations or discontinue use as the KEV entry instructs.",
-    "**Cisco** \u2014 Upgrade ISE to the fixed release stated in the Cisco advisory - check the vendor advisory for the fixed release.",
-    "**Cisco** \u2014 Before the upgrade, capture ISE logs and configuration for forensics; patching overwrites some of the evidence you would want later.",
-    "**Check Point** \u2014 Confirm LivePatch is enabled and has actually applied the fix on every Security Management Server and Log Server - verify the installed patch level rather than assuming the channel delivered it.",
-    "**Check Point** \u2014 Remove management server access from any untrusted or internet-facing network; SmartConsole and management traffic belong on a dedicated management VLAN or out-of-band network."
+    "**Fortinet** \u2014 Inventory every FortiOS, FortiManager, FortiAnalyzer, FortiMail and FortiAuthenticator instance with its running build, and rank internet-facing management and VPN interfaces first.",
+    "**Fortinet** \u2014 Upgrade FortiManager and FortiAnalyzer ahead of the devices they manage; take the current builds and fixed-release confirmation from the vendor's own release notes rather than any third-party version claim.",
+    "**Palo Alto Networks** \u2014 Open the PSIRT advisory for CVE-2026-109618 and confirm which Palo Alto Networks products and versions it lists against your inventory before planning any change.",
+    "**Palo Alto Networks** \u2014 Apply the fixed release named in the advisory, or the documented workaround if a maintenance window is not available yet; do not act on a version number that the advisory does not state."
   ],
   "ai_defenses": [
     {
-      "vendor": "Check Point",
-      "solution": "Agentic network security management",
-      "what_it_does": "Check Point describes agentic AI taking on day-to-day security operations work in hybrid mesh environments, setting out four ways agentic network security management improves security operations where environments change faster than teams can manage them manually. The post describes the approach; it does not state a product name, release or availability date."
-    },
-    {
-      "vendor": "Palo Alto Networks",
-      "solution": "AI Application Security",
-      "what_it_does": "Palo Alto Networks describes its work on AI security and states it was named a Market Shaper in the 2026 September Gartner Emerging Market Quadrant for AI Application Security - Established Vendors. The collected text names no specific product, feature or capability detail."
+      "vendor": "Fortinet",
+      "solution": "AI-assisted vulnerability discovery in Fortinet product security, human-validated (no product name given in the source)",
+      "what_it_does": "Fortinet states that the vulnerabilities fixed in its recent FortiOS, FortiManager, FortiAnalyzer, FortiMail and FortiAuthenticator updates were uncovered with the help of AI models and then validated by humans. Its CISO describes this as a response to attackers having the same AI tooling for finding vulnerabilities and building exploits."
     }
   ],
   "headlines": [
     {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN",
-      "summary": "Cisco's September 2026 hardening release for ASA, FTD and FMC software fixes multiple internally found flaws, two of them already exploited in Firewall Management Center.",
+      "title": "Fortinet patches critical FortiOS flaws found with AI help",
+      "link": "https://www.helpnetsecurity.com/2026/10/26/fortinet-patches-critical-fortios-flaws-found-with-ai-help/",
+      "summary": "Fortinet shipped hardening updates for FortiOS, FortiManager, FortiAnalyzer, FortiMail and FortiAuthenticator while withholding the vulnerability details until November 10, 2026.",
       "relevance": "critical",
-      "vendor": "Cisco",
-      "source": "Cisco PSIRT"
+      "vendor": "Fortinet",
+      "source": "Help Net Security"
     },
     {
-      "title": "Cisco Zero-Day Highlights API Endpoint Authentication Issues",
-      "link": "https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues",
-      "summary": "CVE-2026-76460, a CVSS 10.0 authentication bypass on a Cisco ISE API endpoint, is on CISA's KEV list with a 2026-09-19 remediation deadline.",
-      "relevance": "critical",
-      "vendor": "Cisco",
-      "source": "Dark Reading"
+      "title": "CVE-2026-109618 Impact of Critical Vulnerabilities in PHP (CVE-2026-109618, CVE-2026-109619) on Palo Alto Networks Products (Severity: HIGH)",
+      "link": "https://security.paloaltonetworks.com/CVE-2026-109618",
+      "summary": "Palo Alto Networks PSIRT rates the impact of two critical PHP vulnerabilities, CVE-2026-109618 and CVE-2026-109619, on its own products as HIGH.",
+      "relevance": "high",
+      "vendor": "Palo Alto Networks",
+      "source": "Palo Alto Networks PSIRT"
     },
     {
-      "title": "Cisco Warns of New Zero-Day ISE Auth Bypass (CVSS 10.0) Exploited in Active Attacks",
-      "link": "https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html",
-      "summary": "Cisco confirms active exploitation of a maximum-severity ISE authentication bypass caused by insufficient authentication control on an API endpoint.",
-      "relevance": "critical",
-      "vendor": "Cisco",
+      "title": "Unpatched Tailscale SSH Flaws Could Let a Hacked Device Reach Root on Other Servers",
+      "link": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
+      "summary": "Unpatched Tailscale SSH flaws let an attacker who already controls one node reach root on other servers it is permitted to connect to, when port forwarding is allowed.",
+      "relevance": "medium",
+      "vendor": "Tailscale",
       "source": "The Hacker News"
     },
     {
-      "title": "Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root",
-      "link": "https://thehackernews.com/2026/09/critical-check-point-management-server.html",
-      "summary": "Check Point Security Management and Log Servers accept unauthenticated network requests that run code as root; a LivePatch fix is out with no reported exploitation.",
-      "relevance": "critical",
-      "vendor": "Check Point",
+      "title": "PHP2Shell Exploitation Attempts Continue Amid Suspected N. Korea Global Scanning Activity",
+      "link": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
+      "summary": "Unit 42 retracted its assessment that PHP2Shell flaws were exploited against a European government agency, while scanning and exploitation attempts linked to suspected North Korean activity continue.",
+      "relevance": "watch",
+      "vendor": "Unspecified",
       "source": "The Hacker News"
-    },
-    {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Certificate Authentication Denial of Service Vulnerability",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv",
-      "summary": "An unauthenticated attacker can crash Cisco ASA and FTD firewalls by starting an IKEv2 VPN connection with a crafted certificate, and Cisco states there is no workaround.",
-      "relevance": "high",
-      "vendor": "Cisco",
-      "source": "Cisco PSIRT"
-    },
-    {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software for Secure Firewall 3100 and 4200 Series DTLS Denial of Service Vulnerability",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-dtls-dos-Kp57HkyO",
-      "summary": "Crafted DTLS traffic reloads Cisco Secure Firewall 3100 and 4200 Series appliances running ASA or FTD software; Cisco states workarounds exist.",
-      "relevance": "high",
-      "vendor": "Cisco",
-      "source": "Cisco PSIRT"
     }
   ]
 }

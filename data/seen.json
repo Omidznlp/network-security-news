@@ -13,12 +13,18 @@
 "https://sec.cloudapps.cisco.com/security/center/content/ciscosecurityadvisory/cisco-sa-ftd-acl-bypass-8p6vfvw": "2026-09-18T22:37:58.902913+00:00",
 "https://sec.cloudapps.cisco.com/security/center/content/ciscosecurityadvisory/cisco-sa-hardening-asaftdfmc-uvpprohn": "2026-09-18T22:37:58.902913+00:00",
 "https://sec.cloudapps.cisco.com/security/center/content/ciscosecurityadvisory/cisco-sa-hardening-iosxr-qg64ncm": "2026-09-18T22:37:58.902913+00:00",
+"https://security.paloaltonetworks.com/cve-2026-109618": "2026-10-26T12:36:38.524003+00:00",
 "https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html": "2026-09-18T22:37:58.902913+00:00",
 "https://thehackernews.com/2026/09/critical-check-point-management-server.html": "2026-09-18T22:37:58.902913+00:00",
 "https://thehackernews.com/2026/09/public-exploits-released-for-four-linux.html": "2026-09-18T22:37:58.902913+00:00",
+"https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html": "2026-10-26T12:36:38.524003+00:00",
+"https://thehackernews.com/2026/10/ucreator-android-spyware-can-steal.html": "2026-10-26T12:36:38.524003+00:00",
+"https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html": "2026-10-26T12:36:38.524003+00:00",
 "https://www.bleepingcomputer.com/news/security/check-point-warns-critical-flaw-lets-hackers-execute-code-as-root": "2026-09-18T22:37:58.902913+00:00",
 "https://www.bleepingcomputer.com/news/security/openai-details-more-cases-of-ai-agents-taking-unauthorized-actions": "2026-09-18T22:37:58.902913+00:00",
 "https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues": "2026-09-18T22:37:58.902913+00:00",
+"https://www.helpnetsecurity.com/2026/10/26/fortinet-patches-critical-fortios-flaws-found-with-ai-help": "2026-10-26T12:36:38.524003+00:00",
+"https://www.helpnetsecurity.com/2026/10/26/google-elephant-goldfish-model-plugin": "2026-10-26T12:36:38.524003+00:00",
 "https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security": "2026-09-18T22:37:58.902913+00:00",
 "https://www.securityweek.com/check-point-kaspersky-tanium-patch-product-vulnerabilities": "2026-09-18T22:37:58.902913+00:00"
 }

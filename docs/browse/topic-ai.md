@@ -6,7 +6,7 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*25 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
@@ -75,11 +75,32 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 
+## Fortinet
+
+- 🔴 [Fortinet patches critical FortiOS flaws found with AI help](https://www.helpnetsecurity.com/2026/10/26/fortinet-patches-critical-fortios-flaws-found-with-ai-help/)  
+  <small>2026-10-26 · Help Net Security · [in digest]({{ '/2026/10/26/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** Fortinet states the vulnerabilities were found with the help of AI models and validated by humans, and its CISO warns that attackers can use the same tooling for vulnerability discovery and exploit development. This is AI applied to vulnerability discovery on both sides; it shortens the realistic time between a public build and a working exploit.</small>
+
 ## Palo Alto Networks
 
+- 🟠 [CVE-2026-109618 Impact of Critical Vulnerabilities in PHP (CVE-2026-109618, CVE-2026-109619) on Palo Alto Networks Products (Severity: HIGH)](https://security.paloaltonetworks.com/CVE-2026-109618) — CVE-2026-109618, CVE-2026-109619  
+  <small>2026-10-26 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/10/26/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None stated in the source.</small>
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** Vendor positioning in AI application security; no product capability or availability detail is given in the source.</small>
+
+## Tailscale
+
+- 🟡 [Unpatched Tailscale SSH Flaws Could Let a Hacked Device Reach Root on Other Servers](https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html)  
+  <small>2026-10-26 · The Hacker News · [in digest]({{ '/2026/10/26/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None stated in the source.</small>
+
+## Unspecified
+
+- ⚪ [PHP2Shell Exploitation Attempts Continue Amid Suspected N. Korea Global Scanning Activity](https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html)  
+  <small>2026-10-26 · The Hacker News · [in digest]({{ '/2026/10/26/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None stated in the source.</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>

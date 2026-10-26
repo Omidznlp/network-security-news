@@ -6,7 +6,7 @@ permalink: /browse/ai-defenses/
 
 # Vendor AI defences
 
-*3 vendor AI capability announcement(s), all editions.*
+*4 vendor AI capability announcement(s), all editions.*
 
 What the network vendors have shipped to answer AI-era threats: AI security products and features, AI-assisted detection, guardrails for AI running on network gear, and vendor guidance for defending against AI-enabled attacks.
 
@@ -24,6 +24,18 @@ Check Point describes agentic AI taking on day-to-day security operations work i
 
 - ⚪ [When Security Operations Can’t Keep Up: 4 Ways Agentic Network Security Management Improves Security Operations](https://blog.checkpoint.com/hybrid-mesh/when-security-operations-cant-keep-up-4-ways-agentic-network-security-management-improves-security-operations/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
+
+## Fortinet (1)
+
+### AI-assisted vulnerability discovery in Fortinet product security, human-validated (no product name given in the source)
+
+Fortinet states that the vulnerabilities fixed in its recent FortiOS, FortiManager, FortiAnalyzer, FortiMail and FortiAuthenticator updates were uncovered with the help of AI models and then validated by humans. Its CISO describes this as a response to attackers having the same AI tooling for finding vulnerabilities and building exploits.
+
+*Defends against:* AI-accelerated vulnerability discovery and exploit development against network device firmware - the vendor finding and fixing the bug before an attacker's AI-assisted review finds it.  
+*Availability:* described-only - a stated internal product-security practice, not a customer-facing product or feature, and no date is given beyond the November 10, 2026 disclosure of details.
+
+- 🔴 [Fortinet patches critical FortiOS flaws found with AI help](https://www.helpnetsecurity.com/2026/10/26/fortinet-patches-critical-fortios-flaws-found-with-ai-help/)  
+  <small>2026-10-26 · Help Net Security · [in digest]({{ '/2026/10/26/network-security-digest/' | relative_url }})</small>
 
 ## Palo Alto Networks (1)
 

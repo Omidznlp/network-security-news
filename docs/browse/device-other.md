@@ -6,7 +6,7 @@ permalink: /browse/device/other/
 
 # Other
 
-*8 item(s) across all editions.*
+*10 item(s) across all editions.*
 
 ## Check Point
 
@@ -24,6 +24,11 @@ permalink: /browse/device/other/
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 
+## Fortinet
+
+- 🔴 [Fortinet patches critical FortiOS flaws found with AI help](https://www.helpnetsecurity.com/2026/10/26/fortinet-patches-critical-fortios-flaws-found-with-ai-help/)  
+  <small>2026-10-26 · Help Net Security · [in digest]({{ '/2026/10/26/network-security-digest/' | relative_url }})</small>
+
 ## Palo Alto Networks
 
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
@@ -35,6 +40,11 @@ permalink: /browse/device/other/
 
 - ⚪ [Attackers Exploit Issabel Framework Flaw Enabling Unauthenticated OS Command Execution](https://thehackernews.com/2026/09/attackers-exploit-issabel-framework.html) — CVE-2026-89026  
   <small>2026-09-17 · The Hacker News · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Unspecified
+
+- ⚪ [PHP2Shell Exploitation Attempts Continue Amid Suspected N. Korea Global Scanning Activity](https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html)  
+  <small>2026-10-26 · The Hacker News · [in digest]({{ '/2026/10/26/network-security-digest/' | relative_url }})</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>
