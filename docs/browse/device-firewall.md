@@ -6,7 +6,7 @@ permalink: /browse/device/firewall/
 
 # Firewalls
 
-*11 item(s) across all editions.*
+*13 item(s) across all editions.*
 
 ## Cisco
 
@@ -32,6 +32,16 @@ permalink: /browse/device/firewall/
   <small>2026-09-17 · Zero Day Initiative · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Fortinet
+
+- 🔴 [Fortinet patches critical FortiOS flaws found with AI help](https://www.helpnetsecurity.com/2026/10/26/fortinet-patches-critical-fortios-flaws-found-with-ai-help/)  
+  <small>2026-10-26 · Help Net Security · [in digest]({{ '/2026/10/26/network-security-digest/' | relative_url }})</small>
+
+## Palo Alto Networks
+
+- 🟠 [CVE-2026-109618 Impact of Critical Vulnerabilities in PHP (CVE-2026-109618, CVE-2026-109619) on Palo Alto Networks Products (Severity: HIGH)](https://security.paloaltonetworks.com/CVE-2026-109618) — CVE-2026-109618, CVE-2026-109619  
+  <small>2026-10-26 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/10/26/network-security-digest/' | relative_url }})</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>
