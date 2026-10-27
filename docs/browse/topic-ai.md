@@ -6,12 +6,18 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*23 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
 ## Check Point
 
+- ⚪ [Budgets Are Stalling Firewall Deals. Here’s How Partners Can Get Them Moving Again](https://blog.checkpoint.com/security/budgets-are-stalling-firewall-deals-heres-how-partners-can-get-them-moving-again/)  
+  <small>2026-10-27 · Check Point Blog · [in digest]({{ '/2026/10/27/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** The post frames the driver as customers adopting AI tools and connecting more systems while their firewall hardware predates those demands, and the companion post describes the subscription as putting "Advanced AI-Era Protection" within reach. This is positioning language, not an AI capability or an AI-related threat, so it is recorded under vendor AI defences rather than treated as an AI security event.</small>
+- ⚪ [Rising Borrowing Costs Shouldn’t Delay Your Security: Meet Firewall-as-a-Subscription](https://blog.checkpoint.com/security/rising-borrowing-costs-shouldnt-delay-your-security-meet-firewall-as-a-subscription/)  
+  <small>2026-10-27 · Check Point Blog · [in digest]({{ '/2026/10/27/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** Describes the offering as putting "Advanced AI-Era Protection" within reach of every organisation. Marketing framing with no AI capability detailed and no AI-related threat reported.</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
