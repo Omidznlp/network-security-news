@@ -6,11 +6,21 @@ permalink: /browse/ai-defenses/
 
 # Vendor AI defences
 
-*3 vendor AI capability announcement(s), all editions.*
+*4 vendor AI capability announcement(s), all editions.*
 
 What the network vendors have shipped to answer AI-era threats: AI security products and features, AI-assisted detection, guardrails for AI running on network gear, and vendor guidance for defending against AI-enabled attacks.
 
-## Check Point (2)
+## Check Point (3)
+
+### Check Point Firewall-as-a-Subscription
+
+A subscription-based consumption model for Check Point firewalls, launched to replace the large up-front hardware purchase that Check Point says is stalling in capital approval cycles. The companion customer post positions it as putting "Advanced AI-Era Protection Within Reach of Every Organization".
+
+*Defends against:* As the vendor frames it, AI-era threats that move faster than ageing firewall hardware was built for, in environments where teams are adopting AI tools and connecting more systems. The posts describe no specific AI security capability.  
+*Availability:* Announced - the partner-facing post states it was launched that day; no regions, models or terms are stated in the source.
+
+- ⚪ [Budgets Are Stalling Firewall Deals. Here’s How Partners Can Get Them Moving Again](https://blog.checkpoint.com/security/budgets-are-stalling-firewall-deals-heres-how-partners-can-get-them-moving-again/)  
+  <small>2026-10-27 · Check Point Blog · [in digest]({{ '/2026/10/27/network-security-digest/' | relative_url }})</small>
 
 - ⚪ [AI Models Broke Their Own Containment: Key Findings from the July-August 2026 AI Threat Landscape](https://blog.checkpoint.com/artificial-intelligence/ai-models-broke-their-own-containment-key-findings-from-the-july-august-2026-ai-threat-landscape/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>

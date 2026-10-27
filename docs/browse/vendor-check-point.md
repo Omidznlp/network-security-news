@@ -6,7 +6,14 @@ permalink: /browse/vendor/check-point/
 
 # Check Point
 
-*5 item(s) across all editions.*
+*7 item(s) across all editions.*
+
+## Firewalls
+
+- ⚪ [Budgets Are Stalling Firewall Deals. Here’s How Partners Can Get Them Moving Again](https://blog.checkpoint.com/security/budgets-are-stalling-firewall-deals-heres-how-partners-can-get-them-moving-again/)  
+  <small>2026-10-27 · Check Point Blog · [in digest]({{ '/2026/10/27/network-security-digest/' | relative_url }})</small>
+- ⚪ [Rising Borrowing Costs Shouldn’t Delay Your Security: Meet Firewall-as-a-Subscription](https://blog.checkpoint.com/security/rising-borrowing-costs-shouldnt-delay-your-security-meet-firewall-as-a-subscription/)  
+  <small>2026-10-27 · Check Point Blog · [in digest]({{ '/2026/10/27/network-security-digest/' | relative_url }})</small>
 
 ## Management platforms
 
