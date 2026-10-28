@@ -6,7 +6,7 @@ permalink: /browse/vendor/cisco/
 
 # Cisco
 
-*18 item(s) across all editions.*
+*23 item(s) across all editions.*
 
 ## Firewalls
 
@@ -45,6 +45,12 @@ permalink: /browse/vendor/cisco/
 
 ## Management platforms
 
+- 🔴 [Vulnerabilities in PHP Affecting Cisco Products: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq) — CVE-2026-109618, CVE-2026-109619 **[KEV]**  
+  <small>2026-10-28 · Cisco PSIRT · [in digest]({{ '/2026/10/28/network-security-digest/' | relative_url }})</small>
+- 🟠 [Vulnerabilities in node.js Affecting Cisco Products: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u) — CVE-2026-105482, CVE-2026-105483, CVE-2026-106069, CVE-2026-111497 **[KEV]**  
+  <small>2026-10-28 · Cisco PSIRT · [in digest]({{ '/2026/10/28/network-security-digest/' | relative_url }})</small>
+- 🟠 [Cisco Informational for Emergency Distrust of eMudhra Root and Intermediate Certificate Authorities](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r)  
+  <small>2026-10-28 · Cisco PSIRT · [in digest]({{ '/2026/10/28/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Zero-Day Highlights API Endpoint Authentication Issues](https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues) — CVE-2026-76460 **[KEV]**  
@@ -62,6 +68,16 @@ permalink: /browse/vendor/cisco/
 
 ## Other
 
+- 🔴 [Vulnerabilities in PHP Affecting Cisco Products: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq) — CVE-2026-109618, CVE-2026-109619 **[KEV]**  
+  <small>2026-10-28 · Cisco PSIRT · [in digest]({{ '/2026/10/28/network-security-digest/' | relative_url }})</small>
+- 🟠 [Vulnerabilities in node.js Affecting Cisco Products: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u) — CVE-2026-105482, CVE-2026-105483, CVE-2026-106069, CVE-2026-111497 **[KEV]**  
+  <small>2026-10-28 · Cisco PSIRT · [in digest]({{ '/2026/10/28/network-security-digest/' | relative_url }})</small>
+- 🟠 [Cisco Informational for Emergency Distrust of eMudhra Root and Intermediate Certificate Authorities](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r)  
+  <small>2026-10-28 · Cisco PSIRT · [in digest]({{ '/2026/10/28/network-security-digest/' | relative_url }})</small>
+- 🟡 [Cisco Expressway Series Security Hardening Release: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-exwy-hardening-FhcqBVcs)  
+  <small>2026-10-28 · Cisco PSIRT · [in digest]({{ '/2026/10/28/network-security-digest/' | relative_url }})</small>
+- ⚪ [Cisco Unified Communications Products Security Hardening Release: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-voice-hardening-twgbH9e3)  
+  <small>2026-10-28 · Cisco PSIRT · [in digest]({{ '/2026/10/28/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Email Gateway SQL Injection Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [CVE-2026-76461: Critical Cisco Secure Email Gateway Vulnerability Exploited in the Wild](https://www.rapid7.com/blog/post/etr-cve-2026-76461-critical-cisco-secure-email-gateway-vulnerability-exploited-in-the-wild) — CVE-2026-76461 **[KEV]**  
