@@ -6,7 +6,7 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*22 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
@@ -80,6 +80,12 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** Vendor positioning in AI application security; no product capability or availability detail is given in the source.</small>
+
+## Unspecified
+
+- 🟠 [PHP2Shell Attack Roots 25 Servers, Breaches U.S. Government-Affiliated Network](https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html)  
+  <small>2026-10-29 · The Hacker News · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** Researchers characterise the intrusion as AI-assisted, with the actor chaining an unauthenticated RCE and a kernel privilege-escalation exploit against 25 hosts within four days of the fix - evidence that exploitation tempo now outruns conventional patch windows.</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>

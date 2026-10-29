@@ -6,10 +6,18 @@ permalink: /browse/vendor/cisco/
 
 # Cisco
 
-*18 item(s) across all editions.*
+*30 item(s) across all editions.*
 
 ## Firewalls
 
+- 🔴 [Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls](https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html) — CVE-2026-76418  
+  <small>2026-10-29 · The Hacker News · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
+- 🔴 [Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software Remote Access SSL VPN Tunnel Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-tunnel-dos-s6mgkb75)  
+  <small>2026-10-29 · Cisco PSIRT · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
+- 🟠 [Attackers Exploit Second Cisco Firewall VPN Zero-Day Since August](https://www.securityweek.com/attackers-exploit-second-cisco-firewall-vpn-zero-day-since-august/)  
+  <small>2026-10-29 · SecurityWeek · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
+- 🟠 [New Cisco firewall zero-day exploited to crash SSL VPN devices](https://www.bleepingcomputer.com/news/security/cisco-warns-of-firewall-zero-day-exploited-to-crash-ssl-vpn-devices/)  
+  <small>2026-10-29 · BleepingComputer · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Certificate Authentication Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv)  
@@ -35,6 +43,14 @@ permalink: /browse/vendor/cisco/
 
 ## VPN gateways
 
+- 🔴 [Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls](https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html) — CVE-2026-76418  
+  <small>2026-10-29 · The Hacker News · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
+- 🔴 [Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software Remote Access SSL VPN Tunnel Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-tunnel-dos-s6mgkb75)  
+  <small>2026-10-29 · Cisco PSIRT · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
+- 🟠 [Attackers Exploit Second Cisco Firewall VPN Zero-Day Since August](https://www.securityweek.com/attackers-exploit-second-cisco-firewall-vpn-zero-day-since-august/)  
+  <small>2026-10-29 · SecurityWeek · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
+- 🟠 [New Cisco firewall zero-day exploited to crash SSL VPN devices](https://www.bleepingcomputer.com/news/security/cisco-warns-of-firewall-zero-day-exploited-to-crash-ssl-vpn-devices/)  
+  <small>2026-10-29 · BleepingComputer · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Certificate Authentication Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 
@@ -43,8 +59,29 @@ permalink: /browse/vendor/cisco/
 - 🟠 [Cisco IOS XR Software Security Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-iosxr-qg64NcM)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 
+## SD-WAN / SASE
+
+- 🔴 [Cisco Catalyst SD-WAN Controller Authentication Bypass Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-rpa-EHchtZk)  
+  <small>2026-10-29 · Cisco PSIRT · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
+- 🔴 [Inside KeyDrift: Analyzing historical UAT-11473 activity on Cisco SD-WAN](https://blog.talosintelligence.com/uat-11473-keydrift/) — CVE-2026-20127 **[KEV]**  
+  <small>2026-10-29 · Cisco Talos · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
+- 🟠 [Cisco SD-WAN Zero-Day Exploitation Tied to Volt Typhoon’s ‘Silent Train’ Network](https://www.securityweek.com/cisco-sd-wan-zero-day-exploitation-tied-to-volt-typhoons-silent-train-network/)  
+  <small>2026-10-29 · SecurityWeek · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
+- 🟠 [Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys](https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html)  
+  <small>2026-10-29 · The Hacker News · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
+
 ## Management platforms
 
+- 🔴 [Cisco Catalyst SD-WAN Controller Authentication Bypass Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-rpa-EHchtZk)  
+  <small>2026-10-29 · Cisco PSIRT · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
+- 🔴 [Inside KeyDrift: Analyzing historical UAT-11473 activity on Cisco SD-WAN](https://blog.talosintelligence.com/uat-11473-keydrift/) — CVE-2026-20127 **[KEV]**  
+  <small>2026-10-29 · Cisco Talos · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
+- 🔴 [Vulnerabilities in PHP Affecting Cisco Products: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq) — CVE-2026-109618, CVE-2026-109619 **[KEV]**  
+  <small>2026-10-29 · Cisco PSIRT · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
+- 🟠 [Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys](https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html)  
+  <small>2026-10-29 · The Hacker News · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
+- ⚪ [Cisco Advance Notification for Publication of November 4, 2026, Security Advisories](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-I8z3n6lK)  
+  <small>2026-10-29 · Cisco PSIRT · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Zero-Day Highlights API Endpoint Authentication Issues](https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues) — CVE-2026-76460 **[KEV]**  
@@ -62,6 +99,14 @@ permalink: /browse/vendor/cisco/
 
 ## Other
 
+- 🔴 [Vulnerabilities in PHP Affecting Cisco Products: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq) — CVE-2026-109618, CVE-2026-109619 **[KEV]**  
+  <small>2026-10-29 · Cisco PSIRT · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
+- 🟠 [Vulnerabilities in Node.js Affecting Cisco Products: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u) — CVE-2026-105482, CVE-2026-105483, CVE-2026-106069, CVE-2026-111497 **[KEV]**  
+  <small>2026-10-29 · Cisco PSIRT · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
+- 🟡 [Cisco Informational for Emergency Distrust of eMudhra Root and Intermediate Certificate Authorities](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r)  
+  <small>2026-10-29 · Cisco PSIRT · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
+- ⚪ [Cisco Advance Notification for Publication of November 4, 2026, Security Advisories](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-I8z3n6lK)  
+  <small>2026-10-29 · Cisco PSIRT · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Email Gateway SQL Injection Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [CVE-2026-76461: Critical Cisco Secure Email Gateway Vulnerability Exploited in the Wild](https://www.rapid7.com/blog/post/etr-cve-2026-76461-critical-cisco-secure-email-gateway-vulnerability-exploited-in-the-wild) — CVE-2026-76461 **[KEV]**  

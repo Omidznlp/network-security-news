@@ -6,7 +6,7 @@ permalink: /browse/device/management-platform/
 
 # Management platforms
 
-*11 item(s) across all editions.*
+*20 item(s) across all editions.*
 
 ## Check Point
 
@@ -21,6 +21,16 @@ permalink: /browse/device/management-platform/
 
 ## Cisco
 
+- 🔴 [Cisco Catalyst SD-WAN Controller Authentication Bypass Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-rpa-EHchtZk)  
+  <small>2026-10-29 · Cisco PSIRT · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
+- 🔴 [Inside KeyDrift: Analyzing historical UAT-11473 activity on Cisco SD-WAN](https://blog.talosintelligence.com/uat-11473-keydrift/) — CVE-2026-20127 **[KEV]**  
+  <small>2026-10-29 · Cisco Talos · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
+- 🔴 [Vulnerabilities in PHP Affecting Cisco Products: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq) — CVE-2026-109618, CVE-2026-109619 **[KEV]**  
+  <small>2026-10-29 · Cisco PSIRT · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
+- 🟠 [Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys](https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html)  
+  <small>2026-10-29 · The Hacker News · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
+- ⚪ [Cisco Advance Notification for Publication of November 4, 2026, Security Advisories](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-I8z3n6lK)  
+  <small>2026-10-29 · Cisco PSIRT · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Zero-Day Highlights API Endpoint Authentication Issues](https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues) — CVE-2026-76460 **[KEV]**  
@@ -35,6 +45,20 @@ permalink: /browse/device/management-platform/
   <small>2026-09-18 · Zero Day Initiative · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [ZDI-26-709: Cisco Secure Firewall Management Center CommandSinkRmi Deserialization of Untrusted Data Remote Code Execution Vulnerability](http://www.zerodayinitiative.com/advisories/ZDI-26-709/) — CVE-2026-20242  
   <small>2026-09-17 · Zero Day Initiative · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Palo Alto Networks
+
+- 🔴 [CVE-2026-109618 Impact of Critical Vulnerabilities in PHP (CVE-2026-109618, CVE-2026-109619) on Palo Alto Networks Products (Severity: CRITICAL)](https://security.paloaltonetworks.com/CVE-2026-109618) — CVE-2026-109618, CVE-2026-109619 **[KEV]**  
+  <small>2026-10-29 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
+- 🔴 [Attackers Exploit PHP2Shell Flaws in Internet-Exposed Palo Alto Networks Management Interfaces](https://thehackernews.com/2026/10/attackers-exploit-php2shell-flaws-in.html)  
+  <small>2026-10-29 · The Hacker News · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
+
+## Unspecified
+
+- 🟠 [InfraTrust report warns of exploited flaws in critical network infrastructure](https://www.bleepingcomputer.com/news/security/infratrust-report-warns-of-exploited-flaws-in-critical-network-infrastructure/)  
+  <small>2026-10-29 · BleepingComputer · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
+- 🟠 [PHP2Shell Attack Roots 25 Servers, Breaches U.S. Government-Affiliated Network](https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html)  
+  <small>2026-10-29 · The Hacker News · [in digest]({{ '/2026/10/29/network-security-digest/' | relative_url }})</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>
