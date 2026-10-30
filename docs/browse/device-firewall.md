@@ -6,10 +6,17 @@ permalink: /browse/device/firewall/
 
 # Firewalls
 
-*11 item(s) across all editions.*
+*16 item(s) across all editions.*
+
+## Check Point
+
+- 🟡 [Secure AI-Scale Traffic with the Maestro MHO 200](https://blog.checkpoint.com/security/secure-ai-traffic-maestro-mho-200/)  
+  <small>2026-10-30 · Check Point Blog · [in digest]({{ '/2026/10/30/network-security-digest/' | relative_url }})</small>
 
 ## Cisco
 
+- 🟠 [CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV](https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html) — CVE-2026-97229 **[KEV]**  
+  <small>2026-10-30 · The Hacker News · [in digest]({{ '/2026/10/30/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Certificate Authentication Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv)  
@@ -32,6 +39,18 @@ permalink: /browse/device/firewall/
   <small>2026-09-17 · Zero Day Initiative · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Multiple
+
+- 🔴 [Chinese hackers used VMware ESX zero-day; PHP2Shell and Fragnesia chained to root firewalls](https://www.helpnetsecurity.com/2026/10/29/php2shell-fragnesia-vmware-esx-zero-day/) — CVE-2026-41709 **[KEV]**  
+  <small>2026-10-30 · Help Net Security · [in digest]({{ '/2026/10/30/network-security-digest/' | relative_url }})</small>
+- ⚪ [ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories](https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html)  
+  <small>2026-10-30 · The Hacker News · [in digest]({{ '/2026/10/30/network-security-digest/' | relative_url }})</small>
+
+## Palo Alto Networks
+
+- 🔴 [CVE-2026-109618 Impact of Critical Vulnerabilities in PHP (CVE-2026-109618, CVE-2026-109619) on Palo Alto Networks Products (Severity: CRITICAL)](https://security.paloaltonetworks.com/CVE-2026-109618) — CVE-2026-109618, CVE-2026-109619 **[KEV]**  
+  <small>2026-10-30 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/10/30/network-security-digest/' | relative_url }})</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>

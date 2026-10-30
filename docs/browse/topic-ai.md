@@ -6,12 +6,18 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*31 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
 ## Check Point
 
+- 🟡 [Secure AI-Scale Traffic with the Maestro MHO 200](https://blog.checkpoint.com/security/secure-ai-traffic-maestro-mho-200/)  
+  <small>2026-10-30 · Check Point Blog · [in digest]({{ '/2026/10/30/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** The product is positioned specifically for AI-driven data center traffic growth: training, inference and agentic workloads raising encrypted east-west volume beyond what existing inspection architectures were sized for.</small>
+- ⚪ [Audio Prompt Injection: What Voice Agents Hear That Text Guardrails Miss](https://blog.checkpoint.com/ai-security/audio-guardrails-voice-agents/)  
+  <small>2026-10-30 · Check Point Blog · [in digest]({{ '/2026/10/30/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** Audio prompt injection against voice agents, and the defensive answer Check Point describes: guardrails that screen the audio itself because transcript checks can be blinded.</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
@@ -30,6 +36,21 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 
 ## Cisco
 
+- 🔴 [Hackers exploit Cisco SD-WAN flaw to deploy custom KeyDrift malware](https://www.bleepingcomputer.com/news/security/hackers-exploit-cisco-sd-wan-flaw-to-deploy-custom-keydrift-malware/) — CVE-2026-20127 **[KEV]**  
+  <small>2026-10-30 · BleepingComputer · [in digest]({{ '/2026/10/30/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+- 🟠 [CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV](https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html) — CVE-2026-97229 **[KEV]**  
+  <small>2026-10-30 · The Hacker News · [in digest]({{ '/2026/10/30/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+- 🟠 [Vulnerabilities in Node.js Affecting Cisco Products: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u) — CVE-2026-105482, CVE-2026-105483, CVE-2026-106069, CVE-2026-111497 **[KEV]**  
+  <small>2026-10-30 · Cisco PSIRT · [in digest]({{ '/2026/10/30/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+- ⚪ [Cisco Open Sources Quarry to Catch AI Agent Attacks Hidden in Harmless Steps](https://www.securityweek.com/cisco-open-sources-quarry-to-catch-ai-agent-attacks-hidden-in-harmless-steps/)  
+  <small>2026-10-30 · SecurityWeek · [in digest]({{ '/2026/10/30/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** This is the defensive side of agentic AI: Cisco is open sourcing detection logic specifically for attacks that are distributed across benign AI agent actions.</small>
+- ⚪ [Fake IT help desk callers got by on little more than names and email addresses](https://www.helpnetsecurity.com/2026/10/30/cisco-talos-it-help-desk-vishing/)  
+  <small>2026-10-30 · Help Net Security · [in digest]({{ '/2026/10/30/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None stated in the source - the reporting describes phone, email and Teams impersonation without attributing AI involvement.</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
@@ -75,8 +96,20 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 
+## Multiple
+
+- 🔴 [Chinese hackers used VMware ESX zero-day; PHP2Shell and Fragnesia chained to root firewalls](https://www.helpnetsecurity.com/2026/10/29/php2shell-fragnesia-vmware-esx-zero-day/) — CVE-2026-41709 **[KEV]**  
+  <small>2026-10-30 · Help Net Security · [in digest]({{ '/2026/10/30/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+- ⚪ [ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories](https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html)  
+  <small>2026-10-30 · The Hacker News · [in digest]({{ '/2026/10/30/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** The roundup mentions attackers borrowing trust from AI tools and using AI to speed up operations, but gives no detail tied to network devices.</small>
+
 ## Palo Alto Networks
 
+- 🔴 [CVE-2026-109618 Impact of Critical Vulnerabilities in PHP (CVE-2026-109618, CVE-2026-109619) on Palo Alto Networks Products (Severity: CRITICAL)](https://security.paloaltonetworks.com/CVE-2026-109618) — CVE-2026-109618, CVE-2026-109619 **[KEV]**  
+  <small>2026-10-30 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/10/30/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** Vendor positioning in AI application security; no product capability or availability detail is given in the source.</small>

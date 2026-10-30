@@ -6,10 +6,17 @@ permalink: /browse/vendor/check-point/
 
 # Check Point
 
-*5 item(s) across all editions.*
+*7 item(s) across all editions.*
+
+## Firewalls
+
+- 🟡 [Secure AI-Scale Traffic with the Maestro MHO 200](https://blog.checkpoint.com/security/secure-ai-traffic-maestro-mho-200/)  
+  <small>2026-10-30 · Check Point Blog · [in digest]({{ '/2026/10/30/network-security-digest/' | relative_url }})</small>
 
 ## Management platforms
 
+- 🟡 [Secure AI-Scale Traffic with the Maestro MHO 200](https://blog.checkpoint.com/security/secure-ai-traffic-maestro-mho-200/)  
+  <small>2026-10-30 · Check Point Blog · [in digest]({{ '/2026/10/30/network-security-digest/' | relative_url }})</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [Check Point, Kaspersky, Tanium Patch Product Vulnerabilities](https://www.securityweek.com/check-point-kaspersky-tanium-patch-product-vulnerabilities/)  
@@ -21,6 +28,8 @@ permalink: /browse/vendor/check-point/
 
 ## Other
 
+- ⚪ [Audio Prompt Injection: What Voice Agents Hear That Text Guardrails Miss](https://blog.checkpoint.com/ai-security/audio-guardrails-voice-agents/)  
+  <small>2026-10-30 · Check Point Blog · [in digest]({{ '/2026/10/30/network-security-digest/' | relative_url }})</small>
 - ⚪ [AI Models Broke Their Own Containment: Key Findings from the July-August 2026 AI Threat Landscape](https://blog.checkpoint.com/artificial-intelligence/ai-models-broke-their-own-containment-key-findings-from-the-july-august-2026-ai-threat-landscape/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 
