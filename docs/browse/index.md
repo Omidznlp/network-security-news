@@ -11,8 +11,9 @@ Pick a vendor, or browse by device type.
 ## By vendor
 
 - [Check Point]({{ '/browse/vendor/check-point/' | relative_url }}) (5) <small>Management platforms, Other</small>
-- [Cisco]({{ '/browse/vendor/cisco/' | relative_url }}) (18) <small>Firewalls, Management platforms, Other, Routers, VPN gateways</small>
-- [Palo Alto Networks]({{ '/browse/vendor/palo-alto-networks/' | relative_url }}) (2) <small>Other, VPN gateways</small>
+- [Cisco]({{ '/browse/vendor/cisco/' | relative_url }}) (21) <small>Firewalls, Management platforms, Other, Routers, VPN gateways</small>
+- [Ivanti]({{ '/browse/vendor/ivanti/' | relative_url }}) (2) <small>VPN gateways</small>
+- [Palo Alto Networks]({{ '/browse/vendor/palo-alto-networks/' | relative_url }}) (4) <small>Firewalls, Other, VPN gateways</small>
 - [Ubiquiti]({{ '/browse/vendor/ubiquiti/' | relative_url }}) (1) <small>Other</small>
 
 ## By topic
@@ -22,16 +23,16 @@ Pick a vendor, or browse by device type.
 
 ## By period
 
-- [This week]({{ '/browse/week/2026-W38/' | relative_url }}) (26)
-- [September]({{ '/browse/month/2026-09/' | relative_url }}) (26)
+- [This week]({{ '/browse/week/2026-W44/' | relative_url }}) (7)
+- [October]({{ '/browse/month/2026-10/' | relative_url }}) (7)
 - [Full archive by week, month and year]({{ '/browse/archive/' | relative_url }})
 
 ## By device type
 
-- [Firewalls]({{ '/browse/device/firewall/' | relative_url }}) (11) <small>Cisco</small>
-- [VPN gateways]({{ '/browse/device/vpn-gateway/' | relative_url }}) (2) <small>Cisco, Palo Alto Networks</small>
+- [Firewalls]({{ '/browse/device/firewall/' | relative_url }}) (13) <small>Cisco, Palo Alto Networks</small>
+- [VPN gateways]({{ '/browse/device/vpn-gateway/' | relative_url }}) (4) <small>Cisco, Ivanti, Palo Alto Networks</small>
 - [Routers]({{ '/browse/device/router/' | relative_url }}) (1) <small>Cisco</small>
 - [Management platforms]({{ '/browse/device/management-platform/' | relative_url }}) (11) <small>Check Point, Cisco</small>
-- [Other]({{ '/browse/device/other/' | relative_url }}) (8) <small>Check Point, Cisco, Palo Alto Networks, Ubiquiti</small>
+- [Other]({{ '/browse/device/other/' | relative_url }}) (11) <small>Check Point, Cisco, Palo Alto Networks, Ubiquiti</small>
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>
