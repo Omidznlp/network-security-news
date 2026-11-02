@@ -6,7 +6,7 @@ permalink: /browse/year/2026/
 
 # Year 2026
 
-*26 item(s) in this period.*
+*30 item(s) in this period.*
 
 ## Cisco (18)
 
@@ -60,6 +60,13 @@ permalink: /browse/year/2026/
 - ⚪ [When Security Operations Can’t Keep Up: 4 Ways Agentic Network Security Management Improves Security Operations](https://blog.checkpoint.com/hybrid-mesh/when-security-operations-cant-keep-up-4-ways-agentic-network-security-management-improves-security-operations/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 
+## Ivanti (2)
+
+- 🔴 [Ivanti Patches Two More Zero-Days Exploited in Connect Secure Attack Chain](https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/) — CVE-2026-111357, CVE-2026-118527 **[KEV]**  
+  <small>2026-11-02 · SecurityWeek · [in digest]({{ '/2026/11/02/network-security-digest/' | relative_url }})</small>
+- 🔴 [Ivanti patches two more Connect Secure zero-days chained in attacks](https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/)  
+  <small>2026-11-02 · BleepingComputer · [in digest]({{ '/2026/11/02/network-security-digest/' | relative_url }})</small>
+
 ## Palo Alto Networks (2)
 
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
@@ -67,10 +74,20 @@ permalink: /browse/year/2026/
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
   <small>2026-09-17 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 
+## Synology (1)
+
+- ⚪ [Synology warns of C3RB3R ransomware attacks targeting NAS devices](https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/)  
+  <small>2026-11-02 · BleepingComputer · [in digest]({{ '/2026/11/02/network-security-digest/' | relative_url }})</small>
+
 ## Ubiquiti (1)
 
 - ⚪ [Attackers Exploit Issabel Framework Flaw Enabling Unauthenticated OS Command Execution](https://thehackernews.com/2026/09/attackers-exploit-issabel-framework.html) — CVE-2026-89026  
   <small>2026-09-17 · The Hacker News · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Unspecified (1)
+
+- 🟡 [Ransomware gang talked AI agents into doing much of its dirty work](https://www.helpnetsecurity.com/2026/11/02/aur0ra-ransomware-ai-agents/)  
+  <small>2026-11-02 · Help Net Security · [in digest]({{ '/2026/11/02/network-security-digest/' | relative_url }})</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>

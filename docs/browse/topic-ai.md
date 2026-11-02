@@ -6,7 +6,7 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*25 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
@@ -75,11 +75,32 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 
+## Ivanti
+
+- 🔴 [Ivanti Patches Two More Zero-Days Exploited in Connect Secure Attack Chain](https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/) — CVE-2026-111357, CVE-2026-118527 **[KEV]**  
+  <small>2026-11-02 · SecurityWeek · [in digest]({{ '/2026/11/02/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** No AI element reported in this item.</small>
+- 🔴 [Ivanti patches two more Connect Secure zero-days chained in attacks](https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/)  
+  <small>2026-11-02 · BleepingComputer · [in digest]({{ '/2026/11/02/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** No AI element reported in this item.</small>
+
 ## Palo Alto Networks
 
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** Vendor positioning in AI application security; no product capability or availability detail is given in the source.</small>
+
+## Synology
+
+- ⚪ [Synology warns of C3RB3R ransomware attacks targeting NAS devices](https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/)  
+  <small>2026-11-02 · BleepingComputer · [in digest]({{ '/2026/11/02/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** No AI element reported in this item.</small>
+
+## Unspecified
+
+- 🟡 [Ransomware gang talked AI agents into doing much of its dirty work](https://www.helpnetsecurity.com/2026/11/02/aur0ra-ransomware-ai-agents/)  
+  <small>2026-11-02 · Help Net Security · [in digest]({{ '/2026/11/02/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** This is the AI item of the cycle: AI agents were driven as the intrusion operator, given VPN credentials and objectives, compressing network mapping and privilege escalation into machine-paced activity. It is an attacker-side capability with no defensive product attached.</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>
