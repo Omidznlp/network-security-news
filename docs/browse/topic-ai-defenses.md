@@ -6,7 +6,7 @@ permalink: /browse/ai-defenses/
 
 # Vendor AI defences
 
-*3 vendor AI capability announcement(s), all editions.*
+*5 vendor AI capability announcement(s), all editions.*
 
 What the network vendors have shipped to answer AI-era threats: AI security products and features, AI-assisted detection, guardrails for AI running on network gear, and vendor guidance for defending against AI-enabled attacks.
 
@@ -24,6 +24,28 @@ Check Point describes agentic AI taking on day-to-day security operations work i
 
 - ⚪ [When Security Operations Can’t Keep Up: 4 Ways Agentic Network Security Management Improves Security Operations](https://blog.checkpoint.com/hybrid-mesh/when-security-operations-cant-keep-up-4-ways-agentic-network-security-management-improves-security-operations/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
+
+## Cisco (2)
+
+### Cisco coverage and customer resilience guidance for PHP2Shell
+
+A Cisco Security Blog post collecting the resources that describe Cisco security product coverage for PHP2Shell, plus steps Cisco says customers can take to increase resilience against the next AI-driven threat. No product name or signature is given in the source.
+
+*Defends against:* AI-accelerated threats, in Cisco's framing - the compressed interval between a threat appearing and mass exploitation.  
+*Availability:* described-only
+
+- ⚪ [PHP2Shell: How Cisco Helps Customers Respond to AI-Accelerated Threats](https://blogs.cisco.com/security/php2shell-how-cisco-helps-customers-respond-to-ai-accelerated-threats/)  
+  <small>2026-11-03 · Cisco Security Blog · [in digest]({{ '/2026/11/03/network-security-digest/' | relative_url }})</small>
+
+### Cisco AI Transit
+
+Described as extending the existing SD-WAN fabric to the specialised cloud environments where AI workloads are spreading, so network teams preserve a common policy model across those destinations.
+
+*Defends against:* Loss of policy and visibility control as AI workloads move into cloud environments reached outside the SD-WAN policy path, leaving AI-bound traffic outside normal enforcement and logging.  
+*Availability:* announced; the source states no availability date, release or platform requirement
+
+- ⚪ [Cisco AI Transit connects AI environments to your SD-WAN](https://blogs.cisco.com/security/cisco-ai-transit-connects-ai-environments-to-your-sd-wan/)  
+  <small>2026-11-03 · Cisco Security Blog · [in digest]({{ '/2026/11/03/network-security-digest/' | relative_url }})</small>
 
 ## Palo Alto Networks (1)
 
