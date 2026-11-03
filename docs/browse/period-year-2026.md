@@ -6,10 +6,16 @@ permalink: /browse/year/2026/
 
 # Year 2026
 
-*26 item(s) in this period.*
+*32 item(s) in this period.*
 
-## Cisco (18)
+## Cisco (21)
 
+- 🔴 [Vulnerabilities in Node.js Affecting Cisco Products: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u) — CVE-2026-105482, CVE-2026-105483, CVE-2026-106069, CVE-2026-111497 **[KEV]**  
+  <small>2026-11-03 · Cisco PSIRT · [in digest]({{ '/2026/11/03/network-security-digest/' | relative_url }})</small>
+- ⚪ [PHP2Shell: How Cisco Helps Customers Respond to AI-Accelerated Threats](https://blogs.cisco.com/security/php2shell-how-cisco-helps-customers-respond-to-ai-accelerated-threats/)  
+  <small>2026-11-03 · Cisco Security Blog · [in digest]({{ '/2026/11/03/network-security-digest/' | relative_url }})</small>
+- ⚪ [Cisco AI Transit connects AI environments to your SD-WAN](https://blogs.cisco.com/security/cisco-ai-transit-connects-ai-environments-to-your-sd-wan/)  
+  <small>2026-11-03 · Cisco Security Blog · [in digest]({{ '/2026/11/03/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Zero-Day Highlights API Endpoint Authentication Issues](https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues) — CVE-2026-76460 **[KEV]**  
@@ -66,6 +72,18 @@ permalink: /browse/year/2026/
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
   <small>2026-09-17 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Unspecified (2)
+
+- ⚪ [Fireperf: Open-source network testing tool for firewalls and routers](https://www.helpnetsecurity.com/2026/11/03/fireperf-open-source-network-testing-tool/)  
+  <small>2026-11-03 · Help Net Security · [in digest]({{ '/2026/11/03/network-security-digest/' | relative_url }})</small>
+- ⚪ [AI agents scale and speed up Chinese-linked attacks](https://www.helpnetsecurity.com/2026/11/03/ai-powered-cyberattacks-artex-cyberstrikeai/)  
+  <small>2026-11-03 · Help Net Security · [in digest]({{ '/2026/11/03/network-security-digest/' | relative_url }})</small>
+
+## Synology (1)
+
+- 🟡 [Synology NAS Devices Targeted in Ransomware Attacks Exploiting Patched DSM Flaw](https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html)  
+  <small>2026-11-03 · The Hacker News · [in digest]({{ '/2026/11/03/network-security-digest/' | relative_url }})</small>
 
 ## Ubiquiti (1)
 

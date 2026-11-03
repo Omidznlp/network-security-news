@@ -6,7 +6,7 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*24 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
@@ -30,6 +30,12 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 
 ## Cisco
 
+- ⚪ [PHP2Shell: How Cisco Helps Customers Respond to AI-Accelerated Threats](https://blogs.cisco.com/security/php2shell-how-cisco-helps-customers-respond-to-ai-accelerated-threats/)  
+  <small>2026-11-03 · Cisco Security Blog · [in digest]({{ '/2026/11/03/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** Cisco positions this as how it helps customers respond to AI-accelerated threats, which is the vendor response side of the LLM-directed campaign tempo reported in item 2.</small>
+- ⚪ [Cisco AI Transit connects AI environments to your SD-WAN](https://blogs.cisco.com/security/cisco-ai-transit-connects-ai-environments-to-your-sd-wan/)  
+  <small>2026-11-03 · Cisco Security Blog · [in digest]({{ '/2026/11/03/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** An AI-era networking capability on network gear: extending SD-WAN policy to AI cloud destinations keeps AI-bound traffic inside the same policy and logging model as everything else.</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
@@ -80,6 +86,12 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** Vendor positioning in AI application security; no product capability or availability detail is given in the source.</small>
+
+## Unspecified
+
+- ⚪ [AI agents scale and speed up Chinese-linked attacks](https://www.helpnetsecurity.com/2026/11/03/ai-powered-cyberattacks-artex-cyberstrikeai/)  
+  <small>2026-11-03 · Help Net Security · [in digest]({{ '/2026/11/03/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** This is one of the two genuinely AI items in the cycle: the attack chain is directed by a large language model choosing commands under human-set goals, which is a tempo and scale change rather than a new technique.</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>
