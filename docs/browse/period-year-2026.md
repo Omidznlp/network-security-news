@@ -6,7 +6,7 @@ permalink: /browse/year/2026/
 
 # Year 2026
 
-*26 item(s) in this period.*
+*28 item(s) in this period.*
 
 ## Cisco (18)
 
@@ -59,6 +59,13 @@ permalink: /browse/year/2026/
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - ⚪ [When Security Operations Can’t Keep Up: 4 Ways Agentic Network Security Management Improves Security Operations](https://blog.checkpoint.com/hybrid-mesh/when-security-operations-cant-keep-up-4-ways-agentic-network-security-management-improves-security-operations/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
+
+## Barracuda (2)
+
+- 🔴 [Barracuda Flaws Could Be Chained to Bypass Authorization and Gain Root Access](https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html) — CVE-2026-116606  
+  <small>2026-11-04 · The Hacker News · [in digest]({{ '/2026/11/04/network-security-digest/' | relative_url }})</small>
+- 🟠 [Barracuda warns of critical flaws allowing root access to devices](https://www.bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices/)  
+  <small>2026-11-04 · BleepingComputer · [in digest]({{ '/2026/11/04/network-security-digest/' | relative_url }})</small>
 
 ## Palo Alto Networks (2)
 
