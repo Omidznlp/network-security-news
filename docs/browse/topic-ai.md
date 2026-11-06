@@ -6,12 +6,15 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*23 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
 ## Check Point
 
+- 🟡 [Inside ARTEX: How Autonomous AI Agents Are Being Used in Real-World Cyberattacks](https://blog.checkpoint.com/research/inside-artex-how-autonomous-ai-agents-are-being-used-in-real-world-cyberattacks/)  
+  <small>2026-11-06 · Check Point Blog · [in digest]({{ '/2026/11/06/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** This is the AI story of the cycle: autonomous agents, operating from an objective rather than a script, doing vulnerability discovery and exploitation with minimal human involvement - and already deployed at scale, with 1,608 live public instances counted.</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
@@ -30,6 +33,9 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 
 ## Cisco
 
+- ⚪ [Firewalling the AI Era: Why the Network Still Decides](https://blogs.cisco.com/security/firewalling-the-ai-era-why-the-network-still-decides/)  
+  <small>2026-11-06 · Cisco Security Blog · [in digest]({{ '/2026/11/06/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** Cisco's position is that the network boundary, not the model, is where autonomous agent behaviour becomes visible and containable - firewalls show what agents reach and enforce policy on it. A described approach, with no product named in the source.</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>

@@ -6,10 +6,18 @@ permalink: /browse/year/2026/
 
 # Year 2026
 
-*26 item(s) in this period.*
+*36 item(s) in this period.*
 
-## Cisco (18)
+## Cisco (22)
 
+- 🔴 [Vulnerabilities in Node.js and Brotli Affecting Cisco Products: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u) — CVE-2026-105482, CVE-2026-105483, CVE-2026-106069, CVE-2026-111497 **[KEV]**  
+  <small>2026-11-06 · Cisco PSIRT · [in digest]({{ '/2026/11/06/network-security-digest/' | relative_url }})</small>
+- 🟠 [Vulnerability Scans for Older Cisco IOS Vulnerability / Opt-Out Headers, (Thu, Nov 5th)](https://isc.sans.edu/diary/rss/33492) — CVE-2023-20198 **[KEV]**  
+  <small>2026-11-06 · SANS Internet Storm Center · [in digest]({{ '/2026/11/06/network-security-digest/' | relative_url }})</small>
+- 🟠 [Cisco Informational for Emergency Distrust of eMudhra Root and Intermediate Certificate Authorities](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r)  
+  <small>2026-11-06 · Cisco PSIRT · [in digest]({{ '/2026/11/06/network-security-digest/' | relative_url }})</small>
+- ⚪ [Firewalling the AI Era: Why the Network Still Decides](https://blogs.cisco.com/security/firewalling-the-ai-era-why-the-network-still-decides/)  
+  <small>2026-11-06 · Cisco Security Blog · [in digest]({{ '/2026/11/06/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Zero-Day Highlights API Endpoint Authentication Issues](https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues) — CVE-2026-76460 **[KEV]**  
@@ -47,8 +55,12 @@ permalink: /browse/year/2026/
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 
-## Check Point (5)
+## Check Point (7)
 
+- 🟡 [A Critical SSH Password Bypass Hits musl-Based Linux](https://blog.checkpoint.com/exposure-management/a-critical-ssh-password-bypass-hits-musl-based-linux/)  
+  <small>2026-11-06 · Check Point Blog · [in digest]({{ '/2026/11/06/network-security-digest/' | relative_url }})</small>
+- 🟡 [Inside ARTEX: How Autonomous AI Agents Are Being Used in Real-World Cyberattacks](https://blog.checkpoint.com/research/inside-artex-how-autonomous-ai-agents-are-being-used-in-real-world-cyberattacks/)  
+  <small>2026-11-06 · Check Point Blog · [in digest]({{ '/2026/11/06/network-security-digest/' | relative_url }})</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [Check Point, Kaspersky, Tanium Patch Product Vulnerabilities](https://www.securityweek.com/check-point-kaspersky-tanium-patch-product-vulnerabilities/)  
@@ -60,6 +72,13 @@ permalink: /browse/year/2026/
 - ⚪ [When Security Operations Can’t Keep Up: 4 Ways Agentic Network Security Management Improves Security Operations](https://blog.checkpoint.com/hybrid-mesh/when-security-operations-cant-keep-up-4-ways-agentic-network-security-management-improves-security-operations/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 
+## Barracuda (2)
+
+- 🔴 [Barracuda Networks is your new best friend (Barracuda Email Security Gateway Pre-Auth Remote Root RCE CVE-2026-116606 / CVE-2026-111560)](https://labs.watchtowr.com/barracuda-networks-is-your-new-best-friend-barracuda-email-security-gateway-pre-auth-remote-root-rce-cve-2026-116606-cve-2026-111560/) — CVE-2026-111560, CVE-2026-116606  
+  <small>2026-11-06 · watchTowr Labs · [in digest]({{ '/2026/11/06/network-security-digest/' | relative_url }})</small>
+- 🟠 [Experts Demonstrate Barracuda Email Security Gateway Chain Enabling Root Access Without Login](https://thehackernews.com/2026/11/experts-demonstrate-barracuda-email.html) — CVE-2026-116606  
+  <small>2026-11-06 · The Hacker News · [in digest]({{ '/2026/11/06/network-security-digest/' | relative_url }})</small>
+
 ## Palo Alto Networks (2)
 
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
@@ -67,10 +86,20 @@ permalink: /browse/year/2026/
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
   <small>2026-09-17 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 
+## D-Link (1)
+
+- 🟠 [D-Link warns of multiple zero-days in DGS-3130 Series switches](https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/)  
+  <small>2026-11-06 · BleepingComputer · [in digest]({{ '/2026/11/06/network-security-digest/' | relative_url }})</small>
+
 ## Ubiquiti (1)
 
 - ⚪ [Attackers Exploit Issabel Framework Flaw Enabling Unauthenticated OS Command Execution](https://thehackernews.com/2026/09/attackers-exploit-issabel-framework.html) — CVE-2026-89026  
   <small>2026-09-17 · The Hacker News · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Unspecified (1)
+
+- 🟡 [OpenSSH flaw exploited in the wild just hours after disclosure (CVE-2026-123158)](https://www.helpnetsecurity.com/2026/11/06/openssh-sshole-cve-2026-123158-exploitation/) — CVE-2026-123158  
+  <small>2026-11-06 · Help Net Security · [in digest]({{ '/2026/11/06/network-security-digest/' | relative_url }})</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>
