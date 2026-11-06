@@ -6,10 +6,12 @@ permalink: /browse/vendor/cisco/
 
 # Cisco
 
-*18 item(s) across all editions.*
+*22 item(s) across all editions.*
 
 ## Firewalls
 
+- ⚪ [Firewalling the AI Era: Why the Network Still Decides](https://blogs.cisco.com/security/firewalling-the-ai-era-why-the-network-still-decides/)  
+  <small>2026-11-06 · Cisco Security Blog · [in digest]({{ '/2026/11/06/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Certificate Authentication Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv)  
@@ -40,8 +42,15 @@ permalink: /browse/vendor/cisco/
 
 ## Routers
 
+- 🟠 [Vulnerability Scans for Older Cisco IOS Vulnerability / Opt-Out Headers, (Thu, Nov 5th)](https://isc.sans.edu/diary/rss/33492) — CVE-2023-20198 **[KEV]**  
+  <small>2026-11-06 · SANS Internet Storm Center · [in digest]({{ '/2026/11/06/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco IOS XR Software Security Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-iosxr-qg64NcM)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
+
+## Switches
+
+- 🟠 [Vulnerability Scans for Older Cisco IOS Vulnerability / Opt-Out Headers, (Thu, Nov 5th)](https://isc.sans.edu/diary/rss/33492) — CVE-2023-20198 **[KEV]**  
+  <small>2026-11-06 · SANS Internet Storm Center · [in digest]({{ '/2026/11/06/network-security-digest/' | relative_url }})</small>
 
 ## Management platforms
 
@@ -62,6 +71,10 @@ permalink: /browse/vendor/cisco/
 
 ## Other
 
+- 🔴 [Vulnerabilities in Node.js and Brotli Affecting Cisco Products: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u) — CVE-2026-105482, CVE-2026-105483, CVE-2026-106069, CVE-2026-111497 **[KEV]**  
+  <small>2026-11-06 · Cisco PSIRT · [in digest]({{ '/2026/11/06/network-security-digest/' | relative_url }})</small>
+- 🟠 [Cisco Informational for Emergency Distrust of eMudhra Root and Intermediate Certificate Authorities](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r)  
+  <small>2026-11-06 · Cisco PSIRT · [in digest]({{ '/2026/11/06/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Email Gateway SQL Injection Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [CVE-2026-76461: Critical Cisco Secure Email Gateway Vulnerability Exploited in the Wild](https://www.rapid7.com/blog/post/etr-cve-2026-76461-critical-cisco-secure-email-gateway-vulnerability-exploited-in-the-wild) — CVE-2026-76461 **[KEV]**  

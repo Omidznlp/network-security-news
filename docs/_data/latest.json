@@ -1,96 +1,93 @@
 {
-  "date": "2026-09-18",
-  "url": "/2026/09/18/network-security-digest/",
-  "item_count": 20,
-  "critical_count": 4,
+  "date": "2026-11-06",
+  "url": "/2026/11/06/network-security-digest/",
+  "item_count": 10,
+  "critical_count": 2,
   "kev": [
-    "CVE-2026-76460"
+    "CVE-2023-20198",
+    "CVE-2026-111497"
   ],
-  "feeds_ok": 22,
-  "top_story_title": "Cisco ISE authentication bypass CVE-2026-76460 (CVSS 10.0) is on KEV with a 19 September deadline",
-  "top_story_summary": "Cisco has confirmed active exploitation of CVE-2026-76460, a maximum-severity authentication bypass in Cisco Identity Services Engine (ISE) and the ISE Passive Identity Connector (ISE-PIC). Cisco attributes it to insufficient authentication control on an API endpoint, which lets an unauthenticated, remote attacker bypass the web-based management interface and gain unauthorized access to the device. CISA added it to the Known Exploited Vulnerabilities catalogue on 2026-09-16 with a remediation due date of 2026-09-19 under BOD 26-04; ransomware use is listed as unknown.",
+  "feeds_ok": 23,
+  "top_story_title": "Barracuda Email Security Gateway: pre-auth chain to remote root, with the full chain now public",
+  "top_story_summary": "watchTowr Labs published a two-flaw chain against Barracuda's Email Security Gateway (ESG) that ends in command execution as root with no login at all. The reporting names CVE-2026-116606 as an authorization bypass an unauthenticated attacker can reach directly, chained with CVE-2026-111560. Barracuda released patches on the Monday before disclosure; watchTowr published the technical write-up on the Thursday. Neither source states a fixed build number, so confirm the fixed release against Barracuda's own advisory before you schedule anything.",
   "top_actions": [
-    "Inventory every ISE and ISE-PIC node (including standby, PAN and MnT personas) with its running patch level, and apply the fixed release named in the Cisco advisory for CVE-2026-76460 - check the vendor advisory for the fixed release, it is not stated in these sources.",
-    "US federal agencies: the BOD 26-04 due date for CVE-2026-76460 is 2026-09-19. If you cannot meet it, follow CISA's instruction to apply vendor mitigations or discontinue use, and record the decision.",
-    "Remove the ISE administrative and API interfaces from any internet-facing or user-reachable path today; permit them only from a dedicated management VLAN or out-of-band network and jump hosts.",
-    "Assume pre-patch compromise on any ISE node that was reachable from an untrusted network: rotate admin credentials, API keys, pxGrid and node certificates, RADIUS/TACACS+ shared secrets and any ERS/OpenAPI service accounts after upgrading.",
-    "Review ISE for unexpected admin users, changed authorisation policies and profiles, new network device entries and modified shared secrets - a policy change is the quiet form of this compromise."
+    "Identify every Barracuda ESG appliance (physical, virtual and hosted) and confirm in the appliance UI which build is actually installed - do not assume an update channel has applied the fix.",
+    "Apply Barracuda's patched release; check the vendor advisory for the fixed release, as the public reporting does not state a build number.",
+    "Rotate everything the appliance holds after patching: admin credentials, API tokens, LDAP/AD bind accounts, SMTP relay credentials and TLS certificates - a pre-patch compromise survives the upgrade.",
+    "Restrict the ESG administrative interface to a management VLAN or jump host and remove it from internet exposure entirely; SMTP exposure is unavoidable, the admin plane is not.",
+    "Hunt for compromise: unexpected local accounts, new or modified scripts and web resources, outbound connections from the appliance to unfamiliar hosts, and configuration restores you did not perform."
   ],
   "executive_summary": [
-    "Cisco ISE CVE-2026-76460 (CVSS 10.0, unauthenticated authentication bypass on an API endpoint) is actively exploited and on CISA KEV with a 2026-09-19 due date - patch the identity platform first.",
-    "Cisco's September 2026 ASA/FTD/FMC hardening release states two of its flaws are already exploited, both in Firewall Management Center: a static credential issue and an authentication bypass.",
-    "Six further Cisco ASA/FTD advisories land at once - four denial of service (IKEv2 certificate, DTLS on 3100/4200, EIGRP, TCP DNS), one syslog CPU exhaustion, and an Object Group Search ACL bypass that lets blocked traffic through.",
-    "Check Point Security Management and Log Servers have a critical unauthenticated remote code execution as root, fixed via LivePatch, with no reported exploitation - this is the box that holds firewall policy.",
-    "Three ZDI advisories cover authenticated Cisco ISE flaws (CVE-2026-20176, CVE-2026-20211, CVE-2026-20235); they chain behind the auth bypass rather than standing alone.",
-    "No source in this window states a fixed version string. Take exact fixed releases from the vendor advisories, not from press coverage."
+    "**Barracuda ESG** - a public chain of CVE-2026-116606 and CVE-2026-111560 gives unauthenticated remote root on the Email Security Gateway; patches are out, exploitation is not reported yet. Patch on an emergency change.",
+    "**Cisco** - the October Node.js/Brotli bundle advisory includes CVE-2026-111497, which is on the CISA KEV catalog with a BOD 26-04 due date of 2026-11-10. Four days out, and the affected-product list is in the advisory, not in the feed.",
+    "**D-Link** - multiple zero-days in DGS-3130 series managed switches have mitigations but no patch. Treat these as permanently exposed until D-Link says otherwise.",
+    "**Cisco IOS XE** - SANS honeypots are logging exploit attempts consistent with CVE-2023-20198 (KEV, 2023). Three years on, the Web UI is still being swept. Check for privilege-15 accounts you did not create.",
+    "**Cisco / certificate trust** - emergency distrust of eMudhra root and intermediate CAs after eight intermediate private keys proved brute-forceable in seconds. Audit anything on your network that trusts them.",
+    "**OpenSSH** - CVE-2026-123158 is being exploited within hours of disclosure: a password-auth bypass on musl-based Linux with PAM disabled, fixed in 10.6p2. Ask your appliance vendors whether their firmware is in scope.",
+    "**AI** - Check Point Research documents ARTEX, an autonomous AI pentest platform in criminal use with 1,608 live public instances. Plan patch windows for internet-facing devices in days."
   ],
   "key_actions": [
-    "**Cisco** \u2014 Confirm the running ASA, FTD and FMC versions against Cisco's fixed-release table in the hardening advisory - check the vendor advisory for the fixed release, no version is stated in this source.",
-    "**Cisco** \u2014 Patch FMC before the managed FTD devices, then upgrade firewalls in the change window, HA pair secondary first, and verify policy deploy afterwards.",
-    "**Cisco** \u2014 Patch ISE and ISE-PIC to the fixed release named in the Cisco advisory - check the vendor advisory for the fixed release.",
-    "**Cisco** \u2014 Meet or formally document the CISA BOD 26-04 due date of 2026-09-19 if you are in scope; otherwise apply vendor mitigations or discontinue use as the KEV entry instructs.",
-    "**Cisco** \u2014 Upgrade ISE to the fixed release stated in the Cisco advisory - check the vendor advisory for the fixed release.",
-    "**Cisco** \u2014 Before the upgrade, capture ISE logs and configuration for forensics; patching overwrites some of the evidence you would want later.",
-    "**Check Point** \u2014 Confirm LivePatch is enabled and has actually applied the fix on every Security Management Server and Log Server - verify the installed patch level rather than assuming the channel delivered it.",
-    "**Check Point** \u2014 Remove management server access from any untrusted or internet-facing network; SmartConsole and management traffic belong on a dedicated management VLAN or out-of-band network."
+    "**Barracuda** \u2014 Inventory all ESG appliances - physical, virtual and hosted - and read the installed build from the appliance UI rather than trusting an update channel.",
+    "**Barracuda** \u2014 Apply the patched release Barracuda has published; check the vendor advisory for the fixed release and record the build you land on.",
+    "**Cisco** \u2014 Pull the affected-product list from the Cisco advisory and match it against your asset inventory by model and running version - the feed entry does not name products.",
+    "**Cisco** \u2014 Apply the Cisco fixed releases where published; check the vendor advisory for the fixed release and re-check it, as Cisco states the advisory will be updated.",
+    "**D-Link** \u2014 Apply D-Link's published mitigation measures exactly as written, then verify them on each unit rather than assuming the template took.",
+    "**D-Link** \u2014 Restrict the management plane now: management ACLs permitting only your management subnet, out-of-band management where you have it, and no management reachability from user or guest VLANs.",
+    "**Barracuda** \u2014 Confirm the patch Barracuda released is actually installed on every ESG appliance, and note the date it landed relative to the public disclosure.",
+    "**Barracuda** \u2014 If the appliance was unpatched after the disclosure date, treat it as potentially compromised: rotate credentials, tokens and certificates, and hunt before you close the ticket."
   ],
   "ai_defenses": [
     {
-      "vendor": "Check Point",
-      "solution": "Agentic network security management",
-      "what_it_does": "Check Point describes agentic AI taking on day-to-day security operations work in hybrid mesh environments, setting out four ways agentic network security management improves security operations where environments change faster than teams can manage them manually. The post describes the approach; it does not state a product name, release or availability date."
-    },
-    {
-      "vendor": "Palo Alto Networks",
-      "solution": "AI Application Security",
-      "what_it_does": "Palo Alto Networks describes its work on AI security and states it was named a Market Shaper in the 2026 September Gartner Emerging Market Quadrant for AI Application Security - Established Vendors. The collected text names no specific product, feature or capability detail."
+      "vendor": "Cisco",
+      "solution": "Firewall policy enforcement at network boundaries for AI agent traffic (no product named in the source)",
+      "what_it_does": "Cisco describes using firewalls as the point where AI agent activity becomes visible: revealing what agents reach, enforcing policy at network boundaries, and helping contain the risks of autonomous action. The post names no product, version or availability date."
     }
   ],
   "headlines": [
     {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN",
-      "summary": "Cisco's September 2026 hardening release for ASA, FTD and FMC software fixes multiple internally found flaws, two of them already exploited in Firewall Management Center.",
+      "title": "Barracuda Networks is your new best friend (Barracuda Email Security Gateway Pre-Auth Remote Root RCE CVE-2026-116606 / CVE-2026-111560)",
+      "link": "https://labs.watchtowr.com/barracuda-networks-is-your-new-best-friend-barracuda-email-security-gateway-pre-auth-remote-root-rce-cve-2026-116606-cve-2026-111560/",
+      "summary": "watchTowr published a chain of two Barracuda Email Security Gateway flaws that gives an unauthenticated attacker remote root on the appliance.",
+      "relevance": "critical",
+      "vendor": "Barracuda",
+      "source": "watchTowr Labs"
+    },
+    {
+      "title": "Vulnerabilities in Node.js and Brotli Affecting Cisco Products: October 2026",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u",
+      "summary": "Cisco's October bundle advisory covers four High-severity Node.js and Brotli flaws, including KEV-listed CVE-2026-111497, in products that embed Node.js 22.x, 24.x or 26.x.",
       "relevance": "critical",
       "vendor": "Cisco",
       "source": "Cisco PSIRT"
     },
     {
-      "title": "Cisco Zero-Day Highlights API Endpoint Authentication Issues",
-      "link": "https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues",
-      "summary": "CVE-2026-76460, a CVSS 10.0 authentication bypass on a Cisco ISE API endpoint, is on CISA's KEV list with a 2026-09-19 remediation deadline.",
-      "relevance": "critical",
-      "vendor": "Cisco",
-      "source": "Dark Reading"
+      "title": "D-Link warns of multiple zero-days in DGS-3130 Series switches",
+      "link": "https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/",
+      "summary": "D-Link published mitigation measures, not patches, for multiple zero-day flaws in DGS-3130 series managed stackable switches.",
+      "relevance": "high",
+      "vendor": "D-Link",
+      "source": "BleepingComputer"
     },
     {
-      "title": "Cisco Warns of New Zero-Day ISE Auth Bypass (CVSS 10.0) Exploited in Active Attacks",
-      "link": "https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html",
-      "summary": "Cisco confirms active exploitation of a maximum-severity ISE authentication bypass caused by insufficient authentication control on an API endpoint.",
-      "relevance": "critical",
-      "vendor": "Cisco",
+      "title": "Experts Demonstrate Barracuda Email Security Gateway Chain Enabling Root Access Without Login",
+      "link": "https://thehackernews.com/2026/11/experts-demonstrate-barracuda-email.html",
+      "summary": "Reporting on the Barracuda ESG chain confirms CVE-2026-116606 is an authorization bypass usable with no login, with patches released on the Monday before disclosure.",
+      "relevance": "high",
+      "vendor": "Barracuda",
       "source": "The Hacker News"
     },
     {
-      "title": "Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root",
-      "link": "https://thehackernews.com/2026/09/critical-check-point-management-server.html",
-      "summary": "Check Point Security Management and Log Servers accept unauthenticated network requests that run code as root; a LivePatch fix is out with no reported exploitation.",
-      "relevance": "critical",
-      "vendor": "Check Point",
-      "source": "The Hacker News"
-    },
-    {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Certificate Authentication Denial of Service Vulnerability",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv",
-      "summary": "An unauthenticated attacker can crash Cisco ASA and FTD firewalls by starting an IKEv2 VPN connection with a crafted certificate, and Cisco states there is no workaround.",
+      "title": "Vulnerability Scans for Older Cisco IOS Vulnerability / Opt-Out Headers, (Thu, Nov 5th)",
+      "link": "https://isc.sans.edu/diary/rss/33492",
+      "summary": "SANS honeypots are logging exploit attempts against the Cisco IOS XE Web UI consistent with CVE-2023-20198, a KEV flaw from 2023.",
       "relevance": "high",
       "vendor": "Cisco",
-      "source": "Cisco PSIRT"
+      "source": "SANS Internet Storm Center"
     },
     {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software for Secure Firewall 3100 and 4200 Series DTLS Denial of Service Vulnerability",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-dtls-dos-Kp57HkyO",
-      "summary": "Crafted DTLS traffic reloads Cisco Secure Firewall 3100 and 4200 Series appliances running ASA or FTD software; Cisco states workarounds exist.",
+      "title": "Cisco Informational for Emergency Distrust of eMudhra Root and Intermediate Certificate Authorities",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r",
+      "summary": "Cisco issued an emergency-distrust notice for eMudhra root and intermediate CAs after researchers showed eight intermediate private keys can be brute-forced in seconds.",
       "relevance": "high",
       "vendor": "Cisco",
       "source": "Cisco PSIRT"
