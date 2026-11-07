@@ -6,10 +6,16 @@ permalink: /browse/year/2026/
 
 # Year 2026
 
-*26 item(s) in this period.*
+*32 item(s) in this period.*
 
-## Cisco (18)
+## Cisco (21)
 
+- 🟠 [Vulnerabilities in PHP Affecting Cisco Products: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq) — CVE-2026-109618, CVE-2026-109619 **[KEV]**  
+  <small>2026-11-07 · Cisco PSIRT · [in digest]({{ '/2026/11/07/network-security-digest/' | relative_url }})</small>
+- 🟠 [Vulnerabilities in Node.js and Brotli Affecting Cisco Products: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u) — CVE-2026-105482, CVE-2026-105483, CVE-2026-106069, CVE-2026-111497 **[KEV]**  
+  <small>2026-11-07 · Cisco PSIRT · [in digest]({{ '/2026/11/07/network-security-digest/' | relative_url }})</small>
+- 🟡 [Cisco Informational for Emergency Distrust of eMudhra Root and Intermediate Certificate Authorities](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r)  
+  <small>2026-11-07 · Cisco PSIRT · [in digest]({{ '/2026/11/07/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Zero-Day Highlights API Endpoint Authentication Issues](https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues) — CVE-2026-76460 **[KEV]**  
@@ -67,10 +73,22 @@ permalink: /browse/year/2026/
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
   <small>2026-09-17 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 
+## SonicWall (2)
+
+- 🔴 [SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins](https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/) — CVE-2026-19868 **[KEV]**  
+  <small>2026-11-07 · SecurityWeek · [in digest]({{ '/2026/11/07/network-security-digest/' | relative_url }})</small>
+- 🔴 [SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks](https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/)  
+  <small>2026-11-07 · BleepingComputer · [in digest]({{ '/2026/11/07/network-security-digest/' | relative_url }})</small>
+
 ## Ubiquiti (1)
 
 - ⚪ [Attackers Exploit Issabel Framework Flaw Enabling Unauthenticated OS Command Execution](https://thehackernews.com/2026/09/attackers-exploit-issabel-framework.html) — CVE-2026-89026  
   <small>2026-09-17 · The Hacker News · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Unspecified (1)
+
+- ⚪ [OpenSSH flaw exploited in the wild just hours after disclosure (CVE-2026-123158)](https://www.helpnetsecurity.com/2026/11/06/openssh-sshole-cve-2026-123158-exploitation/) — CVE-2026-123158  
+  <small>2026-11-07 · Help Net Security · [in digest]({{ '/2026/11/07/network-security-digest/' | relative_url }})</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>
