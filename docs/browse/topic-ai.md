@@ -6,12 +6,15 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*24 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
 ## Check Point
 
+- ⚪ [How Safe Remediation Reduces Exposure Without Disrupting Production](https://blog.checkpoint.com/security/how-safe-remediation-reduces-exposure-without-disrupting-production/)  
+  <small>2026-11-09 · Check Point Blog · [in digest]({{ '/2026/11/09/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** The source describes no AI capability, so this is not recorded as a vendor AI defence.</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
@@ -80,6 +83,15 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** Vendor positioning in AI application security; no product capability or availability detail is given in the source.</small>
+
+## SonicWall
+
+- 🔴 [CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation](https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html) — CVE-2026-19868 **[KEV]**  
+  <small>2026-11-09 · The Hacker News · [in digest]({{ '/2026/11/09/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None stated in the source.</small>
+- 🔴 [Exploited SonicWall SSL-VPN flaw lets attackers bypass SAML-enforced MFA (CVE-2026-19868)](https://www.helpnetsecurity.com/2026/11/09/exploited-sonicwall-ssl-vpn-flaw-lets-attackers-bypass-saml-enforced-mfa-cve-2026-19868/) — CVE-2026-19868 **[KEV]**  
+  <small>2026-11-09 · Help Net Security · [in digest]({{ '/2026/11/09/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None stated in the source.</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>

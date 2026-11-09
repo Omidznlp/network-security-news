@@ -6,7 +6,7 @@ permalink: /browse/year/2026/
 
 # Year 2026
 
-*26 item(s) in this period.*
+*29 item(s) in this period.*
 
 ## Cisco (18)
 
@@ -47,8 +47,10 @@ permalink: /browse/year/2026/
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 
-## Check Point (5)
+## Check Point (6)
 
+- ⚪ [How Safe Remediation Reduces Exposure Without Disrupting Production](https://blog.checkpoint.com/security/how-safe-remediation-reduces-exposure-without-disrupting-production/)  
+  <small>2026-11-09 · Check Point Blog · [in digest]({{ '/2026/11/09/network-security-digest/' | relative_url }})</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [Check Point, Kaspersky, Tanium Patch Product Vulnerabilities](https://www.securityweek.com/check-point-kaspersky-tanium-patch-product-vulnerabilities/)  
@@ -66,6 +68,13 @@ permalink: /browse/year/2026/
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
   <small>2026-09-17 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## SonicWall (2)
+
+- 🔴 [CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation](https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html) — CVE-2026-19868 **[KEV]**  
+  <small>2026-11-09 · The Hacker News · [in digest]({{ '/2026/11/09/network-security-digest/' | relative_url }})</small>
+- 🔴 [Exploited SonicWall SSL-VPN flaw lets attackers bypass SAML-enforced MFA (CVE-2026-19868)](https://www.helpnetsecurity.com/2026/11/09/exploited-sonicwall-ssl-vpn-flaw-lets-attackers-bypass-saml-enforced-mfa-cve-2026-19868/) — CVE-2026-19868 **[KEV]**  
+  <small>2026-11-09 · Help Net Security · [in digest]({{ '/2026/11/09/network-security-digest/' | relative_url }})</small>
 
 ## Ubiquiti (1)
 

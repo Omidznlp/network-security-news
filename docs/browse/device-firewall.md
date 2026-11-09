@@ -6,7 +6,7 @@ permalink: /browse/device/firewall/
 
 # Firewalls
 
-*11 item(s) across all editions.*
+*13 item(s) across all editions.*
 
 ## Cisco
 
@@ -32,6 +32,13 @@ permalink: /browse/device/firewall/
   <small>2026-09-17 · Zero Day Initiative · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## SonicWall
+
+- 🔴 [CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation](https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html) — CVE-2026-19868 **[KEV]**  
+  <small>2026-11-09 · The Hacker News · [in digest]({{ '/2026/11/09/network-security-digest/' | relative_url }})</small>
+- 🔴 [Exploited SonicWall SSL-VPN flaw lets attackers bypass SAML-enforced MFA (CVE-2026-19868)](https://www.helpnetsecurity.com/2026/11/09/exploited-sonicwall-ssl-vpn-flaw-lets-attackers-bypass-saml-enforced-mfa-cve-2026-19868/) — CVE-2026-19868 **[KEV]**  
+  <small>2026-11-09 · Help Net Security · [in digest]({{ '/2026/11/09/network-security-digest/' | relative_url }})</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>

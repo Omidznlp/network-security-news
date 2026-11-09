@@ -6,10 +6,12 @@ permalink: /browse/vendor/check-point/
 
 # Check Point
 
-*5 item(s) across all editions.*
+*6 item(s) across all editions.*
 
 ## Management platforms
 
+- ⚪ [How Safe Remediation Reduces Exposure Without Disrupting Production](https://blog.checkpoint.com/security/how-safe-remediation-reduces-exposure-without-disrupting-production/)  
+  <small>2026-11-09 · Check Point Blog · [in digest]({{ '/2026/11/09/network-security-digest/' | relative_url }})</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [Check Point, Kaspersky, Tanium Patch Product Vulnerabilities](https://www.securityweek.com/check-point-kaspersky-tanium-patch-product-vulnerabilities/)  
