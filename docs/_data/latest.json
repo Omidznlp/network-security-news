@@ -1,99 +1,90 @@
 {
-  "date": "2026-09-18",
-  "url": "/2026/09/18/network-security-digest/",
-  "item_count": 20,
-  "critical_count": 4,
+  "date": "2026-11-10",
+  "url": "/2026/11/10/network-security-digest/",
+  "item_count": 8,
+  "critical_count": 2,
   "kev": [
-    "CVE-2026-76460"
+    "CVE-2026-111497",
+    "CVE-2026-116779",
+    "CVE-2026-123218"
   ],
-  "feeds_ok": 22,
-  "top_story_title": "Cisco ISE authentication bypass CVE-2026-76460 (CVSS 10.0) is on KEV with a 19 September deadline",
-  "top_story_summary": "Cisco has confirmed active exploitation of CVE-2026-76460, a maximum-severity authentication bypass in Cisco Identity Services Engine (ISE) and the ISE Passive Identity Connector (ISE-PIC). Cisco attributes it to insufficient authentication control on an API endpoint, which lets an unauthenticated, remote attacker bypass the web-based management interface and gain unauthorized access to the device. CISA added it to the Known Exploited Vulnerabilities catalogue on 2026-09-16 with a remediation due date of 2026-09-19 under BOD 26-04; ransomware use is listed as unknown.",
+  "feeds_ok": 23,
+  "top_story_title": "KEV-listed Brotli decoder flaw CVE-2026-111497 reaches both Cisco and Palo Alto Networks portfolios",
+  "top_story_summary": "CISA added CVE-2026-111497 to the Known Exploited Vulnerabilities catalog on 2026-10-27 with a remediation due date of 2026-11-10. The KEV entry describes an unchecked return value in Google Brotli that lets a remote, unauthenticated attacker corrupt adjacent decoder state memory using a crafted Brotli-compressed stream, with possible outcomes of memory disclosure, denial of service or arbitrary code execution. Brotli is a compression library, not a device, which is why this lands as a portfolio problem rather than a single advisory.",
   "top_actions": [
-    "Inventory every ISE and ISE-PIC node (including standby, PAN and MnT personas) with its running patch level, and apply the fixed release named in the Cisco advisory for CVE-2026-76460 - check the vendor advisory for the fixed release, it is not stated in these sources.",
-    "US federal agencies: the BOD 26-04 due date for CVE-2026-76460 is 2026-09-19. If you cannot meet it, follow CISA's instruction to apply vendor mitigations or discontinue use, and record the decision.",
-    "Remove the ISE administrative and API interfaces from any internet-facing or user-reachable path today; permit them only from a dedicated management VLAN or out-of-band network and jump hosts.",
-    "Assume pre-patch compromise on any ISE node that was reachable from an untrusted network: rotate admin credentials, API keys, pxGrid and node certificates, RADIUS/TACACS+ shared secrets and any ERS/OpenAPI service accounts after upgrading.",
-    "Review ISE for unexpected admin users, changed authorisation policies and profiles, new network device entries and modified shared secrets - a policy change is the quiet form of this compromise."
+    "Open the Cisco advisory (cisco-sa-oct2026-node-js-Jj3SQ19u) and the Palo Alto Networks page for CVE-2026-111497, and extract the affected-product and fixed-release tables - do not assume a build number, check the vendor advisory for the fixed release.",
+    "Cross-match those product lists against your asset inventory by model and running version; record patched / mitigated / accepted risk per device group in the change record.",
+    "Treat CVE-2026-111497 as KEV with a due date of 2026-11-10: schedule internet-facing and federal-scope devices first, HA pair secondary before primary.",
+    "Because CVE-2026-105483 and CVE-2026-106069 are TLS hostname validation bypasses, review which outbound TLS sessions your devices initiate (cloud management, telemetry, licensing, update servers) and pin or egress-filter those destinations until patched.",
+    "Remove management access (HTTPS/SSH/API) from untrusted and internet-facing interfaces on the affected platforms, and restrict it to a dedicated management VLAN or out-of-band network."
   ],
   "executive_summary": [
-    "Cisco ISE CVE-2026-76460 (CVSS 10.0, unauthenticated authentication bypass on an API endpoint) is actively exploited and on CISA KEV with a 2026-09-19 due date - patch the identity platform first.",
-    "Cisco's September 2026 ASA/FTD/FMC hardening release states two of its flaws are already exploited, both in Firewall Management Center: a static credential issue and an authentication bypass.",
-    "Six further Cisco ASA/FTD advisories land at once - four denial of service (IKEv2 certificate, DTLS on 3100/4200, EIGRP, TCP DNS), one syslog CPU exhaustion, and an Object Group Search ACL bypass that lets blocked traffic through.",
-    "Check Point Security Management and Log Servers have a critical unauthenticated remote code execution as root, fixed via LivePatch, with no reported exploitation - this is the box that holds firewall policy.",
-    "Three ZDI advisories cover authenticated Cisco ISE flaws (CVE-2026-20176, CVE-2026-20211, CVE-2026-20235); they chain behind the auth bypass rather than standing alone.",
-    "No source in this window states a fixed version string. Take exact fixed releases from the vendor advisories, not from press coverage."
+    "CVE-2026-111497, the KEV-listed Brotli decoder flaw, hit both Cisco (bundled with three Node.js DNS/TLS bugs, SIR High) and Palo Alto Networks (portfolio status, CRITICAL) on the same day; CISA's due date for it was 2026-11-10.",
+    "Barracuda says attackers are now exploiting two recently patched Email Security Gateway flaws to execute commands as root - confirmed in-the-wild exploitation of an edge appliance.",
+    "Cisco shipped a Meraki OS hardening release covering multiple internally found vulnerabilities, with no workarounds and no known exploitation.",
+    "Palo Alto Networks disclosed CVE-2026-0250, a medium-severity buffer overflow in the GlobalProtect app triggered when connecting to a portal or gateway.",
+    "N-able pulled hosted N-central offline and told on-premises customers to shut servers down after 33 zero-days with PoC exploits were published - not network gear, but it holds privileged access into managed estates.",
+    "No network vendor described a defensive AI capability in this window, and nothing in the items is genuinely AI-related."
   ],
   "key_actions": [
-    "**Cisco** \u2014 Confirm the running ASA, FTD and FMC versions against Cisco's fixed-release table in the hardening advisory - check the vendor advisory for the fixed release, no version is stated in this source.",
-    "**Cisco** \u2014 Patch FMC before the managed FTD devices, then upgrade firewalls in the change window, HA pair secondary first, and verify policy deploy afterwards.",
-    "**Cisco** \u2014 Patch ISE and ISE-PIC to the fixed release named in the Cisco advisory - check the vendor advisory for the fixed release.",
-    "**Cisco** \u2014 Meet or formally document the CISA BOD 26-04 due date of 2026-09-19 if you are in scope; otherwise apply vendor mitigations or discontinue use as the KEV entry instructs.",
-    "**Cisco** \u2014 Upgrade ISE to the fixed release stated in the Cisco advisory - check the vendor advisory for the fixed release.",
-    "**Cisco** \u2014 Before the upgrade, capture ISE logs and configuration for forensics; patching overwrites some of the evidence you would want later.",
-    "**Check Point** \u2014 Confirm LivePatch is enabled and has actually applied the fix on every Security Management Server and Log Server - verify the installed patch level rather than assuming the channel delivered it.",
-    "**Check Point** \u2014 Remove management server access from any untrusted or internet-facing network; SmartConsole and management traffic belong on a dedicated management VLAN or out-of-band network."
+    "**Cisco** \u2014 Read the affected-product list in the Cisco advisory and filter your inventory by model and running version; check the vendor advisory for the fixed release rather than assuming a build.",
+    "**Cisco** \u2014 Prioritise internet-facing and federal-scope devices against the KEV due date of 2026-11-10, then schedule the rest inside the normal change window, HA secondary first.",
+    "**Palo Alto Networks** \u2014 Open the portfolio status page for CVE-2026-111497, note which products and versions are listed as affected, and check the vendor advisory for the fixed release - no version number should be assumed.",
+    "**Palo Alto Networks** \u2014 Confirm running versions across your estate against that table; schedule the upgrade in the change window, HA pair secondary first.",
+    "**Barracuda** \u2014 Verify that every ESG appliance actually has the recent patches applied - exploitation is of already-patched flaws, so unpatched units are the live exposure; check the vendor advisory for the fixed release.",
+    "**Barracuda** \u2014 Treat root-capable command execution as potential compromise: rotate appliance admin credentials, API tokens, certificates and any directory or mail service accounts configured on the ESG.",
+    "**Cisco** \u2014 Identify your Meraki estate by model and current firmware in the dashboard, and compare against the fixed versions named in the advisory.",
+    "**Cisco** \u2014 Because no workarounds exist, schedule the hardening release through the dashboard firmware management: controllers and security appliances first, then a staged access point and switch rollout."
   ],
-  "ai_defenses": [
-    {
-      "vendor": "Check Point",
-      "solution": "Agentic network security management",
-      "what_it_does": "Check Point describes agentic AI taking on day-to-day security operations work in hybrid mesh environments, setting out four ways agentic network security management improves security operations where environments change faster than teams can manage them manually. The post describes the approach; it does not state a product name, release or availability date."
-    },
-    {
-      "vendor": "Palo Alto Networks",
-      "solution": "AI Application Security",
-      "what_it_does": "Palo Alto Networks describes its work on AI security and states it was named a Market Shaper in the 2026 September Gartner Emerging Market Quadrant for AI Application Security - Established Vendors. The collected text names no specific product, feature or capability detail."
-    }
-  ],
+  "ai_defenses": [],
   "headlines": [
     {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN",
-      "summary": "Cisco's September 2026 hardening release for ASA, FTD and FMC software fixes multiple internally found flaws, two of them already exploited in Firewall Management Center.",
+      "title": "Vulnerabilities in Node.js and Brotli Affecting Cisco Products: October 2026",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u",
+      "summary": "KEV-listed Brotli decoder flaw CVE-2026-111497 plus three Node.js DNS and TLS validation bugs affect Cisco products, rated Security Impact Rating High.",
       "relevance": "critical",
       "vendor": "Cisco",
       "source": "Cisco PSIRT"
     },
     {
-      "title": "Cisco Zero-Day Highlights API Endpoint Authentication Issues",
-      "link": "https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues",
-      "summary": "CVE-2026-76460, a CVSS 10.0 authentication bypass on a Cisco ISE API endpoint, is on CISA's KEV list with a 2026-09-19 remediation deadline.",
+      "title": "CVE-2026-111497 Portfolio Status: Impact of Brotli Vulnerability (CVE-2026-111497) on Palo Alto Networks Products (Severity: CRITICAL)",
+      "link": "https://security.paloaltonetworks.com/CVE-2026-111497",
+      "summary": "Palo Alto Networks opened a critical-severity portfolio status page for the KEV-listed Brotli flaw CVE-2026-111497, covering which of its products are affected.",
       "relevance": "critical",
-      "vendor": "Cisco",
-      "source": "Dark Reading"
+      "vendor": "Palo Alto Networks",
+      "source": "Palo Alto Networks PSIRT"
     },
     {
-      "title": "Cisco Warns of New Zero-Day ISE Auth Bypass (CVSS 10.0) Exploited in Active Attacks",
-      "link": "https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html",
-      "summary": "Cisco confirms active exploitation of a maximum-severity ISE authentication bypass caused by insufficient authentication control on an API endpoint.",
-      "relevance": "critical",
-      "vendor": "Cisco",
-      "source": "The Hacker News"
+      "title": "Hackers now exploit critical Barracuda ESG flaws to gain root access",
+      "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access/",
+      "summary": "Attackers are exploiting two recently patched Barracuda Email Security Gateway flaws to run commands with root privileges, the vendor warned.",
+      "relevance": "high",
+      "vendor": "Barracuda",
+      "source": "BleepingComputer"
     },
     {
-      "title": "Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root",
-      "link": "https://thehackernews.com/2026/09/critical-check-point-management-server.html",
-      "summary": "Check Point Security Management and Log Servers accept unauthenticated network requests that run code as root; a LivePatch fix is out with no reported exploitation.",
-      "relevance": "critical",
-      "vendor": "Check Point",
-      "source": "The Hacker News"
-    },
-    {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Certificate Authentication Denial of Service Vulnerability",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv",
-      "summary": "An unauthenticated attacker can crash Cisco ASA and FTD firewalls by starting an IKEv2 VPN connection with a crafted certificate, and Cisco states there is no workaround.",
+      "title": "Cisco Meraki Security Hardening Release: October 2026",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-meraki-os-drbEX9GH",
+      "summary": "Cisco shipped a Meraki OS hardening release fixing multiple internally discovered vulnerabilities, with no workarounds available and no known exploitation.",
       "relevance": "high",
       "vendor": "Cisco",
       "source": "Cisco PSIRT"
     },
     {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software for Secure Firewall 3100 and 4200 Series DTLS Denial of Service Vulnerability",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-dtls-dos-Kp57HkyO",
-      "summary": "Crafted DTLS traffic reloads Cisco Secure Firewall 3100 and 4200 Series appliances running ASA or FTD software; Cisco states workarounds exist.",
-      "relevance": "high",
-      "vendor": "Cisco",
-      "source": "Cisco PSIRT"
+      "title": "CVE-2026-0250 GlobalProtect App: Buffer Overflow Vulnerability during connection to Portal or Gateway (Severity: MEDIUM)",
+      "link": "https://security.paloaltonetworks.com/CVE-2026-0250",
+      "summary": "A medium-severity buffer overflow, CVE-2026-0250, affects the GlobalProtect app when it connects to a portal or gateway.",
+      "relevance": "medium",
+      "vendor": "Palo Alto Networks",
+      "source": "Palo Alto Networks PSIRT"
+    },
+    {
+      "title": "N-able Takes N-central Cloud Offline After Researcher Discloses 33 Zero-Days with PoC Exploits",
+      "link": "https://thehackernews.com/2026/11/n-able-takes-hosted-n-central-offline.html",
+      "summary": "N-able took hosted N-central offline and told on-premises customers to shut servers down after 33 zero-days with PoC exploits, tracked as Able2Shell, were published.",
+      "relevance": "watch",
+      "vendor": "Unspecified",
+      "source": "The Hacker News"
     }
   ]
 }
