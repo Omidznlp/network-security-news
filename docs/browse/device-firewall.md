@@ -6,10 +6,12 @@ permalink: /browse/device/firewall/
 
 # Firewalls
 
-*11 item(s) across all editions.*
+*13 item(s) across all editions.*
 
 ## Cisco
 
+- 🟠 [Cisco Meraki Security Hardening Release: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-meraki-os-drbEX9GH)  
+  <small>2026-11-10 · Cisco PSIRT · [in digest]({{ '/2026/11/10/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Certificate Authentication Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv)  
@@ -32,6 +34,11 @@ permalink: /browse/device/firewall/
   <small>2026-09-17 · Zero Day Initiative · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Palo Alto Networks
+
+- 🔴 [CVE-2026-111497 Portfolio Status: Impact of Brotli Vulnerability (CVE-2026-111497) on Palo Alto Networks Products (Severity: CRITICAL)](https://security.paloaltonetworks.com/CVE-2026-111497) — CVE-2026-111497 **[KEV]**  
+  <small>2026-11-10 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/10/network-security-digest/' | relative_url }})</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>

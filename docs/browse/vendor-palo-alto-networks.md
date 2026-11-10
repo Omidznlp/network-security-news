@@ -6,10 +6,17 @@ permalink: /browse/vendor/palo-alto-networks/
 
 # Palo Alto Networks
 
-*2 item(s) across all editions.*
+*4 item(s) across all editions.*
+
+## Firewalls
+
+- 🔴 [CVE-2026-111497 Portfolio Status: Impact of Brotli Vulnerability (CVE-2026-111497) on Palo Alto Networks Products (Severity: CRITICAL)](https://security.paloaltonetworks.com/CVE-2026-111497) — CVE-2026-111497 **[KEV]**  
+  <small>2026-11-10 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/10/network-security-digest/' | relative_url }})</small>
 
 ## VPN gateways
 
+- 🟡 [CVE-2026-0250 GlobalProtect App: Buffer Overflow Vulnerability during connection to Portal or Gateway (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0250) — CVE-2026-0250  
+  <small>2026-11-10 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/10/network-security-digest/' | relative_url }})</small>
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
   <small>2026-09-17 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 
