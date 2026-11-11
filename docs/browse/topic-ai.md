@@ -6,7 +6,7 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*22 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
@@ -74,6 +74,12 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
   <small>**AI angle:** None stated in this source.</small>
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Fortinet
+
+- 🟠 [Fortinet Patches Nearly 100 Vulnerabilities](https://www.securityweek.com/fortinet-patches-nearly-100-vulnerabilities/)  
+  <small>2026-11-11 · SecurityWeek · [in digest]({{ '/2026/11/11/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** The vendor attributes the size of this patch batch to frontier AI models added to its own product security testing - AI-assisted vulnerability discovery on the defensive side, with the operational consequence being faster and larger patch cycles.</small>
 
 ## Palo Alto Networks
 

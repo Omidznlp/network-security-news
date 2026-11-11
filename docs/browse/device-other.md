@@ -6,7 +6,12 @@ permalink: /browse/device/other/
 
 # Other
 
-*8 item(s) across all editions.*
+*15 item(s) across all editions.*
+
+## Barracuda
+
+- 🟠 [Recently Patched Barracuda Vulnerabilities Exploited in Attacks](https://www.securityweek.com/recently-patched-barracuda-vulnerabilities-exploited-in-attacks/)  
+  <small>2026-11-11 · SecurityWeek · [in digest]({{ '/2026/11/11/network-security-digest/' | relative_url }})</small>
 
 ## Check Point
 
@@ -15,6 +20,16 @@ permalink: /browse/device/other/
 
 ## Cisco
 
+- 🟠 [Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches](https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html) — CVE-2026-20320 **[KEV]**  
+  <small>2026-11-11 · The Hacker News · [in digest]({{ '/2026/11/11/network-security-digest/' | relative_url }})</small>
+- 🟠 [Vulnerabilities in Node.js and Brotli Affecting Cisco Products: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u) — CVE-2026-105482, CVE-2026-105483, CVE-2026-106069, CVE-2026-111497 **[KEV]**  
+  <small>2026-11-11 · Cisco PSIRT · [in digest]({{ '/2026/11/11/network-security-digest/' | relative_url }})</small>
+- 🟡 [Cisco Informational for Emergency Distrust of eMudhra Root and Intermediate Certificate Authorities](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r)  
+  <small>2026-11-11 · Cisco PSIRT · [in digest]({{ '/2026/11/11/network-security-digest/' | relative_url }})</small>
+- 🟡 [Threat Actors Exploit Openwave, Cisco BroadWorks Vulnerabilities](https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/) — CVE-2026-111793, CVE-2026-20320 **[KEV]**  
+  <small>2026-11-11 · SecurityWeek · [in digest]({{ '/2026/11/11/network-security-digest/' | relative_url }})</small>
+- 🟡 [CISA flags Cisco BroadWorks flaw as actively exploited in attacks](https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/)  
+  <small>2026-11-11 · BleepingComputer · [in digest]({{ '/2026/11/11/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Email Gateway SQL Injection Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [CVE-2026-76461: Critical Cisco Secure Email Gateway Vulnerability Exploited in the Wild](https://www.rapid7.com/blog/post/etr-cve-2026-76461-critical-cisco-secure-email-gateway-vulnerability-exploited-in-the-wild) — CVE-2026-76461 **[KEV]**  
@@ -23,6 +38,11 @@ permalink: /browse/device/other/
   <small>2026-09-17 · The Hacker News · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Fortinet
+
+- 🟠 [Fortinet Patches Nearly 100 Vulnerabilities](https://www.securityweek.com/fortinet-patches-nearly-100-vulnerabilities/)  
+  <small>2026-11-11 · SecurityWeek · [in digest]({{ '/2026/11/11/network-security-digest/' | relative_url }})</small>
 
 ## Palo Alto Networks
 
