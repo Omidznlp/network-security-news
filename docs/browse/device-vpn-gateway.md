@@ -6,7 +6,7 @@ permalink: /browse/device/vpn-gateway/
 
 # VPN gateways
 
-*2 item(s) across all editions.*
+*5 item(s) across all editions.*
 
 ## Cisco
 
@@ -15,6 +15,12 @@ permalink: /browse/device/vpn-gateway/
 
 ## Palo Alto Networks
 
+- 🟡 [CVE-2026-0325 PAN-OS: GlobalProtect Authorization Bypass Vulnerability (Severity: LOW)](https://security.paloaltonetworks.com/CVE-2026-0325) — CVE-2026-0325  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+- 🟡 [CVE-2026-0328 PAN-OS: User Impersonation through GlobalProtect Portal (Severity: LOW)](https://security.paloaltonetworks.com/CVE-2026-0328) — CVE-2026-0328  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+- ⚪ [CVE-2026-0327 PAN-OS: Privilege Escalation Vulnerability in GlobalProtect (Severity: LOW)](https://security.paloaltonetworks.com/CVE-2026-0327) — CVE-2026-0327  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
   <small>2026-09-17 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 
