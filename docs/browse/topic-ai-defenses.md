@@ -6,11 +6,21 @@ permalink: /browse/ai-defenses/
 
 # Vendor AI defences
 
-*3 vendor AI capability announcement(s), all editions.*
+*4 vendor AI capability announcement(s), all editions.*
 
 What the network vendors have shipped to answer AI-era threats: AI security products and features, AI-assisted detection, guardrails for AI running on network gear, and vendor guidance for defending against AI-enabled attacks.
 
-## Check Point (2)
+## Check Point (3)
+
+### Check Point WAF
+
+Check Point's web application firewall, now included in the company's FedRAMP certification. The post positions it in front of government citizen self-service portals, connected APIs and workflows into which AI has been integrated, each of which it describes as a new entry point.
+
+*Defends against:* Attack surface created at the web and API layer as public-sector organisations put services online and integrate AI into mission-critical workflows.  
+*Availability:* Announced - FedRAMP certification expanded to include Check Point WAF; the post states no date or authorization-boundary detail.
+
+- ⚪ [Check Point Expands Its FedRAMP Certification to Include Check Point WAF](https://blog.checkpoint.com/security/check-point-expands-its-fedramp-certification-to-include-check-point-waf/)  
+  <small>2026-11-12 · Check Point Blog · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
 
 - ⚪ [AI Models Broke Their Own Containment: Key Findings from the July-August 2026 AI Threat Landscape](https://blog.checkpoint.com/artificial-intelligence/ai-models-broke-their-own-containment-key-findings-from-the-july-august-2026-ai-threat-landscape/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>

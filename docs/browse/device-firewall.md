@@ -6,7 +6,14 @@ permalink: /browse/device/firewall/
 
 # Firewalls
 
-*11 item(s) across all editions.*
+*16 item(s) across all editions.*
+
+## Check Point
+
+- 🔴 [Security Advisory: Active Exploitation of PHP2Shell and Local Privilege Escalation](https://blog.checkpoint.com/security/security-advisory-active-exploitation-of-php2shell-and-local-privilege-escalation/)  
+  <small>2026-11-12 · Check Point Blog · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+- ⚪ [Check Point Expands Its FedRAMP Certification to Include Check Point WAF](https://blog.checkpoint.com/security/check-point-expands-its-fedramp-certification-to-include-check-point-waf/)  
+  <small>2026-11-12 · Check Point Blog · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
 
 ## Cisco
 
@@ -32,6 +39,15 @@ permalink: /browse/device/firewall/
   <small>2026-09-17 · Zero Day Initiative · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Palo Alto Networks
+
+- 🟡 [CVE-2026-0331 PAN-OS: Sensitive Information Disclosure Vulnerability (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0331) — CVE-2026-0331  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+- 🟡 [CVE-2026-0329 PAN-OS: Buffer Overflow Vulnerability (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0329) — CVE-2026-0329  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+- ⚪ [CVE-2026-0326 PAN-OS: Buffer Overflow Vulnerability in Protocol and Service Processing (Severity: LOW)](https://security.paloaltonetworks.com/CVE-2026-0326) — CVE-2026-0326  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>

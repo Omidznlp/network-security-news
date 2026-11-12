@@ -6,7 +6,7 @@ permalink: /browse/device/other/
 
 # Other
 
-*8 item(s) across all editions.*
+*10 item(s) across all editions.*
 
 ## Check Point
 
@@ -26,6 +26,10 @@ permalink: /browse/device/other/
 
 ## Palo Alto Networks
 
+- ⚪ [CVE-2026-0324 GlobalProtect App: Incorrect Privilege Management Vulnerability in OPSWAT MetaDefender Endpoint Security SDK on Windows (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0324) — CVE-2026-0324  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+- ⚪ [PAN-SA-2026-0014 Chromium: Monthly Vulnerability Update (November 2026) (Severity: HIGH)](https://security.paloaltonetworks.com/PAN-SA-2026-0014)  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  

@@ -6,7 +6,7 @@ permalink: /browse/year/2026/
 
 # Year 2026
 
-*26 item(s) in this period.*
+*38 item(s) in this period.*
 
 ## Cisco (18)
 
@@ -47,8 +47,39 @@ permalink: /browse/year/2026/
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 
-## Check Point (5)
+## Palo Alto Networks (11)
 
+- 🟠 [CVE-2026-0330 PAN-OS: Authenticated Remote Code Execution (RCE) in Panorama (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0330) — CVE-2026-0330  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+- 🟡 [CVE-2026-0331 PAN-OS: Sensitive Information Disclosure Vulnerability (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0331) — CVE-2026-0331  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+- 🟡 [CVE-2026-0329 PAN-OS: Buffer Overflow Vulnerability (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0329) — CVE-2026-0329  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+- 🟡 [CVE-2026-0325 PAN-OS: GlobalProtect Authorization Bypass Vulnerability (Severity: LOW)](https://security.paloaltonetworks.com/CVE-2026-0325) — CVE-2026-0325  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+- 🟡 [CVE-2026-0328 PAN-OS: User Impersonation through GlobalProtect Portal (Severity: LOW)](https://security.paloaltonetworks.com/CVE-2026-0328) — CVE-2026-0328  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+- ⚪ [CVE-2026-0327 PAN-OS: Privilege Escalation Vulnerability in GlobalProtect (Severity: LOW)](https://security.paloaltonetworks.com/CVE-2026-0327) — CVE-2026-0327  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+- ⚪ [CVE-2026-0326 PAN-OS: Buffer Overflow Vulnerability in Protocol and Service Processing (Severity: LOW)](https://security.paloaltonetworks.com/CVE-2026-0326) — CVE-2026-0326  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+- ⚪ [CVE-2026-0324 GlobalProtect App: Incorrect Privilege Management Vulnerability in OPSWAT MetaDefender Endpoint Security SDK on Windows (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0324) — CVE-2026-0324  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+- ⚪ [PAN-SA-2026-0014 Chromium: Monthly Vulnerability Update (November 2026) (Severity: HIGH)](https://security.paloaltonetworks.com/PAN-SA-2026-0014)  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+- ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
+  <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
+- 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
+  <small>2026-09-17 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Check Point (8)
+
+- 🔴 [Security Advisory: Active Exploitation of PHP2Shell and Local Privilege Escalation](https://blog.checkpoint.com/security/security-advisory-active-exploitation-of-php2shell-and-local-privilege-escalation/)  
+  <small>2026-11-12 · Check Point Blog · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+- ⚪ [Check Point Expands Its FedRAMP Certification to Include Check Point WAF](https://blog.checkpoint.com/security/check-point-expands-its-fedramp-certification-to-include-check-point-waf/)  
+  <small>2026-11-12 · Check Point Blog · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+- ⚪ [A Single Branch No Longer Operates in A Single Place](https://blog.checkpoint.com/security/a-single-branch-no-longer-operates-in-a-single-place/)  
+  <small>2026-11-12 · Check Point Blog · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [Check Point, Kaspersky, Tanium Patch Product Vulnerabilities](https://www.securityweek.com/check-point-kaspersky-tanium-patch-product-vulnerabilities/)  
@@ -59,13 +90,6 @@ permalink: /browse/year/2026/
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - ⚪ [When Security Operations Can’t Keep Up: 4 Ways Agentic Network Security Management Improves Security Operations](https://blog.checkpoint.com/hybrid-mesh/when-security-operations-cant-keep-up-4-ways-agentic-network-security-management-improves-security-operations/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
-
-## Palo Alto Networks (2)
-
-- ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
-  <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
-- 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
-  <small>2026-09-17 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 
 ## Ubiquiti (1)
 

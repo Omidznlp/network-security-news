@@ -6,10 +6,24 @@ permalink: /browse/vendor/check-point/
 
 # Check Point
 
-*5 item(s) across all editions.*
+*8 item(s) across all editions.*
+
+## Firewalls
+
+- 🔴 [Security Advisory: Active Exploitation of PHP2Shell and Local Privilege Escalation](https://blog.checkpoint.com/security/security-advisory-active-exploitation-of-php2shell-and-local-privilege-escalation/)  
+  <small>2026-11-12 · Check Point Blog · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+- ⚪ [Check Point Expands Its FedRAMP Certification to Include Check Point WAF](https://blog.checkpoint.com/security/check-point-expands-its-fedramp-certification-to-include-check-point-waf/)  
+  <small>2026-11-12 · Check Point Blog · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+
+## SD-WAN / SASE
+
+- ⚪ [A Single Branch No Longer Operates in A Single Place](https://blog.checkpoint.com/security/a-single-branch-no-longer-operates-in-a-single-place/)  
+  <small>2026-11-12 · Check Point Blog · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
 
 ## Management platforms
 
+- 🔴 [Security Advisory: Active Exploitation of PHP2Shell and Local Privilege Escalation](https://blog.checkpoint.com/security/security-advisory-active-exploitation-of-php2shell-and-local-privilege-escalation/)  
+  <small>2026-11-12 · Check Point Blog · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [Check Point, Kaspersky, Tanium Patch Product Vulnerabilities](https://www.securityweek.com/check-point-kaspersky-tanium-patch-product-vulnerabilities/)  

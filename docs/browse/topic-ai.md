@@ -6,12 +6,21 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*33 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
 ## Check Point
 
+- 🔴 [Security Advisory: Active Exploitation of PHP2Shell and Local Privilege Escalation](https://blog.checkpoint.com/security/security-advisory-active-exploitation-of-php2shell-and-local-privilege-escalation/)  
+  <small>2026-11-12 · Check Point Blog · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+- ⚪ [Check Point Expands Its FedRAMP Certification to Include Check Point WAF](https://blog.checkpoint.com/security/check-point-expands-its-fedramp-certification-to-include-check-point-waf/)  
+  <small>2026-11-12 · Check Point Blog · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** The post cites AI integrated into mission-critical government workflows as part of the expanding attack surface a WAF is meant to cover; it describes no AI feature of the product itself.</small>
+- ⚪ [A Single Branch No Longer Operates in A Single Place](https://blog.checkpoint.com/security/a-single-branch-no-longer-operates-in-a-single-place/)  
+  <small>2026-11-12 · Check Point Blog · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
@@ -77,6 +86,33 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 
 ## Palo Alto Networks
 
+- 🟠 [CVE-2026-0330 PAN-OS: Authenticated Remote Code Execution (RCE) in Panorama (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0330) — CVE-2026-0330  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+- 🟡 [CVE-2026-0331 PAN-OS: Sensitive Information Disclosure Vulnerability (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0331) — CVE-2026-0331  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+- 🟡 [CVE-2026-0329 PAN-OS: Buffer Overflow Vulnerability (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0329) — CVE-2026-0329  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+- 🟡 [CVE-2026-0325 PAN-OS: GlobalProtect Authorization Bypass Vulnerability (Severity: LOW)](https://security.paloaltonetworks.com/CVE-2026-0325) — CVE-2026-0325  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+- 🟡 [CVE-2026-0328 PAN-OS: User Impersonation through GlobalProtect Portal (Severity: LOW)](https://security.paloaltonetworks.com/CVE-2026-0328) — CVE-2026-0328  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+- ⚪ [CVE-2026-0327 PAN-OS: Privilege Escalation Vulnerability in GlobalProtect (Severity: LOW)](https://security.paloaltonetworks.com/CVE-2026-0327) — CVE-2026-0327  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+- ⚪ [CVE-2026-0326 PAN-OS: Buffer Overflow Vulnerability in Protocol and Service Processing (Severity: LOW)](https://security.paloaltonetworks.com/CVE-2026-0326) — CVE-2026-0326  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+- ⚪ [CVE-2026-0324 GlobalProtect App: Incorrect Privilege Management Vulnerability in OPSWAT MetaDefender Endpoint Security SDK on Windows (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0324) — CVE-2026-0324  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+- ⚪ [PAN-SA-2026-0014 Chromium: Monthly Vulnerability Update (November 2026) (Severity: HIGH)](https://security.paloaltonetworks.com/PAN-SA-2026-0014)  
+  <small>2026-11-12 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/12/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** Vendor positioning in AI application security; no product capability or availability detail is given in the source.</small>
