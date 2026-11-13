@@ -6,7 +6,16 @@ permalink: /browse/vendor/check-point/
 
 # Check Point
 
-*5 item(s) across all editions.*
+*8 item(s) across all editions.*
+
+## Firewalls
+
+- 🔴 [Hackers Exploit PHP2Shell Flaws in Check Point Gateways to Deploy TSGA Backdoor and Wipe ESXi Files](https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html)  
+  <small>2026-11-13 · The Hacker News · [in digest]({{ '/2026/11/13/network-security-digest/' | relative_url }})</small>
+- 🟠 [Check Point warns of zero-day flaw exploited for root access](https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/)  
+  <small>2026-11-13 · BleepingComputer · [in digest]({{ '/2026/11/13/network-security-digest/' | relative_url }})</small>
+- 🟠 [PHP2Shell Exploited in Destructive Check Point Gateway Attacks](https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/) — CVE-2026-123039  
+  <small>2026-11-13 · SecurityWeek · [in digest]({{ '/2026/11/13/network-security-digest/' | relative_url }})</small>
 
 ## Management platforms
 
