@@ -6,7 +6,12 @@ permalink: /browse/device/firewall/
 
 # Firewalls
 
-*11 item(s) across all editions.*
+*12 item(s) across all editions.*
+
+## Check Point
+
+- 🔴 [Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper](https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/)  
+  <small>2026-11-14 · BleepingComputer · [in digest]({{ '/2026/11/14/network-security-digest/' | relative_url }})</small>
 
 ## Cisco
 
