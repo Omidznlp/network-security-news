@@ -6,7 +6,12 @@ permalink: /browse/device/other/
 
 # Other
 
-*8 item(s) across all editions.*
+*9 item(s) across all editions.*
+
+## Barracuda
+
+- 🟠 [Barracuda Hacked Amid Surge in Artex-Powered Cyberattacks](https://www.securityweek.com/barracuda-hacked-amid-surge-in-artex-powered-cyberattacks/)  
+  <small>2026-11-16 · SecurityWeek · [in digest]({{ '/2026/11/16/network-security-digest/' | relative_url }})</small>
 
 ## Check Point
 

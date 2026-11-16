@@ -6,9 +6,15 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*22 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
+
+## Barracuda
+
+- 🟠 [Barracuda Hacked Amid Surge in Artex-Powered Cyberattacks](https://www.securityweek.com/barracuda-hacked-amid-surge-in-artex-powered-cyberattacks/)  
+  <small>2026-11-16 · SecurityWeek · [in digest]({{ '/2026/11/16/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** The reported driver is Artex, an agentic AI penetration testing framework that the source says Chinese threat actors are adopting broadly to accelerate attacks. That is an AI-assisted attack-tempo story, not a new vulnerability class, and it argues for shorter patch windows on internet-facing appliances and anomaly-based detection rather than reliance on signature updates.</small>
 
 ## Check Point
 
