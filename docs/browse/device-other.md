@@ -6,7 +6,12 @@ permalink: /browse/device/other/
 
 # Other
 
-*8 item(s) across all editions.*
+*10 item(s) across all editions.*
+
+## Barracuda
+
+- 🟡 [Barracuda links cloud breach to ARTEX AI-powered cyberattack](https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/)  
+  <small>2026-11-17 · BleepingComputer · [in digest]({{ '/2026/11/17/network-security-digest/' | relative_url }})</small>
 
 ## Check Point
 
@@ -15,6 +20,8 @@ permalink: /browse/device/other/
 
 ## Cisco
 
+- 🟠 [Cisco Informational for Emergency Distrust of eMudhra Root and Intermediate Certificate Authorities](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r)  
+  <small>2026-11-17 · Cisco PSIRT · [in digest]({{ '/2026/11/17/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Email Gateway SQL Injection Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [CVE-2026-76461: Critical Cisco Secure Email Gateway Vulnerability Exploited in the Wild](https://www.rapid7.com/blog/post/etr-cve-2026-76461-critical-cisco-secure-email-gateway-vulnerability-exploited-in-the-wild) — CVE-2026-76461 **[KEV]**  
