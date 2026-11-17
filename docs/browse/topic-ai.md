@@ -6,9 +6,15 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*23 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
+
+## Barracuda
+
+- 🟡 [Barracuda links cloud breach to ARTEX AI-powered cyberattack](https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/)  
+  <small>2026-11-17 · BleepingComputer · [in digest]({{ '/2026/11/17/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** The vendor attributes part of the intrusion to the ARTEX AI penetration testing framework, used after a stolen cloud access key provided access - offensive AI tooling accelerating a credential-based breach, not finding a device flaw.</small>
 
 ## Check Point
 
@@ -30,6 +36,9 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 
 ## Cisco
 
+- 🟠 [Cisco Informational for Emergency Distrust of eMudhra Root and Intermediate Certificate Authorities](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r)  
+  <small>2026-11-17 · Cisco PSIRT · [in digest]({{ '/2026/11/17/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None stated in the source - the key recovery is described as brute-force following a Key Generation Ceremony error, not an AI-assisted discovery.</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
