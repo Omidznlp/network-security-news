@@ -6,7 +6,7 @@ permalink: /browse/ai-defenses/
 
 # Vendor AI defences
 
-*3 vendor AI capability announcement(s), all editions.*
+*4 vendor AI capability announcement(s), all editions.*
 
 What the network vendors have shipped to answer AI-era threats: AI security products and features, AI-assisted detection, guardrails for AI running on network gear, and vendor guidance for defending against AI-enabled attacks.
 
@@ -24,6 +24,18 @@ Check Point describes agentic AI taking on day-to-day security operations work i
 
 - ⚪ [When Security Operations Can’t Keep Up: 4 Ways Agentic Network Security Management Improves Security Operations](https://blog.checkpoint.com/hybrid-mesh/when-security-operations-cant-keep-up-4-ways-agentic-network-security-management-improves-security-operations/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
+
+## Cisco (1)
+
+### Security framework for the agentic enterprise
+
+A Cisco Fellow sets out why concrete, vendor-neutral security architectures are needed for AI agents and works through a technical example. It is a documented architectural approach, not a product.
+
+*Defends against:* Unscoped, unauthenticated and unaudited AI agents operating inside the enterprise, including agents reaching privileged management paths.  
+*Availability:* described-only
+
+- ⚪ [Building a Security Framework for the Agentic Enterprise](https://blogs.cisco.com/security/building-a-security-framework-for-the-agentic-enterprise/)  
+  <small>2026-11-18 · Cisco Security Blog · [in digest]({{ '/2026/11/18/network-security-digest/' | relative_url }})</small>
 
 ## Palo Alto Networks (1)
 

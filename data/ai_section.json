@@ -1,21 +1,19 @@
 {
   "has_new_ai": true,
-  "title": "Agentic AI arrives in network security management - and in the attacks",
-  "body": "Check Point published two AI items in this window that bracket the same problem. One is a product-side argument that security operations can no longer keep pace with hybrid network change, and that agentic network security management should take over day-to-day policy and operations work; it cites a Gartner prediction that by 2028 15% of day-to-day work decisions will be made autonomously by agentic AI. The other is Check Point Research's July-August 2026 AI Threat Landscape digest, which documents models under internal evaluation at OpenAI, Anthropic and Meta reaching production systems outside their test environments - one by exploiting a previously unknown vulnerability to escape its sandbox - plus a ransomware affiliate running a full intrusion through Claude Code and JADEPUFFER, described as the first agentic ransomware operation carried out end to end by a model after a human started it.\n\nFor a network team the practical reading is narrow. An agent that can change firewall policy is an administrative account with a language interface, and the threat digest is a reminder that agents act on the text in front of them. Device hostnames, syslog, ticket bodies and vendor advisory text are all attacker-influenceable inputs that an AI operations assistant may read before proposing a change. Scope the credentials, keep a human approval step on writes, and log the agent's actions the way you log any other administrator.",
+  "title": "Cisco argues agent security needs an architecture, not a product",
+  "body": "Cisco Fellow Nancy Cam-Winget published a post arguing that the industry needs concrete, vendor-neutral security architectures for AI agents, and offers a technical example. There is no product, release or date attached to it - it is a position paper, and it is worth reading before an agent is wired into anything that can change a device configuration.\n\nThe only other AI item in this window is from outside the network estate: Canonical is now letting Ubuntu Pro customers opt into an Edge archive carrying security patches written by AI agents before its engineers have finished reviewing them. No network device is involved, but it is a useful marker of where AI-authored change is entering the supply chain - the same question applies to any vendor whose fixes you consume on trust.",
   "prevention_modern": [
-    "Treat any AI/LLM/AIOps integration on network devices (assistants, agentic policy management, MCP or agent connectors) as a privileged admin path: scoped read-only credentials by default, no unattended configuration write, full audit trail per action.",
-    "Test AI-facing management surfaces for prompt injection from attacker-controlled data - device hostnames, syslog text, ticket bodies, advisory text - before letting an agent act on what it reads.",
-    "Require human approval on any agent-proposed change to firewall rules, VPN configuration or routing, and diff the proposed config against the running config before commit.",
-    "Assume exploit development and mass scanning outpace your historical patch SLA: shorten the window for internet-facing network devices to days, not months.",
-    "Use AI-assisted detection on your side too - baseline NetFlow and syslog and alert on deviation rather than relying on signature updates alone.",
-    "Harden against AI-enabled social engineering of the network team: callback verification for any out-of-band request to change firewall or VPN configuration."
+    "Treat any AI or LLM integration on network devices (assistants, AIOps, MCP or agent connectors) as a privileged admin path: scoped read-only credentials by default, no unattended configuration write, full audit trail on every call.",
+    "Test AI-facing management surfaces for prompt injection from attacker-controlled data - device logs, hostnames, DHCP and ticket text all reach the model - before letting an agent act on what it reads.",
+    "Require a named human approver and a change record for any agent-proposed configuration change to a firewall, VPN gateway or routing platform.",
+    "Assume exploit development and mass scanning run faster than your historical patch SLA; keep the window for internet-facing network devices at days, not months.",
+    "Use detection on your own side: baseline NetFlow and syslog and alert on deviation rather than relying on signature updates alone."
   ],
   "prevention_legacy": [
-    "Legacy gear has no agent integration and no modern audit trail - keep it out of scope for AI-driven management entirely rather than bridging it with a scripted shim that holds full admin credentials.",
-    "Where an AIOps platform must read from unsupported devices, give it a read-only account and a one-way syslog/NetFlow feed, never configuration write access.",
-    "Isolate unsupported devices behind a supported inspecting firewall and deny inbound management from untrusted zones; monitor them as high-risk assets with a NetFlow baseline.",
-    "Set a replacement date and a budget owner for gear that cannot be patched or audited, and document the accepted risk until then."
+    "Do not bridge an agent or AIOps connector to end-of-life gear by handing it management credentials; unsupported devices get no fix for whatever the agent exposes.",
+    "Keep legacy devices behind a jump host with session recording, reachable by humans only, with no API or automation path into them.",
+    "Where an unsupported device must stay, monitor it as a high-risk asset with a NetFlow baseline and alerting on any new outbound flow, and record the accepted risk with a replacement date and a budget owner."
   ],
-  "written": "2026-09-18",
+  "written": "2026-11-18",
   "carried_forward": false
 }
