@@ -6,7 +6,12 @@ permalink: /browse/device/firewall/
 
 # Firewalls
 
-*11 item(s) across all editions.*
+*12 item(s) across all editions.*
+
+## Check Point
+
+- 🟡 [Java4Shell (CVE-2026-114938): Check Your Java Services Now](https://blog.checkpoint.com/security/java4shell-cve-2026-114938-check-your-java-services-now/) — CVE-2026-114938  
+  <small>2026-11-18 · Check Point Blog · [in digest]({{ '/2026/11/18/network-security-digest/' | relative_url }})</small>
 
 ## Cisco
 
