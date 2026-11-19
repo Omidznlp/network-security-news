@@ -1,99 +1,95 @@
 {
-  "date": "2026-09-18",
-  "url": "/2026/09/18/network-security-digest/",
-  "item_count": 20,
-  "critical_count": 4,
+  "date": "2026-11-19",
+  "url": "/2026/11/19/network-security-digest/",
+  "item_count": 10,
+  "critical_count": 2,
   "kev": [
-    "CVE-2026-76460"
+    "CVE-2026-109618",
+    "CVE-2026-109619"
   ],
-  "feeds_ok": 22,
-  "top_story_title": "Cisco ISE authentication bypass CVE-2026-76460 (CVSS 10.0) is on KEV with a 19 September deadline",
-  "top_story_summary": "Cisco has confirmed active exploitation of CVE-2026-76460, a maximum-severity authentication bypass in Cisco Identity Services Engine (ISE) and the ISE Passive Identity Connector (ISE-PIC). Cisco attributes it to insufficient authentication control on an API endpoint, which lets an unauthenticated, remote attacker bypass the web-based management interface and gain unauthorized access to the device. CISA added it to the Known Exploited Vulnerabilities catalogue on 2026-09-16 with a remediation due date of 2026-09-19 under BOD 26-04; ransomware use is listed as unknown.",
+  "feeds_ok": 23,
+  "top_story_title": "PAN-OS management interfaces exploited through the PHP2Shell pair, both now in KEV",
+  "top_story_summary": "The two PHP vulnerabilities tracked as CVE-2026-109618 and CVE-2026-109619 (reported as PHP2Shell) are being used against firewalls. Palo Alto Networks confirmed on October 28 that attackers were exploiting both against PAN-OS management interfaces exposed to the internet. Both flaws allow code execution on the web server with no authentication, and both are in CISA's Known Exploited Vulnerabilities catalog - added 2026-10-26 with a 2026-10-29 due date, catalogued against PHP Group's PHP rather than under a network vendor's name, which is why they are easy to miss in a vendor-filtered patch process.",
   "top_actions": [
-    "Inventory every ISE and ISE-PIC node (including standby, PAN and MnT personas) with its running patch level, and apply the fixed release named in the Cisco advisory for CVE-2026-76460 - check the vendor advisory for the fixed release, it is not stated in these sources.",
-    "US federal agencies: the BOD 26-04 due date for CVE-2026-76460 is 2026-09-19. If you cannot meet it, follow CISA's instruction to apply vendor mitigations or discontinue use, and record the decision.",
-    "Remove the ISE administrative and API interfaces from any internet-facing or user-reachable path today; permit them only from a dedicated management VLAN or out-of-band network and jump hosts.",
-    "Assume pre-patch compromise on any ISE node that was reachable from an untrusted network: rotate admin credentials, API keys, pxGrid and node certificates, RADIUS/TACACS+ shared secrets and any ERS/OpenAPI service accounts after upgrading.",
-    "Review ISE for unexpected admin users, changed authorisation policies and profiles, new network device entries and modified shared secrets - a policy change is the quiet form of this compromise."
+    "Enumerate every PAN-OS device whose management interface (HTTPS/SSH/API, including Panorama) answers from the internet, and remove that exposure now - management on a dedicated management VLAN or out-of-band network only.",
+    "Where exposure cannot be removed immediately, restrict the management interface with permitted-IP lists to administrator source ranges and the jump hosts only.",
+    "Check the Palo Alto Networks advisory for the fixed release covering CVE-2026-109618 and CVE-2026-109619 and schedule the upgrade in the change window, HA pair secondary first.",
+    "After patching, rotate local admin credentials, API keys, device certificates and VPN pre-shared keys; terminate active admin and VPN sessions.",
+    "Export the configuration and review it for unexpected admin users, modified login pages, new scripts, static routes or tunnels."
   ],
   "executive_summary": [
-    "Cisco ISE CVE-2026-76460 (CVSS 10.0, unauthenticated authentication bypass on an API endpoint) is actively exploited and on CISA KEV with a 2026-09-19 due date - patch the identity platform first.",
-    "Cisco's September 2026 ASA/FTD/FMC hardening release states two of its flaws are already exploited, both in Firewall Management Center: a static credential issue and an authentication bypass.",
-    "Six further Cisco ASA/FTD advisories land at once - four denial of service (IKEv2 certificate, DTLS on 3100/4200, EIGRP, TCP DNS), one syslog CPU exhaustion, and an Object Group Search ACL bypass that lets blocked traffic through.",
-    "Check Point Security Management and Log Servers have a critical unauthenticated remote code execution as root, fixed via LivePatch, with no reported exploitation - this is the box that holds firewall policy.",
-    "Three ZDI advisories cover authenticated Cisco ISE flaws (CVE-2026-20176, CVE-2026-20211, CVE-2026-20235); they chain behind the auth bypass rather than standing alone.",
-    "No source in this window states a fixed version string. Take exact fixed releases from the vendor advisories, not from press coverage."
+    "Firewalls are the live target: CVE-2026-109618 and CVE-2026-109619 (PHP2Shell) are in KEV and were confirmed by Palo Alto Networks on October 28 as being exploited against internet-exposed PAN-OS management interfaces.",
+    "F5 has two separate problems in one cycle - five NGINX2Root remote code execution flaws with public proof-of-concept exploits, and six critical BIG-IP flaws that let an unauthenticated attacker crash the Traffic Management Microkernel on virtual servers with specific iRule or APM configuration.",
+    "Cisco Expressway is being exploited in the wild shortly after a proof of concept went public, against a clustered deployment, with tooling staged for lateral movement.",
+    "Java4Shell (CVE-2026-114938 in OpenJDK) has moved to active exploit attempts; Cisco has opened an advisory for affected Cisco products but has not yet published the product list, so this needs tracking rather than a one-time read.",
+    "SonicWall Gen 6 and Gen 6.5 on SonicOS 6.x is out of support with no further patches regardless of severity - that fleet is now a replacement project, not a patching one.",
+    "No fixed release numbers are quoted in this edition where the sources did not state them; confirm every build against the vendor advisory before opening a change."
   ],
   "key_actions": [
-    "**Cisco** \u2014 Confirm the running ASA, FTD and FMC versions against Cisco's fixed-release table in the hardening advisory - check the vendor advisory for the fixed release, no version is stated in this source.",
-    "**Cisco** \u2014 Patch FMC before the managed FTD devices, then upgrade firewalls in the change window, HA pair secondary first, and verify policy deploy afterwards.",
-    "**Cisco** \u2014 Patch ISE and ISE-PIC to the fixed release named in the Cisco advisory - check the vendor advisory for the fixed release.",
-    "**Cisco** \u2014 Meet or formally document the CISA BOD 26-04 due date of 2026-09-19 if you are in scope; otherwise apply vendor mitigations or discontinue use as the KEV entry instructs.",
-    "**Cisco** \u2014 Upgrade ISE to the fixed release stated in the Cisco advisory - check the vendor advisory for the fixed release.",
-    "**Cisco** \u2014 Before the upgrade, capture ISE logs and configuration for forensics; patching overwrites some of the evidence you would want later.",
-    "**Check Point** \u2014 Confirm LivePatch is enabled and has actually applied the fix on every Security Management Server and Log Server - verify the installed patch level rather than assuming the channel delivered it.",
-    "**Check Point** \u2014 Remove management server access from any untrusted or internet-facing network; SmartConsole and management traffic belong on a dedicated management VLAN or out-of-band network."
+    "**Palo Alto Networks** \u2014 Identify every PAN-OS device and Panorama instance with a management interface reachable from the internet and remove that reachability; management belongs on a dedicated management VLAN or out-of-band network.",
+    "**Palo Alto Networks** \u2014 Apply permitted-IP restrictions to the management interface for administrator source ranges and jump hosts where exposure cannot be removed immediately.",
+    "**F5** \u2014 Check the F5 advisory for the fixed releases and the exact affected versions for NGINX2Root; do not assume a build number from the reporting.",
+    "**F5** \u2014 Inventory every NGINX and F5 NGINX instance, including ones deployed as containers or inside application stacks, and record the running version - this is where incomplete inventories bite.",
+    "**Cisco** \u2014 Subscribe to or re-check the Cisco advisory (cisco-sa-nov2026-java-rce) daily until the affected-product and fixed-release tables are populated - the source states it is incomplete.",
+    "**Cisco** \u2014 Check the vendor advisory for the fixed release; no fixed Cisco versions are stated in the source and none should be assumed.",
+    "**SonicWall** \u2014 List every Gen 6 and Gen 6.5 unit on SonicOS 6.x with its role, site and whether it terminates internet or VPN traffic; this is the replacement backlog.",
+    "**SonicWall** \u2014 Move internet-edge and VPN-termination duties off Gen 6 units first - those are the ones SonicWall expects to be targeted."
   ],
   "ai_defenses": [
     {
       "vendor": "Check Point",
-      "solution": "Agentic network security management",
-      "what_it_does": "Check Point describes agentic AI taking on day-to-day security operations work in hybrid mesh environments, setting out four ways agentic network security management improves security operations where environments change faster than teams can manage them manually. The post describes the approach; it does not state a product name, release or availability date."
-    },
-    {
-      "vendor": "Palo Alto Networks",
-      "solution": "AI Application Security",
-      "what_it_does": "Palo Alto Networks describes its work on AI security and states it was named a Market Shaper in the 2026 September Gartner Emerging Market Quadrant for AI Application Security - Established Vendors. The collected text names no specific product, feature or capability detail."
+      "solution": "Check Point AI Security (agentic steering and automatic agent kill switch)",
+      "what_it_does": "Check Point describes AI Security as providing an automatic way to stop an AI agent, held as a last resort, with what it calls agentic steering as the first-line response. The stated rationale is that switching an agent off stops the risk and the work at the same time, so steering an agent away from risky behaviour precedes stopping it."
     }
   ],
   "headlines": [
     {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN",
-      "summary": "Cisco's September 2026 hardening release for ASA, FTD and FMC software fixes multiple internally found flaws, two of them already exploited in Firewall Management Center.",
+      "title": "Everything Is a Web Application, Including Your Firewall",
+      "link": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
+      "summary": "Palo Alto Networks confirmed attackers exploiting two unauthenticated PHP code-execution flaws against internet-exposed PAN-OS management interfaces.",
       "relevance": "critical",
-      "vendor": "Cisco",
-      "source": "Cisco PSIRT"
-    },
-    {
-      "title": "Cisco Zero-Day Highlights API Endpoint Authentication Issues",
-      "link": "https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues",
-      "summary": "CVE-2026-76460, a CVSS 10.0 authentication bypass on a Cisco ISE API endpoint, is on CISA's KEV list with a 2026-09-19 remediation deadline.",
-      "relevance": "critical",
-      "vendor": "Cisco",
-      "source": "Dark Reading"
-    },
-    {
-      "title": "Cisco Warns of New Zero-Day ISE Auth Bypass (CVSS 10.0) Exploited in Active Attacks",
-      "link": "https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html",
-      "summary": "Cisco confirms active exploitation of a maximum-severity ISE authentication bypass caused by insufficient authentication control on an API endpoint.",
-      "relevance": "critical",
-      "vendor": "Cisco",
+      "vendor": "Palo Alto Networks",
       "source": "The Hacker News"
     },
     {
-      "title": "Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root",
-      "link": "https://thehackernews.com/2026/09/critical-check-point-management-server.html",
-      "summary": "Check Point Security Management and Log Servers accept unauthenticated network requests that run code as root; a LivePatch fix is out with no reported exploitation.",
+      "title": "F5 Patches Critical NGINX2Root Flaws as PoC Exploits Go Public",
+      "link": "https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public/",
+      "summary": "F5 patched five NGINX2Root flaws that let remote unauthenticated attackers run code, with proof-of-concept exploits now public.",
       "relevance": "critical",
-      "vendor": "Check Point",
-      "source": "The Hacker News"
+      "vendor": "F5",
+      "source": "SecurityWeek"
     },
     {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Certificate Authentication Denial of Service Vulnerability",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv",
-      "summary": "An unauthenticated attacker can crash Cisco ASA and FTD firewalls by starting an IKEv2 VPN connection with a crafted certificate, and Cisco states there is no workaround.",
+      "title": "Vulnerability in Oracle OpenJDK (Java4Shell) Affecting Cisco Products: November 2026",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nov2026-java-rce-eCa6ss9z",
+      "summary": "Cisco is tracking CVE-2026-114938 in OpenJDK (Java4Shell), an RCE in Java 17.0.6 and later on x86-64 that affects an as-yet unlisted set of Cisco products.",
       "relevance": "high",
       "vendor": "Cisco",
       "source": "Cisco PSIRT"
     },
     {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software for Secure Firewall 3100 and 4200 Series DTLS Denial of Service Vulnerability",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-dtls-dos-Kp57HkyO",
-      "summary": "Crafted DTLS traffic reloads Cisco Secure Firewall 3100 and 4200 Series appliances running ASA or FTD software; Cisco states workarounds exist.",
+      "title": "SonicWall urges customers to replace Gen 6 firewalls now",
+      "link": "https://www.helpnetsecurity.com/2026/11/19/sonicwall-gen-6-firewalls-reach-end-of-support/",
+      "summary": "SonicWall Gen 6 and Gen 6.5 firewalls on SonicOS 6.x are now out of support and will get no further patches; SonicWall says replace them and pull them off the edge.",
+      "relevance": "high",
+      "vendor": "SonicWall",
+      "source": "Help Net Security"
+    },
+    {
+      "title": "F5 Warns 6 Critical BIG-IP Flaws Can Crash Traffic in Specific Setups, May Allow RCE",
+      "link": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html",
+      "summary": "Six critical F5 BIG-IP flaws let an unauthenticated attacker crash the Traffic Management Microkernel and drop traffic on virtual servers with specific iRule or APM config.",
+      "relevance": "high",
+      "vendor": "F5",
+      "source": "The Hacker News"
+    },
+    {
+      "title": "Hackers Exploit Cisco Expressway Vulnerability Soon After PoC Release",
+      "link": "https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/",
+      "summary": "Cisco Expressway devices were exploited shortly after a proof of concept went public, with attackers hitting a clustered deployment and staging lateral movement.",
       "relevance": "high",
       "vendor": "Cisco",
-      "source": "Cisco PSIRT"
+      "source": "SecurityWeek"
     }
   ]
 }
