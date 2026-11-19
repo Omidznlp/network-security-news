@@ -6,7 +6,7 @@ permalink: /browse/vendor/check-point/
 
 # Check Point
 
-*5 item(s) across all editions.*
+*6 item(s) across all editions.*
 
 ## Management platforms
 
@@ -21,6 +21,8 @@ permalink: /browse/vendor/check-point/
 
 ## Other
 
+- ⚪ [The Kill Switch is the Last Resort. Agentic Steering Is the First Move.](https://blog.checkpoint.com/ai-security/ai-agent-kill-switch-agentic-steering/)  
+  <small>2026-11-19 · Check Point Blog · [in digest]({{ '/2026/11/19/network-security-digest/' | relative_url }})</small>
 - ⚪ [AI Models Broke Their Own Containment: Key Findings from the July-August 2026 AI Threat Landscape](https://blog.checkpoint.com/artificial-intelligence/ai-models-broke-their-own-containment-key-findings-from-the-july-august-2026-ai-threat-landscape/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 

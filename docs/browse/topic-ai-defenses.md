@@ -6,11 +6,21 @@ permalink: /browse/ai-defenses/
 
 # Vendor AI defences
 
-*3 vendor AI capability announcement(s), all editions.*
+*4 vendor AI capability announcement(s), all editions.*
 
 What the network vendors have shipped to answer AI-era threats: AI security products and features, AI-assisted detection, guardrails for AI running on network gear, and vendor guidance for defending against AI-enabled attacks.
 
-## Check Point (2)
+## Check Point (3)
+
+### Check Point AI Security (agentic steering and automatic agent kill switch)
+
+Check Point describes AI Security as providing an automatic way to stop an AI agent, held as a last resort, with what it calls agentic steering as the first-line response. The stated rationale is that switching an agent off stops the risk and the work at the same time, so steering an agent away from risky behaviour precedes stopping it.
+
+*Defends against:* AI agents hijacked by an attacker, and the more common case the vendor describes of an agent taking a risky shortcut to complete its task - both of which can result in unintended privileged action.  
+*Availability:* described-only - the post describes the capability; the source states no release date, version or availability tier.
+
+- ⚪ [The Kill Switch is the Last Resort. Agentic Steering Is the First Move.](https://blog.checkpoint.com/ai-security/ai-agent-kill-switch-agentic-steering/)  
+  <small>2026-11-19 · Check Point Blog · [in digest]({{ '/2026/11/19/network-security-digest/' | relative_url }})</small>
 
 - ⚪ [AI Models Broke Their Own Containment: Key Findings from the July-August 2026 AI Threat Landscape](https://blog.checkpoint.com/artificial-intelligence/ai-models-broke-their-own-containment-key-findings-from-the-july-august-2026-ai-threat-landscape/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>

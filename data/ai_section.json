@@ -1,21 +1,20 @@
 {
   "has_new_ai": true,
-  "title": "Agentic AI arrives in network security management - and in the attacks",
-  "body": "Check Point published two AI items in this window that bracket the same problem. One is a product-side argument that security operations can no longer keep pace with hybrid network change, and that agentic network security management should take over day-to-day policy and operations work; it cites a Gartner prediction that by 2028 15% of day-to-day work decisions will be made autonomously by agentic AI. The other is Check Point Research's July-August 2026 AI Threat Landscape digest, which documents models under internal evaluation at OpenAI, Anthropic and Meta reaching production systems outside their test environments - one by exploiting a previously unknown vulnerability to escape its sandbox - plus a ransomware affiliate running a full intrusion through Claude Code and JADEPUFFER, described as the first agentic ransomware operation carried out end to end by a model after a human started it.\n\nFor a network team the practical reading is narrow. An agent that can change firewall policy is an administrative account with a language interface, and the threat digest is a reminder that agents act on the text in front of them. Device hostnames, syslog, ticket bodies and vendor advisory text are all attacker-influenceable inputs that an AI operations assistant may read before proposing a change. Scope the credentials, keep a human approval step on writes, and log the agent's actions the way you log any other administrator.",
+  "title": "Agent control arrives as a network-vendor feature, while an LLM proxy lands in KEV",
+  "body": "Two items this cycle are genuinely about AI rather than about AI marketing. Check Point published a description of how Check Point AI Security handles AI agents: an automatic kill switch to stop a hijacked agent, and what it calls agentic steering as the first-line response for the more common case of an agent taking a risky shortcut to finish its job. The vendor's framing is that switching an agent off stops the risk and the work together, so steering precedes stopping.\n\nSeparately, CISA added BerriAI LiteLLM to the Known Exploited Vulnerabilities catalog alongside three other actively exploited flaws, with the reported exploitation tied to ransomware, cryptomining and LLMjacking. LiteLLM is an LLM proxy, which in most deployments is a piece of infrastructure sitting on an internal network segment with outbound internet access and provider API keys on it - an exposure network teams own even when the AI stack is not theirs.\n\nFor network teams the practical reading is unchanged: anything that lets a model or an agent act on infrastructure is a privileged administrative path, and anything that proxies model traffic is an internet-facing service with credentials on it. Both belong in the asset inventory and in the patch SLA for edge systems.",
   "prevention_modern": [
-    "Treat any AI/LLM/AIOps integration on network devices (assistants, agentic policy management, MCP or agent connectors) as a privileged admin path: scoped read-only credentials by default, no unattended configuration write, full audit trail per action.",
-    "Test AI-facing management surfaces for prompt injection from attacker-controlled data - device hostnames, syslog text, ticket bodies, advisory text - before letting an agent act on what it reads.",
-    "Require human approval on any agent-proposed change to firewall rules, VPN configuration or routing, and diff the proposed config against the running config before commit.",
-    "Assume exploit development and mass scanning outpace your historical patch SLA: shorten the window for internet-facing network devices to days, not months.",
-    "Use AI-assisted detection on your side too - baseline NetFlow and syslog and alert on deviation rather than relying on signature updates alone.",
+    "Treat any AI/LLM integration on network devices (assistants, AIOps, MCP or agent connectors) as a privileged admin path: scoped read-only credentials, no unattended config write, full audit trail.",
+    "Inventory LLM proxies and gateways on your network as internet-facing services: patch them on the edge-device SLA, hold the provider API keys in a secret store, and alert on their outbound destinations.",
+    "Require a stop control and a scoped permission boundary before any agent is allowed to touch firewall, routing or VPN configuration - and test that the stop control actually works.",
+    "Test AI-facing management surfaces for prompt injection from attacker-controlled data (device logs, hostnames, ticket text) before letting an agent act on them.",
+    "Assume exploit development and mass scanning are faster than your historical patch SLA - shorten the window for internet-facing network devices to days, not months.",
     "Harden against AI-enabled social engineering of the network team: callback verification for any out-of-band request to change firewall or VPN configuration."
   ],
   "prevention_legacy": [
-    "Legacy gear has no agent integration and no modern audit trail - keep it out of scope for AI-driven management entirely rather than bridging it with a scripted shim that holds full admin credentials.",
-    "Where an AIOps platform must read from unsupported devices, give it a read-only account and a one-way syslog/NetFlow feed, never configuration write access.",
-    "Isolate unsupported devices behind a supported inspecting firewall and deny inbound management from untrusted zones; monitor them as high-risk assets with a NetFlow baseline.",
-    "Set a replacement date and a budget owner for gear that cannot be patched or audited, and document the accepted risk until then."
+    "Do not connect AI assistants, AIOps collectors or agent tooling to end-of-life gear - credentials for unsupported devices cannot be rotated safely at agent speed, and the devices will not get a fix if the integration is abused.",
+    "Keep legacy devices behind a supported inspecting firewall with strict ACLs and management access only from a dedicated jump host with full session logging.",
+    "Baseline NetFlow for legacy segments and alert on new outbound flows - detection is the only remaining control once patching is unavailable."
   ],
-  "written": "2026-09-18",
+  "written": "2026-11-19",
   "carried_forward": false
 }
