@@ -6,10 +6,12 @@ permalink: /browse/device/vpn-gateway/
 
 # VPN gateways
 
-*2 item(s) across all editions.*
+*3 item(s) across all editions.*
 
 ## Cisco
 
+- 🔴 [Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network](https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html) — CVE-2026-76466  
+  <small>2026-11-20 · The Hacker News · [in digest]({{ '/2026/11/20/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Certificate Authentication Denial of Service Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 

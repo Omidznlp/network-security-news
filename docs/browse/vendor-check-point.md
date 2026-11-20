@@ -6,7 +6,12 @@ permalink: /browse/vendor/check-point/
 
 # Check Point
 
-*5 item(s) across all editions.*
+*6 item(s) across all editions.*
+
+## Firewalls
+
+- 🟡 [New PHP Vulnerabilities: What Organizations Need to Know and How Check Point Customers Are Protected](https://blog.checkpoint.com/security/new-php-vulnerabilities-what-organizations-need-to-know-and-how-check-point-customers-are-protected/) — CVE-2026-109618, CVE-2026-109619, CVE-2026-115560 **[KEV]**  
+  <small>2026-11-20 · Check Point Blog · [in digest]({{ '/2026/11/20/network-security-digest/' | relative_url }})</small>
 
 ## Management platforms
 
