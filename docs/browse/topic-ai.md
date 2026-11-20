@@ -6,12 +6,15 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*29 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
 ## Check Point
 
+- 🟡 [New PHP Vulnerabilities: What Organizations Need to Know and How Check Point Customers Are Protected](https://blog.checkpoint.com/security/new-php-vulnerabilities-what-organizations-need-to-know-and-how-check-point-customers-are-protected/) — CVE-2026-109618, CVE-2026-109619, CVE-2026-115560 **[KEV]**  
+  <small>2026-11-20 · Check Point Blog · [in digest]({{ '/2026/11/20/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
@@ -30,6 +33,12 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 
 ## Cisco
 
+- 🔴 [Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network](https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html) — CVE-2026-76466  
+  <small>2026-11-20 · The Hacker News · [in digest]({{ '/2026/11/20/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+- 🟠 [Vulnerability in Oracle OpenJDK (Java4Shell) Affecting Cisco Products: November 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nov2026-java-rce-eCa6ss9z) — CVE-2026-114938  
+  <small>2026-11-20 · Cisco PSIRT · [in digest]({{ '/2026/11/20/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
@@ -75,11 +84,32 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 
+## F5
+
+- 🔴 [F5 releases emergency patches for critical BIG-IP RCE flaws](https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/)  
+  <small>2026-11-20 · BleepingComputer · [in digest]({{ '/2026/11/20/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+- 🟠 [NGINX2Root: F5 patches five critical NGINX vulnerabilities](https://www.helpnetsecurity.com/2026/11/19/nginx2root-nginx-vulnerabilities/) — CVE-2026-123007, CVE-2026-123633  
+  <small>2026-11-20 · Help Net Security · [in digest]({{ '/2026/11/20/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+- 🟠 [Two Critical NGINX HTTP/2 Flaws: What to Patch First](https://blog.checkpoint.com/security/two-critical-nginx-http-2-flaws-what-to-patch-first/) — CVE-2026-123007, CVE-2026-123633  
+  <small>2026-11-20 · Check Point Blog · [in digest]({{ '/2026/11/20/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
+
 ## Palo Alto Networks
 
+- 🟠 [CVE-2026-114938 Portfolio Status: Impact of Java Vulnerability (CVE-2026-114938) on Palo Alto Networks Products (Severity: CRITICAL)](https://security.paloaltonetworks.com/CVE-2026-114938) — CVE-2026-114938  
+  <small>2026-11-20 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/20/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** None.</small>
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** Vendor positioning in AI application security; no product capability or availability detail is given in the source.</small>
+
+## SonicWall
+
+- 🟠 [SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws](https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html)  
+  <small>2026-11-20 · The Hacker News · [in digest]({{ '/2026/11/20/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** SonicWall's stated reason is AI and automation shortening the time between a device becoming unsupported and being found and exploited - the vendor's own argument that the risk-acceptance window for end-of-life edge gear is now days, not budget cycles. It is a threat assertion, not a defensive product.</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>

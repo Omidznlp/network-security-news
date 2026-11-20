@@ -6,7 +6,12 @@ permalink: /browse/device/firewall/
 
 # Firewalls
 
-*11 item(s) across all editions.*
+*13 item(s) across all editions.*
+
+## Check Point
+
+- 🟡 [New PHP Vulnerabilities: What Organizations Need to Know and How Check Point Customers Are Protected](https://blog.checkpoint.com/security/new-php-vulnerabilities-what-organizations-need-to-know-and-how-check-point-customers-are-protected/) — CVE-2026-109618, CVE-2026-109619, CVE-2026-115560 **[KEV]**  
+  <small>2026-11-20 · Check Point Blog · [in digest]({{ '/2026/11/20/network-security-digest/' | relative_url }})</small>
 
 ## Cisco
 
@@ -32,6 +37,11 @@ permalink: /browse/device/firewall/
   <small>2026-09-17 · Zero Day Initiative · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## SonicWall
+
+- 🟠 [SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws](https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html)  
+  <small>2026-11-20 · The Hacker News · [in digest]({{ '/2026/11/20/network-security-digest/' | relative_url }})</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>
