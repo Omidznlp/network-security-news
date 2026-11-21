@@ -6,7 +6,7 @@ permalink: /browse/device/other/
 
 # Other
 
-*8 item(s) across all editions.*
+*12 item(s) across all editions.*
 
 ## Check Point
 
@@ -15,6 +15,14 @@ permalink: /browse/device/other/
 
 ## Cisco
 
+- 🔴 [Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge](https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html) — CVE-2026-129448 **[KEV]**  
+  <small>2026-11-21 · The Hacker News · [in digest]({{ '/2026/11/21/network-security-digest/' | relative_url }})</small>
+- 🟠 [Vulnerabilities in nginx Affecting Cisco Products: November 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nginx-nov-2026-e8jska2s) — CVE-2026-113425, CVE-2026-121810, CVE-2026-123007, CVE-2026-123633, CVE-2026-123634  
+  <small>2026-11-21 · Cisco PSIRT · [in digest]({{ '/2026/11/21/network-security-digest/' | relative_url }})</small>
+- 🟠 [Vulnerability in Oracle OpenJDK (Java4Shell) Affecting Cisco Products: November 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nov2026-java-rce-eCa6ss9z) — CVE-2026-114938  
+  <small>2026-11-21 · Cisco PSIRT · [in digest]({{ '/2026/11/21/network-security-digest/' | relative_url }})</small>
+- 🟠 [Cisco Informational for Emergency Distrust of eMudhra Root and Intermediate Certificate Authorities](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r)  
+  <small>2026-11-21 · Cisco PSIRT · [in digest]({{ '/2026/11/21/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Email Gateway SQL Injection Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [CVE-2026-76461: Critical Cisco Secure Email Gateway Vulnerability Exploited in the Wild](https://www.rapid7.com/blog/post/etr-cve-2026-76461-critical-cisco-secure-email-gateway-vulnerability-exploited-in-the-wild) — CVE-2026-76461 **[KEV]**  

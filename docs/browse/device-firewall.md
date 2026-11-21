@@ -6,7 +6,7 @@ permalink: /browse/device/firewall/
 
 # Firewalls
 
-*11 item(s) across all editions.*
+*13 item(s) across all editions.*
 
 ## Cisco
 
@@ -32,6 +32,13 @@ permalink: /browse/device/firewall/
   <small>2026-09-17 · Zero Day Initiative · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Palo Alto Networks
+
+- 🟠 [CVE-2026-123633 Portfolio Status: Impact of NGINX Vulnerabilities (CVE-2026-123633, CVE-2026-123007) on Palo Alto Networks Products (Severity: CRITICAL)](https://security.paloaltonetworks.com/CVE-2026-123633) — CVE-2026-123007, CVE-2026-123633  
+  <small>2026-11-21 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/21/network-security-digest/' | relative_url }})</small>
+- 🟠 [CVE-2026-114938 Portfolio Status: Impact of Java Vulnerability (CVE-2026-114938) on Palo Alto Networks Products (Severity: CRITICAL)](https://security.paloaltonetworks.com/CVE-2026-114938) — CVE-2026-114938  
+  <small>2026-11-21 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/21/network-security-digest/' | relative_url }})</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>
