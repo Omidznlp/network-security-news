@@ -6,7 +6,7 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*23 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
@@ -80,6 +80,15 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** Vendor positioning in AI application security; no product capability or availability detail is given in the source.</small>
+
+## Unspecified
+
+- ⚪ [Open-source AI pentesting framework Cairn keeps turning up in real-world attacks](https://www.helpnetsecurity.com/2026/11/23/cairn-ai-agents-autonomous-attacks/)  
+  <small>2026-11-23 · Help Net Security · [in digest]({{ '/2026/11/23/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** AI-assisted attack and autonomous vulnerability discovery: agents on an open-source AI pentesting framework performed the discovery and exploitation themselves with only a target list and a goal.</small>
+- ⚪ [AI Agents Zip From Flaw Discovery to Root Access in 11 Minutes](https://www.darkreading.com/cyberattacks-data-breaches/ai-agents-flaw-discovery-root-access-11-minutes)  
+  <small>2026-11-23 · Dark Reading · [in digest]({{ '/2026/11/23/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** Same Cairn campaign as item 3, reported with the discovery-to-root timing: autonomous agent operation compressed exploitation to 11 minutes.</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>
