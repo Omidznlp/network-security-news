@@ -1,99 +1,88 @@
 {
-  "date": "2026-09-18",
-  "url": "/2026/09/18/network-security-digest/",
-  "item_count": 20,
+  "date": "2026-11-23",
+  "url": "/2026/11/23/network-security-digest/",
+  "item_count": 9,
   "critical_count": 4,
   "kev": [
-    "CVE-2026-76460"
+    "CVE-2026-123890",
+    "CVE-2026-76466"
   ],
-  "feeds_ok": 22,
-  "top_story_title": "Cisco ISE authentication bypass CVE-2026-76460 (CVSS 10.0) is on KEV with a 19 September deadline",
-  "top_story_summary": "Cisco has confirmed active exploitation of CVE-2026-76460, a maximum-severity authentication bypass in Cisco Identity Services Engine (ISE) and the ISE Passive Identity Connector (ISE-PIC). Cisco attributes it to insufficient authentication control on an API endpoint, which lets an unauthenticated, remote attacker bypass the web-based management interface and gain unauthorized access to the device. CISA added it to the Known Exploited Vulnerabilities catalogue on 2026-09-16 with a remediation due date of 2026-09-19 under BOD 26-04; ransomware use is listed as unknown.",
+  "feeds_ok": 23,
+  "top_story_title": "Cisco Expressway database-service flaw (CVE-2026-76466) exploited for root access, now KEV-listed",
+  "top_story_summary": "Cisco Expressway Series devices - Expressway-C and Expressway-E - carry a hard-coded credential / persistent cookie flaw in the database service feature tracked as CVE-2026-76466. An unauthenticated remote attacker with network access to the device and possession of persistent cookies can connect to the database service, invoke specific remote procedure call (RPC) commands, and execute arbitrary operating system commands as root. Cisco's advisory also notes insufficient validation of client certificates when TLS Verify Mode is set to Enabled for clustering, meaning client certificates are not validated.",
   "top_actions": [
-    "Inventory every ISE and ISE-PIC node (including standby, PAN and MnT personas) with its running patch level, and apply the fixed release named in the Cisco advisory for CVE-2026-76460 - check the vendor advisory for the fixed release, it is not stated in these sources.",
-    "US federal agencies: the BOD 26-04 due date for CVE-2026-76460 is 2026-09-19. If you cannot meet it, follow CISA's instruction to apply vendor mitigations or discontinue use, and record the decision.",
-    "Remove the ISE administrative and API interfaces from any internet-facing or user-reachable path today; permit them only from a dedicated management VLAN or out-of-band network and jump hosts.",
-    "Assume pre-patch compromise on any ISE node that was reachable from an untrusted network: rotate admin credentials, API keys, pxGrid and node certificates, RADIUS/TACACS+ shared secrets and any ERS/OpenAPI service accounts after upgrading.",
-    "Review ISE for unexpected admin users, changed authorisation policies and profiles, new network device entries and modified shared secrets - a policy change is the quiet form of this compromise."
+    "Inventory every Expressway-C and Expressway-E node, including clustered peers and lab or decommission-pending units, and record the running version against the vendor's fixed-release table; check the vendor advisory for the fixed release.",
+    "Upgrade to the Cisco fixed release now - the KEV remediation due date is 2026-11-23. Upgrade cluster members in a controlled order and verify cluster health and config sync afterwards.",
+    "Until the upgrade lands, restrict the database service and clustering ports so they are reachable only from the cluster peers' addresses, and remove any internet or untrusted-zone path to them with a firewall ACL in front of the DMZ node.",
+    "Remove administrative access (HTTPS/SSH/API) from internet-facing interfaces; restrict management to a dedicated management VLAN or out-of-band network and enforce MFA on all admin accounts.",
+    "After patching, rotate everything the device held: local admin credentials, API keys, device and clustering certificates, and any service-account or integration credentials configured on Expressway. Invalidate existing sessions and persistent cookies."
   ],
   "executive_summary": [
-    "Cisco ISE CVE-2026-76460 (CVSS 10.0, unauthenticated authentication bypass on an API endpoint) is actively exploited and on CISA KEV with a 2026-09-19 due date - patch the identity platform first.",
-    "Cisco's September 2026 ASA/FTD/FMC hardening release states two of its flaws are already exploited, both in Firewall Management Center: a static credential issue and an authentication bypass.",
-    "Six further Cisco ASA/FTD advisories land at once - four denial of service (IKEv2 certificate, DTLS on 3100/4200, EIGRP, TCP DNS), one syslog CPU exhaustion, and an Object Group Search ACL bypass that lets blocked traffic through.",
-    "Check Point Security Management and Log Servers have a critical unauthenticated remote code execution as root, fixed via LivePatch, with no reported exploitation - this is the box that holds firewall policy.",
-    "Three ZDI advisories cover authenticated Cisco ISE flaws (CVE-2026-20176, CVE-2026-20211, CVE-2026-20235); they chain behind the auth bypass rather than standing alone.",
-    "No source in this window states a fixed version string. Take exact fixed releases from the vendor advisories, not from press coverage."
+    "Cisco Expressway CVE-2026-76466 is on CISA's KEV list (added 2026-11-20, due 2026-11-23) and confirmed exploited in the wild: unauthenticated root command execution on Expressway-C and Expressway-E via the database service. Patch today and rotate device credentials and certificates.",
+    "GreyNoise found an active intrusion campaign against Check Point Security Management Servers, with confirmed activity between 17 October and 2 November 2026 affecting at least 22 organizations globally. A compromised management server reaches every gateway it manages - audit it before you audit the gateways.",
+    "GL.iNet's GoodCloud remote management service was compromised and used to install malware on connected routers and KVM devices; users report backdoors and reverse shells. Device count is still unknown and the vendor is still investigating.",
+    "Autonomous AI agents on the open-source Cairn framework went from zero-day discovery to root in 11 minutes in real intrusions. Nothing network-specific was targeted, but it sets the patch-window expectation for internet-facing edge devices.",
+    "The same KEV batch added CVE-2026-123890, a VMware vCenter authentication bypass exploited as a zero-day for months. Not a network device, but it will compete for the same maintenance window this week."
   ],
   "key_actions": [
-    "**Cisco** \u2014 Confirm the running ASA, FTD and FMC versions against Cisco's fixed-release table in the hardening advisory - check the vendor advisory for the fixed release, no version is stated in this source.",
-    "**Cisco** \u2014 Patch FMC before the managed FTD devices, then upgrade firewalls in the change window, HA pair secondary first, and verify policy deploy afterwards.",
-    "**Cisco** \u2014 Patch ISE and ISE-PIC to the fixed release named in the Cisco advisory - check the vendor advisory for the fixed release.",
-    "**Cisco** \u2014 Meet or formally document the CISA BOD 26-04 due date of 2026-09-19 if you are in scope; otherwise apply vendor mitigations or discontinue use as the KEV entry instructs.",
-    "**Cisco** \u2014 Upgrade ISE to the fixed release stated in the Cisco advisory - check the vendor advisory for the fixed release.",
-    "**Cisco** \u2014 Before the upgrade, capture ISE logs and configuration for forensics; patching overwrites some of the evidence you would want later.",
-    "**Check Point** \u2014 Confirm LivePatch is enabled and has actually applied the fix on every Security Management Server and Log Server - verify the installed patch level rather than assuming the channel delivered it.",
-    "**Check Point** \u2014 Remove management server access from any untrusted or internet-facing network; SmartConsole and management traffic belong on a dedicated management VLAN or out-of-band network."
+    "**Cisco** \u2014 Identify all Expressway-C and Expressway-E nodes from asset inventory, filtered by model and running version, and compare against the vendor's fixed-release table; check the vendor advisory for the fixed release.",
+    "**Cisco** \u2014 Apply the Cisco fixed release inside the change window today - the KEV remediation date is 2026-11-23 - or record the deviation with a compensating control.",
+    "**Cisco** \u2014 Read the advisory and map your running train to the fixed release before scheduling; check the vendor advisory for the fixed release rather than assuming the latest build.",
+    "**Cisco** \u2014 Upgrade all cluster members and verify cluster state and configuration sync after the upgrade.",
+    "**GL.iNet** \u2014 Locate every GL.iNet router or KVM in use, including user-purchased travel routers used for remote work, and determine whether each is enrolled in GoodCloud.",
+    "**GL.iNet** \u2014 Disconnect affected devices from the cloud management service and disable cloud/remote management until the vendor confirms the service is clean.",
+    "**Check Point** \u2014 Read the GreyNoise report and block or hunt its published C2 addresses in firewall and proxy logs covering at least 17 October to 2 November 2026 - retrospectively, not just going forward.",
+    "**Check Point** \u2014 Treat this as an incident review on the management server, not a patch task: check for unexpected administrator accounts, unexplained policy installs, new or modified scripts, and SmartConsole or API logins outside change windows."
   ],
-  "ai_defenses": [
-    {
-      "vendor": "Check Point",
-      "solution": "Agentic network security management",
-      "what_it_does": "Check Point describes agentic AI taking on day-to-day security operations work in hybrid mesh environments, setting out four ways agentic network security management improves security operations where environments change faster than teams can manage them manually. The post describes the approach; it does not state a product name, release or availability date."
-    },
-    {
-      "vendor": "Palo Alto Networks",
-      "solution": "AI Application Security",
-      "what_it_does": "Palo Alto Networks describes its work on AI security and states it was named a Market Shaper in the 2026 September Gartner Emerging Market Quadrant for AI Application Security - Established Vendors. The collected text names no specific product, feature or capability detail."
-    }
-  ],
+  "ai_defenses": [],
   "headlines": [
     {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN",
-      "summary": "Cisco's September 2026 hardening release for ASA, FTD and FMC software fixes multiple internally found flaws, two of them already exploited in Firewall Management Center.",
+      "title": "Cisco Expressway vulnerability exploited to breach internal networks (CVE-2026-76466)",
+      "link": "https://www.helpnetsecurity.com/2026/11/23/cisco-expressway-vulnerability-exploited-cve-2026-76466/",
+      "summary": "CISA added CVE-2026-76466 to its KEV catalog after attackers used the Cisco Expressway database-service flaw to run commands as root and breach internal networks.",
+      "relevance": "critical",
+      "vendor": "Cisco",
+      "source": "Help Net Security"
+    },
+    {
+      "title": "Cisco Expressway Series Remote Code Execution Vulnerability",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t",
+      "summary": "Cisco's advisory details unauthenticated root command execution in the Expressway database service, reachable with persistent cookies against clustered Expressway-C and Expressway-E.",
       "relevance": "critical",
       "vendor": "Cisco",
       "source": "Cisco PSIRT"
     },
     {
-      "title": "Cisco Zero-Day Highlights API Endpoint Authentication Issues",
-      "link": "https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues",
-      "summary": "CVE-2026-76460, a CVSS 10.0 authentication bypass on a Cisco ISE API endpoint, is on CISA's KEV list with a 2026-09-19 remediation deadline.",
+      "title": "GL.iNet cloud compromise hits routers and KVMs, older backdoors also found",
+      "link": "https://www.helpnetsecurity.com/2026/11/23/gl-inet-cloud-compromise-malware-backdoors/",
+      "summary": "Attackers compromised GL.iNet's GoodCloud remote management service and used it to install malware on connected routers and KVM devices.",
       "relevance": "critical",
-      "vendor": "Cisco",
-      "source": "Dark Reading"
+      "vendor": "GL.iNet",
+      "source": "Help Net Security"
     },
     {
-      "title": "Cisco Warns of New Zero-Day ISE Auth Bypass (CVSS 10.0) Exploited in Active Attacks",
-      "link": "https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html",
-      "summary": "Cisco confirms active exploitation of a maximum-severity ISE authentication bypass caused by insufficient authentication control on an API endpoint.",
-      "relevance": "critical",
-      "vendor": "Cisco",
-      "source": "The Hacker News"
-    },
-    {
-      "title": "Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root",
-      "link": "https://thehackernews.com/2026/09/critical-check-point-management-server.html",
-      "summary": "Check Point Security Management and Log Servers accept unauthenticated network requests that run code as root; a LivePatch fix is out with no reported exploitation.",
+      "title": "99 IPs but a C2 ain\u2019t one: An Active Intrusion Campaign Against Check Point Security Management Servers",
+      "link": "https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign",
+      "summary": "GreyNoise found an intrusion campaign against Check Point Security Management Servers affecting at least 22 organizations globally.",
       "relevance": "critical",
       "vendor": "Check Point",
-      "source": "The Hacker News"
+      "source": "GreyNoise Blog"
     },
     {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Certificate Authentication Denial of Service Vulnerability",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv",
-      "summary": "An unauthenticated attacker can crash Cisco ASA and FTD firewalls by starting an IKEv2 VPN connection with a crafted certificate, and Cisco states there is no workaround.",
+      "title": "CISA flags critical Cisco RCE flaw as actively exploited in attacks",
+      "link": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
+      "summary": "CISA warned federal agencies that the critical Cisco Expressway remote code execution flaw is being exploited in the wild.",
       "relevance": "high",
       "vendor": "Cisco",
-      "source": "Cisco PSIRT"
+      "source": "BleepingComputer"
     },
     {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software for Secure Firewall 3100 and 4200 Series DTLS Denial of Service Vulnerability",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-dtls-dos-Kp57HkyO",
-      "summary": "Crafted DTLS traffic reloads Cisco Secure Firewall 3100 and 4200 Series appliances running ASA or FTD software; Cisco states workarounds exist.",
+      "title": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
+      "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+      "summary": "GL.iNet confirmed attackers abused a flaw in its cloud management service to install custom malware, with users finding backdoors and reverse shells on routers.",
       "relevance": "high",
-      "vendor": "Cisco",
-      "source": "Cisco PSIRT"
+      "vendor": "GL.iNet",
+      "source": "BleepingComputer"
     }
   ]
 }
