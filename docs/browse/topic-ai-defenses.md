@@ -6,7 +6,7 @@ permalink: /browse/ai-defenses/
 
 # Vendor AI defences
 
-*3 vendor AI capability announcement(s), all editions.*
+*4 vendor AI capability announcement(s), all editions.*
 
 What the network vendors have shipped to answer AI-era threats: AI security products and features, AI-assisted detection, guardrails for AI running on network gear, and vendor guidance for defending against AI-enabled attacks.
 
@@ -24,6 +24,18 @@ Check Point describes agentic AI taking on day-to-day security operations work i
 
 - ⚪ [When Security Operations Can’t Keep Up: 4 Ways Agentic Network Security Management Improves Security Operations](https://blog.checkpoint.com/hybrid-mesh/when-security-operations-cant-keep-up-4-ways-agentic-network-security-management-improves-security-operations/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
+
+## Cisco (1)
+
+### Shirudo
+
+An open-source Linux security runtime, released by Cisco with OpenAI, that lets AI agents write dynamic eBPF controls to deploy temporary runtime protections against exploitation of a vulnerability, without restarting services, while administrators prepare and roll out the patch.
+
+*Defends against:* Exploitation during the gap between disclosure and patch deployment on Linux hosts - the window that AI-accelerated exploit development and mass scanning have made shorter than a normal maintenance cycle.  
+*Availability:* Announced - released as open source, and described in the reporting as not yet production-ready.
+
+- ⚪ [New Shirudo tool uses AI to shield unpatched Linux systems from exploits](https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/)  
+  <small>2026-11-24 · BleepingComputer · [in digest]({{ '/2026/11/24/network-security-digest/' | relative_url }})</small>
 
 ## Palo Alto Networks (1)
 
