@@ -6,7 +6,7 @@ permalink: /browse/vendor/cisco/
 
 # Cisco
 
-*18 item(s) across all editions.*
+*23 item(s) across all editions.*
 
 ## Firewalls
 
@@ -43,6 +43,11 @@ permalink: /browse/vendor/cisco/
 - 🟠 [Cisco IOS XR Software Security Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-iosxr-qg64NcM)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 
+## Load balancers
+
+- 🟠 [Vulnerabilities in nginx Affecting Cisco Products: November 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nginx-nov-2026-e8jska2s) — CVE-2026-113425, CVE-2026-121810, CVE-2026-123007, CVE-2026-123633, CVE-2026-123634  
+  <small>2026-11-24 · Cisco PSIRT · [in digest]({{ '/2026/11/24/network-security-digest/' | relative_url }})</small>
+
 ## Management platforms
 
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
@@ -62,6 +67,16 @@ permalink: /browse/vendor/cisco/
 
 ## Other
 
+- 🟠 [Vulnerability in Oracle OpenJDK (Java4Shell) Affecting Cisco Products: November 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nov2026-java-rce-eCa6ss9z) — CVE-2026-114938  
+  <small>2026-11-24 · Cisco PSIRT · [in digest]({{ '/2026/11/24/network-security-digest/' | relative_url }})</small>
+- 🟠 [Vulnerability in PHP Affecting Cisco Products: November 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-phpaftershell-nov-2026-kT9pL4Xe) — CVE-2026-126714  
+  <small>2026-11-24 · Cisco PSIRT · [in digest]({{ '/2026/11/24/network-security-digest/' | relative_url }})</small>
+- 🟠 [Vulnerabilities in nginx Affecting Cisco Products: November 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nginx-nov-2026-e8jska2s) — CVE-2026-113425, CVE-2026-121810, CVE-2026-123007, CVE-2026-123633, CVE-2026-123634  
+  <small>2026-11-24 · Cisco PSIRT · [in digest]({{ '/2026/11/24/network-security-digest/' | relative_url }})</small>
+- 🟡 [ClamAV Vulnerabilities Affecting Cisco Products: November 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-clamav-multi-e93M3vdA)  
+  <small>2026-11-24 · Cisco PSIRT · [in digest]({{ '/2026/11/24/network-security-digest/' | relative_url }})</small>
+- ⚪ [New Shirudo tool uses AI to shield unpatched Linux systems from exploits](https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/)  
+  <small>2026-11-24 · BleepingComputer · [in digest]({{ '/2026/11/24/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Email Gateway SQL Injection Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [CVE-2026-76461: Critical Cisco Secure Email Gateway Vulnerability Exploited in the Wild](https://www.rapid7.com/blog/post/etr-cve-2026-76461-critical-cisco-secure-email-gateway-vulnerability-exploited-in-the-wild) — CVE-2026-76461 **[KEV]**  

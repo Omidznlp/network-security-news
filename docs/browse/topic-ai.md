@@ -6,12 +6,18 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*24 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
 ## Check Point
 
+- 🔴 [Hackers compromise Check Point Servers in 22 organizations](https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/)  
+  <small>2026-11-24 · BleepingComputer · [in digest]({{ '/2026/11/24/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** Companion reporting on this campaign describes it as AI-assisted; see item 12.</small>
+- 🟠 [Check Point Security Management Servers Hacked in AI-Assisted Campaign](https://www.securityweek.com/check-point-security-management-servers-hacked-in-ai-assisted-campaign/)  
+  <small>2026-11-24 · SecurityWeek · [in digest]({{ '/2026/11/24/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** The campaign is reported as AI-assisted, with 99 source addresses hitting organisations across multiple industries and countries - the operational reading is that reconnaissance for exposed management interfaces and chaining of known flaws now outpace a monthly patch cycle.</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
@@ -30,6 +36,9 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 
 ## Cisco
 
+- ⚪ [New Shirudo tool uses AI to shield unpatched Linux systems from exploits](https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/)  
+  <small>2026-11-24 · BleepingComputer · [in digest]({{ '/2026/11/24/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** AI agents author the runtime eBPF controls, making this a defensive AI capability from a network vendor - and a worked example of an AI agent holding a privileged administrative path on infrastructure hosts.</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
