@@ -6,12 +6,18 @@ permalink: /browse/ai/
 
 # AI & network devices
 
-*21 item(s) with an AI angle, across all editions.*
+*24 item(s) with an AI angle, across all editions.*
 
 Items where AI is part of the story: AI-assisted attacks or vulnerability discovery, AI/LLM/AIOps integrations on network gear, or prompt injection against network management.
 
 ## Check Point
 
+- 🔴 [Hackers Compromise 24 Check Point Management Servers in Suspected AI-Driven Attack Campaign](https://thehackernews.com/2026/11/hackers-compromise-24-check-point.html)  
+  <small>2026-11-25 · The Hacker News · [in digest]({{ '/2026/11/25/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** The offensive tooling in the campaign is described as AI-driven. Nothing in the report says an AI feature of the Check Point platform was the entry point - the operational lesson is that management-plane exposure is now found and exploited faster, so treat internet reachability of a management server as an incident in itself.</small>
+- ⚪ [Check Point Named a Leader in the 2026 Gartner® Magic Quadrant™ for Email Security](https://blog.checkpoint.com/security/check-point-named-a-leader-in-the-2026-gartner-magic-quadrant-for-email-security/)  
+  <small>2026-11-25 · Check Point Blog · [in digest]({{ '/2026/11/25/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** The post is the vendor's defensive AI position: AI-powered email threat protection, extended to cover AI assistants that read and act on mail. It is a described capability in a marketing post, not a documented launch, and it is captured in the vendor AI defences section.</small>
 - 🔴 [Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root](https://thehackernews.com/2026/09/critical-check-point-management-server.html)  
   <small>2026-09-18 · The Hacker News · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** None stated in this source.</small>
@@ -77,6 +83,9 @@ Items where AI is part of the story: AI-assisted attacks or vulnerability discov
 
 ## Palo Alto Networks
 
+- 🔴 [Palo Alto Networks Patches Fragnesia Flaw Used to Root Firewalls](https://www.securityweek.com/palo-alto-networks-patches-fragnesia-flaw-used-to-root-firewalls/)  
+  <small>2026-11-25 · SecurityWeek · [in digest]({{ '/2026/11/25/network-security-digest/' | relative_url }})</small>
+  <small>**AI angle:** The report characterises the campaign as AI-assisted. No AI capability on the firewall was involved and the vulnerabilities are not attributed to AI discovery in the collected text - the defensive implication is tempo, so shorten the patch window for internet-facing firewalls rather than buying a control for an AI threat.</small>
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
   <small>**AI angle:** Vendor positioning in AI application security; no product capability or availability detail is given in the source.</small>

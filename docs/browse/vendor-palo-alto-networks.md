@@ -6,7 +6,18 @@ permalink: /browse/vendor/palo-alto-networks/
 
 # Palo Alto Networks
 
-*2 item(s) across all editions.*
+*6 item(s) across all editions.*
+
+## Firewalls
+
+- 🔴 [Palo Alto Networks Patches Fragnesia Flaw Used to Root Firewalls](https://www.securityweek.com/palo-alto-networks-patches-fragnesia-flaw-used-to-root-firewalls/)  
+  <small>2026-11-25 · SecurityWeek · [in digest]({{ '/2026/11/25/network-security-digest/' | relative_url }})</small>
+- 🟠 [CVE-2026-123633 Portfolio Status: Impact of NGINX Vulnerabilities (CVE-2026-123633, CVE-2026-123007) on Palo Alto Networks Products (Severity: CRITICAL)](https://security.paloaltonetworks.com/CVE-2026-123633) — CVE-2026-123007, CVE-2026-123633  
+  <small>2026-11-25 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/25/network-security-digest/' | relative_url }})</small>
+- ⚪ [PAN-SA-2026-0015 Security Bulletin: OSS CVEs Fixed in PAN-OS (Severity: INFORMATIONAL)](https://security.paloaltonetworks.com/PAN-SA-2026-0015)  
+  <small>2026-11-25 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/25/network-security-digest/' | relative_url }})</small>
+- ⚪ [PAN-SA-2026-0005 Informational Bulletin: Precautionary Fixes for Non-Exploitable OSS CVEs in PAN-OS (Severity: INFORMATIONAL)](https://security.paloaltonetworks.com/PAN-SA-2026-0005)  
+  <small>2026-11-25 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/11/25/network-security-digest/' | relative_url }})</small>
 
 ## VPN gateways
 
