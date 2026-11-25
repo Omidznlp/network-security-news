@@ -6,15 +6,23 @@ permalink: /browse/device/other/
 
 # Other
 
-*8 item(s) across all editions.*
+*12 item(s) across all editions.*
 
 ## Check Point
 
+- ⚪ [Check Point Named a Leader in the 2026 Gartner® Magic Quadrant™ for Email Security](https://blog.checkpoint.com/security/check-point-named-a-leader-in-the-2026-gartner-magic-quadrant-for-email-security/)  
+  <small>2026-11-25 · Check Point Blog · [in digest]({{ '/2026/11/25/network-security-digest/' | relative_url }})</small>
 - ⚪ [AI Models Broke Their Own Containment: Key Findings from the July-August 2026 AI Threat Landscape](https://blog.checkpoint.com/artificial-intelligence/ai-models-broke-their-own-containment-key-findings-from-the-july-august-2026-ai-threat-landscape/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 
 ## Cisco
 
+- 🟠 [Vulnerabilities in Node.js and Brotli Affecting Cisco Products: October 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u) — CVE-2026-105482, CVE-2026-105483, CVE-2026-106069, CVE-2026-111497 **[KEV]**  
+  <small>2026-11-25 · Cisco PSIRT · [in digest]({{ '/2026/11/25/network-security-digest/' | relative_url }})</small>
+- 🟠 [Vulnerabilities in nginx Affecting Cisco Products: November 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nginx-nov-2026-e8jska2s) — CVE-2026-113425, CVE-2026-121810, CVE-2026-123007, CVE-2026-123633, CVE-2026-123634  
+  <small>2026-11-25 · Cisco PSIRT · [in digest]({{ '/2026/11/25/network-security-digest/' | relative_url }})</small>
+- 🟠 [Vulnerability in PHP Affecting Cisco Products: November 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-phpaftershell-nov-2026-kT9pL4Xe) — CVE-2026-126714  
+  <small>2026-11-25 · Cisco PSIRT · [in digest]({{ '/2026/11/25/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Email Gateway SQL Injection Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [CVE-2026-76461: Critical Cisco Secure Email Gateway Vulnerability Exploited in the Wild](https://www.rapid7.com/blog/post/etr-cve-2026-76461-critical-cisco-secure-email-gateway-vulnerability-exploited-in-the-wild) — CVE-2026-76461 **[KEV]**  

@@ -6,11 +6,21 @@ permalink: /browse/ai-defenses/
 
 # Vendor AI defences
 
-*3 vendor AI capability announcement(s), all editions.*
+*4 vendor AI capability announcement(s), all editions.*
 
 What the network vendors have shipped to answer AI-era threats: AI security products and features, AI-assisted detection, guardrails for AI running on network gear, and vendor guidance for defending against AI-enabled attacks.
 
-## Check Point (2)
+## Check Point (3)
+
+### AI-powered email threat protection on Check Point's unified email, collaboration and endpoint platform
+
+Check Point describes AI-powered security that helps prevent phishing, ransomware, account takeover, business email compromise and zero-day attacks, delivered on one platform covering email, collaboration tools and endpoints. The post states the protection extends to the AI assistants that now read and act on email, not only to employees.
+
+*Defends against:* AI-era email threats - AI-generated phishing and BEC, and abuse of AI assistants that read and act on mailbox content on a user's behalf.  
+*Availability:* described-only - the post is analyst-recognition and capability description, with no launch, release or availability date stated.
+
+- ⚪ [Check Point Named a Leader in the 2026 Gartner® Magic Quadrant™ for Email Security](https://blog.checkpoint.com/security/check-point-named-a-leader-in-the-2026-gartner-magic-quadrant-for-email-security/)  
+  <small>2026-11-25 · Check Point Blog · [in digest]({{ '/2026/11/25/network-security-digest/' | relative_url }})</small>
 
 - ⚪ [AI Models Broke Their Own Containment: Key Findings from the July-August 2026 AI Threat Landscape](https://blog.checkpoint.com/artificial-intelligence/ai-models-broke-their-own-containment-key-findings-from-the-july-august-2026-ai-threat-landscape/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>

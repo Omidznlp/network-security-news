@@ -1,96 +1,92 @@
 {
-  "date": "2026-09-18",
-  "url": "/2026/09/18/network-security-digest/",
-  "item_count": 20,
-  "critical_count": 4,
+  "date": "2026-11-25",
+  "url": "/2026/11/25/network-security-digest/",
+  "item_count": 11,
+  "critical_count": 3,
   "kev": [
-    "CVE-2026-76460"
+    "CVE-2026-103406",
+    "CVE-2026-111497"
   ],
-  "feeds_ok": 22,
-  "top_story_title": "Cisco ISE authentication bypass CVE-2026-76460 (CVSS 10.0) is on KEV with a 19 September deadline",
-  "top_story_summary": "Cisco has confirmed active exploitation of CVE-2026-76460, a maximum-severity authentication bypass in Cisco Identity Services Engine (ISE) and the ISE Passive Identity Connector (ISE-PIC). Cisco attributes it to insufficient authentication control on an API endpoint, which lets an unauthenticated, remote attacker bypass the web-based management interface and gain unauthorized access to the device. CISA added it to the Known Exploited Vulnerabilities catalogue on 2026-09-16 with a remediation due date of 2026-09-19 under BOD 26-04; ransomware use is listed as unknown.",
+  "feeds_ok": 23,
+  "top_story_title": "CISA adds HPE Juniper Session Smart Conductor and Router command injection to the KEV catalog - root via a crafted salt minion ID",
+  "top_story_summary": "CISA added CVE-2026-103406 to the Known Exploited Vulnerabilities catalog on 2026-11-25. The flaw is an OS command injection in Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router: a remote attacker can execute arbitrary commands as root by supplying a specially crafted salt minion ID. The federal remediation due date is 2026-11-28, which is three days out - treat that as the signal for how fast this is being exploited.",
   "top_actions": [
-    "Inventory every ISE and ISE-PIC node (including standby, PAN and MnT personas) with its running patch level, and apply the fixed release named in the Cisco advisory for CVE-2026-76460 - check the vendor advisory for the fixed release, it is not stated in these sources.",
-    "US federal agencies: the BOD 26-04 due date for CVE-2026-76460 is 2026-09-19. If you cannot meet it, follow CISA's instruction to apply vendor mitigations or discontinue use, and record the decision.",
-    "Remove the ISE administrative and API interfaces from any internet-facing or user-reachable path today; permit them only from a dedicated management VLAN or out-of-band network and jump hosts.",
-    "Assume pre-patch compromise on any ISE node that was reachable from an untrusted network: rotate admin credentials, API keys, pxGrid and node certificates, RADIUS/TACACS+ shared secrets and any ERS/OpenAPI service accounts after upgrading.",
-    "Review ISE for unexpected admin users, changed authorisation policies and profiles, new network device entries and modified shared secrets - a policy change is the quiet form of this compromise."
+    "Inventory every Session Smart Conductor and Session Smart Router and record the running version; the Conductor is the priority asset because it controls the routers.",
+    "Check the vendor advisory for the fixed release and the mitigation for CVE-2026-103406, then patch or mitigate the Conductor first and the routers after, inside an emergency change.",
+    "Remove the Conductor's management and Salt channel from any internet-facing or untrusted interface; restrict to a dedicated management VLAN or out-of-band network with an explicit ACL.",
+    "Treat any reachable Conductor as potentially compromised: rotate local admin credentials, API keys, certificates and router onboarding secrets after patching, because root access survives an upgrade otherwise.",
+    "Hunt for persistence on Conductor and routers - unexpected local accounts, new or modified salt states and minion configuration, unexplained root shell history, new outbound connections and changed static routes or tunnels."
   ],
   "executive_summary": [
-    "Cisco ISE CVE-2026-76460 (CVSS 10.0, unauthenticated authentication bypass on an API endpoint) is actively exploited and on CISA KEV with a 2026-09-19 due date - patch the identity platform first.",
-    "Cisco's September 2026 ASA/FTD/FMC hardening release states two of its flaws are already exploited, both in Firewall Management Center: a static credential issue and an authentication bypass.",
-    "Six further Cisco ASA/FTD advisories land at once - four denial of service (IKEv2 certificate, DTLS on 3100/4200, EIGRP, TCP DNS), one syslog CPU exhaustion, and an Object Group Search ACL bypass that lets blocked traffic through.",
-    "Check Point Security Management and Log Servers have a critical unauthenticated remote code execution as root, fixed via LivePatch, with no reported exploitation - this is the box that holds firewall policy.",
-    "Three ZDI advisories cover authenticated Cisco ISE flaws (CVE-2026-20176, CVE-2026-20211, CVE-2026-20235); they chain behind the auth bypass rather than standing alone.",
-    "No source in this window states a fixed version string. Take exact fixed releases from the vendor advisories, not from press coverage."
+    "CISA added CVE-2026-103406 in HPE Juniper Session Smart Conductor and Session Smart Router to the KEV catalog on 2026-11-25 with a 2026-11-28 due date: remote root via a crafted salt minion ID, and the Conductor is the management plane for a router fleet.",
+    "A China-linked group chained PHP2Shell with the Fragnesia flaw in AI-assisted attacks to root Palo Alto Networks firewalls across 25 servers; Palo Alto Networks has shipped patches, so confirm your PAN-OS build against the vendor advisory.",
+    "GreyNoise reports 24 Check Point Security Management servers compromised across 22 organisations using AI-driven offensive tooling - a management-platform compromise, so rotate managed-gateway credentials, not just the server's own.",
+    "Upstream component flaws dominate the vendor advisories: Cisco is assessing Node.js (including KEV-listed Brotli CVE-2026-111497), nginx and PHP (phpAfterShell CVE-2026-126714), and Palo Alto Networks has opened a critical portfolio-status bulletin for the nginx CVEs.",
+    "No collected source states a fixed release for the Juniper KEV entry or for Fragnesia - check the vendor advisory before scheduling any change, and do not act on a version number from a news report.",
+    "Webworm is recompiling SoftEther VPN from source to strip detection artifacts, so inventory-based VPN detection will miss it; hunt on egress behaviour instead."
   ],
   "key_actions": [
-    "**Cisco** \u2014 Confirm the running ASA, FTD and FMC versions against Cisco's fixed-release table in the hardening advisory - check the vendor advisory for the fixed release, no version is stated in this source.",
-    "**Cisco** \u2014 Patch FMC before the managed FTD devices, then upgrade firewalls in the change window, HA pair secondary first, and verify policy deploy afterwards.",
-    "**Cisco** \u2014 Patch ISE and ISE-PIC to the fixed release named in the Cisco advisory - check the vendor advisory for the fixed release.",
-    "**Cisco** \u2014 Meet or formally document the CISA BOD 26-04 due date of 2026-09-19 if you are in scope; otherwise apply vendor mitigations or discontinue use as the KEV entry instructs.",
-    "**Cisco** \u2014 Upgrade ISE to the fixed release stated in the Cisco advisory - check the vendor advisory for the fixed release.",
-    "**Cisco** \u2014 Before the upgrade, capture ISE logs and configuration for forensics; patching overwrites some of the evidence you would want later.",
-    "**Check Point** \u2014 Confirm LivePatch is enabled and has actually applied the fix on every Security Management Server and Log Server - verify the installed patch level rather than assuming the channel delivered it.",
-    "**Check Point** \u2014 Remove management server access from any untrusted or internet-facing network; SmartConsole and management traffic belong on a dedicated management VLAN or out-of-band network."
+    "**Juniper** \u2014 Identify all Session Smart Conductor and Session Smart Router instances from inventory with their running versions, and patch or mitigate the Conductor before the routers - the controller is the higher-value target.",
+    "**Juniper** \u2014 Check the vendor advisory for the fixed release and the documented mitigation for CVE-2026-103406; do not act on a version number from a news summary.",
+    "**Palo Alto Networks** \u2014 Identify your PAN-OS firewalls and their running versions, then confirm each against the Palo Alto Networks advisory's fixed-release table; patch the HA pair secondary first, then fail over.",
+    "**Palo Alto Networks** \u2014 Treat this as an emergency change for any firewall whose management interface or administrative web access has ever been reachable from the internet.",
+    "**Check Point** \u2014 Determine whether any Security Management server is reachable from the internet or from untrusted internal zones, and remove that reachability immediately - management servers belong on a dedicated management network.",
+    "**Check Point** \u2014 Check the Check Point advisories for guidance tied to this campaign and for the fixed release or mitigation if one is published; do not assume a version number from the news report.",
+    "**Cisco** \u2014 Pull the Cisco advisory and build the affected-product list against your inventory, filtered by model and running version; re-check it, because Cisco says it will be updated.",
+    "**Cisco** \u2014 Where a product is listed and a fixed release is published, schedule the upgrade; where it is not, check the vendor advisory for the fixed release rather than assuming the Node.js version number maps to a Cisco build."
   ],
   "ai_defenses": [
     {
       "vendor": "Check Point",
-      "solution": "Agentic network security management",
-      "what_it_does": "Check Point describes agentic AI taking on day-to-day security operations work in hybrid mesh environments, setting out four ways agentic network security management improves security operations where environments change faster than teams can manage them manually. The post describes the approach; it does not state a product name, release or availability date."
-    },
-    {
-      "vendor": "Palo Alto Networks",
-      "solution": "AI Application Security",
-      "what_it_does": "Palo Alto Networks describes its work on AI security and states it was named a Market Shaper in the 2026 September Gartner Emerging Market Quadrant for AI Application Security - Established Vendors. The collected text names no specific product, feature or capability detail."
+      "solution": "AI-powered email threat protection on Check Point's unified email, collaboration and endpoint platform",
+      "what_it_does": "Check Point describes AI-powered security that helps prevent phishing, ransomware, account takeover, business email compromise and zero-day attacks, delivered on one platform covering email, collaboration tools and endpoints. The post states the protection extends to the AI assistants that now read and act on email, not only to employees."
     }
   ],
   "headlines": [
     {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN",
-      "summary": "Cisco's September 2026 hardening release for ASA, FTD and FMC software fixes multiple internally found flaws, two of them already exploited in Firewall Management Center.",
+      "title": "CISA KEV addition: Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router - CVE-2026-103406",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-103406",
+      "summary": "CISA added a Juniper Session Smart Conductor and Session Smart Router command-injection flaw to the KEV catalog; a crafted salt minion ID gives a remote attacker root.",
       "relevance": "critical",
-      "vendor": "Cisco",
-      "source": "Cisco PSIRT"
+      "vendor": "Juniper",
+      "source": "CISA KEV catalog"
     },
     {
-      "title": "Cisco Zero-Day Highlights API Endpoint Authentication Issues",
-      "link": "https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues",
-      "summary": "CVE-2026-76460, a CVSS 10.0 authentication bypass on a Cisco ISE API endpoint, is on CISA's KEV list with a 2026-09-19 remediation deadline.",
+      "title": "Palo Alto Networks Patches Fragnesia Flaw Used to Root Firewalls",
+      "link": "https://www.securityweek.com/palo-alto-networks-patches-fragnesia-flaw-used-to-root-firewalls/",
+      "summary": "A China-linked group chained PHP2Shell with the Fragnesia flaw in AI-assisted attacks to gain root on Palo Alto Networks firewalls, hitting 25 servers; patches are out.",
       "relevance": "critical",
-      "vendor": "Cisco",
-      "source": "Dark Reading"
+      "vendor": "Palo Alto Networks",
+      "source": "SecurityWeek"
     },
     {
-      "title": "Cisco Warns of New Zero-Day ISE Auth Bypass (CVSS 10.0) Exploited in Active Attacks",
-      "link": "https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html",
-      "summary": "Cisco confirms active exploitation of a maximum-severity ISE authentication bypass caused by insufficient authentication control on an API endpoint.",
-      "relevance": "critical",
-      "vendor": "Cisco",
-      "source": "The Hacker News"
-    },
-    {
-      "title": "Critical Check Point Management Flaw Lets Unauthenticated Attackers Run Code as Root",
-      "link": "https://thehackernews.com/2026/09/critical-check-point-management-server.html",
-      "summary": "Check Point Security Management and Log Servers accept unauthenticated network requests that run code as root; a LivePatch fix is out with no reported exploitation.",
+      "title": "Hackers Compromise 24 Check Point Management Servers in Suspected AI-Driven Attack Campaign",
+      "link": "https://thehackernews.com/2026/11/hackers-compromise-24-check-point.html",
+      "summary": "An unknown actor used AI-driven offensive tooling to compromise 24 Check Point Security Management servers across 22 organisations, per GreyNoise.",
       "relevance": "critical",
       "vendor": "Check Point",
       "source": "The Hacker News"
     },
     {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Certificate Authentication Denial of Service Vulnerability",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2cert-dos-uWyc2xtv",
-      "summary": "An unauthenticated attacker can crash Cisco ASA and FTD firewalls by starting an IKEv2 VPN connection with a crafted certificate, and Cisco states there is no workaround.",
+      "title": "Vulnerabilities in Node.js and Brotli Affecting Cisco Products: October 2026",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u",
+      "summary": "Cisco's October advisory covers four Node.js flaws in its products, including the KEV-listed Brotli decoder out-of-bounds write that can lead to remote code execution.",
       "relevance": "high",
       "vendor": "Cisco",
       "source": "Cisco PSIRT"
     },
     {
-      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software for Secure Firewall 3100 and 4200 Series DTLS Denial of Service Vulnerability",
-      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-dtls-dos-Kp57HkyO",
-      "summary": "Crafted DTLS traffic reloads Cisco Secure Firewall 3100 and 4200 Series appliances running ASA or FTD software; Cisco states workarounds exist.",
+      "title": "Vulnerabilities in nginx Affecting Cisco Products: November 2026",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nginx-nov-2026-e8jska2s",
+      "summary": "Cisco is assessing which of its products ship the nginx releases hit by five critical RCE flaws, fixed upstream in nginx 1.31.9 mainline and 1.30.7 stable.",
+      "relevance": "high",
+      "vendor": "Cisco",
+      "source": "Cisco PSIRT"
+    },
+    {
+      "title": "Vulnerability in PHP Affecting Cisco Products: November 2026",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-phpaftershell-nov-2026-kT9pL4Xe",
+      "summary": "A critical PHP remote code execution flaw dubbed phpAfterShell (CVE-2026-126714) is being assessed for impact across Cisco products.",
       "relevance": "high",
       "vendor": "Cisco",
       "source": "Cisco PSIRT"
