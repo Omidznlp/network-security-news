@@ -6,7 +6,7 @@ permalink: /browse/vendor/cisco/
 
 # Cisco
 
-*18 item(s) across all editions.*
+*21 item(s) across all editions.*
 
 ## Firewalls
 
@@ -45,6 +45,8 @@ permalink: /browse/vendor/cisco/
 
 ## Management platforms
 
+- 🟡 [Cisco Informational for Emergency Distrust of eMudhra Root and Intermediate Certificate Authorities](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r)  
+  <small>2026-11-26 · Cisco PSIRT · [in digest]({{ '/2026/11/26/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Zero-Day Highlights API Endpoint Authentication Issues](https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues) — CVE-2026-76460 **[KEV]**  
@@ -62,6 +64,12 @@ permalink: /browse/vendor/cisco/
 
 ## Other
 
+- 🟠 [Vulnerabilities in nginx Affecting Cisco Products: November 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nginx-nov-2026-e8jska2s) — CVE-2026-113425, CVE-2026-121810, CVE-2026-123007, CVE-2026-123633, CVE-2026-123634  
+  <small>2026-11-26 · Cisco PSIRT · [in digest]({{ '/2026/11/26/network-security-digest/' | relative_url }})</small>
+- 🟡 [Cisco Informational for Emergency Distrust of eMudhra Root and Intermediate Certificate Authorities](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r)  
+  <small>2026-11-26 · Cisco PSIRT · [in digest]({{ '/2026/11/26/network-security-digest/' | relative_url }})</small>
+- 🟡 [Cisco UCS and UCS-Based Appliances UEFI Shell Secure Boot Bypass Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ucs-uefi-sb-bypass-eb6xC5GW)  
+  <small>2026-11-26 · Cisco PSIRT · [in digest]({{ '/2026/11/26/network-security-digest/' | relative_url }})</small>
 - 🟠 [Cisco Secure Email Gateway SQL Injection Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [CVE-2026-76461: Critical Cisco Secure Email Gateway Vulnerability Exploited in the Wild](https://www.rapid7.com/blog/post/etr-cve-2026-76461-critical-cisco-secure-email-gateway-vulnerability-exploited-in-the-wild) — CVE-2026-76461 **[KEV]**  

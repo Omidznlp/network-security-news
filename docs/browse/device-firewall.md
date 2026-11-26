@@ -6,7 +6,7 @@ permalink: /browse/device/firewall/
 
 # Firewalls
 
-*11 item(s) across all editions.*
+*12 item(s) across all editions.*
 
 ## Cisco
 
@@ -32,6 +32,11 @@ permalink: /browse/device/firewall/
   <small>2026-09-17 · Zero Day Initiative · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
 - 🟠 [Securing the unpatchable in an age of AI-driven vulnerabilities](https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/)  
   <small>2026-09-17 · Cisco Talos · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Palo Alto Networks
+
+- 🔴 [Palo Alto Networks warns of Fragnesia flaw exploited in PAN-OS attacks](https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/)  
+  <small>2026-11-26 · BleepingComputer · [in digest]({{ '/2026/11/26/network-security-digest/' | relative_url }})</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>
