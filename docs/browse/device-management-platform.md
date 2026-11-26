@@ -6,7 +6,7 @@ permalink: /browse/device/management-platform/
 
 # Management platforms
 
-*11 item(s) across all editions.*
+*15 item(s) across all editions.*
 
 ## Check Point
 
@@ -21,6 +21,8 @@ permalink: /browse/device/management-platform/
 
 ## Cisco
 
+- 🟡 [Cisco Informational for Emergency Distrust of eMudhra Root and Intermediate Certificate Authorities](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r)  
+  <small>2026-11-26 · Cisco PSIRT · [in digest]({{ '/2026/11/26/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Zero-Day Highlights API Endpoint Authentication Issues](https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues) — CVE-2026-76460 **[KEV]**  
@@ -35,6 +37,21 @@ permalink: /browse/device/management-platform/
   <small>2026-09-18 · Zero Day Initiative · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟠 [ZDI-26-709: Cisco Secure Firewall Management Center CommandSinkRmi Deserialization of Untrusted Data Remote Code Execution Vulnerability](http://www.zerodayinitiative.com/advisories/ZDI-26-709/) — CVE-2026-20242  
   <small>2026-09-17 · Zero Day Initiative · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Juniper Networks
+
+- 🔴 [Critical Juniper Session Smart Conductor Flaw Exploited in Attacks](https://www.securityweek.com/critical-juniper-session-smart-conductor-flaw-exploited-in-attacks/) — CVE-2026-103406 **[KEV]**  
+  <small>2026-11-26 · SecurityWeek · [in digest]({{ '/2026/11/26/network-security-digest/' | relative_url }})</small>
+
+## Multiple
+
+- 🟠 [Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products](https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html) — CVE-2026-133275 **[KEV]**  
+  <small>2026-11-26 · The Hacker News · [in digest]({{ '/2026/11/26/network-security-digest/' | relative_url }})</small>
+
+## Palo Alto Networks
+
+- 🔴 [Palo Alto Networks warns of Fragnesia flaw exploited in PAN-OS attacks](https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/)  
+  <small>2026-11-26 · BleepingComputer · [in digest]({{ '/2026/11/26/network-security-digest/' | relative_url }})</small>
 
 
 <p><a href="{{ "/" | relative_url }}">← All editions</a> · <a href="{{ "/browse/" | relative_url }}">Browse index</a></p>

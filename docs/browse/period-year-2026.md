@@ -6,10 +6,16 @@ permalink: /browse/year/2026/
 
 # Year 2026
 
-*26 item(s) in this period.*
+*32 item(s) in this period.*
 
-## Cisco (18)
+## Cisco (21)
 
+- 🟠 [Vulnerabilities in nginx Affecting Cisco Products: November 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nginx-nov-2026-e8jska2s) — CVE-2026-113425, CVE-2026-121810, CVE-2026-123007, CVE-2026-123633, CVE-2026-123634  
+  <small>2026-11-26 · Cisco PSIRT · [in digest]({{ '/2026/11/26/network-security-digest/' | relative_url }})</small>
+- 🟡 [Cisco Informational for Emergency Distrust of eMudhra Root and Intermediate Certificate Authorities](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r)  
+  <small>2026-11-26 · Cisco PSIRT · [in digest]({{ '/2026/11/26/network-security-digest/' | relative_url }})</small>
+- 🟡 [Cisco UCS and UCS-Based Appliances UEFI Shell Secure Boot Bypass Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ucs-uefi-sb-bypass-eb6xC5GW)  
+  <small>2026-11-26 · Cisco PSIRT · [in digest]({{ '/2026/11/26/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Secure Firewall Adaptive Security Appliance, Secure Firewall Threat Defense, and Secure Firewall Management Center Software Hardening Release: September 2026](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-asaftdfmc-uvpPROhN)  
   <small>2026-09-18 · Cisco PSIRT · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🔴 [Cisco Zero-Day Highlights API Endpoint Authentication Issues](https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues) — CVE-2026-76460 **[KEV]**  
@@ -60,12 +66,24 @@ permalink: /browse/year/2026/
 - ⚪ [When Security Operations Can’t Keep Up: 4 Ways Agentic Network Security Management Improves Security Operations](https://blog.checkpoint.com/hybrid-mesh/when-security-operations-cant-keep-up-4-ways-agentic-network-security-management-improves-security-operations/)  
   <small>2026-09-18 · Check Point Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 
-## Palo Alto Networks (2)
+## Palo Alto Networks (3)
 
+- 🔴 [Palo Alto Networks warns of Fragnesia flaw exploited in PAN-OS attacks](https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/)  
+  <small>2026-11-26 · BleepingComputer · [in digest]({{ '/2026/11/26/network-security-digest/' | relative_url }})</small>
 - ⚪ [Defining the Standard for AI Security](https://www.paloaltonetworks.com/blog/2026/09/defining-the-standard-for-ai-security/)  
   <small>2026-09-18 · Palo Alto Networks Blog · [in digest]({{ '/2026/09/18/network-security-digest/' | relative_url }})</small>
 - 🟡 [CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)](https://security.paloaltonetworks.com/CVE-2026-0307) — CVE-2026-0307  
   <small>2026-09-17 · Palo Alto Networks PSIRT · [in digest]({{ '/2026/09/17/network-security-digest/' | relative_url }})</small>
+
+## Juniper Networks (1)
+
+- 🔴 [Critical Juniper Session Smart Conductor Flaw Exploited in Attacks](https://www.securityweek.com/critical-juniper-session-smart-conductor-flaw-exploited-in-attacks/) — CVE-2026-103406 **[KEV]**  
+  <small>2026-11-26 · SecurityWeek · [in digest]({{ '/2026/11/26/network-security-digest/' | relative_url }})</small>
+
+## Multiple (1)
+
+- 🟠 [Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products](https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html) — CVE-2026-133275 **[KEV]**  
+  <small>2026-11-26 · The Hacker News · [in digest]({{ '/2026/11/26/network-security-digest/' | relative_url }})</small>
 
 ## Ubiquiti (1)
 
